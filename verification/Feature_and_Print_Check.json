@@ -1,0 +1,19 @@
+{
+  "feature_issues": [],
+  "print_components": [
+    "PRINT_01_Hull_shell",
+    "PRINT_02_Removable_hatch_cover",
+    "PRINT_03_Removable_electronics_tray",
+    "PRINT_04_Battery_slide_tray",
+    "PRINT_11_Motor_face_mount",
+    "PRINT_06_Magnetometer_adjustment_rail",
+    "PRINT_07_Magnetometer_service_pod",
+    "PRINT_08_Magnetometer_pod_lid",
+    "PRINT_09_Rudder_transom_bracket",
+    "PRINT_14_Motor_lower_cradle",
+    "PRINT_16_Rudder_blade",
+    "PRINT_17_Rudder_tiller"
+  ],
+  "parameters": 39,
+  "timeline_items": 950
+}

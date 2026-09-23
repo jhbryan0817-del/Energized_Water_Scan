@@ -1,0 +1,1312 @@
+{
+  "document": "Energized_Water_Scanner",
+  "body_count": 87,
+  "interferences_between_components": [],
+  "inventory": [
+    {
+      "component": "D24V10F5_OFFICIAL_STEP:1+pololu-3.3v-1a-step-down-voltage-regulator-d24v10f3:1",
+      "body": "Body1",
+      "volume_cm3": 0.36501383669925713,
+      "min_mm": [
+        22.0,
+        34.0,
+        24.0
+      ],
+      "max_mm": [
+        34.7,
+        51.78,
+        27.816000000000003
+      ]
+    },
+    {
+      "component": "BATTERY_Gens_Ace_GEA222S30X6GT_126g:1",
+      "body": "Gens_Ace_104x34_5x14_5",
+      "volume_cm3": 52.02600000000001,
+      "min_mm": [
+        -95.0,
+        -17.25,
+        21.0
+      ],
+      "max_mm": [
+        9.000000000000004,
+        17.25,
+        35.5
+      ]
+    },
+    {
+      "component": "ESP32_DevKitC_V4_dimension_envelope:1",
+      "body": "PCB_48.26x27.94",
+      "volume_cm3": 2.157415040000002,
+      "min_mm": [
+        -90.0,
+        30.0,
+        24.000000000000004
+      ],
+      "max_mm": [
+        -41.74,
+        57.940000000000005,
+        25.600000000000005
+      ]
+    },
+    {
+      "component": "ESP32_DevKitC_V4_dimension_envelope:1",
+      "body": "Header_and_module_clearance",
+      "volume_cm3": 13.483844000000001,
+      "min_mm": [
+        -90.0,
+        30.0,
+        25.6
+      ],
+      "max_mm": [
+        -41.74,
+        57.940000000000005,
+        35.6
+      ]
+    },
+    {
+      "component": "ESP32_DevKitC_V4_dimension_envelope:1",
+      "body": "Antenna_overhang_6_04mm_OFFICIAL",
+      "volume_cm3": 0.32616,
+      "min_mm": [
+        -41.74,
+        34.97,
+        25.600000000000005
+      ],
+      "max_mm": [
+        -35.7,
+        52.970000000000006,
+        28.6
+      ]
+    },
+    {
+      "component": "FRONT_END_replaceable_40x30x12:1",
+      "body": "Input_protection_module",
+      "volume_cm3": 14.400000000000004,
+      "min_mm": [
+        -85.0,
+        -58.00000000000001,
+        24.000000000000004
+      ],
+      "max_mm": [
+        -45.0,
+        -28.000000000000004,
+        36.00000000000001
+      ]
+    },
+    {
+      "component": "ESC_Hobbywing_WP1625:1",
+      "body": "34x24x14_ESC",
+      "volume_cm3": 11.424000000000007,
+      "min_mm": [
+        92.00000000000001,
+        30.0,
+        22.0
+      ],
+      "max_mm": [
+        126.00000000000001,
+        54.0,
+        36.00000000000001
+      ]
+    },
+    {
+      "component": "SERVO_TowerPro_SG90_Digital_ENVELOPE:1",
+      "body": "Body",
+      "volume_cm3": 8.137400000000005,
+      "min_mm": [
+        130.0,
+        -45.0,
+        25.0
+      ],
+      "max_mm": [
+        153.0,
+        -32.8,
+        54.0
+      ]
+    },
+    {
+      "component": "SERVO_TowerPro_SG90_Digital_ENVELOPE:1",
+      "body": "Mount_lugs_VERIFY",
+      "volume_cm3": 1.0065000000000004,
+      "min_mm": [
+        125.0,
+        -45.0,
+        43.0
+      ],
+      "max_mm": [
+        158.0,
+        -32.8,
+        45.5
+      ]
+    },
+    {
+      "component": "SERVO_TowerPro_SG90_Digital_ENVELOPE:1",
+      "body": "Spline_envelope",
+      "volume_cm3": 0.07853981633974842,
+      "min_mm": [
+        144.5,
+        -41.400000000000006,
+        54.0
+      ],
+      "max_mm": [
+        149.5,
+        -36.4,
+        58.00000000000001
+      ]
+    },
+    {
+      "component": "PRINT_01_Hull_shell:1",
+      "body": "Hull_with_sleeve_electrode_bosses_and_tray_pillars",
+      "volume_cm3": 486.663223896176,
+      "min_mm": [
+        -200.0,
+        -95.0,
+        -10.149137602248663
+      ],
+      "max_mm": [
+        200.0,
+        95.0,
+        71.0
+      ]
+    },
+    {
+      "component": "SEAL_Main_hatch_continuous_gasket:1",
+      "body": "Gasket_blank",
+      "volume_cm3": 11.782732755698003,
+      "min_mm": [
+        -115.0,
+        -75.0,
+        68.0
+      ],
+      "max_mm": [
+        175.0,
+        75.0,
+        70.0
+      ]
+    },
+    {
+      "component": "PRINT_02_Removable_hatch_cover:1",
+      "body": "Hatch_cover",
+      "volume_cm3": 79.92259913354681,
+      "min_mm": [
+        -117.0,
+        -77.0,
+        70.0
+      ],
+      "max_mm": [
+        177.0,
+        77.0,
+        73.0
+      ]
+    },
+    {
+      "component": "PRINT_03_Removable_electronics_tray:1",
+      "body": "Electronics_tray_with_all_PCB_and_servo_supports",
+      "volume_cm3": 78.72006842099765,
+      "min_mm": [
+        -100.0,
+        -61.00000000000001,
+        16.0
+      ],
+      "max_mm": [
+        160.0,
+        61.00000000000001,
+        43.00000000000001
+      ]
+    },
+    {
+      "component": "PRINT_04_Battery_slide_tray:1",
+      "body": "Sliding_battery_plate",
+      "volume_cm3": 11.472000000000001,
+      "min_mm": [
+        -101.00000000000001,
+        -22.0,
+        19.0
+      ],
+      "max_mm": [
+        15.0,
+        22.0,
+        26.0
+      ]
+    },
+    {
+      "component": "ELECTRODE_E1_M4_316_envelope:1",
+      "body": "M4_shank",
+      "volume_cm3": 0.33929200658768094,
+      "min_mm": [
+        -102.0,
+        -1.999999999999993,
+        -10.0
+      ],
+      "max_mm": [
+        -98.0,
+        1.999999999999993,
+        17.0
+      ]
+    },
+    {
+      "component": "ELECTRODE_E1_M4_316_envelope:1",
+      "body": "Head",
+      "volume_cm3": 0.11545353001942955,
+      "min_mm": [
+        -103.5,
+        -3.4999999999999964,
+        -13.0
+      ],
+      "max_mm": [
+        -96.5,
+        3.4999999999999964,
+        -10.0
+      ]
+    },
+    {
+      "component": "ELECTRODE_E1_M4_316_envelope:1",
+      "body": "Sealing_washer",
+      "volume_cm3": 0.06597344572538856,
+      "min_mm": [
+        -105.0,
+        -5.0,
+        -1.0
+      ],
+      "max_mm": [
+        -95.0,
+        5.0,
+        0.0
+      ]
+    },
+    {
+      "component": "ELECTRODE_E1_M4_316_envelope:1",
+      "body": "Internal_washer",
+      "volume_cm3": 0.051050880620836236,
+      "min_mm": [
+        -104.5,
+        -4.499999999999993,
+        10.0
+      ],
+      "max_mm": [
+        -95.5,
+        4.499999999999993,
+        11.0
+      ]
+    },
+    {
+      "component": "ELECTRODE_E1_M4_316_envelope:1",
+      "body": "Nut_envelope",
+      "volume_cm3": 0.08293804605477409,
+      "min_mm": [
+        -103.5,
+        -3.4999999999999964,
+        11.0
+      ],
+      "max_mm": [
+        -96.5,
+        3.4999999999999964,
+        14.200000000000001
+      ]
+    },
+    {
+      "component": "ELECTRODE_E2_M4_316_envelope:1",
+      "body": "M4_shank",
+      "volume_cm3": 0.33929200658768377,
+      "min_mm": [
+        38.0,
+        -2.0000000000000018,
+        -10.0
+      ],
+      "max_mm": [
+        42.0,
+        2.0000000000000018,
+        17.0
+      ]
+    },
+    {
+      "component": "ELECTRODE_E2_M4_316_envelope:1",
+      "body": "Head",
+      "volume_cm3": 0.11545353001942964,
+      "min_mm": [
+        36.5,
+        -3.4999999999999964,
+        -13.0
+      ],
+      "max_mm": [
+        43.5,
+        3.4999999999999964,
+        -10.0
+      ]
+    },
+    {
+      "component": "ELECTRODE_E2_M4_316_envelope:1",
+      "body": "Sealing_washer",
+      "volume_cm3": 0.06597344572538846,
+      "min_mm": [
+        35.0,
+        -5.0,
+        -1.0
+      ],
+      "max_mm": [
+        45.0,
+        5.0,
+        0.0
+      ]
+    },
+    {
+      "component": "ELECTRODE_E2_M4_316_envelope:1",
+      "body": "Internal_washer",
+      "volume_cm3": 0.05105088062083639,
+      "min_mm": [
+        35.5,
+        -4.500000000000002,
+        10.0
+      ],
+      "max_mm": [
+        44.5,
+        4.500000000000002,
+        11.0
+      ]
+    },
+    {
+      "component": "ELECTRODE_E2_M4_316_envelope:1",
+      "body": "Nut_envelope",
+      "volume_cm3": 0.08293804605477376,
+      "min_mm": [
+        36.5,
+        -3.4999999999999964,
+        11.0
+      ],
+      "max_mm": [
+        43.5,
+        3.4999999999999964,
+        14.200000000000001
+      ]
+    },
+    {
+      "component": "ELECTRODE_E3_M4_316_envelope:1",
+      "body": "M4_shank",
+      "volume_cm3": 0.3392920065876842,
+      "min_mm": [
+        -32.0,
+        -57.0,
+        -10.0
+      ],
+      "max_mm": [
+        -28.0,
+        -53.0,
+        17.0
+      ]
+    },
+    {
+      "component": "ELECTRODE_E3_M4_316_envelope:1",
+      "body": "Head",
+      "volume_cm3": 0.11545353001942994,
+      "min_mm": [
+        -33.5,
+        -58.5,
+        -13.0
+      ],
+      "max_mm": [
+        -26.5,
+        -51.5,
+        -10.0
+      ]
+    },
+    {
+      "component": "ELECTRODE_E3_M4_316_envelope:1",
+      "body": "Sealing_washer",
+      "volume_cm3": 0.06597344572538848,
+      "min_mm": [
+        -35.0,
+        -60.0,
+        -1.0
+      ],
+      "max_mm": [
+        -25.0,
+        -50.0,
+        0.0
+      ]
+    },
+    {
+      "component": "ELECTRODE_E3_M4_316_envelope:1",
+      "body": "Internal_washer",
+      "volume_cm3": 0.051050880620836396,
+      "min_mm": [
+        -34.5,
+        -59.5,
+        10.0
+      ],
+      "max_mm": [
+        -25.5,
+        -50.5,
+        11.0
+      ]
+    },
+    {
+      "component": "ELECTRODE_E3_M4_316_envelope:1",
+      "body": "Nut_envelope",
+      "volume_cm3": 0.08293804605477412,
+      "min_mm": [
+        -33.5,
+        -58.5,
+        11.0
+      ],
+      "max_mm": [
+        -26.5,
+        -51.5,
+        14.200000000000001
+      ]
+    },
+    {
+      "component": "ELECTRODE_E4_M4_316_envelope:1",
+      "body": "M4_shank",
+      "volume_cm3": 0.3392920065876842,
+      "min_mm": [
+        -32.0,
+        53.0,
+        -10.0
+      ],
+      "max_mm": [
+        -28.0,
+        57.0,
+        17.0
+      ]
+    },
+    {
+      "component": "ELECTRODE_E4_M4_316_envelope:1",
+      "body": "Head",
+      "volume_cm3": 0.11545353001942994,
+      "min_mm": [
+        -33.5,
+        51.5,
+        -13.0
+      ],
+      "max_mm": [
+        -26.5,
+        58.5,
+        -10.0
+      ]
+    },
+    {
+      "component": "ELECTRODE_E4_M4_316_envelope:1",
+      "body": "Sealing_washer",
+      "volume_cm3": 0.06597344572538848,
+      "min_mm": [
+        -35.0,
+        50.0,
+        -1.0
+      ],
+      "max_mm": [
+        -25.0,
+        60.0,
+        0.0
+      ]
+    },
+    {
+      "component": "ELECTRODE_E4_M4_316_envelope:1",
+      "body": "Internal_washer",
+      "volume_cm3": 0.051050880620836396,
+      "min_mm": [
+        -34.5,
+        50.5,
+        10.0
+      ],
+      "max_mm": [
+        -25.5,
+        59.5,
+        11.0
+      ]
+    },
+    {
+      "component": "ELECTRODE_E4_M4_316_envelope:1",
+      "body": "Nut_envelope",
+      "volume_cm3": 0.08293804605477412,
+      "min_mm": [
+        -33.5,
+        51.5,
+        11.0
+      ],
+      "max_mm": [
+        -26.5,
+        58.5,
+        14.200000000000001
+      ]
+    },
+    {
+      "component": "DRIVELINE_Mabuchi_and_Krick:1",
+      "body": "Mabuchi_RS380PH_can",
+      "volume_cm3": 25.27074511080632,
+      "min_mm": [
+        14.709245707776418,
+        -14.6,
+        15.897482936179612
+      ],
+      "max_mm": [
+        58.7787580584968,
+        14.6,
+        53.8858769686957
+      ]
+    },
+    {
+      "component": "DRIVELINE_Mabuchi_and_Krick:1",
+      "body": "Mabuchi_front_boss",
+      "volume_cm3": 0.2042035224833449,
+      "min_mm": [
+        53.70590477448742,
+        -5.0,
+        24.497441351288106
+      ],
+      "max_mm": [
+        58.805502373864215,
+        5.0,
+        34.829629131445344
+      ]
+    },
+    {
+      "component": "DRIVELINE_Mabuchi_and_Krick:1",
+      "body": "Motor_output_shaft",
+      "volume_cm3": 0.05733563672434301,
+      "min_mm": [
+        57.213765246483696,
+        -1.15,
+        24.644552960086227
+      ],
+      "max_mm": [
+        71.13882545300864,
+        1.15,
+        30.43788518296588
+      ]
+    },
+    {
+      "component": "DRIVELINE_Mabuchi_and_Krick:1",
+      "body": "Krick_63800_63823_63820_coupling",
+      "volume_cm3": 3.4613282459090478,
+      "min_mm": [
+        62.718115424621786,
+        -7.5,
+        14.99098494975637
+      ],
+      "max_mm": [
+        85.91891762694098,
+        7.500000000000002,
+        34.65625324614281
+      ]
+    },
+    {
+      "component": "DRIVELINE_Mabuchi_and_Krick:1",
+      "body": "Krick_65220_stern_tube",
+      "volume_cm3": 3.053416001785295,
+      "min_mm": [
+        89.06157737237456,
+        -2.75,
+        -21.57309554667136
+      ],
+      "max_mm": [
+        238.27173354266588,
+        2.75,
+        23.338810398604195
+      ]
+    },
+    {
+      "component": "DRIVELINE_Mabuchi_and_Krick:1",
+      "body": "Krick_65220_shaft_178mm",
+      "volume_cm3": 0.5592034923390071,
+      "min_mm": [
+        78.88932661212422,
+        -1.0,
+        -23.506191982100766
+      ],
+      "max_mm": [
+        251.34176178178348,
+        1.0,
+        24.495449698726055
+      ]
+    },
+    {
+      "component": "DRIVELINE_Mabuchi_and_Krick:1",
+      "body": "Propeller_30mm_swept_volume",
+      "volume_cm3": 3.534291735288669,
+      "min_mm": [
+        242.37102792869786,
+        -15.0,
+        -37.02915355014777
+      ],
+      "max_mm": [
+        254.9652284132188,
+        15.000000000000004,
+        -6.757283535963108
+      ]
+    },
+    {
+      "component": "PRINT_11_Motor_face_mount:1",
+      "body": "PRINT_11_Motor_face_mount",
+      "volume_cm3": 12.60494296653927,
+      "min_mm": [
+        46.00000000000001,
+        -24.000000000000004,
+        3.0000000000000004
+      ],
+      "max_mm": [
+        65.0,
+        24.000000000000004,
+        49.31851652578138
+      ]
+    },
+    {
+      "component": "PRINT_06_Magnetometer_adjustment_rail:1",
+      "body": "Nonmagnetic_bow_rail",
+      "volume_cm3": 6.688000000000002,
+      "min_mm": [
+        -190.0,
+        -16.0,
+        68.0
+      ],
+      "max_mm": [
+        -122.00000000000001,
+        16.0,
+        72.0
+      ]
+    },
+    {
+      "component": "PRINT_07_Magnetometer_service_pod:1",
+      "body": "Pod_with_rail_mounting_shoe",
+      "volume_cm3": 9.977247518570477,
+      "min_mm": [
+        -181.0,
+        -14.000000000000002,
+        72.0
+      ],
+      "max_mm": [
+        -149.00000000000003,
+        14.000000000000002,
+        92.99999999999999
+      ]
+    },
+    {
+      "component": "SENSOR_SparkFun_SEN19921_MMC5983MA:1",
+      "body": "19.05x7.62_PCB",
+      "volume_cm3": 0.23225760000000034,
+      "min_mm": [
+        -174.525,
+        -3.81,
+        83.0
+      ],
+      "max_mm": [
+        -155.475,
+        3.81,
+        84.60000000000001
+      ]
+    },
+    {
+      "component": "SENSOR_SparkFun_SEN19921_MMC5983MA:1",
+      "body": "Qwiic_component_envelope",
+      "volume_cm3": 0.5080634999999998,
+      "min_mm": [
+        -174.525,
+        -3.81,
+        84.60000000000001
+      ],
+      "max_mm": [
+        -155.475,
+        3.81,
+        88.10000000000001
+      ]
+    },
+    {
+      "component": "PRINT_08_Magnetometer_pod_lid:1",
+      "body": "Pod_lid",
+      "volume_cm3": 1.5055893831132443,
+      "min_mm": [
+        -181.0,
+        -12.000000000000002,
+        93.0
+      ],
+      "max_mm": [
+        -149.00000000000003,
+        12.000000000000002,
+        95.0
+      ]
+    },
+    {
+      "component": "PRINT_09_Rudder_transom_bracket:1",
+      "body": "Single_print_rudder_bracket",
+      "volume_cm3": 13.979603342945687,
+      "min_mm": [
+        195.84615384615387,
+        -14.000000000000002,
+        38.0
+      ],
+      "max_mm": [
+        283.0,
+        14.000000000000002,
+        63.00000000000001
+      ]
+    },
+    {
+      "component": "PROCURE_ESC_mounting_foam_3mm:1",
+      "body": "ESC_foam_pad_allocation",
+      "volume_cm3": 1.8000000000000003,
+      "min_mm": [
+        94.0,
+        32.0,
+        19.0
+      ],
+      "max_mm": [
+        124.0,
+        52.0,
+        22.0
+      ]
+    },
+    {
+      "component": "PRINT_14_Motor_lower_cradle:1",
+      "body": "PRINT_14_Motor_lower_cradle",
+      "volume_cm3": 19.619037944326326,
+      "min_mm": [
+        20.0,
+        -20.0,
+        3.0000000000000004
+      ],
+      "max_mm": [
+        50.17037086855466,
+        20.0,
+        37.76457135307563
+      ]
+    },
+    {
+      "component": "PROCURE_Servo_horn_and_M2_linkage_ENVELOPES:1",
+      "body": "Custom_horn_spline_fit_TBD",
+      "volume_cm3": 0.311191374382402,
+      "min_mm": [
+        143.5,
+        -42.0,
+        58.00000000000001
+      ],
+      "max_mm": [
+        150.5,
+        -17.5,
+        60.00000000000001
+      ]
+    },
+    {
+      "component": "PROCURE_Servo_horn_and_M2_linkage_ENVELOPES:1",
+      "body": "Horn_link_pin",
+      "volume_cm3": 0.012566370614358554,
+      "min_mm": [
+        146.0,
+        -21.999999999999996,
+        58.00000000000001
+      ],
+      "max_mm": [
+        148.0,
+        -20.000000000000004,
+        62.000000000000014
+      ]
+    },
+    {
+      "component": "PROCURE_Servo_horn_and_M2_linkage_ENVELOPES:1",
+      "body": "M2_pushrod_131mm",
+      "volume_cm3": 0.41154863762024285,
+      "min_mm": [
+        147.0,
+        -21.999999999999996,
+        59.0
+      ],
+      "max_mm": [
+        278.00000000000006,
+        -20.000000000000004,
+        61.0
+      ]
+    },
+    {
+      "component": "PROCURE_Servo_horn_and_M2_linkage_ENVELOPES:1",
+      "body": "Tiller_drop_link_pin",
+      "volume_cm3": 0.03455751918948721,
+      "min_mm": [
+        277.0,
+        -22.000000000000014,
+        59.0
+      ],
+      "max_mm": [
+        279.0,
+        -19.999999999999986,
+        70.0
+      ]
+    },
+    {
+      "component": "SEAL_Steering_pushrod_boot_envelope:1",
+      "body": "Procured_flexible_boot_envelope",
+      "volume_cm3": 0.5277875658030641,
+      "min_mm": [
+        194.0,
+        -25.000000000000004,
+        56.0
+      ],
+      "max_mm": [
+        208.0,
+        -16.999999999999996,
+        64.0
+      ]
+    },
+    {
+      "component": "ADS1115_OFFICIAL_STEP:1",
+      "body": "Body1",
+      "volume_cm3": 0.6495343108800632,
+      "min_mm": [
+        -16.999999999999996,
+        -53.0,
+        24.0
+      ],
+      "max_mm": [
+        8.400000000000002,
+        -35.22,
+        25.57
+      ]
+    },
+    {
+      "component": "ADS1115_OFFICIAL_STEP:1",
+      "body": "Body2",
+      "volume_cm3": 4.6294467859453105e-05,
+      "min_mm": [
+        -2.545999999999995,
+        -42.545,
+        25.57
+      ],
+      "max_mm": [
+        -1.5959999999999952,
+        -42.40500000000001,
+        26.299999999999994
+      ]
+    },
+    {
+      "component": "ADS1115_OFFICIAL_STEP:1",
+      "body": "Body3",
+      "volume_cm3": 0.008676603846706201,
+      "min_mm": [
+        -5.545999999999996,
+        -44.97500000000001,
+        25.679999999999996
+      ],
+      "max_mm": [
+        -2.545999999999995,
+        -41.97500000000001,
+        26.669999999999998
+      ]
+    },
+    {
+      "component": "ADS1115_OFFICIAL_STEP:1",
+      "body": "Body4",
+      "volume_cm3": 5.183627878399101e-06,
+      "min_mm": [
+        -3.124571428570999,
+        -44.696428571429,
+        26.596666666667
+      ],
+      "max_mm": [
+        -2.8245714285709953,
+        -44.396428571429006,
+        26.669999999999998
+      ]
+    },
+    {
+      "component": "ADS1115_OFFICIAL_STEP:1",
+      "body": "Body5",
+      "volume_cm3": 4.6294467859453105e-05,
+      "min_mm": [
+        -6.495999999999995,
+        -42.545,
+        25.57
+      ],
+      "max_mm": [
+        -5.545999999999996,
+        -42.40500000000001,
+        26.299999999999994
+      ]
+    },
+    {
+      "component": "ADS1115_OFFICIAL_STEP:1",
+      "body": "Body6",
+      "volume_cm3": 4.6294467859453105e-05,
+      "min_mm": [
+        -6.495999999999997,
+        -43.045,
+        25.57
+      ],
+      "max_mm": [
+        -5.545999999999998,
+        -42.90500000000001,
+        26.299999999999994
+      ]
+    },
+    {
+      "component": "ADS1115_OFFICIAL_STEP:1",
+      "body": "Body7",
+      "volume_cm3": 4.629446785945604e-05,
+      "min_mm": [
+        -6.495999999999997,
+        -43.54500000000001,
+        25.57
+      ],
+      "max_mm": [
+        -5.545999999999998,
+        -43.405,
+        26.299999999999994
+      ]
+    },
+    {
+      "component": "ADS1115_OFFICIAL_STEP:1",
+      "body": "Body8",
+      "volume_cm3": 4.629446785945604e-05,
+      "min_mm": [
+        -6.495999999999997,
+        -44.045,
+        25.57
+      ],
+      "max_mm": [
+        -5.545999999999998,
+        -43.905,
+        26.299999999999994
+      ]
+    },
+    {
+      "component": "ADS1115_OFFICIAL_STEP:1",
+      "body": "Body9",
+      "volume_cm3": 4.629446785945604e-05,
+      "min_mm": [
+        -6.495999999999997,
+        -44.545,
+        25.57
+      ],
+      "max_mm": [
+        -5.545999999999998,
+        -44.405,
+        26.299999999999994
+      ]
+    },
+    {
+      "component": "ADS1115_OFFICIAL_STEP:1",
+      "body": "Body10",
+      "volume_cm3": 4.6294467859453105e-05,
+      "min_mm": [
+        -2.545999999999995,
+        -43.045,
+        25.57
+      ],
+      "max_mm": [
+        -1.5959999999999952,
+        -42.90500000000001,
+        26.299999999999994
+      ]
+    },
+    {
+      "component": "ADS1115_OFFICIAL_STEP:1",
+      "body": "Body11",
+      "volume_cm3": 4.629446785945604e-05,
+      "min_mm": [
+        -2.545999999999995,
+        -43.54500000000001,
+        25.57
+      ],
+      "max_mm": [
+        -1.5959999999999952,
+        -43.405,
+        26.299999999999994
+      ]
+    },
+    {
+      "component": "ADS1115_OFFICIAL_STEP:1",
+      "body": "Body12",
+      "volume_cm3": 4.629446785945604e-05,
+      "min_mm": [
+        -2.545999999999997,
+        -44.045,
+        25.57
+      ],
+      "max_mm": [
+        -1.5959999999999974,
+        -43.905,
+        26.299999999999994
+      ]
+    },
+    {
+      "component": "ADS1115_OFFICIAL_STEP:1",
+      "body": "Body13",
+      "volume_cm3": 4.629446785945899e-05,
+      "min_mm": [
+        -2.545999999999997,
+        -44.545000000000016,
+        25.57
+      ],
+      "max_mm": [
+        -1.5959999999999974,
+        -44.405,
+        26.299999999999994
+      ]
+    },
+    {
+      "component": "ADS1115_OFFICIAL_STEP:1",
+      "body": "Body14",
+      "volume_cm3": 0.0024961024000000036,
+      "min_mm": [
+        -9.871999999999996,
+        -41.687,
+        25.57
+      ],
+      "max_mm": [
+        -7.871999999999996,
+        -40.437,
+        26.57
+      ]
+    },
+    {
+      "component": "ADS1115_OFFICIAL_STEP:1",
+      "body": "Body15",
+      "volume_cm3": 0.0011499215999999988,
+      "min_mm": [
+        -9.671999999999997,
+        -43.416999999999994,
+        25.57
+      ],
+      "max_mm": [
+        -8.071999999999996,
+        -42.516999999999996,
+        26.37
+      ]
+    },
+    {
+      "component": "ADS1115_OFFICIAL_STEP:1",
+      "body": "Body16",
+      "volume_cm3": 0.0440376312163515,
+      "min_mm": [
+        3.2580000000000053,
+        -47.11,
+        25.57
+      ],
+      "max_mm": [
+        8.208000000000006,
+        -41.11,
+        28.52999999999998
+      ]
+    },
+    {
+      "component": "ADS1115_OFFICIAL_STEP:1",
+      "body": "Body17",
+      "volume_cm3": 1.1353290973949644e-06,
+      "min_mm": [
+        -13.697999999999997,
+        -40.72029393674826,
+        25.57
+      ],
+      "max_mm": [
+        -13.189999999999994,
+        -40.133706063251736,
+        25.57762
+      ]
+    },
+    {
+      "component": "ADS1115_OFFICIAL_STEP:1",
+      "body": "Body18",
+      "volume_cm3": 4.530715772568304e-06,
+      "min_mm": [
+        -14.2441,
+        -40.808,
+        25.57127
+      ],
+      "max_mm": [
+        -13.799599999999996,
+        -40.046,
+        25.87607
+      ]
+    },
+    {
+      "component": "ADS1115_OFFICIAL_STEP:1",
+      "body": "Body19",
+      "volume_cm3": 4.530715772568297e-06,
+      "min_mm": [
+        -13.088399999999996,
+        -40.808,
+        25.57127
+      ],
+      "max_mm": [
+        -12.643899999999997,
+        -40.046,
+        25.87607
+      ]
+    },
+    {
+      "component": "ADS1115_OFFICIAL_STEP:1",
+      "body": "Body20",
+      "volume_cm3": 0.0003340016470952864,
+      "min_mm": [
+        -14.237749999999995,
+        -40.8207,
+        25.57762
+      ],
+      "max_mm": [
+        -12.650249999999996,
+        -40.0333,
+        25.869719999999997
+      ]
+    },
+    {
+      "component": "ADS1115_OFFICIAL_STEP:1",
+      "body": "Body21",
+      "volume_cm3": 0.0003408675567452324,
+      "min_mm": [
+        -13.989966884240577,
+        -40.8207,
+        25.872259999999997
+      ],
+      "max_mm": [
+        -12.89803311575942,
+        -40.0333,
+        26.278660000000002
+      ]
+    },
+    {
+      "component": "ADS1115_OFFICIAL_STEP:1",
+      "body": "Body22",
+      "volume_cm3": 0.002338489999999997,
+      "min_mm": [
+        -5.824999999999996,
+        -47.385999999999996,
+        25.57
+      ],
+      "max_mm": [
+        -2.7749999999999964,
+        -45.786,
+        26.069999999999997
+      ]
+    },
+    {
+      "component": "ADS1115_OFFICIAL_STEP:1",
+      "body": "Body23",
+      "volume_cm3": 0.002496102400000001,
+      "min_mm": [
+        -9.744999999999994,
+        -47.91,
+        25.57
+      ],
+      "max_mm": [
+        -7.744999999999997,
+        -46.66,
+        26.57
+      ]
+    },
+    {
+      "component": "ADS1115_OFFICIAL_STEP:1",
+      "body": "Body24",
+      "volume_cm3": 0.0011499215999999986,
+      "min_mm": [
+        -9.798999999999998,
+        -45.004,
+        25.57
+      ],
+      "max_mm": [
+        -8.198999999999996,
+        -44.104,
+        26.37
+      ]
+    },
+    {
+      "component": "ADS1115_OFFICIAL_STEP:1",
+      "body": "Body25",
+      "volume_cm3": 0.0011499216000000036,
+      "min_mm": [
+        -0.20999999999999686,
+        -43.925,
+        25.57
+      ],
+      "max_mm": [
+        1.3900000000000046,
+        -43.02499999999999,
+        26.37
+      ]
+    },
+    {
+      "component": "ADS1115_OFFICIAL_STEP:1",
+      "body": "Body26",
+      "volume_cm3": 0.0011499215999999954,
+      "min_mm": [
+        -11.861999999999995,
+        -41.480999999999995,
+        25.57
+      ],
+      "max_mm": [
+        -10.961999999999996,
+        -39.881,
+        26.37
+      ]
+    },
+    {
+      "component": "ADS1115_OFFICIAL_STEP:1",
+      "body": "Body27",
+      "volume_cm3": 0.04403763121635152,
+      "min_mm": [
+        -16.807999999999996,
+        -47.10999999999999,
+        25.57
+      ],
+      "max_mm": [
+        -11.857999999999995,
+        -41.11,
+        28.52999999999998
+      ]
+    },
+    {
+      "component": "PROCURE_Magnetometer_adhesive_pad_1mm:1",
+      "body": "Nonmagnetic_foam_pad",
+      "volume_cm3": 0.14516099999999957,
+      "min_mm": [
+        -174.525,
+        -3.81,
+        82.0
+      ],
+      "max_mm": [
+        -155.475,
+        3.81,
+        82.99999999999999
+      ]
+    },
+    {
+      "component": "PRINT_16_Rudder_blade:1",
+      "body": "Rudder_blade_with_stock_socket",
+      "volume_cm3": 3.9931413510371825,
+      "min_mm": [
+        275.0,
+        -3.000000000000007,
+        -48.00000000000001
+      ],
+      "max_mm": [
+        305.0,
+        3.000000000000007,
+        -4.0000000000000036
+      ]
+    },
+    {
+      "component": "PRINT_17_Rudder_tiller:1",
+      "body": "Tiller_with_stock_socket",
+      "volume_cm3": 0.6097760491670241,
+      "min_mm": [
+        274.0,
+        -24.000000000000004,
+        64.0
+      ],
+      "max_mm": [
+        282.0,
+        3.999999999999986,
+        70.0
+      ]
+    },
+    {
+      "component": "PROCURE_Rudder_stock_D3_L86:1",
+      "body": "Metal_stock_3x86",
+      "volume_cm3": 0.6078981784695876,
+      "min_mm": [
+        276.5,
+        -1.4999999999999858,
+        -15.0
+      ],
+      "max_mm": [
+        279.5,
+        1.4999999999999858,
+        71.0
+      ]
+    }
+  ]
+}
