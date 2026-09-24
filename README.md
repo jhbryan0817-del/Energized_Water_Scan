@@ -1,40 +1,46 @@
 # Energized Water Scan
 
-Rev-A mechanical prototype for a small remotely controlled surface craft with four electrodes and a magnetometer. This repository contains the **audited CAD revision dated 2026-09-23**.
+**Rev-A.1 — light mechanical design audit, 24 September 2026.** An experimental remotely controlled surface craft with four electrodes and a magnetometer. This is a prototype packaging design, not a qualified production release.
 
-![Audited assembly](previews/RevA_assembly.png)
+![Rev-A.1 open assembly](previews/RevA1_assembly.png)
 
 ## Start here
 
-- [Print and procurement checklist, audit changes and limitations](docs/Print_and_Procurement.md)
-- [Original hardware and CAD baseline](docs/Energized_Water_Scan_RevA_Hardware_and_CAD.md)
-- [Editable Autodesk Fusion design](cad/Energized_Water_Scanner_RevA.f3d)
-- [Neutral STEP assembly](cad/Energized_Water_Scanner_RevA.step)
-- [All 12 printable parts (ZIP)](prints/Print_STLs.zip), or [individual STL files](prints/)
-- [Verification reports](verification/)
+- [Audit findings, fixes, verification scope and remaining limitations](docs/RevA1_Design_Audit.md)
+- [Print, procurement and assembly checklist](docs/Print_and_Procurement.md)
+- [Editable Fusion design — Rev-A.1](cad/Energized_Water_Scanner_RevA1.f3d)
+- [Physical assembly STEP — Rev-A.1](cad/Energized_Water_Scanner_RevA1.step)
+- [All 12 printable parts](prints/Print_STLs.zip), or [individual STLs](prints/)
+- [Current assembly/steering report](verification/RevA1_Assembly_Audit.json) and [mesh report](verification/RevA1_STL_Check.json)
+- [Original hardware baseline](docs/Energized_Water_Scan_RevA_Hardware_and_CAD.md), retained as historical design intent
+
+## What changed
+
+Closed the 9 mm electrode head/seal gaps; moved the battery 6 mm forward to clear the motor-terminal space and extended its tray; cleared the reserved power-wire route; added a tiller cross-pin interface and lower rudder collar envelope; enlarged the steering port after finding a near-full-travel rod/hull collision. The regulator CAD is now labeled as a package proxy rather than an exact F5 model.
+
+**Changed prints:** hull (PRINT_01), battery tray (PRINT_04), and tiller (PRINT_17). The complete set still contains 12 parts. Additional purchased pin/collar hardware and a boot compatible with the revised port are required; see the checklist.
 
 ## CAD and printing
 
-Open the F3D archive in Autodesk Fusion to retain the 39 parameters and editable timeline. The STEP assembly represents purchased components and physical printed parts; it is not a print plate. Imported and simplified purchased-part geometry is for packaging.
+The F3D retains 40 user parameters and the editable timeline. Some legacy dimensions are fixed; parameter changes require another audit. The STEP includes physical printed and purchased-part representations, including the hatch, and excludes hidden optional/reference/clearance geometry. It is not a print plate.
 
-Print one of each of the 12 STL files. Units are millimeters; files retain assembly coordinates, so orient and place each part on the bed in the slicer. The hull is 400 mm long. Hull supports and the stern-tube sleeve are integral, not separate prints. Alternative mast/boom configurations remain in the Fusion file but are excluded from the default print set. Hidden datum/reference components preserve design history.
+STLs are in millimeters and retain assembly coordinates. Orient/place each in the slicer. The 400 mm hull requires an appropriate build volume. Default hull supports and stern sleeve are integral. Optional mast/boom layouts are retained only in the native design.
 
-Audit results: 87 physical solids, no detected cross-component volume overlaps, no timeline warnings/errors, and 12 closed STL meshes with no unmatched/nonmanifold edges in the export check. This check does not establish full steering travel, print process capability, sealing, strength or flotation.
+## Verification and limits
 
-## Prototype status
+CAD results: **89 physical solids, zero detected cross-component overlaps, zero feature warnings/errors, and no collisions with tested static obstacles at 71 sampled steering positions (±35°).** See the audit and JSON reports for exclusions. Static solid intersections, sampled ideal steering motion and mesh topology are CAD checks; they do not establish continuous steering clearance, real boot behavior, manufacturing tolerances, structural strength, sealing or flotation. Validate these in a dry assembly and controlled prototype tests.
 
-This is a prototype packaging design, **not a qualified production release**. Verify purchased-part fits, attachment/retention, wiring and full steering motion in a dry assembly; test sealing and flotation before use. The servo horn and flexible boot are procurement envelopes. Fastener lengths in the checklist are starting selections to verify against the actual assembly.
+The sensing system is experimental and is not protective equipment. A negative measurement does not establish that water is safe. This repository contains no validated detection firmware, production PCB or calibrated hazard thresholds.
 
-The sensing system is experimental and is not protective equipment. A negative reading does not establish that water is safe. The repository does not contain validated detection firmware, a production PCB or calibrated hazard thresholds.
-
-## Contents
+## Repository layout
 
 | Folder | Contents |
 |---|---|
-| `cad/` | Current audited native F3D and physical STEP assembly |
-| `prints/` | Twelve individual STL files and a matching ZIP |
-| `docs/` | Original requirements, build/procurement checklist and audit notes |
-| `previews/` | Open and closed assembly images |
-| `verification/` | Assembly interference inventory, feature health and STL checks |
+| `cad/` | Current native F3D and physical STEP |
+| `prints/` | Twelve current individual STLs and matching ZIP |
+| `docs/` | Current audit/checklist and historical hardware baseline |
+| `previews/` | Current RevA1 and previous RevA assembly views |
+| `verification/` | Current `RevA1_*` reports; unprefixed reports are historical Rev-A evidence |
+| `scripts/` | Re-runnable Fusion and STL verification scripts |
 
-The original baseline describes intent; the audited checklist documents the delivered geometry and unresolved fit checks. Earlier superseded CAD exports and temporary automation files are excluded.
+Earlier CAD exports are available in Git history. Do not mix the previous print package or verification claims with the current release.

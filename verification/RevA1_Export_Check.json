@@ -1,0 +1,24 @@
+{
+  "step_solid_count": 89,
+  "f3d_fusion_roundtrip": "passed",
+  "print_zip_matches_individual_stls": true,
+  "sha256": {
+    "cad/Energized_Water_Scanner_RevA1.f3d": "b16b353b78c49a6cb7a0380c1f9c714980ba1cc879f30e47b46a2743cc57cbe7",
+    "cad/Energized_Water_Scanner_RevA1.step": "83cbaa9c5260932e43e2c763402b9b2ff0ead8e7a6a6e3c1833e147d2abb6405",
+    "previews/RevA1_assembly.png": "4173b33a6b3c9e2bcbc7ef677f6931f3aec846d50f5a40193119c68a06ba066a",
+    "previews/RevA1_closed.png": "f137f26702f24d52f02660b375e763629dc9e0a08f4f7cc8b15a9da525ff47fd",
+    "prints/PRINT_01_Hull_shell.stl": "88161ff4e594cc4cd792eee3a7648e1da300569088b0d62a0909cc36dfdd6a29",
+    "prints/PRINT_02_Removable_hatch_cover.stl": "86d2c88ac8c0b07693c88ccaded385222e55473b9e761e08840b3768f928a6ba",
+    "prints/PRINT_03_Removable_electronics_tray.stl": "e383d40358c1a6e924bb779f42d5f24500dada5a38781eac831c82e0068c1096",
+    "prints/PRINT_04_Battery_slide_tray.stl": "34b73cfddacdb04cff68849051a3866abb4c8f2ce60042b874e73bc278144470",
+    "prints/PRINT_06_Magnetometer_adjustment_rail.stl": "fa9f6a5e77f3e473db27227b13fb17a822e7f47badd7e44bc49ef5c333eb40cb",
+    "prints/PRINT_07_Magnetometer_service_pod.stl": "136ecb4304f0b5e774b3ea1d6549a44fa5dc95b8ea5867514d42551fc3b8ca14",
+    "prints/PRINT_08_Magnetometer_pod_lid.stl": "fa60430ab520f6d7e8438c13102cc27782352a04e1466239354477b0216c96ca",
+    "prints/PRINT_09_Rudder_transom_bracket.stl": "e3aca6cf41e7cdf56398ac821199ce34a476251995278e29b7439da42133073c",
+    "prints/PRINT_11_Motor_face_mount.stl": "49595c89c4e4fa9567052bad67d3c169239617edc431252410915c57c11801d1",
+    "prints/PRINT_14_Motor_lower_cradle.stl": "4991f7b1283d028f95b3030f896d981e524ab5b915e3a69ebbea8f145e90bcaa",
+    "prints/PRINT_16_Rudder_blade.stl": "95c5ce9f2b838f88c9fa01b330ab64c69ec2c8551b464bcb8e7a2798fc71e2d9",
+    "prints/PRINT_17_Rudder_tiller.stl": "2b57fa1c56366e92478fc5ecdff3c05b85743946fc70923481916ff93a6045e4",
+    "prints/Print_STLs.zip": "183c7a371e6c5af3bb7d978c05768af87ea36777261f1b102a8129eb8d4d81cb"
+  }
+}
