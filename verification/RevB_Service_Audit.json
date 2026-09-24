@@ -1,0 +1,122 @@
+{
+  "revision": "Rev-B",
+  "method": "Exact temporary BRep intersections for tool/grip allocations; tray lift sampled every 5 mm from 0 to 100 mm. Cables, fasteners and flexible retainers not fully modeled; this is not a physical assembly trial.",
+  "prerequisites": [
+    "Remove hatch.",
+    "Unplug and remove battery and battery strap tray.",
+    "Disconnect and remove servo horn/linkage and unplug tray wiring before lifting electronics tray.",
+    "USB insertion requires battery and battery tray removal."
+  ],
+  "intersections": [],
+  "boolean_failures": [],
+  "metrics": {
+    "PRINT_01": {
+      "min_mm": [
+        -120.01,
+        -85.01,
+        -10.159
+      ],
+      "max_mm": [
+        200.01,
+        85.01,
+        71.01
+      ]
+    },
+    "PRINT_02": {
+      "min_mm": [
+        -92.01,
+        -77.01,
+        69.99
+      ],
+      "max_mm": [
+        177.01,
+        77.01,
+        73.01
+      ]
+    },
+    "PRINT_03": {
+      "min_mm": [
+        -75.01,
+        -61.01,
+        15.99
+      ],
+      "max_mm": [
+        160.01,
+        61.01,
+        43.01
+      ]
+    },
+    "PRINT_04": {
+      "min_mm": [
+        -74.51,
+        -59.51,
+        18.99
+      ],
+      "max_mm": [
+        -30.49,
+        59.51,
+        26.01
+      ]
+    },
+    "BATTERY_": {
+      "min_mm": [
+        -69.76,
+        -52.01,
+        20.99
+      ],
+      "max_mm": [
+        -35.24,
+        52.01,
+        35.51
+      ]
+    },
+    "ESP32_": {
+      "min_mm": [
+        -20.02,
+        29.98,
+        23.99
+      ],
+      "max_mm": [
+        34.32,
+        57.96,
+        35.62
+      ]
+    },
+    "FRONT_END_": {
+      "min_mm": [
+        -20.01,
+        -58.01,
+        23.99
+      ],
+      "max_mm": [
+        20.01,
+        -27.99,
+        36.01
+      ]
+    },
+    "ADS1115_": {
+      "min_mm": [
+        34.99,
+        -53.01,
+        23.99
+      ],
+      "max_mm": [
+        60.41,
+        -35.21,
+        28.55
+      ]
+    },
+    "SENSOR_": {
+      "min_mm": [
+        -124.545,
+        -3.83,
+        82.99
+      ],
+      "max_mm": [
+        -105.455,
+        3.83,
+        88.12
+      ]
+    }
+  }
+}

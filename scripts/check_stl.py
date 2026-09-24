@@ -43,7 +43,7 @@ def main():
     root=Path(__file__).resolve().parents[1]
     results=[check(p) for p in sorted((root/'prints').glob('*.stl'))]
     assert len(results)==12, f'Expected 12 default prints; found {len(results)}'
-    (root/'verification'/'RevA1_STL_Check.json').write_text(json.dumps(results,indent=2)+'\n')
+    (root/'verification'/'RevB_STL_Check.json').write_text(json.dumps(results,indent=2)+'\n')
     print(json.dumps(results,indent=2))
     assert all(r['passed'] for r in results), 'STL validation failed'
 if __name__=='__main__':main()
