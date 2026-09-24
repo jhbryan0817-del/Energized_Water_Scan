@@ -1,0 +1,93 @@
+{
+  "step_solid_count": 89,
+  "f3d_fusion_roundtrip": {
+    "physical_solids": 89,
+    "timeline_items": 1012,
+    "user_parameters": 40,
+    "feature_issues": [],
+    "tray_volume_mm3": 69183.87814550733,
+    "passed": true
+  },
+  "print_zip_matches_individual_stls": true,
+  "stl_matches_current_brep": [
+    {
+      "file": "PRINT_01_Hull_shell.stl",
+      "max_extent_error_mm": 0.0176400000000001,
+      "relative_volume_error": 0.00011247319006093247
+    },
+    {
+      "file": "PRINT_02_Removable_hatch_cover.stl",
+      "max_extent_error_mm": 0.0,
+      "relative_volume_error": 1.5040034890631323e-05
+    },
+    {
+      "file": "PRINT_03_Removable_electronics_tray.stl",
+      "max_extent_error_mm": 0.0,
+      "relative_volume_error": 3.090538648574882e-05
+    },
+    {
+      "file": "PRINT_04_Battery_slide_tray.stl",
+      "max_extent_error_mm": 0.0,
+      "relative_volume_error": 1.542039168824904e-16
+    },
+    {
+      "file": "PRINT_06_Magnetometer_adjustment_rail.stl",
+      "max_extent_error_mm": 0.0,
+      "relative_volume_error": 5.850094565434784e-16
+    },
+    {
+      "file": "PRINT_07_Magnetometer_service_pod.stl",
+      "max_extent_error_mm": 0.0,
+      "relative_volume_error": 2.584695118051693e-05
+    },
+    {
+      "file": "PRINT_08_Magnetometer_pod_lid.stl",
+      "max_extent_error_mm": 0.0,
+      "relative_volume_error": 4.723524724138766e-05
+    },
+    {
+      "file": "PRINT_09_Rudder_transom_bracket.stl",
+      "max_extent_error_mm": 5.000000000165983e-05,
+      "relative_volume_error": 5.2236313705033365e-05
+    },
+    {
+      "file": "PRINT_11_Motor_face_mount.stl",
+      "max_extent_error_mm": 1.9999999999242846e-05,
+      "relative_volume_error": 4.458040486359701e-05
+    },
+    {
+      "file": "PRINT_14_Motor_lower_cradle.stl",
+      "max_extent_error_mm": 3.0000000002416982e-05,
+      "relative_volume_error": 0.00012766455117635398
+    },
+    {
+      "file": "PRINT_16_Rudder_blade.stl",
+      "max_extent_error_mm": 0.005300000000000082,
+      "relative_volume_error": 1.518880296258435e-05
+    },
+    {
+      "file": "PRINT_17_Rudder_tiller.stl",
+      "max_extent_error_mm": 0.0,
+      "relative_volume_error": 4.384355545483796e-05
+    }
+  ],
+  "sha256": {
+    "cad/Energized_Water_Scanner_RevB1.f3d": "6e5114810c8cb455398266aed4a857ede53385aeef4da9d3196e954f11f65cff",
+    "cad/Energized_Water_Scanner_RevB1.step": "8d4b601c8aefd6f6cd8a3199e49838b64a145df2b395cfefdbc1e1e92218b649",
+    "prints/PRINT_01_Hull_shell.stl": "0abe3e041c95a43986d80bd4c09c5b1cf55540e06d9ab804b175737a8d4e1c48",
+    "prints/PRINT_02_Removable_hatch_cover.stl": "1fb8ca0beda55c82ebf28d4ea34d27fe5f47bc4ca00fc2dd07eb12932cde9fd5",
+    "prints/PRINT_03_Removable_electronics_tray.stl": "4c3c451762e7f0aa7f699c4b299e5d1a9fb0475105c1fa0ff0984ce485ef6076",
+    "prints/PRINT_04_Battery_slide_tray.stl": "e347481eb6f9c0c1560e0a8e7bfb14e016b714e46d1735932a63ae05fb1278dd",
+    "prints/PRINT_06_Magnetometer_adjustment_rail.stl": "8450d12bfc8cee9e42d7300b0fa4a0d6f3eb1c80fc7a547122bd796905aeb2c2",
+    "prints/PRINT_07_Magnetometer_service_pod.stl": "3f838eb39f9c8349680ab7e183ed76988b60c40aa685d3117ddd5e0d3ecca992",
+    "prints/PRINT_08_Magnetometer_pod_lid.stl": "a46cc0469bd78d4d281c7052e70d38b44cfbd6c070acd0df994b9b60ccc1c097",
+    "prints/PRINT_09_Rudder_transom_bracket.stl": "2b45779f31d1f998e35eca611234931d008bb4c34d6d51b6b485989afa19f1a7",
+    "prints/PRINT_11_Motor_face_mount.stl": "49595c89c4e4fa9567052bad67d3c169239617edc431252410915c57c11801d1",
+    "prints/PRINT_14_Motor_lower_cradle.stl": "4991f7b1283d028f95b3030f896d981e524ab5b915e3a69ebbea8f145e90bcaa",
+    "prints/PRINT_16_Rudder_blade.stl": "95c5ce9f2b838f88c9fa01b330ab64c69ec2c8551b464bcb8e7a2798fc71e2d9",
+    "prints/PRINT_17_Rudder_tiller.stl": "2b57fa1c56366e92478fc5ecdff3c05b85743946fc70923481916ff93a6045e4",
+    "prints/Print_STLs.zip": "caf2afe577bd31156e649479be61fcc7ecac7890d80b8c5dab123442b27f7c52",
+    "previews/RevB1_assembly.png": "fac4112ffe85697fa4838f9c0a44458128cd386b8fabbf1cf8894165a212b473",
+    "previews/RevB1_tray.png": "27b31aacb89c6069efaa0cf8cb0778d453059b302e256e8920ffb12036aa2762"
+  }
+}

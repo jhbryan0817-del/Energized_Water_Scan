@@ -27,6 +27,6 @@ def run(context):
  for prefix in ['PRINT_01','PRINT_02','PRINT_03','PRINT_04','BATTERY_','ESP32_','FRONT_END_','ADS1115_','SENSOR_']:
   o=next(o for o in r.allOccurrences if o.name.startswith(prefix));bb=o.boundingBox
   metrics[prefix]=dict(min_mm=[round(v*10,3) for v in bb.minPoint.asArray()],max_mm=[round(v*10,3) for v in bb.maxPoint.asArray()])
- result=dict(revision='Rev-B',method='Exact temporary BRep intersections for tool/grip allocations; tray lift sampled every 5 mm from 0 to 100 mm. Cables, fasteners and flexible retainers not fully modeled; this is not a physical assembly trial.',prerequisites=['Remove hatch.','Unplug and remove battery and battery strap tray.','Disconnect and remove servo horn/linkage and unplug tray wiring before lifting electronics tray.','USB insertion requires battery and battery tray removal.'],intersections=hits,boolean_failures=failures,metrics=metrics)
- with open(os.path.join(BASE,'verification','RevB_Service_Audit.json'),'w') as f:json.dump(result,f,indent=2)
+ result=dict(revision='Rev-B.1',method='Exact temporary BRep intersections for tool/grip allocations; tray lift sampled every 5 mm from 0 to 100 mm. Cables, fasteners and flexible retainers not fully modeled; this is not a physical assembly trial.',prerequisites=['Remove hatch.','Unplug and remove battery and battery strap tray.','Disconnect and remove servo horn/linkage and unplug tray wiring before lifting electronics tray.','USB insertion requires battery and battery tray removal.'],intersections=hits,boolean_failures=failures,metrics=metrics)
+ with open(os.path.join(BASE,'verification','RevB1_Service_Audit.json'),'w') as f:json.dump(result,f,indent=2)
  print(json.dumps(result))

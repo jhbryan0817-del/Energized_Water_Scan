@@ -1,5 +1,13 @@
 # Changelog
 
+## Rev-B.1 — 2026-09-25
+
+- Add twelve through-slots to the existing Fusion electronics tray: five harness restraint stations and an ESC retention path; preserve the outer envelope and exact purchased-component sizes.
+- Audit all mechanical subsystems for print and assembly risks, and document unresolved production gates.
+- Add a wiring connection schedule, power-source isolation, connector mismatch correction, servo/BEC current-budget check and service sequence.
+- Assess a compact interconnect PCB without creating a PCB design.
+- Regenerate native CAD, physical STEP and twelve STLs; rerun collision, steering, service and mesh/export checks.
+
 ## Rev-B — 2026-09-24
 
 - Reduce hull from 400 × 190 to 320 × 170 mm while retaining the stern/shaft datum.

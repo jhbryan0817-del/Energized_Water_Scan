@@ -1,10 +1,10 @@
-# Rev-B — print, procurement and assembly
+# Rev-B.1 — print, procurement and assembly
 
-Updated 24 September 2026. Use **Rev-B** CAD, all twelve current STLs and the matching ZIP. See [the compact enclosure report](RevB_Compact_Enclosure.md) for final coordinates, assembly order and verification limits. Rev-A.1 coordinates are historical.
+Updated 25 September 2026. Use **Rev-B.1** CAD, all twelve current STLs and the matching ZIP. Reprint only PRINT_03 relative to Rev-B. See the [current audit](RevB1_Production_and_Wiring_Audit.md) and [wiring/assembly schedule](Wiring_and_Assembly.md). The retained Rev-B dimensions are in [the compact enclosure report](RevB_Compact_Enclosure.md). This BOM is not yet a complete exact-part production BOM.
 
 ## Print — one of each (12 pieces)
 
-The hull is **320 × 170 mm**, 80 mm shorter and 20 mm narrower than Rev-A.1. The hatch opening is 245 × 130 mm. Reprint PRINT_01 hull, PRINT_02 hatch, PRINT_03 electronics tray and PRINT_06 magnetometer rail. Other parts retain their shape; battery tray and sensor components have revised assembly coordinates. Use the complete current package.
+The hull is **320 × 170 mm**, 80 mm shorter and 20 mm narrower than Rev-A.1. The hatch opening is 245 × 130 mm. From Rev-B, only PRINT_03 changes shape (twelve new restraint slots). From Rev-A.1, also reprint PRINT_01 hull, PRINT_02 hatch and PRINT_06 rail. Use the complete current package.
 
 | STL prefix | Part |
 |---|---|
@@ -54,6 +54,10 @@ STLs are in millimeters and retain assembly coordinates. Position/orient them in
 - XT60 mating lead, inline fuse holder and correctly selected fuse, silicone wire, Qwiic leads, heat-shrink, approximately 40 x 30 mm front-end perfboard.
 - Front-end parts from the brief: 499 kΩ and 100 kΩ resistors, BAT54S clamps, filter capacitors and bias-divider components; final values/quantities depend on the validated circuit.
 - Compatible 2S LiPo balance charger if not already owned.
+- Correctly polarized XT60-to-small-Tamiya fused distribution harness for the stock ESC connector; matching 4 mm male motor bullet terminations. Exact manufacturer parts, current ratings, wire gauge and lengths remain to be selected and verified.
+- Nonconductive ties up to 2.5 mm wide for new tray slots; positive removable PCB restraints, sensor cable sealed bulkhead/potted feedthrough and mating connectors remain integration gates.
+
+The WP-1625 BEC is specified as 6 V / 1 A. Test loaded servo current and supply transients before accepting this power arrangement; do not parallel it with the Pololu output. Disconnect external power before USB programming. See the source-backed current audit for details.
 
 Part numbers come from the supplied baseline; availability/prices were not rechecked. Fastener lengths above are starting selections, not released manufacturing dimensions.
 
