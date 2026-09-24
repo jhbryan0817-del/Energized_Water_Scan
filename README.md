@@ -1,46 +1,50 @@
 # Energized Water Scan
 
-**Rev-A.1 — light mechanical design audit, 24 September 2026.** An experimental remotely controlled surface craft with four electrodes and a magnetometer. This is a prototype packaging design, not a qualified production release.
+**Rev-B — compact mechanical layout, 24 September 2026.** The hull is now **320 × 170 mm**, reduced from 400 × 190 mm: **80 mm shorter and 20 mm narrower**. Existing purchased components retain their original sizes. This is an experimental surface-craft packaging design, not a qualified production release.
 
-![Rev-A.1 open assembly](previews/RevA1_assembly.png)
+![Rev-B open assembly](previews/RevB_assembly.png)
 
 ## Start here
 
-- [Audit findings, fixes, verification scope and remaining limitations](docs/RevA1_Design_Audit.md)
-- [Print, procurement and assembly checklist](docs/Print_and_Procurement.md)
-- [Editable Fusion design — Rev-A.1](cad/Energized_Water_Scanner_RevA1.f3d)
-- [Physical assembly STEP — Rev-A.1](cad/Energized_Water_Scanner_RevA1.step)
-- [All 12 printable parts](prints/Print_STLs.zip), or [individual STLs](prints/)
-- [Current assembly/steering report](verification/RevA1_Assembly_Audit.json) and [mesh report](verification/RevA1_STL_Check.json)
-- [Original hardware baseline](docs/Energized_Water_Scan_RevA_Hardware_and_CAD.md), retained as historical design intent
+- [Compact layout, dimensions, assembly order and limits](docs/RevB_Compact_Enclosure.md)
+- [Current print and procurement checklist](docs/Print_and_Procurement.md)
+- [Editable Fusion design — Rev-B](cad/Energized_Water_Scanner_RevB.f3d)
+- [Physical assembly STEP — Rev-B](cad/Energized_Water_Scanner_RevB.step)
+- [All 12 current printable parts](prints/Print_STLs.zip), or [individual STLs](prints/)
+- [Assembly and steering audit](verification/RevB_Assembly_Audit.json), [service audit](verification/RevB_Service_Audit.json), and [STL checks](verification/RevB_STL_Check.json)
+- [Export verification](verification/RevB_Export_Check.json)
 
 ## What changed
 
-Closed the 9 mm electrode head/seal gaps; moved the battery 6 mm forward to clear the motor-terminal space and extended its tray; cleared the reserved power-wire route; added a tiller cross-pin interface and lower rudder collar envelope; enlarged the steering port after finding a near-full-travel rod/hull collision. The regulator CAD is now labeled as a package proxy rather than an exact F5 model.
+The battery sits transversely across the bow, centered laterally. The controller, front-end board, ADC and regulator are repacked beside the drivetrain, with matching supports. The shorter electronics tray has relocated mounting pillars and transverse strap passages. Hatch, gasket, lip and fasteners follow the shorter opening. The magnetometer rail is shortened and moved with its pod; shaft and steering alignment remain intact.
 
-**Changed prints:** hull (PRINT_01), battery tray (PRINT_04), and tiller (PRINT_17). The complete set still contains 12 parts. Additional purchased pin/collar hardware and a boot compatible with the revised port are required; see the checklist.
+The 245 × 130 mm hatch allows the electronics tray to lift out after removing the battery and its tray, disconnecting wiring, and removing the servo horn/linkage. **USB access also requires removal of the battery and battery tray.** Assemble and wire the boards outside the hull before installing the tray.
+
+The chosen length reduction is 80 mm of the requested maximum 100 mm. A 300 mm hull has not been validated. The default craft including its forward sensor rail and external rudder is approximately **445 mm long**; 320 mm refers to the hull alone.
 
 ## CAD and printing
 
-The F3D retains 40 user parameters and the editable timeline. Some legacy dimensions are fixed; parameter changes require another audit. The STEP includes physical printed and purchased-part representations, including the hatch, and excludes hidden optional/reference/clearance geometry. It is not a print plate.
+Use the Rev-B files together. Reprint the hull, hatch, electronics tray and magnetometer rail. Other parts retain their shapes; all STLs are regenerated in millimeters and retain assembly coordinates. Place and orient them in the slicer. The 320 mm hull still requires an appropriate printer build volume.
 
-STLs are in millimeters and retain assembly coordinates. Orient/place each in the slicer. The 400 mm hull requires an appropriate build volume. Default hull supports and stern sleeve are integral. Optional mast/boom layouts are retained only in the native design.
+The native F3D retains 40 user parameters and an editable timeline. Some interfaces remain fixed dimensions; changing master parameters requires a new audit. STEP contains physical printed and purchased-part representations, including the hatch, with optional/reference/clearance geometry excluded.
 
 ## Verification and limits
 
-CAD results: **89 physical solids, zero detected cross-component overlaps, zero feature warnings/errors, and no collisions with tested static obstacles at 71 sampled steering positions (±35°).** See the audit and JSON reports for exclusions. Static solid intersections, sampled ideal steering motion and mesh topology are CAD checks; they do not establish continuous steering clearance, real boot behavior, manufacturing tolerances, structural strength, sealing or flotation. Validate these in a dry assembly and controlled prototype tests.
+CAD checks report **89 physical solids, zero detected cross-component volume overlaps and zero feature warnings/errors**. The 71 sampled steering positions (±35°), sampled tray lift, screwdriver corridors and battery pull-loop allocation have no detected tested-obstacle collisions. The reports document exclusions, expected service-volume intersections and required disassembly. All twelve STL meshes pass the topology checks.
 
-The sensing system is experimental and is not protective equipment. A negative measurement does not establish that water is safe. This repository contains no validated detection firmware, production PCB or calibrated hazard thresholds.
+These are geometric checks, not proof of real connector fit, hand assembly, print tolerances, continuous motion, strength, waterproofing, flotation or sensing performance. Dry-assemble actual hardware and repeat trim, leak and magnetic-interference tests for the smaller hull.
+
+The sensing system is experimental and is not protective equipment. A negative measurement does not establish that water is safe. There is no validated detection firmware, production PCB or calibrated hazard threshold in this repository.
 
 ## Repository layout
 
 | Folder | Contents |
 |---|---|
-| `cad/` | Current native F3D and physical STEP |
-| `prints/` | Twelve current individual STLs and matching ZIP |
-| `docs/` | Current audit/checklist and historical hardware baseline |
-| `previews/` | Current RevA1 and previous RevA assembly views |
-| `verification/` | Current `RevA1_*` reports; unprefixed reports are historical Rev-A evidence |
-| `scripts/` | Re-runnable Fusion and STL verification scripts |
+| `cad/` | Rev-B F3D and physical STEP; previous Rev-A.1 exports retained for reference |
+| `prints/` | Twelve current Rev-B STLs and matching ZIP |
+| `docs/` | Current compact-layout report/checklist and historical baseline/audit |
+| `previews/` | Current Rev-B and historical assembly views |
+| `verification/` | Current `RevB_*` evidence; other reports are historical |
+| `scripts/` | Re-runnable current Fusion, service-access and STL audits |
 
-Earlier CAD exports are available in Git history. Do not mix the previous print package or verification claims with the current release.
+Historical [Rev-A.1 audit](docs/RevA1_Design_Audit.md) and [original hardware baseline](docs/Energized_Water_Scan_RevA_Hardware_and_CAD.md) explain prior design intent. Their coordinates and print instructions do not supersede Rev-B.

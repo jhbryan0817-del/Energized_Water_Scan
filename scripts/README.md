@@ -1,7 +1,11 @@
-# Verification scripts
+# Verification scripts — Rev-B
 
-`check_stl.py` uses Python 3 standard-library code. Run `python scripts/check_stl.py` from the repository root; it checks the 12 binary STL files and overwrites `verification/RevA1_STL_Check.json`.
+`check_stl.py` uses Python 3's standard library. Run `python scripts/check_stl.py` from the repository root. It checks twelve binary STLs and writes `verification/RevB_STL_Check.json`.
 
-`fusion_audit.py` runs **inside Autodesk Fusion**, with the scanner design active. Register/run it as a Fusion Python script, keeping it in this repository's `scripts` directory so `__file__` resolves the adjacent verification folder. It inspects geometry without changing the design and writes `verification/RevA1_Assembly_Audit.json`. The solid Boolean and 71-position steering checks can take several minutes. Recompute the model first. The script is specific to this revision's component names and ideal linkage dimensions; update it if these change.
+`fusion_audit.py` runs inside Autodesk Fusion with `Energized_Water_Scanner` active. It reads the design and writes `verification/RevB_Assembly_Audit.json`, checking physical-solid intersections, feature health, service-volume intersections and 71 ideal steering positions.
 
-Read the audit's exclusions before interpreting results. Passing geometry/mesh checks does not qualify sealing, printability, loads or sensing performance.
+`fusion_service_audit.py` runs in the same environment and writes `verification/RevB_Service_Audit.json`. It checks screwdriver/grip allocations and tray removal sampled every 5 mm over 100 mm. Its exclusions require the hatch, battery, battery tray and servo horn/linkage to be removed and wiring disconnected first.
+
+Keep the scripts in this repository's `scripts` directory when running them so `__file__` resolves the output directory. Recompute the model first. These checks are specific to the current component names and coordinates; update them after layout changes. They can take several minutes.
+
+Read [the compact-layout report](../docs/RevB_Compact_Enclosure.md) for exclusions and assembly order. Passing geometry and mesh checks does not qualify manufacturing, sealing, structural loads, flotation or sensing performance.

@@ -1,0 +1,2654 @@
+{
+  "document": "Energized_Water_Scanner",
+  "revision": "Rev-B",
+  "date": "2026-09-24",
+  "body_count": 89,
+  "interferences_between_components": [],
+  "boolean_failures": [],
+  "timeline_items": 1009,
+  "parameters": 40,
+  "feature_errors_and_warnings": [],
+  "other_timeline_states": [
+    {
+      "index": 1,
+      "name": "Group2",
+      "state": 5
+    },
+    {
+      "index": 3,
+      "name": "Group3",
+      "state": 5
+    },
+    {
+      "index": 62,
+      "name": "Hollow_interior",
+      "state": 4
+    },
+    {
+      "index": 172,
+      "name": "Battery_strap_slot",
+      "state": 3
+    },
+    {
+      "index": 175,
+      "name": "Battery_strap_slot (1)",
+      "state": 3
+    },
+    {
+      "index": 178,
+      "name": "Battery_strap_slot (2)",
+      "state": 3
+    },
+    {
+      "index": 181,
+      "name": "Battery_strap_slot (3)",
+      "state": 3
+    },
+    {
+      "index": 642,
+      "name": "Electrode_terminal_access",
+      "state": 3
+    }
+  ],
+  "inventory": [
+    {
+      "component": "D24V10F5_OFFICIAL_STEP:1+D24V10F5_PACKAGE_PROXY_from_D24V10F3_STEP_VERIFY:1",
+      "body": "Body1",
+      "volume_cm3": 0.36501383669925713,
+      "min_mm": [
+        57.0,
+        34.0,
+        24.0
+      ],
+      "max_mm": [
+        69.7,
+        51.78,
+        27.816
+      ]
+    },
+    {
+      "component": "BATTERY_Gens_Ace_GEA222S30X6GT_126g:1",
+      "body": "Gens_Ace_104x34_5x14_5",
+      "volume_cm3": 52.02600000000001,
+      "min_mm": [
+        -69.75,
+        -52.0,
+        21.0
+      ],
+      "max_mm": [
+        -35.25,
+        52.0,
+        35.5
+      ]
+    },
+    {
+      "component": "ESP32_DevKitC_V4_dimension_envelope:1",
+      "body": "PCB_48.26x27.94",
+      "volume_cm3": 2.157415040000002,
+      "min_mm": [
+        -20.0,
+        30.0,
+        24.0
+      ],
+      "max_mm": [
+        28.26,
+        57.94,
+        25.6
+      ]
+    },
+    {
+      "component": "ESP32_DevKitC_V4_dimension_envelope:1",
+      "body": "Header_and_module_clearance",
+      "volume_cm3": 13.483844,
+      "min_mm": [
+        -20.0,
+        30.0,
+        25.6
+      ],
+      "max_mm": [
+        28.26,
+        57.94,
+        35.6
+      ]
+    },
+    {
+      "component": "ESP32_DevKitC_V4_dimension_envelope:1",
+      "body": "Antenna_overhang_6_04mm_OFFICIAL",
+      "volume_cm3": 0.32615999999999995,
+      "min_mm": [
+        28.26,
+        34.97,
+        25.6
+      ],
+      "max_mm": [
+        34.3,
+        52.97,
+        28.6
+      ]
+    },
+    {
+      "component": "FRONT_END_replaceable_40x30x12:1",
+      "body": "Input_protection_module",
+      "volume_cm3": 14.400000000000004,
+      "min_mm": [
+        -20.0,
+        -58.0,
+        24.0
+      ],
+      "max_mm": [
+        20.0,
+        -28.0,
+        36.0
+      ]
+    },
+    {
+      "component": "ESC_Hobbywing_WP1625:1",
+      "body": "34x24x14_ESC",
+      "volume_cm3": 11.424000000000007,
+      "min_mm": [
+        92.0,
+        30.0,
+        22.0
+      ],
+      "max_mm": [
+        126.0,
+        54.0,
+        36.0
+      ]
+    },
+    {
+      "component": "SERVO_TowerPro_SG90_Digital_ENVELOPE:1",
+      "body": "Body",
+      "volume_cm3": 8.137400000000005,
+      "min_mm": [
+        130.0,
+        -45.0,
+        25.0
+      ],
+      "max_mm": [
+        153.0,
+        -32.8,
+        54.0
+      ]
+    },
+    {
+      "component": "SERVO_TowerPro_SG90_Digital_ENVELOPE:1",
+      "body": "Mount_lugs_VERIFY",
+      "volume_cm3": 1.0065000000000004,
+      "min_mm": [
+        125.0,
+        -45.0,
+        43.0
+      ],
+      "max_mm": [
+        158.0,
+        -32.8,
+        45.5
+      ]
+    },
+    {
+      "component": "SERVO_TowerPro_SG90_Digital_ENVELOPE:1",
+      "body": "Spline_envelope",
+      "volume_cm3": 0.07853981633974842,
+      "min_mm": [
+        144.5,
+        -41.4,
+        54.0
+      ],
+      "max_mm": [
+        149.5,
+        -36.4,
+        58.0
+      ]
+    },
+    {
+      "component": "PRINT_01_Hull_shell:1",
+      "body": "Hull_with_sleeve_electrode_bosses_and_tray_pillars",
+      "volume_cm3": 387.8458607612117,
+      "min_mm": [
+        -120.0,
+        -85.0,
+        -10.14914
+      ],
+      "max_mm": [
+        200.0,
+        85.0,
+        71.0
+      ]
+    },
+    {
+      "component": "SEAL_Main_hatch_continuous_gasket:1",
+      "body": "Gasket_blank",
+      "volume_cm3": 11.082732755698,
+      "min_mm": [
+        -90.0,
+        -75.0,
+        68.0
+      ],
+      "max_mm": [
+        175.0,
+        75.0,
+        70.0
+      ]
+    },
+    {
+      "component": "PRINT_02_Removable_hatch_cover:1",
+      "body": "Hatch_cover",
+      "volume_cm3": 73.43509913354683,
+      "min_mm": [
+        -92.0,
+        -77.0,
+        70.0
+      ],
+      "max_mm": [
+        177.0,
+        77.0,
+        73.0
+      ]
+    },
+    {
+      "component": "PRINT_03_Removable_electronics_tray:1",
+      "body": "Electronics_tray_with_all_PCB_and_servo_supports",
+      "volume_cm3": 69.61587814550725,
+      "min_mm": [
+        -75.0,
+        -61.0,
+        16.0
+      ],
+      "max_mm": [
+        160.0,
+        61.0,
+        43.0
+      ]
+    },
+    {
+      "component": "PRINT_04_Battery_slide_tray:1",
+      "body": "Sliding_battery_plate",
+      "volume_cm3": 11.795999999999998,
+      "min_mm": [
+        -74.5,
+        -59.5,
+        19.0
+      ],
+      "max_mm": [
+        -30.5,
+        59.5,
+        26.0
+      ]
+    },
+    {
+      "component": "ELECTRODE_E1_M4_316_envelope:1",
+      "body": "M4_shank",
+      "volume_cm3": 0.22619467105845392,
+      "min_mm": [
+        -102.0,
+        -2.0,
+        -1.0
+      ],
+      "max_mm": [
+        -98.0,
+        2.0,
+        17.0
+      ]
+    },
+    {
+      "component": "ELECTRODE_E1_M4_316_envelope:1",
+      "body": "Head",
+      "volume_cm3": 0.11545353001942955,
+      "min_mm": [
+        -103.5,
+        -3.5,
+        -4.0
+      ],
+      "max_mm": [
+        -96.5,
+        3.5,
+        -1.0
+      ]
+    },
+    {
+      "component": "ELECTRODE_E1_M4_316_envelope:1",
+      "body": "Sealing_washer",
+      "volume_cm3": 0.06597344572538856,
+      "min_mm": [
+        -105.0,
+        -5.0,
+        -1.0
+      ],
+      "max_mm": [
+        -95.0,
+        5.0,
+        0.0
+      ]
+    },
+    {
+      "component": "ELECTRODE_E1_M4_316_envelope:1",
+      "body": "Internal_washer",
+      "volume_cm3": 0.051050880620836236,
+      "min_mm": [
+        -104.5,
+        -4.5,
+        10.0
+      ],
+      "max_mm": [
+        -95.5,
+        4.5,
+        11.0
+      ]
+    },
+    {
+      "component": "ELECTRODE_E1_M4_316_envelope:1",
+      "body": "Nut_envelope",
+      "volume_cm3": 0.08293804605477409,
+      "min_mm": [
+        -103.5,
+        -3.5,
+        11.0
+      ],
+      "max_mm": [
+        -96.5,
+        3.5,
+        14.2
+      ]
+    },
+    {
+      "component": "ELECTRODE_E2_M4_316_envelope:1",
+      "body": "M4_shank",
+      "volume_cm3": 0.22619467105845584,
+      "min_mm": [
+        38.0,
+        -2.0,
+        -1.0
+      ],
+      "max_mm": [
+        42.0,
+        2.0,
+        17.0
+      ]
+    },
+    {
+      "component": "ELECTRODE_E2_M4_316_envelope:1",
+      "body": "Head",
+      "volume_cm3": 0.11545353001942964,
+      "min_mm": [
+        36.5,
+        -3.5,
+        -4.0
+      ],
+      "max_mm": [
+        43.5,
+        3.5,
+        -1.0
+      ]
+    },
+    {
+      "component": "ELECTRODE_E2_M4_316_envelope:1",
+      "body": "Sealing_washer",
+      "volume_cm3": 0.06597344572538846,
+      "min_mm": [
+        35.0,
+        -5.0,
+        -1.0
+      ],
+      "max_mm": [
+        45.0,
+        5.0,
+        0.0
+      ]
+    },
+    {
+      "component": "ELECTRODE_E2_M4_316_envelope:1",
+      "body": "Internal_washer",
+      "volume_cm3": 0.05105088062083639,
+      "min_mm": [
+        35.5,
+        -4.5,
+        10.0
+      ],
+      "max_mm": [
+        44.5,
+        4.5,
+        11.0
+      ]
+    },
+    {
+      "component": "ELECTRODE_E2_M4_316_envelope:1",
+      "body": "Nut_envelope",
+      "volume_cm3": 0.08293804605477376,
+      "min_mm": [
+        36.5,
+        -3.5,
+        11.0
+      ],
+      "max_mm": [
+        43.5,
+        3.5,
+        14.2
+      ]
+    },
+    {
+      "component": "ELECTRODE_E3_M4_316_envelope:1",
+      "body": "M4_shank",
+      "volume_cm3": 0.22619467105845614,
+      "min_mm": [
+        -32.0,
+        -57.0,
+        -1.0
+      ],
+      "max_mm": [
+        -28.0,
+        -53.0,
+        17.0
+      ]
+    },
+    {
+      "component": "ELECTRODE_E3_M4_316_envelope:1",
+      "body": "Head",
+      "volume_cm3": 0.11545353001942994,
+      "min_mm": [
+        -33.5,
+        -58.5,
+        -4.0
+      ],
+      "max_mm": [
+        -26.5,
+        -51.5,
+        -1.0
+      ]
+    },
+    {
+      "component": "ELECTRODE_E3_M4_316_envelope:1",
+      "body": "Sealing_washer",
+      "volume_cm3": 0.06597344572538848,
+      "min_mm": [
+        -35.0,
+        -60.0,
+        -1.0
+      ],
+      "max_mm": [
+        -25.0,
+        -50.0,
+        0.0
+      ]
+    },
+    {
+      "component": "ELECTRODE_E3_M4_316_envelope:1",
+      "body": "Internal_washer",
+      "volume_cm3": 0.051050880620836396,
+      "min_mm": [
+        -34.5,
+        -59.5,
+        10.0
+      ],
+      "max_mm": [
+        -25.5,
+        -50.5,
+        11.0
+      ]
+    },
+    {
+      "component": "ELECTRODE_E3_M4_316_envelope:1",
+      "body": "Nut_envelope",
+      "volume_cm3": 0.08293804605477412,
+      "min_mm": [
+        -33.5,
+        -58.5,
+        11.0
+      ],
+      "max_mm": [
+        -26.5,
+        -51.5,
+        14.2
+      ]
+    },
+    {
+      "component": "ELECTRODE_E4_M4_316_envelope:1",
+      "body": "M4_shank",
+      "volume_cm3": 0.22619467105845614,
+      "min_mm": [
+        -32.0,
+        53.0,
+        -1.0
+      ],
+      "max_mm": [
+        -28.0,
+        57.0,
+        17.0
+      ]
+    },
+    {
+      "component": "ELECTRODE_E4_M4_316_envelope:1",
+      "body": "Head",
+      "volume_cm3": 0.11545353001942994,
+      "min_mm": [
+        -33.5,
+        51.5,
+        -4.0
+      ],
+      "max_mm": [
+        -26.5,
+        58.5,
+        -1.0
+      ]
+    },
+    {
+      "component": "ELECTRODE_E4_M4_316_envelope:1",
+      "body": "Sealing_washer",
+      "volume_cm3": 0.06597344572538848,
+      "min_mm": [
+        -35.0,
+        50.0,
+        -1.0
+      ],
+      "max_mm": [
+        -25.0,
+        60.0,
+        0.0
+      ]
+    },
+    {
+      "component": "ELECTRODE_E4_M4_316_envelope:1",
+      "body": "Internal_washer",
+      "volume_cm3": 0.051050880620836396,
+      "min_mm": [
+        -34.5,
+        50.5,
+        10.0
+      ],
+      "max_mm": [
+        -25.5,
+        59.5,
+        11.0
+      ]
+    },
+    {
+      "component": "ELECTRODE_E4_M4_316_envelope:1",
+      "body": "Nut_envelope",
+      "volume_cm3": 0.08293804605477412,
+      "min_mm": [
+        -33.5,
+        51.5,
+        11.0
+      ],
+      "max_mm": [
+        -26.5,
+        58.5,
+        14.2
+      ]
+    },
+    {
+      "component": "DRIVELINE_Mabuchi_and_Krick:1",
+      "body": "Mabuchi_RS380PH_can",
+      "volume_cm3": 25.27074511080632,
+      "min_mm": [
+        14.70925,
+        -14.6,
+        15.89748
+      ],
+      "max_mm": [
+        58.77876,
+        14.6,
+        53.88588
+      ]
+    },
+    {
+      "component": "DRIVELINE_Mabuchi_and_Krick:1",
+      "body": "Mabuchi_front_boss",
+      "volume_cm3": 0.2042035224833449,
+      "min_mm": [
+        53.7059,
+        -5.0,
+        24.49744
+      ],
+      "max_mm": [
+        58.8055,
+        5.0,
+        34.82963
+      ]
+    },
+    {
+      "component": "DRIVELINE_Mabuchi_and_Krick:1",
+      "body": "Motor_output_shaft",
+      "volume_cm3": 0.05733563672434301,
+      "min_mm": [
+        57.21377,
+        -1.15,
+        24.64455
+      ],
+      "max_mm": [
+        71.13883,
+        1.15,
+        30.43789
+      ]
+    },
+    {
+      "component": "DRIVELINE_Mabuchi_and_Krick:1",
+      "body": "Krick_63800_63823_63820_coupling",
+      "volume_cm3": 3.4613282459090478,
+      "min_mm": [
+        62.71812,
+        -7.5,
+        14.99098
+      ],
+      "max_mm": [
+        85.91892,
+        7.5,
+        34.65625
+      ]
+    },
+    {
+      "component": "DRIVELINE_Mabuchi_and_Krick:1",
+      "body": "Krick_65220_stern_tube",
+      "volume_cm3": 3.053416001785295,
+      "min_mm": [
+        89.06158,
+        -2.75,
+        -21.5731
+      ],
+      "max_mm": [
+        238.27173,
+        2.75,
+        23.33881
+      ]
+    },
+    {
+      "component": "DRIVELINE_Mabuchi_and_Krick:1",
+      "body": "Krick_65220_shaft_178mm",
+      "volume_cm3": 0.5592034923390071,
+      "min_mm": [
+        78.88933,
+        -1.0,
+        -23.50619
+      ],
+      "max_mm": [
+        251.34176,
+        1.0,
+        24.49545
+      ]
+    },
+    {
+      "component": "DRIVELINE_Mabuchi_and_Krick:1",
+      "body": "Propeller_30mm_swept_volume",
+      "volume_cm3": 3.534291735288669,
+      "min_mm": [
+        242.37103,
+        -15.0,
+        -37.02915
+      ],
+      "max_mm": [
+        254.96523,
+        15.0,
+        -6.75728
+      ]
+    },
+    {
+      "component": "PRINT_11_Motor_face_mount:1",
+      "body": "PRINT_11_Motor_face_mount",
+      "volume_cm3": 12.60494296653927,
+      "min_mm": [
+        46.0,
+        -24.0,
+        3.0
+      ],
+      "max_mm": [
+        65.0,
+        24.0,
+        49.31852
+      ]
+    },
+    {
+      "component": "PRINT_06_Magnetometer_adjustment_rail:1",
+      "body": "Nonmagnetic_bow_rail",
+      "volume_cm3": 4.664000000000002,
+      "min_mm": [
+        -140.0,
+        -16.0,
+        68.0
+      ],
+      "max_mm": [
+        -94.0,
+        16.0,
+        72.0
+      ]
+    },
+    {
+      "component": "PRINT_07_Magnetometer_service_pod:1",
+      "body": "Pod_with_rail_mounting_shoe",
+      "volume_cm3": 9.977247518570472,
+      "min_mm": [
+        -131.0,
+        -14.0,
+        72.0
+      ],
+      "max_mm": [
+        -99.0,
+        14.0,
+        93.0
+      ]
+    },
+    {
+      "component": "SENSOR_SparkFun_SEN19921_MMC5983MA:1",
+      "body": "19.05x7.62_PCB",
+      "volume_cm3": 0.23225760000000034,
+      "min_mm": [
+        -124.525,
+        -3.81,
+        83.0
+      ],
+      "max_mm": [
+        -105.475,
+        3.81,
+        84.6
+      ]
+    },
+    {
+      "component": "SENSOR_SparkFun_SEN19921_MMC5983MA:1",
+      "body": "Qwiic_component_envelope",
+      "volume_cm3": 0.5080634999999998,
+      "min_mm": [
+        -124.525,
+        -3.81,
+        84.6
+      ],
+      "max_mm": [
+        -105.475,
+        3.81,
+        88.1
+      ]
+    },
+    {
+      "component": "PRINT_08_Magnetometer_pod_lid:1",
+      "body": "Pod_lid",
+      "volume_cm3": 1.5055893831132445,
+      "min_mm": [
+        -131.0,
+        -12.0,
+        93.0
+      ],
+      "max_mm": [
+        -99.0,
+        12.0,
+        95.0
+      ]
+    },
+    {
+      "component": "PRINT_09_Rudder_transom_bracket:1",
+      "body": "Single_print_rudder_bracket",
+      "volume_cm3": 13.979603342945694,
+      "min_mm": [
+        195.84615,
+        -14.0,
+        38.0
+      ],
+      "max_mm": [
+        283.0,
+        14.0,
+        63.0
+      ]
+    },
+    {
+      "component": "PROCURE_ESC_mounting_foam_3mm:1",
+      "body": "ESC_foam_pad_allocation",
+      "volume_cm3": 1.8000000000000003,
+      "min_mm": [
+        94.0,
+        32.0,
+        19.0
+      ],
+      "max_mm": [
+        124.0,
+        52.0,
+        22.0
+      ]
+    },
+    {
+      "component": "PRINT_14_Motor_lower_cradle:1",
+      "body": "PRINT_14_Motor_lower_cradle",
+      "volume_cm3": 19.619037944326326,
+      "min_mm": [
+        20.0,
+        -20.0,
+        3.0
+      ],
+      "max_mm": [
+        50.17037,
+        20.0,
+        37.76457
+      ]
+    },
+    {
+      "component": "PROCURE_Servo_horn_and_M2_linkage_ENVELOPES:1",
+      "body": "Custom_horn_spline_fit_TBD",
+      "volume_cm3": 0.311191374382402,
+      "min_mm": [
+        143.5,
+        -42.0,
+        58.0
+      ],
+      "max_mm": [
+        150.5,
+        -17.5,
+        60.0
+      ]
+    },
+    {
+      "component": "PROCURE_Servo_horn_and_M2_linkage_ENVELOPES:1",
+      "body": "Horn_link_pin",
+      "volume_cm3": 0.012566370614358554,
+      "min_mm": [
+        146.0,
+        -22.0,
+        58.0
+      ],
+      "max_mm": [
+        148.0,
+        -20.0,
+        62.0
+      ]
+    },
+    {
+      "component": "PROCURE_Servo_horn_and_M2_linkage_ENVELOPES:1",
+      "body": "M2_pushrod_131mm",
+      "volume_cm3": 0.41154863762024285,
+      "min_mm": [
+        147.0,
+        -22.0,
+        59.0
+      ],
+      "max_mm": [
+        278.0,
+        -20.0,
+        61.0
+      ]
+    },
+    {
+      "component": "PROCURE_Servo_horn_and_M2_linkage_ENVELOPES:1",
+      "body": "Tiller_drop_link_pin",
+      "volume_cm3": 0.03455751918948721,
+      "min_mm": [
+        277.0,
+        -22.0,
+        59.0
+      ],
+      "max_mm": [
+        279.0,
+        -20.0,
+        70.0
+      ]
+    },
+    {
+      "component": "SEAL_Steering_pushrod_boot_envelope:1",
+      "body": "Procured_flexible_boot_envelope",
+      "volume_cm3": 0.8152432936065174,
+      "min_mm": [
+        194.0,
+        -26.0,
+        55.0
+      ],
+      "max_mm": [
+        208.0,
+        -16.0,
+        65.0
+      ]
+    },
+    {
+      "component": "ADS1115_OFFICIAL_STEP:1",
+      "body": "Body1",
+      "volume_cm3": 0.6495343108800632,
+      "min_mm": [
+        35.0,
+        -53.0,
+        24.0
+      ],
+      "max_mm": [
+        60.4,
+        -35.22,
+        25.57
+      ]
+    },
+    {
+      "component": "ADS1115_OFFICIAL_STEP:1",
+      "body": "Body2",
+      "volume_cm3": 4.6294467859452936e-05,
+      "min_mm": [
+        49.454,
+        -42.545,
+        25.57
+      ],
+      "max_mm": [
+        50.404,
+        -42.405,
+        26.3
+      ]
+    },
+    {
+      "component": "ADS1115_OFFICIAL_STEP:1",
+      "body": "Body3",
+      "volume_cm3": 0.008676603846706208,
+      "min_mm": [
+        46.454,
+        -44.975,
+        25.68
+      ],
+      "max_mm": [
+        49.454,
+        -41.975,
+        26.67
+      ]
+    },
+    {
+      "component": "ADS1115_OFFICIAL_STEP:1",
+      "body": "Body4",
+      "volume_cm3": 5.183627878399101e-06,
+      "min_mm": [
+        48.87543,
+        -44.69643,
+        26.59667
+      ],
+      "max_mm": [
+        49.17543,
+        -44.39643,
+        26.67
+      ]
+    },
+    {
+      "component": "ADS1115_OFFICIAL_STEP:1",
+      "body": "Body5",
+      "volume_cm3": 4.629446785945295e-05,
+      "min_mm": [
+        45.504,
+        -42.545,
+        25.57
+      ],
+      "max_mm": [
+        46.454,
+        -42.405,
+        26.3
+      ]
+    },
+    {
+      "component": "ADS1115_OFFICIAL_STEP:1",
+      "body": "Body6",
+      "volume_cm3": 4.629446785945295e-05,
+      "min_mm": [
+        45.504,
+        -43.045,
+        25.57
+      ],
+      "max_mm": [
+        46.454,
+        -42.905,
+        26.3
+      ]
+    },
+    {
+      "component": "ADS1115_OFFICIAL_STEP:1",
+      "body": "Body7",
+      "volume_cm3": 4.6294467859455876e-05,
+      "min_mm": [
+        45.504,
+        -43.545,
+        25.57
+      ],
+      "max_mm": [
+        46.454,
+        -43.405,
+        26.3
+      ]
+    },
+    {
+      "component": "ADS1115_OFFICIAL_STEP:1",
+      "body": "Body8",
+      "volume_cm3": 4.6294467859455876e-05,
+      "min_mm": [
+        45.504,
+        -44.045,
+        25.57
+      ],
+      "max_mm": [
+        46.454,
+        -43.905,
+        26.3
+      ]
+    },
+    {
+      "component": "ADS1115_OFFICIAL_STEP:1",
+      "body": "Body9",
+      "volume_cm3": 4.6294467859455876e-05,
+      "min_mm": [
+        45.504,
+        -44.545,
+        25.57
+      ],
+      "max_mm": [
+        46.454,
+        -44.405,
+        26.3
+      ]
+    },
+    {
+      "component": "ADS1115_OFFICIAL_STEP:1",
+      "body": "Body10",
+      "volume_cm3": 4.6294467859452936e-05,
+      "min_mm": [
+        49.454,
+        -43.045,
+        25.57
+      ],
+      "max_mm": [
+        50.404,
+        -42.905,
+        26.3
+      ]
+    },
+    {
+      "component": "ADS1115_OFFICIAL_STEP:1",
+      "body": "Body11",
+      "volume_cm3": 4.629446785945586e-05,
+      "min_mm": [
+        49.454,
+        -43.545,
+        25.57
+      ],
+      "max_mm": [
+        50.404,
+        -43.405,
+        26.3
+      ]
+    },
+    {
+      "component": "ADS1115_OFFICIAL_STEP:1",
+      "body": "Body12",
+      "volume_cm3": 4.629446785945586e-05,
+      "min_mm": [
+        49.454,
+        -44.045,
+        25.57
+      ],
+      "max_mm": [
+        50.404,
+        -43.905,
+        26.3
+      ]
+    },
+    {
+      "component": "ADS1115_OFFICIAL_STEP:1",
+      "body": "Body13",
+      "volume_cm3": 4.6294467859458804e-05,
+      "min_mm": [
+        49.454,
+        -44.545,
+        25.57
+      ],
+      "max_mm": [
+        50.404,
+        -44.405,
+        26.3
+      ]
+    },
+    {
+      "component": "ADS1115_OFFICIAL_STEP:1",
+      "body": "Body14",
+      "volume_cm3": 0.002496102400000007,
+      "min_mm": [
+        42.128,
+        -41.687,
+        25.57
+      ],
+      "max_mm": [
+        44.128,
+        -40.437,
+        26.57
+      ]
+    },
+    {
+      "component": "ADS1115_OFFICIAL_STEP:1",
+      "body": "Body15",
+      "volume_cm3": 0.0011499215999999988,
+      "min_mm": [
+        42.328,
+        -43.417,
+        25.57
+      ],
+      "max_mm": [
+        43.928,
+        -42.517,
+        26.37
+      ]
+    },
+    {
+      "component": "ADS1115_OFFICIAL_STEP:1",
+      "body": "Body16",
+      "volume_cm3": 0.04403763121635145,
+      "min_mm": [
+        55.258,
+        -47.11,
+        25.57
+      ],
+      "max_mm": [
+        60.208,
+        -41.11,
+        28.53
+      ]
+    },
+    {
+      "component": "ADS1115_OFFICIAL_STEP:1",
+      "body": "Body17",
+      "volume_cm3": 1.1353290973949693e-06,
+      "min_mm": [
+        38.302,
+        -40.72029,
+        25.57
+      ],
+      "max_mm": [
+        38.81,
+        -40.13371,
+        25.57762
+      ]
+    },
+    {
+      "component": "ADS1115_OFFICIAL_STEP:1",
+      "body": "Body18",
+      "volume_cm3": 4.530715772567789e-06,
+      "min_mm": [
+        37.7559,
+        -40.808,
+        25.57127
+      ],
+      "max_mm": [
+        38.2004,
+        -40.046,
+        25.87607
+      ]
+    },
+    {
+      "component": "ADS1115_OFFICIAL_STEP:1",
+      "body": "Body19",
+      "volume_cm3": 4.530715772567782e-06,
+      "min_mm": [
+        38.9116,
+        -40.808,
+        25.57127
+      ],
+      "max_mm": [
+        39.3561,
+        -40.046,
+        25.87607
+      ]
+    },
+    {
+      "component": "ADS1115_OFFICIAL_STEP:1",
+      "body": "Body20",
+      "volume_cm3": 0.0003340016470952864,
+      "min_mm": [
+        37.76225,
+        -40.8207,
+        25.57762
+      ],
+      "max_mm": [
+        39.34975,
+        -40.0333,
+        25.86972
+      ]
+    },
+    {
+      "component": "ADS1115_OFFICIAL_STEP:1",
+      "body": "Body21",
+      "volume_cm3": 0.0003408675567452324,
+      "min_mm": [
+        38.01003,
+        -40.8207,
+        25.87226
+      ],
+      "max_mm": [
+        39.10197,
+        -40.0333,
+        26.27866
+      ]
+    },
+    {
+      "component": "ADS1115_OFFICIAL_STEP:1",
+      "body": "Body22",
+      "volume_cm3": 0.00233849000000001,
+      "min_mm": [
+        46.175,
+        -47.386,
+        25.57
+      ],
+      "max_mm": [
+        49.225,
+        -45.786,
+        26.07
+      ]
+    },
+    {
+      "component": "ADS1115_OFFICIAL_STEP:1",
+      "body": "Body23",
+      "volume_cm3": 0.002496102400000007,
+      "min_mm": [
+        42.255,
+        -47.91,
+        25.57
+      ],
+      "max_mm": [
+        44.255,
+        -46.66,
+        26.57
+      ]
+    },
+    {
+      "component": "ADS1115_OFFICIAL_STEP:1",
+      "body": "Body24",
+      "volume_cm3": 0.0011499215999999986,
+      "min_mm": [
+        42.201,
+        -45.004,
+        25.57
+      ],
+      "max_mm": [
+        43.801,
+        -44.104,
+        26.37
+      ]
+    },
+    {
+      "component": "ADS1115_OFFICIAL_STEP:1",
+      "body": "Body25",
+      "volume_cm3": 0.0011499216000000045,
+      "min_mm": [
+        51.79,
+        -43.925,
+        25.57
+      ],
+      "max_mm": [
+        53.39,
+        -43.025,
+        26.37
+      ]
+    },
+    {
+      "component": "ADS1115_OFFICIAL_STEP:1",
+      "body": "Body26",
+      "volume_cm3": 0.0011499215999999954,
+      "min_mm": [
+        40.138,
+        -41.481,
+        25.57
+      ],
+      "max_mm": [
+        41.038,
+        -39.881,
+        26.37
+      ]
+    },
+    {
+      "component": "ADS1115_OFFICIAL_STEP:1",
+      "body": "Body27",
+      "volume_cm3": 0.0440376312163516,
+      "min_mm": [
+        35.192,
+        -47.11,
+        25.57
+      ],
+      "max_mm": [
+        40.142,
+        -41.11,
+        28.53
+      ]
+    },
+    {
+      "component": "PROCURE_Magnetometer_adhesive_pad_1mm:1",
+      "body": "Nonmagnetic_foam_pad",
+      "volume_cm3": 0.14516099999999957,
+      "min_mm": [
+        -124.525,
+        -3.81,
+        82.0
+      ],
+      "max_mm": [
+        -105.475,
+        3.81,
+        83.0
+      ]
+    },
+    {
+      "component": "PRINT_16_Rudder_blade:1",
+      "body": "Rudder_blade_with_stock_socket",
+      "volume_cm3": 3.9931413510371825,
+      "min_mm": [
+        275.0,
+        -3.0,
+        -48.0
+      ],
+      "max_mm": [
+        305.0,
+        3.0,
+        -4.0
+      ]
+    },
+    {
+      "component": "PRINT_17_Rudder_tiller:1",
+      "body": "Tiller_with_stock_socket",
+      "volume_cm3": 0.6033116486722749,
+      "min_mm": [
+        274.0,
+        -24.0,
+        64.0
+      ],
+      "max_mm": [
+        282.0,
+        4.0,
+        70.0
+      ]
+    },
+    {
+      "component": "PROCURE_Rudder_stock_D3_L86:1",
+      "body": "Metal_stock_3x86",
+      "volume_cm3": 0.6040133445634839,
+      "min_mm": [
+        276.5,
+        -1.5,
+        -15.0
+      ],
+      "max_mm": [
+        279.5,
+        1.5,
+        71.0
+      ]
+    },
+    {
+      "component": "PROCURE_Tiller_cross_pin_D1_2_L8_ENVELOPE:1",
+      "body": "Body1",
+      "volume_cm3": 0.009047786842338108,
+      "min_mm": [
+        274.0,
+        -0.6,
+        66.4
+      ],
+      "max_mm": [
+        282.0,
+        0.6,
+        67.6
+      ]
+    },
+    {
+      "component": "PROCURE_Rudder_lower_stop_collar_D8_H5_ENVELOPE:1",
+      "body": "Body1",
+      "volume_cm3": 0.2111150263212413,
+      "min_mm": [
+        274.0,
+        -4.0,
+        34.5
+      ],
+      "max_mm": [
+        282.0,
+        4.0,
+        39.5
+      ]
+    }
+  ],
+  "clearance_intersections": [
+    {
+      "envelope": "USB_plug_insertion",
+      "component": "BATTERY_Gens_Ace_GEA222S30X6GT_126g:1",
+      "body": "Gens_Ace_104x34_5x14_5",
+      "volume_mm3": 1890.0
+    },
+    {
+      "envelope": "USB_plug_insertion",
+      "component": "PRINT_04_Battery_slide_tray:1",
+      "body": "Sliding_battery_plate",
+      "volume_mm3": 116.0
+    },
+    {
+      "envelope": "ESC_allocation_38x28x18",
+      "component": "ESC_Hobbywing_WP1625:1",
+      "body": "34x24x14_ESC",
+      "volume_mm3": 11424.0
+    },
+    {
+      "envelope": "ESC_allocation_38x28x18",
+      "component": "PROCURE_ESC_mounting_foam_3mm:1",
+      "body": "ESC_foam_pad_allocation",
+      "volume_mm3": 1200.0
+    },
+    {
+      "envelope": "Battery_vertical_removal",
+      "component": "BATTERY_Gens_Ace_GEA222S30X6GT_126g:1",
+      "body": "Gens_Ace_104x34_5x14_5",
+      "volume_mm3": 1794.0
+    },
+    {
+      "envelope": "Battery_vertical_removal",
+      "component": "PRINT_02_Removable_hatch_cover:1",
+      "body": "Hatch_cover",
+      "volume_mm3": 6600.0
+    },
+    {
+      "envelope": "Coupling_service_D20_L30",
+      "component": "DRIVELINE_Mabuchi_and_Krick:1",
+      "body": "Motor_output_shaft",
+      "volume_mm3": 39.0547
+    },
+    {
+      "envelope": "Coupling_service_D20_L30",
+      "component": "DRIVELINE_Mabuchi_and_Krick:1",
+      "body": "Krick_63800_63823_63820_coupling",
+      "volume_mm3": 3461.3282
+    },
+    {
+      "envelope": "Coupling_service_D20_L30",
+      "component": "DRIVELINE_Mabuchi_and_Krick:1",
+      "body": "Krick_65220_stern_tube",
+      "volume_mm3": 19.957
+    },
+    {
+      "envelope": "Coupling_service_D20_L30",
+      "component": "DRIVELINE_Mabuchi_and_Krick:1",
+      "body": "Krick_65220_shaft_178mm",
+      "volume_mm3": 37.6991
+    },
+    {
+      "envelope": "Propeller_keepout_D36",
+      "component": "DRIVELINE_Mabuchi_and_Krick:1",
+      "body": "Krick_65220_shaft_178mm",
+      "volume_mm3": 25.1327
+    },
+    {
+      "envelope": "Propeller_keepout_D36",
+      "component": "DRIVELINE_Mabuchi_and_Krick:1",
+      "body": "Propeller_30mm_swept_volume",
+      "volume_mm3": 3534.2917
+    },
+    {
+      "envelope": "Linkage_route_PROVISIONAL",
+      "component": "PRINT_01_Hull_shell:1",
+      "body": "Hull_with_sleeve_electrode_bosses_and_tray_pillars",
+      "volume_mm3": 1274.245
+    },
+    {
+      "envelope": "Linkage_route_PROVISIONAL",
+      "component": "PROCURE_Servo_horn_and_M2_linkage_ENVELOPES:1",
+      "body": "Custom_horn_spline_fit_TBD",
+      "volume_mm3": 232.8866
+    },
+    {
+      "envelope": "Linkage_route_PROVISIONAL",
+      "component": "PROCURE_Servo_horn_and_M2_linkage_ENVELOPES:1",
+      "body": "Horn_link_pin",
+      "volume_mm3": 12.5664
+    },
+    {
+      "envelope": "Linkage_route_PROVISIONAL",
+      "component": "PROCURE_Servo_horn_and_M2_linkage_ENVELOPES:1",
+      "body": "M2_pushrod_131mm",
+      "volume_mm3": 411.5486
+    },
+    {
+      "envelope": "Linkage_route_PROVISIONAL",
+      "component": "PROCURE_Servo_horn_and_M2_linkage_ENVELOPES:1",
+      "body": "Tiller_drop_link_pin",
+      "volume_mm3": 21.9911
+    },
+    {
+      "envelope": "Linkage_route_PROVISIONAL",
+      "component": "SEAL_Steering_pushrod_boot_envelope:1",
+      "body": "Procured_flexible_boot_envelope",
+      "volume_mm3": 538.5658
+    },
+    {
+      "envelope": "Rudder_plus_minus_35deg_sweep_bound",
+      "component": "PRINT_16_Rudder_blade:1",
+      "body": "Rudder_blade_with_stock_socket",
+      "volume_mm3": 3993.1414
+    },
+    {
+      "envelope": "Rudder_plus_minus_35deg_sweep_bound",
+      "component": "PROCURE_Rudder_stock_D3_L86:1",
+      "body": "Metal_stock_3x86",
+      "volume_mm3": 77.7544
+    }
+  ],
+  "steering": {
+    "method": "Rigid idealized linkage, rudder -35 to +35 degrees in 1-degree increments; flexible boot and unmodeled hardware excluded. No claim of continuous sweep or physical validation.",
+    "collisions": [],
+    "solutions": [
+      {
+        "rudder_deg": -35,
+        "servo_deg": 41.18311641688024,
+        "rod_endpoints_mm": [
+          [
+            135.2134279135542,
+            -25.42829934822568,
+            60
+          ],
+          [
+            265.95489483662806,
+            -17.20219293006883,
+            60
+          ]
+        ]
+      },
+      {
+        "rudder_deg": -34,
+        "servo_deg": 40.02405075402521,
+        "rod_endpoints_mm": [
+          [
+            135.4883469028276,
+            -25.192635447674075,
+            60
+          ],
+          [
+            266.25694902711433,
+            -17.409789023655875,
+            60
+          ]
+        ]
+      },
+      {
+        "rudder_deg": -33,
+        "servo_deg": 38.861103888391426,
+        "rod_endpoints_mm": [
+          [
+            135.76892082490153,
+            -24.961820041243925,
+            60
+          ],
+          [
+            266.5625802646844,
+            -17.612081926853904,
+            60
+          ]
+        ]
+      },
+      {
+        "rudder_deg": -32,
+        "servo_deg": 37.694723186348256,
+        "rod_endpoints_mm": [
+          [
+            136.0549703987478,
+            -24.736090686970872,
+            60
+          ],
+          [
+            266.8716954511027,
+            -17.809010019284944,
+            60
+          ]
+        ]
+      },
+      {
+        "rudder_deg": -31,
+        "servo_deg": 36.52532478937928,
+        "rod_endpoints_mm": [
+          [
+            136.3463131889341,
+            -24.515669729468797,
+            60
+          ],
+          [
+            267.1842004268889,
+            -18.00051331474436,
+            60
+          ]
+        ]
+      },
+      {
+        "rudder_deg": -30,
+        "servo_deg": 35.3532953007948,
+        "rod_endpoints_mm": [
+          [
+            136.642764150549,
+            -24.3007648981583,
+            60
+          ],
+          [
+            267.5,
+            -18.186533479473212,
+            60
+          ]
+        ]
+      },
+      {
+        "rudder_deg": -29,
+        "servo_deg": 34.178993365251245,
+        "rod_endpoints_mm": [
+          [
+            136.94413614836475,
+            -24.091569894233373,
+            60
+          ],
+          [
+            267.8189979748269,
+            -18.36701384992731,
+            60
+          ]
+        ]
+      },
+      {
+        "rudder_deg": -28,
+        "servo_deg": 33.00275114468377,
+        "rod_endpoints_mm": [
+          [
+            137.25024045052223,
+            -23.888264966121767,
+            60
+          ],
+          [
+            268.1410971814963,
+            -18.541899450037466,
+            60
+          ]
+        ]
+      },
+      {
+        "rudder_deg": -27,
+        "servo_deg": 31.824875694730963,
+        "rod_endpoints_mm": [
+          [
+            137.56088719710752,
+            -23.691017473405022,
+            60
+          ],
+          [
+            268.4661995054695,
+            -18.711137007955728,
+            60
+          ]
+        ]
+      },
+      {
+        "rudder_deg": -26,
+        "servo_deg": 30.645650246030982,
+        "rod_endpoints_mm": [
+          [
+            137.8758858440515,
+            -23.499982439321037,
+            60
+          ],
+          [
+            268.7942059174294,
+            -18.87467497228251,
+            60
+          ]
+        ]
+      },
+      {
+        "rudder_deg": -25,
+        "servo_deg": 29.465335394831982,
+        "rod_endpoints_mm": [
+          [
+            138.19504558285595,
+            -23.315303092070877,
+            60
+          ],
+          [
+            269.1250165034453,
+            -19.03246352776965,
+            60
+          ]
+        ]
+      },
+      {
+        "rudder_deg": -24,
+        "servo_deg": 28.284170207432453,
+        "rod_endpoints_mm": [
+          [
+            138.51817573667785,
+            -23.13711139523852,
+            60
+          ],
+          [
+            269.4585304954082,
+            -19.18445461049462,
+            60
+          ]
+        ]
+      },
+      {
+        "rudder_deg": -23,
+        "servo_deg": 27.10237324275795,
+        "rod_endpoints_mm": [
+          [
+            138.84508613337564,
+            -22.965528567663817,
+            60
+          ],
+          [
+            269.79464630172527,
+            -19.33060192250125,
+            60
+          ]
+        ]
+      },
+      {
+        "rudder_deg": -22,
+        "servo_deg": 25.920143497426125,
+        "rod_endpoints_mm": [
+          [
+            139.17558745609963,
+            -22.800665593172667,
+            60
+          ],
+          [
+            270.13326153826586,
+            -19.470860945902537,
+            60
+          ]
+        ]
+      },
+      {
+        "rudder_deg": -21,
+        "servo_deg": 24.73766127718818,
+        "rod_endpoints_mm": [
+          [
+            139.50949157210553,
+            -22.642623720549434,
+            60
+          ],
+          [
+            270.4742730595487,
+            -19.605188956441236,
+            60
+          ]
+        ]
+      },
+      {
+        "rudder_deg": -20,
+        "servo_deg": 23.555088998625706,
+        "rod_endpoints_mm": [
+          [
+            139.84661184043185,
+            -22.491494954184574,
+            60
+          ],
+          [
+            270.81757699016094,
+            -19.733545036504076,
+            60
+          ]
+        ]
+      },
+      {
+        "rudder_deg": -19,
+        "servo_deg": 22.372571924586282,
+        "rod_endpoints_mm": [
+          [
+            140.1867633991342,
+            -22.34736253581857,
+            60
+          ],
+          [
+            271.1630687563997,
+            -19.855890087585653,
+            60
+          ]
+        ]
+      },
+      {
+        "rudder_deg": -18,
+        "servo_deg": 21.190238836577464,
+        "rod_endpoints_mm": [
+          [
+            140.52976343278246,
+            -22.210301417813415,
+            60
+          ],
+          [
+            271.5106431181261,
+            -19.972186842198223,
+            60
+          ]
+        ]
+      },
+      {
+        "rudder_deg": -17,
+        "servo_deg": 20.00820264704771,
+        "rod_endpoints_mm": [
+          [
+            140.8754314209386,
+            -22.08037872839064,
+            60
+          ],
+          [
+            271.86019420082255,
+            -20.082399875223743,
+            60
+          ]
+        ]
+      },
+      {
+        "rudder_deg": -16,
+        "servo_deg": 18.826560954187244,
+        "rod_endpoints_mm": [
+          [
+            141.22358936834303,
+            -21.95765422928453,
+            60
+          ],
+          [
+            272.21161552784304,
+            -20.186495614704697,
+            60
+          ]
+        ]
+      },
+      {
+        "rudder_deg": -15,
+        "servo_deg": 17.645396541577156,
+        "rod_endpoints_mm": [
+          [
+            141.57406201754526,
+            -21.84218076627159,
+            60
+          ],
+          [
+            272.5648000528471,
+            -20.284442352070435,
+            60
+          ]
+        ]
+      },
+      {
+        "rudder_deg": -14,
+        "servo_deg": 16.4647778245876,
+        "rod_endpoints_mm": [
+          [
+            141.92667704475872,
+            -21.734004713043237,
+            60
+          ],
+          [
+            272.919640192407,
+            -20.376210251795925,
+            60
+          ]
+        ]
+      },
+      {
+        "rudder_deg": -13,
+        "servo_deg": 15.284759245348596,
+        "rod_endpoints_mm": [
+          [
+            142.28126523965545,
+            -21.633166408935423,
+            60
+          ],
+          [
+            273.27602785877883,
+            -20.46177136048994,
+            60
+          ]
+        ]
+      },
+      {
+        "rudder_deg": -12,
+        "servo_deg": 14.105381617507646,
+        "rod_endpoints_mm": [
+          [
+            142.63766066990905,
+            -21.539700591028343,
+            60
+          ],
+          [
+            273.633854492827,
+            -20.54109961540992,
+            60
+          ]
+        ]
+      },
+      {
+        "rudder_deg": -11,
+        "servo_deg": 12.926672421856438,
+        "rod_endpoints_mm": [
+          [
+            142.99570083124325,
+            -21.45363682118551,
+            60
+          ],
+          [
+            273.99301109709256,
+            -20.614170852400942,
+            60
+          ]
+        ]
+      },
+      {
+        "rudder_deg": -10,
+        "servo_deg": 11.748646053522407,
+        "rod_endpoints_mm": [
+          [
+            143.35522678376466,
+            -21.374999908638703,
+            60
+          ],
+          [
+            274.3533882689945,
+            -20.680962813256368,
+            60
+          ]
+        ]
+      },
+      {
+        "rudder_deg": -9,
+        "servo_deg": 10.571304021020751,
+        "rod_endpoints_mm": [
+          [
+            143.71608327538132,
+            -21.30381032877374,
+            60
+          ],
+          [
+            274.71487623415516,
+            -20.741455152497892,
+            60
+          ]
+        ]
+      },
+      {
+        "rudder_deg": -8,
+        "servo_deg": 9.394635097226,
+        "rod_endpoints_mm": [
+          [
+            144.07811885307876,
+            -21.240084638841946,
+            60
+          ],
+          [
+            275.0773648798386,
+            -20.795629443572977,
+            60
+          ]
+        ]
+      },
+      {
+        "rudder_deg": -7,
+        "servo_deg": 8.218615421776576,
+        "rod_endpoints_mm": [
+          [
+            144.44118596288348,
+            -21.18383589138282,
+            60
+          ],
+          [
+            275.4407437884919,
+            -20.84346918446776,
+            60
+          ]
+        ]
+      },
+      {
+        "rudder_deg": -6,
+        "servo_deg": 7.043208554243847,
+        "rod_endpoints_mm": [
+          [
+            144.80514103928707,
+            -21.135074046239932,
+            60
+          ],
+          [
+            275.80490227137926,
+            -20.88495980273374,
+            60
+          ]
+        ]
+      },
+      {
+        "rudder_deg": -5,
+        "servo_deg": 5.868365476778763,
+        "rod_endpoints_mm": [
+          [
+            145.1698445849718,
+            -21.093806382136496,
+            60
+          ],
+          [
+            276.1697294022992,
+            -20.920088659926655,
+            60
+          ]
+        ]
+      },
+      {
+        "rudder_deg": -4,
+        "servo_deg": 4.694024544621698,
+        "rod_endpoints_mm": [
+          [
+            145.53516124165156,
+            -21.060037908895655,
+            60
+          ],
+          [
+            276.53511405137334,
+            -20.948845055456307,
+            60
+          ]
+        ]
+      },
+      {
+        "rudder_deg": -3,
+        "servo_deg": 3.5201113823518426,
+        "rod_endpoints_mm": [
+          [
+            145.90095985285612,
+            -21.033771781515664,
+            60
+          ],
+          [
+            276.9009449188982,
+            -20.97122022984605,
+            60
+          ]
+        ]
+      },
+      {
+        "rudder_deg": -2,
+        "servo_deg": 2.3465387231658497,
+        "rod_endpoints_mm": [
+          [
+            146.26711351951792,
+            -21.01500971745507,
+            60
+          ],
+          [
+            277.2671105692475,
+            -20.987207367401012,
+            60
+          ]
+        ]
+      },
+      {
+        "rudder_deg": -1,
+        "servo_deg": 1.1732061879206412,
+        "rod_endpoints_mm": [
+          [
+            146.63349964922145,
+            -21.0037524186527,
+            60
+          ],
+          [
+            277.633499464817,
+            -20.996801598284218,
+            60
+          ]
+        ]
+      },
+      {
+        "rudder_deg": 0,
+        "servo_deg": -2.2737367544323206e-12,
+        "rod_endpoints_mm": [
+          [
+            147.0000000000007,
+            -21.0,
+            60
+          ],
+          [
+            278.0,
+            -21.0,
+            60
+          ]
+        ]
+      },
+      {
+        "rudder_deg": 1,
+        "servo_deg": -1.1732073686812328,
+        "rod_endpoints_mm": [
+          [
+            147.3665007195873,
+            -21.0037524262056,
+            60
+          ],
+          [
+            278.366500535183,
+            -20.996801598284218,
+            60
+          ]
+        ]
+      },
+      {
+        "rudder_deg": 2,
+        "servo_deg": -2.3465576261128263,
+        "rod_endpoints_mm": [
+          [
+            147.73289238107412,
+            -21.01500995924897,
+            60
+          ],
+          [
+            278.7328894307525,
+            -20.987207367401012,
+            60
+          ]
+        ]
+      },
+      {
+        "rudder_deg": 3,
+        "servo_deg": -3.520207169542573,
+        "rod_endpoints_mm": [
+          [
+            148.0990700159359,
+            -21.03377361891799,
+            60
+          ],
+          [
+            279.0990550811018,
+            -20.97122022984605,
+            60
+          ]
+        ]
+      },
+      {
+        "rudder_deg": 4,
+        "servo_deg": -4.694327683475876,
+        "rod_endpoints_mm": [
+          [
+            148.46493314548374,
+            -21.060045659271907,
+            60
+          ],
+          [
+            279.46488594862666,
+            -20.948845055456307,
+            60
+          ]
+        ]
+      },
+      {
+        "rudder_deg": 5,
+        "servo_deg": -5.869106835127695,
+        "rod_endpoints_mm": [
+          [
+            148.83038581178053,
+            -21.093830064271753,
+            60
+          ],
+          [
+            279.8302705977008,
+            -20.920088659926655,
+            60
+          ]
+        ]
+      },
+      {
+        "rudder_deg": 6,
+        "servo_deg": -7.0447490779429245,
+        "rod_endpoints_mm": [
+          [
+            149.19533660922767,
+            -21.135133066296703,
+            60
+          ],
+          [
+            280.19509772862074,
+            -20.88495980273374,
+            60
+          ]
+        ]
+      },
+      {
+        "rudder_deg": 7,
+        "servo_deg": -8.221476575261022,
+        "rod_endpoints_mm": [
+          [
+            149.55969871801767,
+            -21.183963691813602,
+            60
+          ],
+          [
+            280.5592562115081,
+            -20.84346918446776,
+            60
+          ]
+        ]
+      },
+      {
+        "rudder_deg": 8,
+        "servo_deg": -9.399530258508548,
+        "rod_endpoints_mm": [
+          [
+            149.92338994082465,
+            -21.240334339125067,
+            60
+          ],
+          [
+            280.9226351201614,
+            -20.795629443572977,
+            60
+          ]
+        ]
+      },
+      {
+        "rudder_deg": 9,
+        "servo_deg": -10.579171036631578,
+        "rod_endpoints_mm": [
+          [
+            150.2863327441922,
+            -21.304261393892833,
+            60
+          ],
+          [
+            281.28512376584484,
+            -20.741455152497892,
+            60
+          ]
+        ]
+      },
+      {
+        "rudder_deg": 10,
+        "servo_deg": -11.760681176390335,
+        "rod_endpoints_mm": [
+          [
+            150.64845430623174,
+            -21.37576588905127,
+            60
+          ],
+          [
+            281.6466117310055,
+            -20.680962813256368,
+            60
+          ]
+        ]
+      },
+      {
+        "rudder_deg": 11,
+        "servo_deg": -12.944365876726351,
+        "rod_endpoints_mm": [
+          [
+            151.00968657246645,
+            -21.454874216831158,
+            60
+          ],
+          [
+            282.00698890290744,
+            -20.614170852400942,
+            60
+          ]
+        ]
+      },
+      {
+        "rudder_deg": 12,
+        "servo_deg": -14.130555064418786,
+        "rod_endpoints_mm": [
+          [
+            151.369966321835,
+            -21.541618901924405,
+            60
+          ],
+          [
+            282.366145507173,
+            -20.54109961540992,
+            60
+          ]
+        ]
+      },
+      {
+        "rudder_deg": 13,
+        "servo_deg": -15.319605443380624,
+        "rod_endpoints_mm": [
+          [
+            151.72923524518202,
+            -21.636039446415314,
+            60
+          ],
+          [
+            282.72397214122117,
+            -20.46177136048994,
+            60
+          ]
+        ]
+      },
+      {
+        "rudder_deg": 14,
+        "servo_deg": -16.511902836011814,
+        "rod_endpoints_mm": [
+          [
+            152.08744003889848,
+            -21.738183259030745,
+            60
+          ],
+          [
+            283.080359807593,
+            -20.376210251795925,
+            60
+          ]
+        ]
+      },
+      {
+        "rudder_deg": 15,
+        "servo_deg": -17.707864862347833,
+        "rod_endpoints_mm": [
+          [
+            152.44453251676563,
+            -21.848106683600154,
+            60
+          ],
+          [
+            283.4351999471529,
+            -20.284442352070435,
+            60
+          ]
+        ]
+      },
+      {
+        "rudder_deg": 16,
+        "servo_deg": -18.90794401197354,
+        "rod_endpoints_mm": [
+          [
+            152.8004697436207,
+            -21.96587614450217,
+            60
+          ],
+          [
+            283.78838447215696,
+            -20.186495614704697,
+            60
+          ]
+        ]
+      },
+      {
+        "rudder_deg": 17,
+        "servo_deg": -20.112631174708895,
+        "rod_endpoints_mm": [
+          [
+            153.15521419505512,
+            -22.09156943040214,
+            60
+          ],
+          [
+            284.13980579917745,
+            -20.082399875223743,
+            60
+          ]
+        ]
+      },
+      {
+        "rudder_deg": 18,
+        "servo_deg": -21.322459709997474,
+        "rod_endpoints_mm": [
+          [
+            153.50873394816966,
+            -22.225277141974935,
+            60
+          ],
+          [
+            284.4893568818739,
+            -19.972186842198223,
+            60
+          ]
+        ]
+      },
+      {
+        "rudder_deg": 19,
+        "servo_deg": -22.538010152222796,
+        "rod_endpoints_mm": [
+          [
+            153.86100290940365,
+            -22.367104334776847,
+            60
+          ],
+          [
+            284.8369312436003,
+            -19.855890087585653,
+            60
+          ]
+        ]
+      },
+      {
+        "rudder_deg": 20,
+        "servo_deg": -23.759915670864302,
+        "rod_endpoints_mm": [
+          [
+            154.21200108669146,
+            -22.51717239529265,
+            60
+          ],
+          [
+            285.18242300983906,
+            -19.733545036504076,
+            60
+          ]
+        ]
+      },
+      {
+        "rudder_deg": 21,
+        "servo_deg": -24.98886843193077,
+        "rod_endpoints_mm": [
+          [
+            154.56171491479205,
+            -22.675621196871315,
+            60
+          ],
+          [
+            285.5257269404513,
+            -19.605188956441236,
+            60
+          ]
+        ]
+      },
+      {
+        "rudder_deg": 22,
+        "servo_deg": -26.225627042065298,
+        "rod_endpoints_mm": [
+          [
+            154.9101376446256,
+            -22.84261159331702,
+            60
+          ],
+          [
+            285.86673846173414,
+            -19.470860945902537,
+            60
+          ]
+        ]
+      },
+      {
+        "rudder_deg": 23,
+        "servo_deg": -27.471025301745158,
+        "rod_endpoints_mm": [
+          [
+            155.25726981003473,
+            -23.018328322110136,
+            60
+          ],
+          [
+            286.20535369827473,
+            -19.33060192250125,
+            60
+          ]
+        ]
+      },
+      {
+        "rudder_deg": 24,
+        "servo_deg": -28.725982552466576,
+        "rod_endpoints_mm": [
+          [
+            155.6031197887561,
+            -23.202983407656298,
+            60
+          ],
+          [
+            286.5414695045918,
+            -19.18445461049462,
+            60
+          ]
+        ]
+      },
+      {
+        "rudder_deg": 25,
+        "servo_deg": -29.991515978983898,
+        "rod_endpoints_mm": [
+          [
+            155.9477044786943,
+            -23.396820179009925,
+            60
+          ],
+          [
+            286.8749834965547,
+            -19.03246352776965,
+            60
+          ]
+        ]
+      },
+      {
+        "rudder_deg": 26,
+        "servo_deg": -31.268755328726456,
+        "rod_endpoints_mm": [
+          [
+            156.29105011637347,
+            -23.60011804833004,
+            60
+          ],
+          [
+            287.2057940825706,
+            -18.87467497228251,
+            60
+          ]
+        ]
+      },
+      {
+        "rudder_deg": 27,
+        "servo_deg": -32.55896064542185,
+        "rod_endpoints_mm": [
+          [
+            156.6331932721162,
+            -23.813198238789795,
+            60
+          ],
+          [
+            287.5338004945305,
+            -18.711137007955728,
+            60
+          ]
+        ]
+      },
+      {
+        "rudder_deg": 28,
+        "servo_deg": -33.8635437960761,
+        "rod_endpoints_mm": [
+          [
+            156.97418206678458,
+            -24.036430707981587,
+            60
+          ],
+          [
+            287.8589028185037,
+            -18.541899450037466,
+            60
+          ]
+        ]
+      },
+      {
+        "rudder_deg": 29,
+        "servo_deg": -35.1840948201766,
+        "rod_endpoints_mm": [
+          [
+            157.31407766906747,
+            -24.270242591333105,
+            60
+          ],
+          [
+            288.1810020251731,
+            -18.36701384992731,
+            60
+          ]
+        ]
+      },
+      {
+        "rudder_deg": 30,
+        "servo_deg": -36.52241447624647,
+        "rod_endpoints_mm": [
+          [
+            157.6529561517907,
+            -24.51512859883604,
+            60
+          ],
+          [
+            288.5,
+            -18.186533479473212,
+            60
+          ]
+        ]
+      },
+      {
+        "rudder_deg": 31,
+        "servo_deg": -37.880554848932206,
+        "rod_endpoints_mm": [
+          [
+            157.9909108131614,
+            -24.771663951578308,
+            60
+          ],
+          [
+            288.8157995731111,
+            -18.00051331474436,
+            60
+          ]
+        ]
+      },
+      {
+        "rudder_deg": 32,
+        "servo_deg": -39.26087057883933,
+        "rod_endpoints_mm": [
+          [
+            158.32805510801202,
+            -25.040520663825696,
+            60
+          ],
+          [
+            289.1283045488973,
+            -17.809010019284944,
+            60
+          ]
+        ]
+      },
+      {
+        "rudder_deg": 33,
+        "servo_deg": -40.66608429718826,
+        "rod_endpoints_mm": [
+          [
+            158.66452639108147,
+            -25.322488296018165,
+            60
+          ],
+          [
+            289.4374197353156,
+            -17.612081926853904,
+            60
+          ]
+        ]
+      },
+      {
+        "rudder_deg": 34,
+        "servo_deg": -42.099371365432035,
+        "rod_endpoints_mm": [
+          [
+            159.00049075888867,
+            -25.618500779436545,
+            60
+          ],
+          [
+            289.74305097288567,
+            -17.409789023655875,
+            60
+          ]
+        ]
+      },
+      {
+        "rudder_deg": 35,
+        "servo_deg": -43.56447133144002,
+        "rod_endpoints_mm": [
+          [
+            159.33614940506118,
+            -25.9296716365387,
+            60
+          ],
+          [
+            290.04510516337194,
+            -17.20219293006883,
+            60
+          ]
+        ]
+      }
+    ]
+  }
+}

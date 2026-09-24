@@ -1,18 +1,10 @@
-# Rev-A.1 audited CAD — print and procurement
+# Rev-B — print, procurement and assembly
 
-Updated 24 September 2026. Current files are **Rev-A.1**: 40 user parameters, an editable Fusion timeline, a physical-only STEP and 12 STL files in millimeters. See the [new design audit](RevA1_Design_Audit.md) for evidence and unresolved limitations.
-
-## Audit and corrections
-
-This revision closes electrode head/seal gaps, moves the battery clear of the motor-terminal envelope, extends its tray support, reroutes the reserved power-wire corridor, adds a tiller cross-pin interface and lower rudder collar envelope, and enlarges the steering penetration to clear sampled ±35° travel. It also labels the imported regulator as a package proxy.
-
-**Reprint changed parts:** PRINT_01 hull (7 mm steering port), PRINT_04 battery tray (119 mm long), and PRINT_17 tiller (1.3 mm transverse pin hole). Other prints are regenerated from the same final assembly. The matching stock hole is a machining operation, not a printed part.
-
-Earlier corrections remain: integrated stern sleeve/supports, relocated ADC and matching mounts, motor cradle relief, consolidated pod/bracket, and separate metal rudder stock.
-
-This is still a prototype. Physical fits, sealing, retention, strength, trim/flotation and actual linkage travel require verification. The boot, horn, pin and collar are procurement envelopes.
+Updated 24 September 2026. Use **Rev-B** CAD, all twelve current STLs and the matching ZIP. See [the compact enclosure report](RevB_Compact_Enclosure.md) for final coordinates, assembly order and verification limits. Rev-A.1 coordinates are historical.
 
 ## Print — one of each (12 pieces)
+
+The hull is **320 × 170 mm**, 80 mm shorter and 20 mm narrower than Rev-A.1. The hatch opening is 245 × 130 mm. Reprint PRINT_01 hull, PRINT_02 hatch, PRINT_03 electronics tray and PRINT_06 magnetometer rail. Other parts retain their shape; battery tray and sensor components have revised assembly coordinates. Use the complete current package.
 
 | STL prefix | Part |
 |---|---|
@@ -29,9 +21,7 @@ This is still a prototype. Physical fits, sealing, retention, strength, trim/flo
 | PRINT_16 | Rudder blade |
 | PRINT_17 | Rudder tiller |
 
-The hull is 400 mm long; check printer capacity. Files retain assembly coordinates: place on the bed and choose orientation/supports in the slicer. Print interface trials before the complete hull. Seal the hull deliberately; FDM alone is not assumed watertight. No material, orientation or process has been qualified for production. Optional mast/boom configurations are excluded from this default print set.
-
-Do not print the PCB, motor, battery, shaft, propeller, servo, gasket or other purchased/reference envelopes. The stern sleeve and internal supports no longer need separate prints.
+STLs are in millimeters and retain assembly coordinates. Position/orient them in the slicer; check that the printer accommodates the 320 mm hull. Optional mast/boom layouts are excluded from this print package. Verify interface coupons, actual hardware fits, print tolerances and sealing before a complete build. FDM is not assumed watertight.
 
 ## Procure — electronics and drive (one each unless noted)
 
@@ -67,11 +57,14 @@ Do not print the PCB, motor, battery, shaft, propeller, servo, gasket or other p
 
 Part numbers come from the supplied baseline; availability/prices were not rechecked. Fastener lengths above are starting selections, not released manufacturing dimensions.
 
-## Rev-A.1 assembly checks
+## Rev-B assembly and service checks
 
-- Four electrode heads now contact the exterior sealing washers. Modeled shank length is 18 mm under-head; select/trim/deburr actual bolts after measuring the complete seal, lug and nut stack. Do not reuse the former 9 mm head-to-washer gap. Head bottom is now Z=-4 mm.
-- Set battery at X=-101…3 mm with straps; do not slide it aft without rechecking the motor terminal keep-out. The tray extends X=-104…15 mm. Preserve lead/finger clearance.
-- Route power wiring in the revised Y=-31…-25 mm corridor and provide actual strain relief. The corridor is not a physical duct.
-- Match-drill the tiller and shaft, retain the cross-pin, install the lower locking collar and verify the blade's bonded socket. The stock is not print material.
-- Dry-cycle the actual horn, rod, clevises and flexible boot through the intended travel before setting controller limits. Sampled CAD motion assumes a 17.9 mm horn radius, 21 mm tiller radius and 131 mm link span.
-- Measure the regulator output and confirm the purchased part is D24V10F5. The model uses shared-package geometry sourced from an F3 STEP and is not proof of electrical compatibility.
+- Mount the battery transversely, centered at X=-52.5, Y=0 mm. Its tray occupies X=-74.5…-30.5, Y=-59.5…59.5 mm. Retain the pack with straps through the matching tray passages and provide a fabric pull loop. Do not lift by wires or compress the pack.
+- Assemble and wire boards on the removed electronics tray. Relocated pads/bosses must match the actual hardware; add appropriate PCB restraints. Fit the tray using the four M3 positions at X=-70/140 and Y=-55/55 mm.
+- Remove both battery and battery tray for USB insertion. Remove them, disconnect wiring and remove the servo horn/linkage before lifting the electronics tray.
+- Keep power wiring in the Y=59…65, Z=20…28 mm allocation; use the separate sensor-route allocation at Y=-30…-24, Z=40…47 mm. These are free-space reservations, not physical cable restraints or a complete harness.
+- The shortened 46 mm sensor rail projects 20 mm beyond the bow. Verify its attachment, cantilever strength, cable strain relief and magnetic performance. Keep its 2 mm gap to the closed hatch clear.
+- Retain Rev-A.1 electrode head/seal contact, the retained tiller cross-pin, lower locking collar and 7 mm steering-boot seat. Match actual fastener stackups and seal compression.
+- Dry-cycle the real horn, rod, clevises and boot before setting controller limits. The ideal CAD linkage uses a 17.9 mm horn radius, 21 mm tiller radius and 131 mm link span.
+- The regulator remains a D24V10F5 procurement requirement with an F3-derived package proxy in CAD. Confirm actual output voltage and package dimensions.
+- Repeat mass/trim, flotation/freeboard, leak and sensor-interference tests for the smaller hull. CAD checks do not establish these properties.

@@ -1,5 +1,15 @@
 # Changelog
 
+## Rev-B — 2026-09-24
+
+- Reduce hull from 400 × 190 to 320 × 170 mm while retaining the stern/shaft datum.
+- Rotate the battery across the bow and repack electronics with matching supports and ADC mounting holes.
+- Shorten the electronics tray, relocate front pillars and strap passages, and resize hatch/gasket/fastener interfaces together.
+- Shorten the magnetometer rail and relocate the sensor assembly; separate revised wiring allocations.
+- Document battery/tray removal for USB access and the assembly/service sequence.
+- Recheck solid overlaps, 71 steering positions, sampled tray removal, tool/grip access, twelve STL meshes and exported files.
+- Save the existing Fusion design and provide Rev-B F3D, STEP, print package, previews and audit documentation.
+
 ## Rev-A.1 — 2026-09-24
 
 - Restore clamping contact between all four electrode heads and exterior seal washers.
