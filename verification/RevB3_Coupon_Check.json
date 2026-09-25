@@ -1,0 +1,60 @@
+{
+  "revision": "Rev-B.3",
+  "clip_min_mm": [
+    14,
+    -34,
+    0
+  ],
+  "clip_max_mm": [
+    66,
+    34,
+    16
+  ],
+  "motor_pilot_floor_checks": [
+    {
+      "center_mm": [
+        26,
+        -23
+      ],
+      "floor_z_mm": [
+        0,
+        2
+      ],
+      "solid_fraction": 1.0
+    },
+    {
+      "center_mm": [
+        26,
+        23
+      ],
+      "floor_z_mm": [
+        0,
+        2
+      ],
+      "solid_fraction": 1.0
+    },
+    {
+      "center_mm": [
+        60,
+        -27
+      ],
+      "floor_z_mm": [
+        0,
+        2
+      ],
+      "solid_fraction": 1.0
+    },
+    {
+      "center_mm": [
+        60,
+        27
+      ],
+      "floor_z_mm": [
+        0,
+        2
+      ],
+      "solid_fraction": 1.0
+    }
+  ],
+  "limits": "Actual hull subsection for fit trials only; open cut faces invalidate whole-hull stiffness and leak-test claims. No E1 tool access represented."
+}

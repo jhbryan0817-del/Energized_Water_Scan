@@ -1,0 +1,317 @@
+{
+  "revision": "Rev-B.3",
+  "timeline_items": 1236,
+  "tests": [
+    {
+      "name": "motor M3 head (26, -23)",
+      "excluded_prefixes": [],
+      "expected_blocked": false
+    },
+    {
+      "name": "motor M3 head (26, 23)",
+      "excluded_prefixes": [],
+      "expected_blocked": false
+    },
+    {
+      "name": "motor M3 head (60, -27)",
+      "excluded_prefixes": [],
+      "expected_blocked": false
+    },
+    {
+      "name": "motor M3 head (60, 27)",
+      "excluded_prefixes": [],
+      "expected_blocked": false
+    },
+    {
+      "name": "tray M3 head (-70, -55)",
+      "excluded_prefixes": [],
+      "expected_blocked": false
+    },
+    {
+      "name": "tray M3 head (-70, 55)",
+      "excluded_prefixes": [],
+      "expected_blocked": false
+    },
+    {
+      "name": "tray M3 head (140, -55)",
+      "excluded_prefixes": [],
+      "expected_blocked": false
+    },
+    {
+      "name": "tray M3 head (140, 55)",
+      "excluded_prefixes": [],
+      "expected_blocked": false
+    },
+    {
+      "name": "ADC M2 head (37.54, -37.76)",
+      "excluded_prefixes": [],
+      "expected_blocked": false
+    },
+    {
+      "name": "ADC M2 head (37.54, -50.46)",
+      "excluded_prefixes": [],
+      "expected_blocked": false
+    },
+    {
+      "name": "ADC M2 head (57.86, -37.76)",
+      "excluded_prefixes": [],
+      "expected_blocked": false
+    },
+    {
+      "name": "ADC M2 head (57.86, -50.46)",
+      "excluded_prefixes": [],
+      "expected_blocked": false
+    },
+    {
+      "name": "servo M2 head 127",
+      "excluded_prefixes": [],
+      "expected_blocked": false
+    },
+    {
+      "name": "servo M2 head 156",
+      "excluded_prefixes": [],
+      "expected_blocked": false
+    },
+    {
+      "name": "ESP_L head",
+      "excluded_prefixes": [],
+      "expected_blocked": false
+    },
+    {
+      "name": "ESP_R head",
+      "excluded_prefixes": [],
+      "expected_blocked": false
+    },
+    {
+      "name": "FE_L head",
+      "excluded_prefixes": [],
+      "expected_blocked": false
+    },
+    {
+      "name": "FE_R head",
+      "excluded_prefixes": [],
+      "expected_blocked": false
+    },
+    {
+      "name": "reg_F head",
+      "excluded_prefixes": [],
+      "expected_blocked": false
+    },
+    {
+      "name": "reg_B head",
+      "excluded_prefixes": [],
+      "expected_blocked": false
+    },
+    {
+      "name": "ESC_F head",
+      "excluded_prefixes": [],
+      "expected_blocked": false
+    },
+    {
+      "name": "ESC_B head",
+      "excluded_prefixes": [],
+      "expected_blocked": false
+    },
+    {
+      "name": "ESP upper header continuous access allocation",
+      "excluded_prefixes": [],
+      "expected_blocked": false
+    },
+    {
+      "name": "ESP lower header continuous access allocation",
+      "excluded_prefixes": [],
+      "expected_blocked": false
+    },
+    {
+      "name": "E1 vertical D12 socket",
+      "excluded_prefixes": [
+        "ELECTRODE",
+        "PRINT_02",
+        "PRINT_03",
+        "PRINT_04",
+        "BATTERY",
+        "DRIVELINE",
+        "PRINT_11",
+        "PRINT_14",
+        "PROCURE_Motor",
+        "PRINT_18",
+        "PRINT_19",
+        "PRINT_20",
+        "PRINT_21",
+        "ESP32",
+        "FRONT_END",
+        "ADS1115",
+        "ESC",
+        "D24V10",
+        "SERVO"
+      ],
+      "expected_blocked": true
+    },
+    {
+      "name": "E2 vertical D12 socket",
+      "excluded_prefixes": [
+        "ELECTRODE",
+        "PRINT_02",
+        "PRINT_03",
+        "PRINT_04",
+        "BATTERY",
+        "DRIVELINE",
+        "PRINT_11",
+        "PRINT_14",
+        "PROCURE_Motor",
+        "PRINT_18",
+        "PRINT_19",
+        "PRINT_20",
+        "PRINT_21",
+        "ESP32",
+        "FRONT_END",
+        "ADS1115",
+        "ESC",
+        "D24V10",
+        "SERVO"
+      ],
+      "expected_blocked": false
+    },
+    {
+      "name": "E3 vertical D12 socket",
+      "excluded_prefixes": [
+        "ELECTRODE",
+        "PRINT_02",
+        "PRINT_03",
+        "PRINT_04",
+        "BATTERY",
+        "DRIVELINE",
+        "PRINT_11",
+        "PRINT_14",
+        "PROCURE_Motor",
+        "PRINT_18",
+        "PRINT_19",
+        "PRINT_20",
+        "PRINT_21",
+        "ESP32",
+        "FRONT_END",
+        "ADS1115",
+        "ESC",
+        "D24V10",
+        "SERVO"
+      ],
+      "expected_blocked": false
+    },
+    {
+      "name": "E4 vertical D12 socket",
+      "excluded_prefixes": [
+        "ELECTRODE",
+        "PRINT_02",
+        "PRINT_03",
+        "PRINT_04",
+        "BATTERY",
+        "DRIVELINE",
+        "PRINT_11",
+        "PRINT_14",
+        "PROCURE_Motor",
+        "PRINT_18",
+        "PRINT_19",
+        "PRINT_20",
+        "PRINT_21",
+        "ESP32",
+        "FRONT_END",
+        "ADS1115",
+        "ESC",
+        "D24V10",
+        "SERVO"
+      ],
+      "expected_blocked": false
+    },
+    {
+      "name": "E1 low-profile wrench allocation before tray",
+      "excluded_prefixes": [
+        "ELECTRODE",
+        "PRINT_02",
+        "PRINT_03",
+        "PRINT_04",
+        "BATTERY",
+        "DRIVELINE",
+        "PRINT_11",
+        "PRINT_14",
+        "PROCURE_Motor",
+        "PRINT_18",
+        "PRINT_19",
+        "PRINT_20",
+        "PRINT_21",
+        "ESP32",
+        "FRONT_END",
+        "ADS1115",
+        "ESC",
+        "D24V10",
+        "SERVO"
+      ],
+      "expected_blocked": true
+    },
+    {
+      "name": "E1 short socket allocation",
+      "excluded_prefixes": [
+        "ELECTRODE",
+        "PRINT_02",
+        "PRINT_03",
+        "PRINT_04",
+        "BATTERY",
+        "DRIVELINE",
+        "PRINT_11",
+        "PRINT_14",
+        "PROCURE_Motor",
+        "PRINT_18",
+        "PRINT_19",
+        "PRINT_20",
+        "PRINT_21",
+        "ESP32",
+        "FRONT_END",
+        "ADS1115",
+        "ESC",
+        "D24V10",
+        "SERVO"
+      ],
+      "expected_blocked": false
+    }
+  ],
+  "unexpected_intersections": [],
+  "known_blocked_access": [
+    {
+      "test": "E1 vertical D12 socket",
+      "obstacle": "PRINT_01_Hull_shell:1/Hull_with_sleeve_electrode_bosses_and_tray_pillars",
+      "overlap_mm3": 742.2082
+    },
+    {
+      "test": "E1 vertical D12 socket",
+      "obstacle": "PRINT_06_Magnetometer_adjustment_rail:1/Nonmagnetic_bow_rail",
+      "overlap_mm3": 398.9074
+    },
+    {
+      "test": "E1 vertical D12 socket",
+      "obstacle": "PRINT_07_Magnetometer_service_pod:1/Pod_with_rail_mounting_shoe",
+      "overlap_mm3": 342.5813
+    },
+    {
+      "test": "E1 vertical D12 socket",
+      "obstacle": "SENSOR_SparkFun_SEN19921_MMC5983MA:1/19.05x7.62_PCB",
+      "overlap_mm3": 2.774
+    },
+    {
+      "test": "E1 vertical D12 socket",
+      "obstacle": "SENSOR_SparkFun_SEN19921_MMC5983MA:1/Qwiic_component_envelope",
+      "overlap_mm3": 0.6935
+    },
+    {
+      "test": "E1 vertical D12 socket",
+      "obstacle": "PROCURE_Magnetometer_adhesive_pad_1mm:1/Nonmagnetic_foam_pad",
+      "overlap_mm3": 1.7337
+    },
+    {
+      "test": "E1 low-profile wrench allocation before tray",
+      "obstacle": "PRINT_01_Hull_shell:1/Hull_with_sleeve_electrode_bosses_and_tray_pillars",
+      "overlap_mm3": 1.2204
+    }
+  ],
+  "assembly_release_passed": false,
+  "boolean_failures": [],
+  "limits": "Head envelopes D5.5x3 M3 and D3.8x2 M2; washers and actual fastener tolerances unmodeled. Continuous header access boxes are allocations, not verified connector CAD. E1 straight-down access and the candidate low-profile wrench are blocked; actual installation tooling remains a release blocker."
+}
