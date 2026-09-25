@@ -1,10 +1,14 @@
-# Rev-B.2 — print, procurement and assembly
+# Rev-B.3 — print, procurement and assembly
 
-Updated 25 September 2026. Use **Rev-B.2** CAD, all sixteen current STLs and the matching ZIP. Reprint PRINT_01, PRINT_03, PRINT_06, PRINT_09, PRINT_11 and PRINT_14 relative to Rev-B.1; add PRINT_18–21. See the [current audit](RevB2_Prototype_Readiness.md) and [wiring/assembly schedule](Wiring_and_Assembly.md). The retained Rev-B dimensions are in [the compact enclosure report](RevB_Compact_Enclosure.md). This BOM is not yet a complete exact-part production BOM.
+Updated 25 September 2026. Use **Rev-B.3** CAD, all sixteen current STLs and the matching ZIP. Reprint PRINT_01, PRINT_04 and PRINT_18 relative to Rev-B.2. See the [current audit and unresolved assembly blockers](RevB3_Assembly_Readiness.md) and [wiring/assembly schedule](Wiring_and_Assembly.md). This BOM is not a complete exact-part procurement/assembly BOM. The builder has screws, an ESP32 and basic components; nearly all named hardware still requires procurement and measurement.
+
+**Printer plan:** H2D for hull and hatch; X1C for smaller parts. The 320 mm hull has only 5 mm total spare width in the H2D's published 325 mm single-nozzle direction before supports/brim. The hatch is 269 × 154 mm and is not an axis-aligned flat X1C print. Confirm Bambu Studio's actual usable area and adhesion plan; do not scale. Print material is unconfirmed. See the source-linked plan in the current audit.
+
+**New interface overrides:** motor-support Ø2.5 pilots end at Z=2.0 rather than 3.8 mm, giving nominal 2 mm M3×8 tip margin. Battery-tray open corner reliefs clear typical front tray M3 heads. PRINT_18 now has an upper header access window. Exact fastener and owned ESP32 fit remain coupon gates. E1 tool access is unresolved and must be demonstrated before the full hull print.
 
 ## Print — one of each (16 pieces)
 
-The hull is **320 × 170 mm**, 80 mm shorter and 20 mm narrower than Rev-A.1. The hatch opening is 245 × 130 mm. Relative to Rev-B.1, reprint the six modified parts listed above and add four capture bridges. Use the complete current package.
+The hull is **320 × 170 mm**; the hatch opening is 245 × 130 mm. Rev-B.3 changes three parts relative to Rev-B.2. Use the complete current package. The hull-section coupon in `coupons/` is separate from the sixteen assembly parts and is not a watertight part.
 
 | STL prefix | Part |
 |---|---|
@@ -42,7 +46,7 @@ STLs are in millimeters and retain assembly coordinates. Position/orient them in
 | Propeller | Krick/Graupner 2307.30, 30 mm, RH, M2 |
 | Servo | Genuine TowerPro SG90 Digital, with matching horn and mounting hardware |
 | Battery | Gens Ace GEA222S30X6GT, 2200 mAh 2S 30C XT60 |
-| Electrodes | Four A4/316 M4 bolts, nuts, washers, terminal lugs and sealing washers/O-rings; length to actual stack |
+| Electrodes | Four A4/316 M4 bolts, nuts, terminal lugs and sealing washers/O-rings; length to actual stack. The modeled lug replaces the internal washer: do not add another internal washer without revising the stack. |
 | Rudder/linkage | 3 mm metal stock, 86 mm modeled length; match-drilled 1.3 mm cross-hole at 82 mm from lower end. M2 pushrod, compatible horn/clevises; nominal span 131 mm |
 
 ## Procure — assembly supplies
@@ -79,3 +83,4 @@ Part numbers come from the supplied baseline; availability/prices were not reche
 - Dry-cycle the real horn, rod, clevises and boot before setting controller limits. The ideal CAD linkage uses a 17.9 mm horn radius, 21 mm tiller radius and 131 mm link span.
 - The regulator remains a D24V10F5 procurement requirement with an F3-derived package proxy in CAD. Confirm actual output voltage and package dimensions.
 - Repeat mass/trim, flotation/freeboard, leak and sensor-interference tests for the smaller hull. CAD checks do not establish these properties.
+

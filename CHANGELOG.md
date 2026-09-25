@@ -1,5 +1,14 @@
 # Changelog
 
+## Rev-B.3 — 25 September 2026
+
+- Clear battery-tray overlap with front M3 tray screw heads using two open corner reliefs.
+- Open the ESP32 capture bridge above the upper header row and reinforce its remaining crossbar.
+- Increase four motor-support M3×8 blind-hole tip margins from 0.2 to 2 mm while retaining nominal 2 mm bottom skin.
+- Add fastener-head/header-access checks and explicitly failed E1 tool-access evidence; assembly release remains false.
+- Document the H2D hull/hatch and X1C small-part plan, staged procurement, missing sealed sensor entry, exact harness/steering interfaces and physical qualification gates.
+- Regenerate Rev-B.3 CAD, all sixteen prints, a separate fit coupon and verification evidence. Electronics architecture remains unchanged.
+
 ## Rev-B.2 — 25 September 2026
 
 - Added electrode ring-lug/crimp envelopes, an E2 cradle side exit, a tray conductor riser and checked routing allocations.
@@ -40,3 +49,4 @@
 ## Rev-A — 2026-09-23
 
 Original published mechanical packaging audit. Historical reports remain in `verification/`; source commit: `a364aa5ba2249f480e7dcc9e9159f0153d982758`.
+

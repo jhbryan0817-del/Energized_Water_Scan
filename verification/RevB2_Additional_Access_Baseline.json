@@ -1,0 +1,169 @@
+{
+  "intersections": [
+    [
+      "tray M3 head",
+      "PRINT_04_Battery_slide_tray:1",
+      "Sliding_battery_plate",
+      42.6085
+    ],
+    [
+      "tray M3 head",
+      "PRINT_04_Battery_slide_tray:1",
+      "Sliding_battery_plate",
+      47.9021
+    ],
+    [
+      "ESP header wiring probe",
+      "PRINT_18_ESP32_capture_bridge:1",
+      "PRINT_18_ESP32_capture_bridge",
+      14.7262
+    ],
+    [
+      "ESP header wiring probe",
+      "PRINT_18_ESP32_capture_bridge:1",
+      "PRINT_18_ESP32_capture_bridge",
+      14.7262
+    ],
+    [
+      "ESP header wiring probe",
+      "PRINT_18_ESP32_capture_bridge:1",
+      "PRINT_18_ESP32_capture_bridge",
+      14.7262
+    ],
+    [
+      "ESP header wiring probe",
+      "PRINT_18_ESP32_capture_bridge:1",
+      "PRINT_18_ESP32_capture_bridge",
+      14.7262
+    ],
+    [
+      "ESP header wiring probe",
+      "PRINT_18_ESP32_capture_bridge:1",
+      "PRINT_18_ESP32_capture_bridge",
+      14.7262
+    ],
+    [
+      "ESP header wiring probe",
+      "PRINT_18_ESP32_capture_bridge:1",
+      "PRINT_18_ESP32_capture_bridge",
+      14.7262
+    ],
+    [
+      "ESP header wiring probe",
+      "PRINT_18_ESP32_capture_bridge:1",
+      "PRINT_18_ESP32_capture_bridge",
+      14.7262
+    ],
+    [
+      "ESP header wiring probe",
+      "PRINT_18_ESP32_capture_bridge:1",
+      "PRINT_18_ESP32_capture_bridge",
+      14.7262
+    ],
+    [
+      "ESP header wiring probe",
+      "PRINT_18_ESP32_capture_bridge:1",
+      "PRINT_18_ESP32_capture_bridge",
+      14.7262
+    ],
+    [
+      "ESP header wiring probe",
+      "PRINT_18_ESP32_capture_bridge:1",
+      "PRINT_18_ESP32_capture_bridge",
+      14.7262
+    ],
+    [
+      "ESP header wiring probe",
+      "PRINT_18_ESP32_capture_bridge:1",
+      "PRINT_18_ESP32_capture_bridge",
+      14.7262
+    ],
+    [
+      "ESP header wiring probe",
+      "PRINT_18_ESP32_capture_bridge:1",
+      "PRINT_18_ESP32_capture_bridge",
+      14.7262
+    ],
+    [
+      "ESP header wiring probe",
+      "PRINT_18_ESP32_capture_bridge:1",
+      "PRINT_18_ESP32_capture_bridge",
+      14.7262
+    ],
+    [
+      "ESP header wiring probe",
+      "PRINT_18_ESP32_capture_bridge:1",
+      "PRINT_18_ESP32_capture_bridge",
+      14.7262
+    ],
+    [
+      "ESP header wiring probe",
+      "PRINT_18_ESP32_capture_bridge:1",
+      "PRINT_18_ESP32_capture_bridge",
+      14.7262
+    ],
+    [
+      "ESP header wiring probe",
+      "PRINT_18_ESP32_capture_bridge:1",
+      "PRINT_18_ESP32_capture_bridge",
+      14.7262
+    ],
+    [
+      "ESP header wiring probe",
+      "PRINT_18_ESP32_capture_bridge:1",
+      "PRINT_18_ESP32_capture_bridge",
+      14.7262
+    ],
+    [
+      "ESP header wiring probe",
+      "PRINT_18_ESP32_capture_bridge:1",
+      "PRINT_18_ESP32_capture_bridge",
+      14.7262
+    ],
+    [
+      "ESP header wiring probe",
+      "PRINT_18_ESP32_capture_bridge:1",
+      "PRINT_18_ESP32_capture_bridge",
+      14.7262
+    ],
+    [
+      "E1 socket",
+      "PRINT_01_Hull_shell:1",
+      "Hull_with_sleeve_electrode_bosses_and_tray_pillars",
+      742.2082
+    ],
+    [
+      "E1 socket",
+      "PRINT_06_Magnetometer_adjustment_rail:1",
+      "Nonmagnetic_bow_rail",
+      398.9074
+    ],
+    [
+      "E1 socket",
+      "PRINT_07_Magnetometer_service_pod:1",
+      "Pod_with_rail_mounting_shoe",
+      342.5813
+    ],
+    [
+      "E1 socket",
+      "SENSOR_SparkFun_SEN19921_MMC5983MA:1",
+      "19.05x7.62_PCB",
+      2.774
+    ],
+    [
+      "E1 socket",
+      "SENSOR_SparkFun_SEN19921_MMC5983MA:1",
+      "Qwiic_component_envelope",
+      0.6935
+    ],
+    [
+      "E1 socket",
+      "PROCURE_Magnetometer_adhesive_pad_1mm:1",
+      "Nonmagnetic_foam_pad",
+      1.7337
+    ]
+  ],
+  "timeline_items": 1216,
+  "revision": "Rev-B.2",
+  "method": "Additional provisional cylindrical head/header/tool allocations; see RevB3 report. Header probes are generic row allocations, not verified supplier connector models."
+}
