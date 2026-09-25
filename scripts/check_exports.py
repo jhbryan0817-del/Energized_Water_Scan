@@ -1,13 +1,13 @@
-"""Verify Rev-B.1 export consistency; run after Fusion audits and mesh export."""
+"""Verify Rev-B.2 export consistency; run after Fusion audits and mesh export."""
 from pathlib import Path
 import hashlib,json,re,zipfile
 
 ROOT=Path(__file__).resolve().parents[1]
 def main():
-    audit=json.loads((ROOT/'verification/RevB1_Assembly_Audit.json').read_text())
-    meshes=json.loads((ROOT/'verification/RevB1_STL_Check.json').read_text())
-    native=json.loads((ROOT/'verification/RevB1_Native_Roundtrip.json').read_text())
-    step=(ROOT/'cad/Energized_Water_Scanner_RevB1.step').read_text()
+    audit=json.loads((ROOT/'verification/RevB2_Assembly_Audit.json').read_text())
+    meshes=json.loads((ROOT/'verification/RevB2_STL_Check.json').read_text())
+    native=json.loads((ROOT/'verification/RevB2_Native_Roundtrip.json').read_text())
+    step=(ROOT/'cad/Energized_Water_Scanner_RevB2.step').read_text()
     count=len(re.findall(r'=\s*MANIFOLD_SOLID_BREP\s*\(',step))
     checks=[]
     for mesh in meshes:
@@ -21,9 +21,9 @@ def main():
     with zipfile.ZipFile(ROOT/'prints/Print_STLs.zip') as z:
         assert set(z.namelist())=={m['file'] for m in meshes}
         assert all(z.read(m['file'])==(ROOT/'prints'/m['file']).read_bytes() for m in meshes)
-    assert count==89 and native['passed']
-    files=[*ROOT.glob('cad/*RevB1*'),*ROOT.glob('prints/*.stl'),ROOT/'prints/Print_STLs.zip',*ROOT.glob('previews/RevB1*')]
+    assert count==audit['body_count'] and native['passed']
+    files=[*ROOT.glob('cad/*RevB2*'),*ROOT.glob('prints/*.stl'),ROOT/'prints/Print_STLs.zip',*ROOT.glob('previews/RevB2*')]
     result=dict(step_solid_count=count,f3d_fusion_roundtrip=native,print_zip_matches_individual_stls=True,stl_matches_current_brep=checks,sha256={str(p.relative_to(ROOT)).replace('\\','/'):hashlib.sha256(p.read_bytes()).hexdigest() for p in files})
-    (ROOT/'verification/RevB1_Export_Check.json').write_text(json.dumps(result,indent=2)+'\n')
+    (ROOT/'verification/RevB2_Export_Check.json').write_text(json.dumps(result,indent=2)+'\n')
     print(f'PASS: {count} STEP solids, native roundtrip, {len(meshes)} meshes and print ZIP consistency')
 if __name__=='__main__':main()

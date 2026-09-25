@@ -1,5 +1,14 @@
 # Changelog
 
+## Rev-B.2 — 25 September 2026
+
+- Added electrode ring-lug/crimp envelopes, an E2 cradle side exit, a tray conductor riser and checked routing allocations.
+- Added blind M3 screw interfaces for motor supports, sensor rail and rudder bracket; converted ADC/servo support bores to M2 pilots. Main hatch inserts remain.
+- Added four screw-secured electronics capture bridges, locating stops and a motor-cradle liner envelope.
+- Joined raised “IoT Beyond Lab” branding into the hull side.
+- Regenerated CAD/print exports and documented the remaining hardware, screw coupon, harness, sealing and prototype-test gates.
+
+
 ## Rev-B.1 — 2026-09-25
 
 - Add twelve through-slots to the existing Fusion electronics tray: five harness restraint stations and an ESC retention path; preserve the outer envelope and exact purchased-component sizes.
