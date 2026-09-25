@@ -76,6 +76,91 @@ Initially retain the exact purchased ESP32, ADS1115 and Pololu modules on a carr
 
 Freeze neither the PCB outline nor pinout yet: resolve front-end protection/bias/filtering, servo current budget, actual connector mating/bend volumes, firmware pin assignments and mounting clearance first. A PCB reduces wiring complexity; it does not solve hull sealing, horn fit or sensing validation. No schematic, layout, Gerbers or PCB manufacture files were created.
 
+## Next steps toward a working prototype
+
+Added 25 September 2026 following this iteration. **All steps below are open; CAD verification does not mark them complete.** The immediate priority is to close the actual-hardware and wiring interfaces, then revise CAD around those measured interfaces before committing to a full build. A custom PCB is optional for the first working prototype.
+
+For this plan, a working prototype means a craft that can be assembled and serviced, remains dry and stable at its intended load, has reliable propulsion/steering and loss-of-command behavior, and logs repeatable sensor measurements against controlled references. It does **not** mean validated detection of hazardous water or a production-qualified product.
+
+### 1. Confirm the build constraints and measure the exact hardware
+
+- [ ] Record the available printer/build volume, nozzle, intended material, and intended prototype payload, operating duration and test conditions. Check that the hull fits with support/brim margin; if it does not, resolve a larger printer or a separately designed sealed hull joint before printing.
+- [ ] Obtain or inspect the named motor, shaft, coupling, propeller, battery, servo, ESC and electronics. Record part/revision markings and photographs; measure mounting holes, screw engagement, connector bodies, wire exits and protrusions against CAD.
+- [ ] Specifically check the actual D24V10F5 against its proxy, ESP32 header/connector height, battery main/balance leads, and the SG90's supplied horn spline and available hole radii.
+
+**Completion check:** a measured interface record identifies every CAD mismatch. Unavailable or substituted parts are explicitly recorded and trigger a fit review. Nominal supplier dimensions alone do not close this step. The builder supplies physical measurements; the next CAD iteration incorporates them.
+
+### 2. Resolve the power budget and define the complete harness
+
+- [ ] Use the [connection schedule](Wiring_and_Assembly.md) to draw a connector-level wiring diagram, including fuse, disconnect, distribution branches, signal grounds and USB power isolation.
+- [ ] Select exact mating parts for battery XT60, ESC small Tamiya input and 4 mm motor bullets, plus sensor/controller adapters. Specify connector cavity/pin mapping, polarity, wire gauge and insulation, terminations and strain relief. Allocate accessible space for the fuse and connector junctions, not just conductors.
+- [ ] Measure servo current and rail transients under representative steering load; confirm whether the ESC BEC can support it. If it cannot, select a suitable separate servo supply and reserve its space before freezing CAD. Keep the BEC and Pololu positive outputs separate.
+- [ ] Establish motor starting/loaded-current demand and choose the fuse, wire and connectors as a coordinated system. Record the test setup and limits; do not choose a fuse solely from the ESC current rating. Perform initial electrical commissioning with the propeller removed; loaded propulsion testing belongs in a controlled later setup.
+
+**Completion check:** an exact integration BOM and wiring diagram exist, polarity/continuity checks pass, and measured supply/current results justify the power arrangement. No unexplained resets, excessive voltage drops or overheating occur in the defined bench tests. Final wire lengths are confirmed during dry assembly in step 6.
+
+### 3. Finish the unresolved mechanical interfaces in Fusion
+
+- [ ] Add positive, removable retention for ESP32, front-end and regulator using measured board and connector geometry; maintain access to connectors and hot components.
+- [ ] Select the magnetometer's main-hull sealed feedthrough and model its opening, seal stack, retention, connector passage and strain relief. Confirm how the cable is assembled through both pod and hull without crossing the hatch gasket.
+- [ ] Replace the provisional horn/clevis geometry with the actual arrangement. Recalculate linkage length and travel if the real horn radius differs from 17.9 mm. Select the steering boot, stock collar and pin retention hardware.
+- [ ] Finalize electrode bolt/lug/seal stacks, insert and screw selections, and attachment methods for motor supports, rail and rudder bracket. Include tool access and under-tray lug/wire clearance.
+- [ ] Model the bulky harness junctions, fuse holder and connector mating/bend envelopes from step 2. Recheck battery removal, USB access and tray removal with those envelopes present.
+
+**Completion check:** no critical mounting/sealing/connector interface remains labeled TBD or represented only by an unchecked proxy. Save a new CAD revision, regenerate affected exports, and rerun assembly, steering, service and mesh checks. Keep measured physical-fit evidence distinct from CAD results.
+
+### 4. Develop and bench-validate the sensing circuit and minimum firmware
+
+This work can proceed alongside steps 1–3, using the selected hardware.
+
+- [ ] Turn the conceptual electrode protection, bias and filtering network into a reviewed schematic with component values and an explicit test input range. Build a removable prototype front end before considering a PCB.
+- [ ] Establish the final ESP32 pin map and sensor-bus connections. Implement basic ADC/magnetometer logging with timestamps, supply/status reporting, command handling, startup with propulsion disabled, and a defined stop response to lost or stale commands.
+- [ ] Test the front end with controlled, isolated low-energy reference signals. Record offset, noise, repeatability, saturation and channel mapping. Do not use hazardous energized water as a validation source.
+- [ ] Compare sensor readings with motor/servo off and operating in a controlled setup. Determine whether wire routing, filtering or magnetometer separation needs revision before hull interfaces are frozen.
+
+**Completion check:** versioned schematic and firmware plus repeatable bench-test logs exist; input limits and limitations are documented; startup and communication-loss behavior are demonstrated. Detection thresholds remain unvalidated until a separate sensing study supports them.
+
+### 5. Print and qualify small interface samples
+
+- [ ] Print coupons for tie slots, board retention, insert/screw fits, gasket land, electrode seal, stern tube and the selected feedthrough using the intended printer/material/settings.
+- [ ] Fit actual hardware, check support removal, and test representative sealed/bonded joints. Record dimensional compensation and assembly method rather than silently drilling or filing every part differently.
+
+**Completion check:** repeatable coupon fits and documented sealing/bonding methods support the chosen settings. Correct CAD or print settings before the full hull print. If existing Rev-B parts are being reused, only the tray changed in Rev-B.1; step 3 may introduce further required reprints.
+
+### 6. Print the build set and complete an unpowered dry assembly
+
+- [ ] Print the current, mutually consistent CAD/STL revision. Inspect flatness, walls, bores, support removal and seal lands before installing components.
+- [ ] Assemble and wire the removable tray outside the hull. Fit positive board restraints, thread ties, insulate terminations, label both harness ends and keep all leads clear of drivetrain/linkage motion.
+- [ ] Install the tray, battery and real linkage. Demonstrate connector mating, tool access, full intended steering travel, battery extraction, USB access and tray removal with actual service loops.
+- [ ] Record final harness cut lengths, connector positions and assembly photographs; feed any interference or assembly-order problem back into CAD and instructions.
+
+**Completion check:** the assembly can be installed and serviced without forcing parts, pulling on leads, pinching seals or leaving boards unsecured. A second assembly using the written sequence should not require undocumented improvisation.
+
+### 7. Verify sealing, flotation and retention before powered water trials
+
+- [ ] Check bonded attachments and fastener/shaft retention, then perform unpowered leak tests of hull, hatch, electrodes, stern tube, pod/feedthrough and steering boot. Exercise the steering seal as part of its test.
+- [ ] Use secured representative ballast for the final mass distribution; measure loaded freeboard, trim and stability. Record test duration, conditions and observed ingress rather than claiming waterproofness from a brief visual check.
+
+**Completion check:** no detected ingress or mechanical loosening in the documented test, and adequate freeboard/stability for the agreed trial conditions. Resolve leaks or trim problems before adding powered electronics to the water test.
+
+### 8. Run a controlled integrated prototype trial
+
+- [ ] Commission propulsion/steering and verify stop behavior, then run short controlled water trials with a recovery method. Increase duration/load only after inspecting the previous run.
+- [ ] Log supply behavior, resets, motor/ESC/regulator/servo temperature, steering response, ingress and sensor data. Compare electrical noise and magnetic interference with the bench baseline.
+- [ ] Record failures and corrective actions, repeat affected tests, and tag the CAD, BOM, harness, firmware and print settings used in the successful build.
+
+**Completion check:** the prototype completes its defined trial duration and maneuvering/logging tasks without loss of control, unacceptable heating, ingress or unexplained resets. Quantitative limits must be chosen from the intended use and actual component specifications before the trial; this audit has not established them.
+
+### 9. Revisit the custom PCB after the interfaces are stable
+
+- [ ] Review the proven harness, circuit, power budget and service experience from the first prototype. Decide whether a compact carrier/interconnect PCB is justified, and capture its connector, mounting, test-point and separation requirements.
+
+**Completion check:** a PCB requirements brief can be based on measured hardware and tested circuitry. A PCB design is a separate future task; it is neither created by this plan nor a prerequisite for initial bench validation.
+
+### Records to preserve as work progresses
+
+Keep the exact integration BOM, measured interfaces, wiring diagram, firmware/schematic revisions, print settings, assembly photos and dated test results in the repository. For each step, record the responsible person, status, evidence path, unresolved issues and completion date. Check a box only when its evidence exists. The next practical work package is **steps 1–2, followed by the interface-focused Fusion revision in step 3**; sensing/firmware work in step 4 can proceed concurrently.
+
 ## Evidence and scope limits
 
 Final results: 89 physical solids; zero detected cross-component overlaps or Boolean failures; zero feature warnings/errors; zero tested steering collisions at 71 positions; zero tested service-access intersections. All twelve STLs pass topology checks. The native F3D reopens with 1012 timeline items, 40 parameters and the expected tray volume. The physical STEP has 89 solid records, and the print ZIP matches the individual STLs. Historical suppressed/rolled-back/unknown timeline states remain listed in the audit rather than being called healthy.
