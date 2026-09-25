@@ -1,6 +1,8 @@
-# Rev-B.1 wiring and assembly work instruction
+# Rev-B.2 wiring and assembly work instruction
 
 This is a prototype integration plan, not a released electrical schematic or pin-numbered production harness. Resolve the open selections in the [production audit](RevB1_Production_and_Wiring_Audit.md) before building for use. Keep the original named components; additional integration hardware is still required.
+
+> See the [Rev-B.2 electrode route/stack and retention schedule](RevB2_Prototype_Readiness.md) first. E2 must be terminated before motor installation; a 6×8 mm tray riser carries conductors to above-tray service connectors. Capture bridges and screw pilots replace the earlier unsecured-board arrangement. Actual connector passage and wire bends remain dry-assembly checks.
 
 ## Connection schedule
 
@@ -20,10 +22,10 @@ Do not publish guessed pin numbers as a released harness. Record actual connecto
 
 ## Routing and assembly sequence
 
-1. Print and finish interfaces. Install and seal electrodes, stern tube, steering boot and qualified attachments. Fit electrode ring lugs with lead barrels pointing toward accessible routes; confirm they clear the tray underside. Install motor and confirm tool access/alignment.
-2. On the removed electronics tray, thread the five harness restraint ties and ESC restraint. Tie heads remain above the plate. Fit the ADC fasteners, qualified removable restraints for other boards, ESC pad and servo. Do not depend on support pads alone to retain boards.
+1. Print and finish interfaces. Install and seal electrodes, stern tube, steering boot and qualified attachments. Fit the four ring lugs in their specified orientations and route E2 through the cradle side exit. Tighten E2 before motor/cradle installation. Use the new blind M3 support fasteners and confirm tool access/alignment.
+2. On the removed electronics tray, thread the five harness restraint ties and ESC restraint. Tie heads remain above the plate. Fit M2 ADC/servo screws into the new receiving pilots, the four M3 capture bridges and the ESC pad. Bridge feet seat on printed pedestals; verify real electronics cannot escape and no screw load presses on components.
 3. Build the fused adapter/distribution harness outside the hull. Put bulky XT60/Tamiya junctions and fuse in a measured accessible free volume; the 6×8 mm side routing allocation is for conductors, not connector bodies or fuse holders. Exact junction placement is an open CAD gate.
-4. Route propulsion supply and return together on the positive-Y side; keep motor leads local and paired. Branch to the logic-side restraint at (80,44), with slack to unplug the regulator. Keep antenna area free of bundled wire or metal.
+4. Route propulsion supply and return together on the positive-Y side; keep motor leads local and paired. Branch to the logic-side restraint at (80,50), with slack to unplug the regulator. Keep antenna area free of bundled wire or metal.
 5. Route electrode/ADC wiring on negative Y, using stations (-12,-24) and (78,-44) as appropriate. The front-end-to-ADC run should stay short. Use (105,-44) for the separate servo/control branch; do not bundle that branch with high-impedance electrode conductors. Cross power wiring approximately at right angles where unavoidable.
 6. Route the magnetometer cable through a selected sealed bulkhead/potted feedthrough into the main hull. This interface is not yet designed. Provide strain relief on both sides, a drip loop where applicable and a service disconnect inside. Never run it across the hatch gasket. Do not assume an assembled Qwiic plug passes the existing pod's small wire exit; select a feedthrough assembly process compatible with the plug and seal.
 7. Leave measured service loops between fixed hull and tray, then disconnect those interfaces before lifting the tray. Do not make a loop large enough to reach the motor shaft, coupling, linkage or gasket. Tie-downs are restraints, not certified clearance corridors; inspect with actual cables in place.

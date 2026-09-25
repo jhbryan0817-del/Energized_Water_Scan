@@ -1,56 +1,48 @@
 # Energized Water Scan
 
-**Rev-B.1 — wiring/assembly audit, 25 September 2026.** Added twelve tray slots for harness strain relief and ESC retention. Hull remains **320 × 170 mm** and purchased components retain their original sizes. **Not production-ready:** exact integration hardware, board retention, sealed sensor-cable entry, loaded power tests and physical print/assembly validation remain open.
+**Rev-B.2 — electrode access and screw retention, 25 September 2026.** Focused revision of the existing 320 × 170 mm boat: E2 side wire exit, electrode ring-lug envelopes, tray wire riser, screw mounting, electronics capture bridges, and **IoT Beyond Lab** hull branding.
 
-![Rev-B.1 open assembly](previews/RevB1_assembly.png)
+**Not released for production.** Exact hardware, screw-fit coupons, actual cable/connector clearances, sealed magnetometer entry and physical assembly/leak tests remain open.
 
 ## Start here
 
-- [Current production audit, print guidance and custom-PCB assessment](docs/RevB1_Production_and_Wiring_Audit.md)
-- [Wiring connection schedule and assembly/service instructions](docs/Wiring_and_Assembly.md)
-- [Compact layout, dimensions, assembly order and limits](docs/RevB_Compact_Enclosure.md)
-- [Current print and procurement checklist](docs/Print_and_Procurement.md)
-- [Editable Fusion design — Rev-B.1](cad/Energized_Water_Scanner_RevB1.f3d)
-- [Physical assembly STEP — Rev-B.1](cad/Energized_Water_Scanner_RevB1.step)
-- [All 12 current printable parts](prints/Print_STLs.zip), or [individual STLs](prints/)
-- [Assembly and steering audit](verification/RevB1_Assembly_Audit.json), [service audit](verification/RevB1_Service_Audit.json), and [STL checks](verification/RevB1_STL_Check.json)
-- [Export verification](verification/RevB1_Export_Check.json)
+- [Current changes and prioritized prototype-production gates](docs/RevB2_Prototype_Readiness.md)
+- [Wiring and assembly sequence](docs/Wiring_and_Assembly.md)
+- [Print and procurement checklist](docs/Print_and_Procurement.md)
+- [Rev-B.1 audit and broader next-step reference](docs/RevB1_Production_and_Wiring_Audit.md)
+- [Editable Rev-B.2 Fusion design](cad/Energized_Water_Scanner_RevB2.f3d)
+- [Physical Rev-B.2 STEP assembly](cad/Energized_Water_Scanner_RevB2.step)
+- [All 16 printable parts](prints/Print_STLs.zip), or [individual STLs](prints/)
+- [Assembly/steering audit](verification/RevB2_Assembly_Audit.json), [service audit](verification/RevB2_Service_Audit.json), [wiring/support audit](verification/RevB2_Wiring_Support_Audit.json)
+- [STL checks](verification/RevB2_STL_Check.json) and [export verification](verification/RevB2_Export_Check.json)
 
-## What changed
+![Rev-B.2 open assembly](previews/RevB2_open_assembly.png)
 
-Rev-B.1 adds five paired harness tie-down stations and two ESC restraint slots to the electronics tray. Reprint **PRINT_03 only** if you already have Rev-B parts. The audit identifies the XT60/small-Tamiya mismatch, the servo/BEC current-budget check and USB power-isolation requirement. A compact interconnect PCB is recommended for repeatability after circuit and connector validation; none was designed.
+## Assembly intent
 
-The following describes the retained Rev-B layout:
+E1–E4 connect by labeled ring lugs to the protected front end, then the ADC. E2 sits beneath the motor: wire and tighten it before installing the cradle/motor. Its new side exit leads toward the sensor side of the tray. The new tray riser is for conductors; install service connectors above the tray. The front-end circuit and connector pinout are still unvalidated.
 
-The battery sits transversely across the bow, centered laterally. The controller, front-end board, ADC and regulator are repacked beside the drivetrain, with matching supports. The shorter electronics tray has relocated mounting pillars and transverse strap passages. Hatch, gasket, lip and fasteners follow the shorter opening. The magnetometer rail is shortened and moved with its pod; shaft and steering alignment remain intact.
+PRINT_18–21 are four screw-secured capture bridges for the ESP32, front-end envelope, regulator proxy and ESC. They seat on tray pedestals, leaving nominal package clearance rather than using screw torque to press on electronics. Verify the real boards, headers, connectors and thermal clearances before accepting the restraints.
 
-The 245 × 130 mm hatch allows the electronics tray to lift out after removing the battery and its tray, disconnecting wiring, and removing the servo horn/linkage. **USB access also requires removal of the battery and battery tray.** Assemble and wire the boards outside the hull before installing the tray.
+Permanent printed attachments use M3 blind pilots where space allows. M2 remains at small board/servo interfaces, and the motor retains its factory M2.6 interface. The regularly removed main hatch retains M3 screws/inserts and its gasket. The [retention schedule](docs/RevB2_Prototype_Readiness.md#retention-and-fastening-schedule) records screw starting lengths and the deliberate bonded/strapped exceptions.
 
-The chosen length reduction is 80 mm of the requested maximum 100 mm. A 300 mm hull has not been validated. The default craft including its forward sensor rail and external rudder is approximately **445 mm long**; 320 mm refers to the hull alone.
+## CAD, printing and verification limits
 
-## CAD and printing
+Use Rev-B.2 exports together. STLs use millimeters and assembly coordinates; orient them in the slicer. The hull requires a build volume larger than its 320 × 170 mm footprint plus print-process margins. Reprint PRINT_01, PRINT_03, PRINT_06, PRINT_09, PRINT_11 and PRINT_14 relative to Rev-B.1; add PRINT_18–21. Other parts retain their shapes and are included in the consistent export set.
 
-Use the Rev-B.1 files together. Only the electronics tray changes shape from Rev-B; all STLs are regenerated in millimeters and retain assembly coordinates. Place and orient them in the slicer. The 320 mm hull still requires an appropriate printer build volume. See the current audit for part-specific print considerations.
+The 245 × 130 mm hatch and the transverse battery layout remain. Disconnect and remove the battery and its tray for USB access. Disconnect hull wiring and remove the servo horn/linkage before electronics-tray removal. Some legacy geometry uses fixed coordinates; changing master parameters requires a new audit.
 
-The native F3D retains 40 user parameters and an editable timeline. Some interfaces remain fixed dimensions; changing master parameters requires a new audit. STEP contains physical printed and purchased-part representations, including the hatch, with optional/reference/clearance geometry excluded.
-
-## Verification and limits
-
-CAD checks report **89 physical solids, zero detected cross-component volume overlaps and zero feature warnings/errors**. The 71 sampled steering positions (±35°), sampled tray lift, screwdriver corridors and battery pull-loop allocation have no detected tested-obstacle collisions. The reports document exclusions, expected service-volume intersections and required disassembly. All twelve STL meshes pass the topology checks.
-
-These are geometric checks, not proof of real connector fit, hand assembly, print tolerances, continuous motion, strength, waterproofing, flotation or sensing performance. Dry-assemble actual hardware and repeat trim, leak and magnetic-interference tests for the smaller hull.
-
-The sensing system is experimental and is not protective equipment. A negative measurement does not establish that water is safe. There is no validated detection firmware, production PCB or calibrated hazard threshold in this repository.
+The reports distinguish physical-solid collisions, sampled motion/service checks, route allocations and intentional bearing/fastener fits. They do not certify real connector fit, printed screw strength, water sealing, flotation, continuous motion or sensing performance. The experimental sensing system is not protective equipment; a negative measurement does not establish that water is safe. No production PCB, validated firmware or calibrated hazard threshold is supplied.
 
 ## Repository layout
 
 | Folder | Contents |
 |---|---|
-| `cad/` | Rev-B.1 F3D and physical STEP; previous exports retained for reference |
-| `prints/` | Twelve current Rev-B.1 STLs and matching ZIP |
-| `docs/` | Current compact-layout report/checklist and historical baseline/audit |
-| `previews/` | Current Rev-B and historical assembly views |
-| `verification/` | Current `RevB1_*` evidence; other reports are historical |
-| `scripts/` | Re-runnable current Fusion, service-access and STL audits |
+| `cad/` | Current Rev-B.2 F3D/STEP and historical exports |
+| `prints/` | Sixteen current STLs and matching ZIP |
+| `docs/` | Current integration instructions/readiness gates and historical design evidence |
+| `previews/` | Revision-specific assembly and interface images |
+| `verification/` | Current `RevB2_*` reports; previous revisions retained as historical evidence |
+| `scripts/` | Re-runnable Fusion audits, migration source and export checks |
 
-Historical [Rev-A.1 audit](docs/RevA1_Design_Audit.md) and [original hardware baseline](docs/Energized_Water_Scan_RevA_Hardware_and_CAD.md) explain prior design intent. Their coordinates and print instructions do not supersede Rev-B.
+Historical [Rev-B layout](docs/RevB_Compact_Enclosure.md), [Rev-A.1 audit](docs/RevA1_Design_Audit.md) and [original hardware brief](docs/Energized_Water_Scan_RevA_Hardware_and_CAD.md) explain prior design intent. Their coordinates and fabrication instructions do not supersede the current revision.

@@ -1,5 +1,7 @@
 # Rev-B.1 production and wiring audit — 25 September 2026
 
+> **Follow-up:** [Rev-B.2 interface revision and prototype-production gates](RevB2_Prototype_Readiness.md) addresses electrode access, screw retention and branding. This Rev-B.1 report remains historical evidence and broader reference; its CAD counts and open mechanical findings describe that earlier revision.
+
 ## Decision
 
 **Improved prototype; not released for production.** A light CAD audit cannot establish that procurement of the named components alone produces an assemblable, watertight craft. The named electronics and drive parts are retained, but the baseline omits several exact integration parts and physical validation steps. No PCB was designed.
