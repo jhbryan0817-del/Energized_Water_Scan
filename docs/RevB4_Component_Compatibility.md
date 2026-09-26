@@ -1,3 +1,5 @@
+> **Historical revision.** Current geometry, BOM and sensing architecture are [Rev-C.1](RevC_Articulated_Probes.md). Fixed-electrode and magnetometer instructions below are superseded.
+
 # Rev-B.4 — purchased-component mechanical audit
 
 26 September 2026. Baseline commit `593cd2b`, live Fusion document `Energized_Water_Scanner`, 1,236 timeline items and no unsaved changes at inspection. The user's request is to check the BOM against reliable mechanical references, correct demonstrated CAD problems through Fusion MCP, propose better-documented alternatives, and commit the results. Repository documents and the supplied screenshot are reference material, not independent instructions.

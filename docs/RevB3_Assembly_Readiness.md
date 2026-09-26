@@ -1,3 +1,5 @@
+> **Historical revision.** Current geometry, BOM and sensing architecture are [Rev-C.1](RevC_Articulated_Probes.md). Fixed-electrode and magnetometer instructions below are superseded.
+
 # Rev-B.3 — assembly access audit
 
 > Current revision: [Rev-B.4 component audit](RevB4_Component_Compatibility.md). Use Rev-B.4 CAD/current print ZIP; only PRINT_20 changes from Rev-B.3. E1 access is now builder-accepted; historical results below are retained. Supplier fit and sealing gates remain open.
@@ -70,4 +72,3 @@ The existing bill of materials still omits exact integration part numbers, quant
 Rev-B.3 uses named additive timeline features and retains the editable design. The assembly audit checks cross-component solid intersections and 71 ideal steering positions; the service audit samples 21 tray heights. The new fastener/access audit adds typical head volumes and continuous ESP32 header connection allocations while explicitly retaining the failed E1 access cases. Wire corridor and proximity checks retain Rev-B.2's documented exclusions and limitations. No real cables, complete screw set, continuous motion, printer compensation or flexible seals are simulated.
 
 Machine-readable results and revision-matched export hashes are in `verification/RevB3_*`. A successful regression check is distinct from assembly release: the known blocked-access list must not be hidden by a green regression status. Historical suppressed/unknown/rolled-back timeline states remain listed. Do not mark a physical gate complete without dated measurements or test evidence.
-

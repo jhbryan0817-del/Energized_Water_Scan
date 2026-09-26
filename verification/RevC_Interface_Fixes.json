@@ -1,0 +1,9 @@
+{
+  "revision": "Rev-C.1",
+  "timeline": 1487,
+  "fixes": [
+    "Two aft-pod forward/inboard hull bosses flush atZ3; closed pilot floorZ2; use M3x8 here",
+    "Cartridge flange clears pod flange; electrode entry moves to localx=-23"
+  ],
+  "assembly_release_passed": false
+}
