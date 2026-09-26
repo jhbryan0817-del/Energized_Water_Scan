@@ -1,3 +1,5 @@
+> **Historical revision.** Current geometry, BOM and sensing architecture are [Rev-C.1](RevC_Articulated_Probes.md). Fixed-electrode and magnetometer instructions below are superseded.
+
 # Rev-B.1 production and wiring audit — 25 September 2026
 
 > **Follow-up:** [Rev-B.2 interface revision and prototype-production gates](RevB2_Prototype_Readiness.md) addresses electrode access, screw retention and branding. This Rev-B.1 report remains historical evidence and broader reference; its CAD counts and open mechanical findings describe that earlier revision.

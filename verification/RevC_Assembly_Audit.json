@@ -1,0 +1,1975 @@
+{
+  "revision": "Rev-C.1",
+  "timeline": 1523,
+  "body_count": 119,
+  "feature_issues": [],
+  "interferences": [],
+  "sampled_motion_collisions": [],
+  "boolean_failures": [],
+  "tip_position_checks": [
+    {
+      "probe": "E1",
+      "actual_tip_mm": [
+        -75.00000000000001,
+        -82.3,
+        -150.00000000000003
+      ],
+      "expected_tip_mm": [
+        -74.99999999999999,
+        -82.3,
+        -150.0
+      ],
+      "error_mm": 4.0194366942304644e-14
+    },
+    {
+      "probe": "E2",
+      "actual_tip_mm": [
+        204.3153532995459,
+        -82.3,
+        -83.99999999999999
+      ],
+      "expected_tip_mm": [
+        204.3153532995459,
+        -82.3,
+        -83.99999999999999
+      ],
+      "error_mm": 0.0
+    },
+    {
+      "probe": "E3",
+      "actual_tip_mm": [
+        39.315353299545905,
+        82.3,
+        -83.99999999999999
+      ],
+      "expected_tip_mm": [
+        39.315353299545905,
+        82.3,
+        -83.99999999999999
+      ],
+      "error_mm": 0.0
+    },
+    {
+      "probe": "E4",
+      "actual_tip_mm": [
+        89.99999999999999,
+        82.3,
+        -149.99999999999997
+      ],
+      "expected_tip_mm": [
+        90.00000000000001,
+        82.3,
+        -150.0
+      ],
+      "error_mm": 4.0194366942304644e-14
+    }
+  ],
+  "inventory": [
+    {
+      "component": "D24V10F5_OFFICIAL_D24V10Fx_FAMILY_STEP",
+      "body": "Body1",
+      "volume_mm3": 365.0138366992571,
+      "lumps": 1,
+      "min_mm": [
+        57.0,
+        34.0,
+        24.0
+      ],
+      "max_mm": [
+        69.7,
+        51.78,
+        27.816
+      ]
+    },
+    {
+      "component": "BATTERY_Gens_Ace_GEA222S30X6GT_126g",
+      "body": "Gens_Ace_104x34_5x14_5",
+      "volume_mm3": 52026.00000000001,
+      "lumps": 1,
+      "min_mm": [
+        -69.75,
+        -52.0,
+        21.0
+      ],
+      "max_mm": [
+        -35.25,
+        52.0,
+        35.5
+      ]
+    },
+    {
+      "component": "ESP32_DevKitC_V4_dimension_envelope",
+      "body": "PCB_48.26x27.94",
+      "volume_mm3": 2157.4150400000017,
+      "lumps": 1,
+      "min_mm": [
+        -20.0,
+        30.0,
+        24.0
+      ],
+      "max_mm": [
+        28.26,
+        57.94,
+        25.6
+      ]
+    },
+    {
+      "component": "ESP32_DevKitC_V4_dimension_envelope",
+      "body": "Header_and_module_clearance",
+      "volume_mm3": 13483.844,
+      "lumps": 1,
+      "min_mm": [
+        -20.0,
+        30.0,
+        25.6
+      ],
+      "max_mm": [
+        28.26,
+        57.94,
+        35.6
+      ]
+    },
+    {
+      "component": "ESP32_DevKitC_V4_dimension_envelope",
+      "body": "Antenna_overhang_6_04mm_OFFICIAL",
+      "volume_mm3": 326.15999999999997,
+      "lumps": 1,
+      "min_mm": [
+        28.26,
+        34.97,
+        25.6
+      ],
+      "max_mm": [
+        34.3,
+        52.97,
+        28.6
+      ]
+    },
+    {
+      "component": "FRONT_END_replaceable_40x30x12",
+      "body": "Input_protection_module",
+      "volume_mm3": 14400.000000000004,
+      "lumps": 1,
+      "min_mm": [
+        -20.0,
+        -58.0,
+        24.0
+      ],
+      "max_mm": [
+        20.0,
+        -28.0,
+        36.0
+      ]
+    },
+    {
+      "component": "ESC_Hobbywing_WP1625",
+      "body": "34x24x14_ESC",
+      "volume_mm3": 11424.000000000007,
+      "lumps": 1,
+      "min_mm": [
+        92.0,
+        30.0,
+        22.0
+      ],
+      "max_mm": [
+        126.0,
+        54.0,
+        36.0
+      ]
+    },
+    {
+      "component": "SERVO_TowerPro_SG90_Digital_ENVELOPE",
+      "body": "Body",
+      "volume_mm3": 8137.400000000005,
+      "lumps": 1,
+      "min_mm": [
+        130.0,
+        -45.0,
+        25.0
+      ],
+      "max_mm": [
+        153.0,
+        -32.8,
+        54.0
+      ]
+    },
+    {
+      "component": "SERVO_TowerPro_SG90_Digital_ENVELOPE",
+      "body": "Mount_lugs_VERIFY",
+      "volume_mm3": 987.4933644457813,
+      "lumps": 1,
+      "min_mm": [
+        125.0,
+        -45.0,
+        43.0
+      ],
+      "max_mm": [
+        158.0,
+        -32.8,
+        45.5
+      ]
+    },
+    {
+      "component": "SERVO_TowerPro_SG90_Digital_ENVELOPE",
+      "body": "Spline_envelope",
+      "volume_mm3": 78.53981633974843,
+      "lumps": 1,
+      "min_mm": [
+        144.5,
+        -41.4,
+        54.0
+      ],
+      "max_mm": [
+        149.5,
+        -36.4,
+        58.0
+      ]
+    },
+    {
+      "component": "PRINT_01_Hull_shell",
+      "body": "Hull_with_sleeve_electrode_bosses_and_tray_pillars",
+      "volume_mm3": 422865.88672127994,
+      "lumps": 1,
+      "min_mm": [
+        -120.0,
+        -85.0,
+        -10.14914
+      ],
+      "max_mm": [
+        200.0,
+        85.0,
+        71.0
+      ]
+    },
+    {
+      "component": "SEAL_Main_hatch_continuous_gasket",
+      "body": "Gasket_blank",
+      "volume_mm3": 11082.732755698,
+      "lumps": 1,
+      "min_mm": [
+        -90.0,
+        -75.0,
+        68.0
+      ],
+      "max_mm": [
+        175.0,
+        75.0,
+        70.0
+      ]
+    },
+    {
+      "component": "PRINT_02_Removable_hatch_cover",
+      "body": "Hatch_cover",
+      "volume_mm3": 73435.09913354683,
+      "lumps": 1,
+      "min_mm": [
+        -92.0,
+        -77.0,
+        70.0
+      ],
+      "max_mm": [
+        177.0,
+        77.0,
+        73.0
+      ]
+    },
+    {
+      "component": "PRINT_03_Removable_electronics_tray",
+      "body": "Electronics_tray_with_all_PCB_and_servo_supports",
+      "volume_mm3": 71408.19891165762,
+      "lumps": 1,
+      "min_mm": [
+        -75.0,
+        -61.0,
+        16.0
+      ],
+      "max_mm": [
+        160.0,
+        61.0,
+        43.0
+      ]
+    },
+    {
+      "component": "PRINT_04_Battery_slide_tray",
+      "body": "Sliding_battery_plate",
+      "volume_mm3": 11352.0,
+      "lumps": 1,
+      "min_mm": [
+        -74.5,
+        -59.5,
+        19.0
+      ],
+      "max_mm": [
+        -30.5,
+        59.5,
+        26.0
+      ]
+    },
+    {
+      "component": "DRIVELINE_Mabuchi_and_Krick",
+      "body": "Mabuchi_RS380PH_can",
+      "volume_mm3": 25270.74511080632,
+      "lumps": 1,
+      "min_mm": [
+        14.70925,
+        -14.6,
+        15.89748
+      ],
+      "max_mm": [
+        58.77876,
+        14.6,
+        53.88588
+      ]
+    },
+    {
+      "component": "DRIVELINE_Mabuchi_and_Krick",
+      "body": "Mabuchi_front_boss",
+      "volume_mm3": 204.2035224833449,
+      "lumps": 1,
+      "min_mm": [
+        53.7059,
+        -5.0,
+        24.49744
+      ],
+      "max_mm": [
+        58.8055,
+        5.0,
+        34.82963
+      ]
+    },
+    {
+      "component": "DRIVELINE_Mabuchi_and_Krick",
+      "body": "Motor_output_shaft",
+      "volume_mm3": 57.33563672434301,
+      "lumps": 1,
+      "min_mm": [
+        57.21377,
+        -1.15,
+        24.64455
+      ],
+      "max_mm": [
+        71.13883,
+        1.15,
+        30.43789
+      ]
+    },
+    {
+      "component": "DRIVELINE_Mabuchi_and_Krick",
+      "body": "Krick_63800_63823_63820_coupling",
+      "volume_mm3": 3461.328245909048,
+      "lumps": 1,
+      "min_mm": [
+        62.71812,
+        -7.5,
+        14.99098
+      ],
+      "max_mm": [
+        85.91892,
+        7.5,
+        34.65625
+      ]
+    },
+    {
+      "component": "DRIVELINE_Mabuchi_and_Krick",
+      "body": "Krick_65220_stern_tube",
+      "volume_mm3": 3053.416001785295,
+      "lumps": 1,
+      "min_mm": [
+        89.06158,
+        -2.75,
+        -21.5731
+      ],
+      "max_mm": [
+        238.27173,
+        2.75,
+        23.33881
+      ]
+    },
+    {
+      "component": "DRIVELINE_Mabuchi_and_Krick",
+      "body": "Krick_65220_shaft_178mm",
+      "volume_mm3": 559.2034923390071,
+      "lumps": 1,
+      "min_mm": [
+        78.88933,
+        -1.0,
+        -23.50619
+      ],
+      "max_mm": [
+        251.34176,
+        1.0,
+        24.49545
+      ]
+    },
+    {
+      "component": "DRIVELINE_Mabuchi_and_Krick",
+      "body": "Propeller_30mm_swept_volume",
+      "volume_mm3": 3534.2917352886693,
+      "lumps": 1,
+      "min_mm": [
+        242.37103,
+        -15.0,
+        -37.02915
+      ],
+      "max_mm": [
+        254.96523,
+        15.0,
+        -6.75728
+      ]
+    },
+    {
+      "component": "PRINT_11_Motor_face_mount",
+      "body": "PRINT_11_Motor_face_mount",
+      "volume_mm3": 12828.192773551915,
+      "lumps": 1,
+      "min_mm": [
+        46.0,
+        -31.0,
+        3.0
+      ],
+      "max_mm": [
+        65.0,
+        31.0,
+        49.31852
+      ]
+    },
+    {
+      "component": "PRINT_09_Rudder_transom_bracket",
+      "body": "Single_print_rudder_bracket",
+      "volume_mm3": 11430.671430678096,
+      "lumps": 1,
+      "min_mm": [
+        195.84615,
+        -14.0,
+        38.0
+      ],
+      "max_mm": [
+        283.0,
+        14.0,
+        63.0
+      ]
+    },
+    {
+      "component": "PROCURE_ESC_mounting_foam_3mm",
+      "body": "ESC_foam_pad_allocation",
+      "volume_mm3": 1800.0000000000002,
+      "lumps": 1,
+      "min_mm": [
+        94.0,
+        32.0,
+        19.0
+      ],
+      "max_mm": [
+        124.0,
+        52.0,
+        22.0
+      ]
+    },
+    {
+      "component": "PRINT_14_Motor_lower_cradle",
+      "body": "PRINT_14_Motor_lower_cradle",
+      "volume_mm3": 18764.462672852096,
+      "lumps": 1,
+      "min_mm": [
+        20.0,
+        -27.0,
+        3.0
+      ],
+      "max_mm": [
+        50.17037,
+        27.0,
+        37.76457
+      ]
+    },
+    {
+      "component": "PROCURE_Servo_horn_and_M2_linkage_ENVELOPES",
+      "body": "Custom_horn_spline_fit_TBD",
+      "volume_mm3": 311.19137438240205,
+      "lumps": 1,
+      "min_mm": [
+        143.5,
+        -42.0,
+        58.0
+      ],
+      "max_mm": [
+        150.5,
+        -17.5,
+        60.0
+      ]
+    },
+    {
+      "component": "PROCURE_Servo_horn_and_M2_linkage_ENVELOPES",
+      "body": "Horn_link_pin",
+      "volume_mm3": 12.566370614358554,
+      "lumps": 1,
+      "min_mm": [
+        146.0,
+        -22.0,
+        58.0
+      ],
+      "max_mm": [
+        148.0,
+        -20.0,
+        62.0
+      ]
+    },
+    {
+      "component": "PROCURE_Servo_horn_and_M2_linkage_ENVELOPES",
+      "body": "M2_pushrod_131mm",
+      "volume_mm3": 411.54863762024286,
+      "lumps": 1,
+      "min_mm": [
+        147.0,
+        -22.0,
+        59.0
+      ],
+      "max_mm": [
+        278.0,
+        -20.0,
+        61.0
+      ]
+    },
+    {
+      "component": "PROCURE_Servo_horn_and_M2_linkage_ENVELOPES",
+      "body": "Tiller_drop_link_pin",
+      "volume_mm3": 34.55751918948721,
+      "lumps": 1,
+      "min_mm": [
+        277.0,
+        -22.0,
+        59.0
+      ],
+      "max_mm": [
+        279.0,
+        -20.0,
+        70.0
+      ]
+    },
+    {
+      "component": "SEAL_Steering_pushrod_boot_envelope",
+      "body": "Procured_flexible_boot_envelope",
+      "volume_mm3": 815.2432936065173,
+      "lumps": 1,
+      "min_mm": [
+        194.0,
+        -26.0,
+        55.0
+      ],
+      "max_mm": [
+        208.0,
+        -16.0,
+        65.0
+      ]
+    },
+    {
+      "component": "ADS1115_OFFICIAL_STEP",
+      "body": "Body1",
+      "volume_mm3": 649.5343108800632,
+      "lumps": 1,
+      "min_mm": [
+        35.0,
+        -53.0,
+        24.0
+      ],
+      "max_mm": [
+        60.4,
+        -35.22,
+        25.57
+      ]
+    },
+    {
+      "component": "ADS1115_OFFICIAL_STEP",
+      "body": "Body2",
+      "volume_mm3": 0.04629446785945294,
+      "lumps": 1,
+      "min_mm": [
+        49.454,
+        -42.545,
+        25.57
+      ],
+      "max_mm": [
+        50.404,
+        -42.405,
+        26.3
+      ]
+    },
+    {
+      "component": "ADS1115_OFFICIAL_STEP",
+      "body": "Body3",
+      "volume_mm3": 8.67660384670621,
+      "lumps": 1,
+      "min_mm": [
+        46.454,
+        -44.975,
+        25.68
+      ],
+      "max_mm": [
+        49.454,
+        -41.975,
+        26.67
+      ]
+    },
+    {
+      "component": "ADS1115_OFFICIAL_STEP",
+      "body": "Body4",
+      "volume_mm3": 0.005183627878399101,
+      "lumps": 1,
+      "min_mm": [
+        48.87543,
+        -44.69643,
+        26.59667
+      ],
+      "max_mm": [
+        49.17543,
+        -44.39643,
+        26.67
+      ]
+    },
+    {
+      "component": "ADS1115_OFFICIAL_STEP",
+      "body": "Body5",
+      "volume_mm3": 0.04629446785945295,
+      "lumps": 1,
+      "min_mm": [
+        45.504,
+        -42.545,
+        25.57
+      ],
+      "max_mm": [
+        46.454,
+        -42.405,
+        26.3
+      ]
+    },
+    {
+      "component": "ADS1115_OFFICIAL_STEP",
+      "body": "Body6",
+      "volume_mm3": 0.04629446785945295,
+      "lumps": 1,
+      "min_mm": [
+        45.504,
+        -43.045,
+        25.57
+      ],
+      "max_mm": [
+        46.454,
+        -42.905,
+        26.3
+      ]
+    },
+    {
+      "component": "ADS1115_OFFICIAL_STEP",
+      "body": "Body7",
+      "volume_mm3": 0.04629446785945587,
+      "lumps": 1,
+      "min_mm": [
+        45.504,
+        -43.545,
+        25.57
+      ],
+      "max_mm": [
+        46.454,
+        -43.405,
+        26.3
+      ]
+    },
+    {
+      "component": "ADS1115_OFFICIAL_STEP",
+      "body": "Body8",
+      "volume_mm3": 0.04629446785945587,
+      "lumps": 1,
+      "min_mm": [
+        45.504,
+        -44.045,
+        25.57
+      ],
+      "max_mm": [
+        46.454,
+        -43.905,
+        26.3
+      ]
+    },
+    {
+      "component": "ADS1115_OFFICIAL_STEP",
+      "body": "Body9",
+      "volume_mm3": 0.04629446785945587,
+      "lumps": 1,
+      "min_mm": [
+        45.504,
+        -44.545,
+        25.57
+      ],
+      "max_mm": [
+        46.454,
+        -44.405,
+        26.3
+      ]
+    },
+    {
+      "component": "ADS1115_OFFICIAL_STEP",
+      "body": "Body10",
+      "volume_mm3": 0.04629446785945294,
+      "lumps": 1,
+      "min_mm": [
+        49.454,
+        -43.045,
+        25.57
+      ],
+      "max_mm": [
+        50.404,
+        -42.905,
+        26.3
+      ]
+    },
+    {
+      "component": "ADS1115_OFFICIAL_STEP",
+      "body": "Body11",
+      "volume_mm3": 0.04629446785945586,
+      "lumps": 1,
+      "min_mm": [
+        49.454,
+        -43.545,
+        25.57
+      ],
+      "max_mm": [
+        50.404,
+        -43.405,
+        26.3
+      ]
+    },
+    {
+      "component": "ADS1115_OFFICIAL_STEP",
+      "body": "Body12",
+      "volume_mm3": 0.04629446785945586,
+      "lumps": 1,
+      "min_mm": [
+        49.454,
+        -44.045,
+        25.57
+      ],
+      "max_mm": [
+        50.404,
+        -43.905,
+        26.3
+      ]
+    },
+    {
+      "component": "ADS1115_OFFICIAL_STEP",
+      "body": "Body13",
+      "volume_mm3": 0.0462944678594588,
+      "lumps": 1,
+      "min_mm": [
+        49.454,
+        -44.545,
+        25.57
+      ],
+      "max_mm": [
+        50.404,
+        -44.405,
+        26.3
+      ]
+    },
+    {
+      "component": "ADS1115_OFFICIAL_STEP",
+      "body": "Body14",
+      "volume_mm3": 2.496102400000007,
+      "lumps": 1,
+      "min_mm": [
+        42.128,
+        -41.687,
+        25.57
+      ],
+      "max_mm": [
+        44.128,
+        -40.437,
+        26.57
+      ]
+    },
+    {
+      "component": "ADS1115_OFFICIAL_STEP",
+      "body": "Body15",
+      "volume_mm3": 1.1499215999999988,
+      "lumps": 1,
+      "min_mm": [
+        42.328,
+        -43.417,
+        25.57
+      ],
+      "max_mm": [
+        43.928,
+        -42.517,
+        26.37
+      ]
+    },
+    {
+      "component": "ADS1115_OFFICIAL_STEP",
+      "body": "Body16",
+      "volume_mm3": 44.03763121635145,
+      "lumps": 1,
+      "min_mm": [
+        55.258,
+        -47.11,
+        25.57
+      ],
+      "max_mm": [
+        60.208,
+        -41.11,
+        28.53
+      ]
+    },
+    {
+      "component": "ADS1115_OFFICIAL_STEP",
+      "body": "Body17",
+      "volume_mm3": 0.0011353290973949693,
+      "lumps": 1,
+      "min_mm": [
+        38.302,
+        -40.72029,
+        25.57
+      ],
+      "max_mm": [
+        38.81,
+        -40.13371,
+        25.57762
+      ]
+    },
+    {
+      "component": "ADS1115_OFFICIAL_STEP",
+      "body": "Body18",
+      "volume_mm3": 0.004530715772567789,
+      "lumps": 1,
+      "min_mm": [
+        37.7559,
+        -40.808,
+        25.57127
+      ],
+      "max_mm": [
+        38.2004,
+        -40.046,
+        25.87607
+      ]
+    },
+    {
+      "component": "ADS1115_OFFICIAL_STEP",
+      "body": "Body19",
+      "volume_mm3": 0.004530715772567782,
+      "lumps": 1,
+      "min_mm": [
+        38.9116,
+        -40.808,
+        25.57127
+      ],
+      "max_mm": [
+        39.3561,
+        -40.046,
+        25.87607
+      ]
+    },
+    {
+      "component": "ADS1115_OFFICIAL_STEP",
+      "body": "Body20",
+      "volume_mm3": 0.33400164709528635,
+      "lumps": 1,
+      "min_mm": [
+        37.76225,
+        -40.8207,
+        25.57762
+      ],
+      "max_mm": [
+        39.34975,
+        -40.0333,
+        25.86972
+      ]
+    },
+    {
+      "component": "ADS1115_OFFICIAL_STEP",
+      "body": "Body21",
+      "volume_mm3": 0.3408675567452324,
+      "lumps": 1,
+      "min_mm": [
+        38.01003,
+        -40.8207,
+        25.87226
+      ],
+      "max_mm": [
+        39.10197,
+        -40.0333,
+        26.27866
+      ]
+    },
+    {
+      "component": "ADS1115_OFFICIAL_STEP",
+      "body": "Body22",
+      "volume_mm3": 2.33849000000001,
+      "lumps": 1,
+      "min_mm": [
+        46.175,
+        -47.386,
+        25.57
+      ],
+      "max_mm": [
+        49.225,
+        -45.786,
+        26.07
+      ]
+    },
+    {
+      "component": "ADS1115_OFFICIAL_STEP",
+      "body": "Body23",
+      "volume_mm3": 2.496102400000007,
+      "lumps": 1,
+      "min_mm": [
+        42.255,
+        -47.91,
+        25.57
+      ],
+      "max_mm": [
+        44.255,
+        -46.66,
+        26.57
+      ]
+    },
+    {
+      "component": "ADS1115_OFFICIAL_STEP",
+      "body": "Body24",
+      "volume_mm3": 1.1499215999999985,
+      "lumps": 1,
+      "min_mm": [
+        42.201,
+        -45.004,
+        25.57
+      ],
+      "max_mm": [
+        43.801,
+        -44.104,
+        26.37
+      ]
+    },
+    {
+      "component": "ADS1115_OFFICIAL_STEP",
+      "body": "Body25",
+      "volume_mm3": 1.1499216000000045,
+      "lumps": 1,
+      "min_mm": [
+        51.79,
+        -43.925,
+        25.57
+      ],
+      "max_mm": [
+        53.39,
+        -43.025,
+        26.37
+      ]
+    },
+    {
+      "component": "ADS1115_OFFICIAL_STEP",
+      "body": "Body26",
+      "volume_mm3": 1.1499215999999954,
+      "lumps": 1,
+      "min_mm": [
+        40.138,
+        -41.481,
+        25.57
+      ],
+      "max_mm": [
+        41.038,
+        -39.881,
+        26.37
+      ]
+    },
+    {
+      "component": "ADS1115_OFFICIAL_STEP",
+      "body": "Body27",
+      "volume_mm3": 44.0376312163516,
+      "lumps": 1,
+      "min_mm": [
+        35.192,
+        -47.11,
+        25.57
+      ],
+      "max_mm": [
+        40.142,
+        -41.11,
+        28.53
+      ]
+    },
+    {
+      "component": "PRINT_16_Rudder_blade",
+      "body": "Rudder_blade_with_stock_socket",
+      "volume_mm3": 3993.1413510371826,
+      "lumps": 1,
+      "min_mm": [
+        275.0,
+        -3.0,
+        -48.0
+      ],
+      "max_mm": [
+        305.0,
+        3.0,
+        -4.0
+      ]
+    },
+    {
+      "component": "PRINT_17_Rudder_tiller",
+      "body": "Tiller_with_stock_socket",
+      "volume_mm3": 603.3116486722749,
+      "lumps": 1,
+      "min_mm": [
+        274.0,
+        -24.0,
+        64.0
+      ],
+      "max_mm": [
+        282.0,
+        4.0,
+        70.0
+      ]
+    },
+    {
+      "component": "PROCURE_Rudder_stock_D3_L86",
+      "body": "Metal_stock_3x86",
+      "volume_mm3": 604.0133445634839,
+      "lumps": 1,
+      "min_mm": [
+        276.5,
+        -1.5,
+        -15.0
+      ],
+      "max_mm": [
+        279.5,
+        1.5,
+        71.0
+      ]
+    },
+    {
+      "component": "PROCURE_Tiller_cross_pin_D1_2_L8_ENVELOPE",
+      "body": "Body1",
+      "volume_mm3": 9.047786842338107,
+      "lumps": 1,
+      "min_mm": [
+        274.0,
+        -0.6,
+        66.4
+      ],
+      "max_mm": [
+        282.0,
+        0.6,
+        67.6
+      ]
+    },
+    {
+      "component": "PROCURE_Rudder_lower_stop_collar_D8_H5_ENVELOPE",
+      "body": "Body1",
+      "volume_mm3": 211.1150263212413,
+      "lumps": 1,
+      "min_mm": [
+        274.0,
+        -4.0,
+        34.5
+      ],
+      "max_mm": [
+        282.0,
+        4.0,
+        39.5
+      ]
+    },
+    {
+      "component": "PRINT_18_ESP32_capture_bridge",
+      "body": "PRINT_18_ESP32_capture_bridge",
+      "volume_mm3": 2601.8096708422563,
+      "lumps": 1,
+      "min_mm": [
+        -28.0,
+        48.5,
+        23.0
+      ],
+      "max_mm": [
+        42.0,
+        58.5,
+        39.1
+      ]
+    },
+    {
+      "component": "PRINT_19_Front_end_capture_bridge",
+      "body": "PRINT_19_Front_end_capture_bridge",
+      "volume_mm3": 2664.3863086271563,
+      "lumps": 1,
+      "min_mm": [
+        -28.0,
+        -49.0,
+        23.0
+      ],
+      "max_mm": [
+        28.0,
+        -41.0,
+        39.5
+      ]
+    },
+    {
+      "component": "PRINT_21_ESC_capture_bridge",
+      "body": "PRINT_21_ESC_capture_bridge",
+      "volume_mm3": 2520.3863086271544,
+      "lumps": 1,
+      "min_mm": [
+        84.0,
+        38.0,
+        23.0
+      ],
+      "max_mm": [
+        134.0,
+        46.0,
+        39.5
+      ]
+    },
+    {
+      "component": "PRINT_20_Regulator_capture_bridge",
+      "body": "PRINT_20_Regulator_capture_bridge",
+      "volume_mm3": 1317.4772595480765,
+      "lumps": 1,
+      "min_mm": [
+        59.5,
+        26.0,
+        23.0
+      ],
+      "max_mm": [
+        74.0,
+        58.8,
+        31.316
+      ]
+    },
+    {
+      "component": "PROCURE_Motor_cradle_liner_0_4mm_VERIFY",
+      "body": "Body1",
+      "volume_mm3": 209.37833663665376,
+      "lumps": 1,
+      "min_mm": [
+        22.13994,
+        -14.65132,
+        20.63369
+      ],
+      "max_mm": [
+        42.57669,
+        14.65132,
+        30.0
+      ]
+    },
+    {
+      "component": "PRINT_22_E1_dry_servo_pod",
+      "body": "Pod",
+      "volume_mm3": 26424.85708168589,
+      "lumps": 1,
+      "min_mm": [
+        -110.0,
+        -69.0,
+        -36.0
+      ],
+      "max_mm": [
+        -54.0,
+        -13.0,
+        -3.0
+      ]
+    },
+    {
+      "component": "SEAL_E1_pod_1mm_silicone_compressed_0p75",
+      "body": "Continuous_face_gasket",
+      "volume_mm3": 350.999999999999,
+      "lumps": 1,
+      "min_mm": [
+        -102.0,
+        -62.0,
+        -3.75
+      ],
+      "max_mm": [
+        -62.0,
+        -18.0,
+        -3.0
+      ]
+    },
+    {
+      "component": "MACHINE_E1_POM_C_seal_cartridge",
+      "body": "Machined_cartridge_nominal",
+      "volume_mm3": 5569.035827497425,
+      "lumps": 1,
+      "min_mm": [
+        -93.0,
+        -71.75,
+        -31.0
+      ],
+      "max_mm": [
+        -57.0,
+        -56.0,
+        -5.0
+      ]
+    },
+    {
+      "component": "SEAL_E1_cartridge_face_gasket",
+      "body": "1mm_sheet_compressed_0p75",
+      "volume_mm3": 384.4556685567878,
+      "lumps": 1,
+      "min_mm": [
+        -93.0,
+        -64.75,
+        -31.0
+      ],
+      "max_mm": [
+        -57.0,
+        -64.0,
+        -5.0
+      ]
+    },
+    {
+      "component": "PROCURE_E1_SKF_6x16x7_and_igus_GFM060806",
+      "body": "SKF_seal_NOMINAL_ENVELOPE",
+      "volume_mm3": 1209.513171632122,
+      "lumps": 1,
+      "min_mm": [
+        -83.0,
+        -71.75,
+        -26.0
+      ],
+      "max_mm": [
+        -67.0,
+        -64.75,
+        -10.0
+      ]
+    },
+    {
+      "component": "PROCURE_E1_SKF_6x16x7_and_igus_GFM060806",
+      "body": "igus_flanged_bush_nominal",
+      "volume_mm3": 193.64588621169074,
+      "lumps": 1,
+      "min_mm": [
+        -81.0,
+        -63.75,
+        -24.0
+      ],
+      "max_mm": [
+        -69.0,
+        -57.75,
+        -12.0
+      ]
+    },
+    {
+      "component": "PROCURE_E1_HS65HB_drawing_envelope",
+      "body": "Case_and_lugs_26mm_datum",
+      "volume_mm3": 7307.033629385644,
+      "lumps": 1,
+      "min_mm": [
+        -96.85,
+        -46.0,
+        -23.8
+      ],
+      "max_mm": [
+        -64.55,
+        -20.0,
+        -12.2
+      ]
+    },
+    {
+      "component": "PROCURE_E1_HS65HB_drawing_envelope",
+      "body": "M25T_spline_envelope",
+      "volume_mm3": 60.868357663304934,
+      "lumps": 1,
+      "min_mm": [
+        -77.5,
+        -49.1,
+        -20.5
+      ],
+      "max_mm": [
+        -72.5,
+        -46.0,
+        -15.5
+      ]
+    },
+    {
+      "component": "PROBE_E1_MOVING",
+      "body": "PRINT_26_E1_insulated_arm",
+      "volume_mm3": 10751.746169656833,
+      "lumps": 1,
+      "min_mm": [
+        -87.0,
+        -81.0,
+        -156.0
+      ],
+      "max_mm": [
+        -63.0,
+        -68.0,
+        -6.0
+      ]
+    },
+    {
+      "component": "PROBE_E1_MOVING",
+      "body": "SHAFT_316_D6_L30p5",
+      "volume_mm3": 843.7798151965451,
+      "lumps": 1,
+      "min_mm": [
+        -78.0,
+        -81.5,
+        -21.0
+      ],
+      "max_mm": [
+        -72.0,
+        -51.0,
+        -15.0
+      ]
+    },
+    {
+      "component": "PROBE_E1_MOVING",
+      "body": "PIN_316_D2_L22",
+      "volume_mm3": 69.11503837897251,
+      "lumps": 1,
+      "min_mm": [
+        -76.0,
+        -78.0,
+        -29.0
+      ],
+      "max_mm": [
+        -74.0,
+        -76.0,
+        -7.0
+      ]
+    },
+    {
+      "component": "PROBE_E1_MOVING",
+      "body": "ELECTRODE_E1_M4x12_A4_tip",
+      "volume_mm3": 250.85617338913335,
+      "lumps": 1,
+      "min_mm": [
+        -78.5,
+        -83.6,
+        -153.5
+      ],
+      "max_mm": [
+        -71.5,
+        -69.0,
+        -146.5
+      ]
+    },
+    {
+      "component": "PRINT_23_E2_dry_servo_pod",
+      "body": "Pod",
+      "volume_mm3": 26424.857081685917,
+      "lumps": 1,
+      "min_mm": [
+        55.0,
+        -69.0,
+        -36.0
+      ],
+      "max_mm": [
+        111.0,
+        -13.0,
+        -3.0
+      ]
+    },
+    {
+      "component": "SEAL_E2_pod_1mm_silicone_compressed_0p75",
+      "body": "Continuous_face_gasket",
+      "volume_mm3": 351.0,
+      "lumps": 1,
+      "min_mm": [
+        63.0,
+        -62.0,
+        -3.75
+      ],
+      "max_mm": [
+        103.0,
+        -18.0,
+        -3.0
+      ]
+    },
+    {
+      "component": "MACHINE_E2_POM_C_seal_cartridge",
+      "body": "Machined_cartridge_nominal",
+      "volume_mm3": 5569.035827497425,
+      "lumps": 1,
+      "min_mm": [
+        72.0,
+        -71.75,
+        -31.0
+      ],
+      "max_mm": [
+        108.0,
+        -56.0,
+        -5.0
+      ]
+    },
+    {
+      "component": "SEAL_E2_cartridge_face_gasket",
+      "body": "1mm_sheet_compressed_0p75",
+      "volume_mm3": 384.4556685567878,
+      "lumps": 1,
+      "min_mm": [
+        72.0,
+        -64.75,
+        -31.0
+      ],
+      "max_mm": [
+        108.0,
+        -64.0,
+        -5.0
+      ]
+    },
+    {
+      "component": "PROCURE_E2_SKF_6x16x7_and_igus_GFM060806",
+      "body": "SKF_seal_NOMINAL_ENVELOPE",
+      "volume_mm3": 1209.5131716321214,
+      "lumps": 1,
+      "min_mm": [
+        82.0,
+        -71.75,
+        -26.0
+      ],
+      "max_mm": [
+        98.0,
+        -64.75,
+        -10.0
+      ]
+    },
+    {
+      "component": "PROCURE_E2_SKF_6x16x7_and_igus_GFM060806",
+      "body": "igus_flanged_bush_nominal",
+      "volume_mm3": 193.64588621169048,
+      "lumps": 1,
+      "min_mm": [
+        84.0,
+        -63.75,
+        -24.0
+      ],
+      "max_mm": [
+        96.0,
+        -57.75,
+        -12.0
+      ]
+    },
+    {
+      "component": "PROCURE_E2_HS65HB_drawing_envelope",
+      "body": "Case_and_lugs_26mm_datum",
+      "volume_mm3": 7307.033629385643,
+      "lumps": 1,
+      "min_mm": [
+        68.15,
+        -46.0,
+        -23.8
+      ],
+      "max_mm": [
+        100.45,
+        -20.0,
+        -12.2
+      ]
+    },
+    {
+      "component": "PROCURE_E2_HS65HB_drawing_envelope",
+      "body": "M25T_spline_envelope",
+      "volume_mm3": 60.868357663305076,
+      "lumps": 1,
+      "min_mm": [
+        87.5,
+        -49.1,
+        -20.5
+      ],
+      "max_mm": [
+        92.5,
+        -46.0,
+        -15.5
+      ]
+    },
+    {
+      "component": "PROBE_E2_MOVING",
+      "body": "PRINT_27_E2_insulated_arm",
+      "volume_mm3": 10751.746177757424,
+      "lumps": 1,
+      "min_mm": [
+        78.0,
+        -81.0,
+        -90.0
+      ],
+      "max_mm": [
+        210.31535,
+        -68.0,
+        -6.0
+      ]
+    },
+    {
+      "component": "PROBE_E2_MOVING",
+      "body": "SHAFT_316_D6_L30p5",
+      "volume_mm3": 843.6997566209552,
+      "lumps": 1,
+      "min_mm": [
+        87.0,
+        -81.5,
+        -21.0
+      ],
+      "max_mm": [
+        93.0,
+        -51.0,
+        -15.0
+      ]
+    },
+    {
+      "component": "PROBE_E2_MOVING",
+      "body": "PIN_316_D2_L22",
+      "volume_mm3": 69.11503837897254,
+      "lumps": 1,
+      "min_mm": [
+        79.97372,
+        -78.0,
+        -24.36603
+      ],
+      "max_mm": [
+        100.02628,
+        -76.0,
+        -11.63397
+      ]
+    },
+    {
+      "component": "PROBE_E2_MOVING",
+      "body": "ELECTRODE_E2_M4x12_A4_tip",
+      "volume_mm3": 250.85617338914952,
+      "lumps": 1,
+      "min_mm": [
+        200.81535,
+        -83.6,
+        -87.5
+      ],
+      "max_mm": [
+        207.81535,
+        -69.0,
+        -80.5
+      ]
+    },
+    {
+      "component": "PRINT_24_E3_dry_servo_pod",
+      "body": "Pod",
+      "volume_mm3": 26424.857081685892,
+      "lumps": 1,
+      "min_mm": [
+        -110.0,
+        13.0,
+        -36.0
+      ],
+      "max_mm": [
+        -54.0,
+        69.0,
+        -3.0
+      ]
+    },
+    {
+      "component": "SEAL_E3_pod_1mm_silicone_compressed_0p75",
+      "body": "Continuous_face_gasket",
+      "volume_mm3": 350.999999999999,
+      "lumps": 1,
+      "min_mm": [
+        -102.0,
+        18.0,
+        -3.75
+      ],
+      "max_mm": [
+        -62.0,
+        62.0,
+        -3.0
+      ]
+    },
+    {
+      "component": "MACHINE_E3_POM_C_seal_cartridge",
+      "body": "Machined_cartridge_nominal",
+      "volume_mm3": 5569.035827497425,
+      "lumps": 1,
+      "min_mm": [
+        -93.0,
+        56.0,
+        -31.0
+      ],
+      "max_mm": [
+        -57.0,
+        71.75,
+        -5.0
+      ]
+    },
+    {
+      "component": "SEAL_E3_cartridge_face_gasket",
+      "body": "1mm_sheet_compressed_0p75",
+      "volume_mm3": 384.4556685567878,
+      "lumps": 1,
+      "min_mm": [
+        -93.0,
+        64.0,
+        -31.0
+      ],
+      "max_mm": [
+        -57.0,
+        64.75,
+        -5.0
+      ]
+    },
+    {
+      "component": "PROCURE_E3_SKF_6x16x7_and_igus_GFM060806",
+      "body": "SKF_seal_NOMINAL_ENVELOPE",
+      "volume_mm3": 1209.513171632122,
+      "lumps": 1,
+      "min_mm": [
+        -83.0,
+        64.75,
+        -26.0
+      ],
+      "max_mm": [
+        -67.0,
+        71.75,
+        -10.0
+      ]
+    },
+    {
+      "component": "PROCURE_E3_SKF_6x16x7_and_igus_GFM060806",
+      "body": "igus_flanged_bush_nominal",
+      "volume_mm3": 193.64588621169065,
+      "lumps": 1,
+      "min_mm": [
+        -81.0,
+        57.75,
+        -24.0
+      ],
+      "max_mm": [
+        -69.0,
+        63.75,
+        -12.0
+      ]
+    },
+    {
+      "component": "PROCURE_E3_HS65HB_drawing_envelope",
+      "body": "Case_and_lugs_26mm_datum",
+      "volume_mm3": 7307.033629385644,
+      "lumps": 1,
+      "min_mm": [
+        -96.85,
+        20.0,
+        -23.8
+      ],
+      "max_mm": [
+        -64.55,
+        46.0,
+        -12.2
+      ]
+    },
+    {
+      "component": "PROCURE_E3_HS65HB_drawing_envelope",
+      "body": "M25T_spline_envelope",
+      "volume_mm3": 60.868357663304934,
+      "lumps": 1,
+      "min_mm": [
+        -77.5,
+        46.0,
+        -20.5
+      ],
+      "max_mm": [
+        -72.5,
+        49.1,
+        -15.5
+      ]
+    },
+    {
+      "component": "PROBE_E3_MOVING",
+      "body": "PRINT_28_E3_insulated_arm",
+      "volume_mm3": 10751.69934165846,
+      "lumps": 1,
+      "min_mm": [
+        -87.0,
+        68.0,
+        -90.0
+      ],
+      "max_mm": [
+        45.31535,
+        81.0,
+        -6.0
+      ]
+    },
+    {
+      "component": "PROBE_E3_MOVING",
+      "body": "SHAFT_316_D6_L30p5",
+      "volume_mm3": 843.6788492432041,
+      "lumps": 1,
+      "min_mm": [
+        -78.0,
+        51.0,
+        -21.0
+      ],
+      "max_mm": [
+        -72.0,
+        81.5,
+        -15.0
+      ]
+    },
+    {
+      "component": "PROBE_E3_MOVING",
+      "body": "PIN_316_D2_L22",
+      "volume_mm3": 69.11503837897257,
+      "lumps": 1,
+      "min_mm": [
+        -85.02628,
+        76.0,
+        -24.36603
+      ],
+      "max_mm": [
+        -64.97372,
+        78.0,
+        -11.63397
+      ]
+    },
+    {
+      "component": "PROBE_E3_MOVING",
+      "body": "ELECTRODE_E3_M4x12_A4_tip",
+      "volume_mm3": 250.85617338914946,
+      "lumps": 1,
+      "min_mm": [
+        35.81535,
+        69.0,
+        -87.5
+      ],
+      "max_mm": [
+        42.81535,
+        83.6,
+        -80.5
+      ]
+    },
+    {
+      "component": "PRINT_25_E4_dry_servo_pod",
+      "body": "Pod",
+      "volume_mm3": 26424.85708168592,
+      "lumps": 1,
+      "min_mm": [
+        55.0,
+        13.0,
+        -36.0
+      ],
+      "max_mm": [
+        111.0,
+        69.0,
+        -3.0
+      ]
+    },
+    {
+      "component": "SEAL_E4_pod_1mm_silicone_compressed_0p75",
+      "body": "Continuous_face_gasket",
+      "volume_mm3": 351.0,
+      "lumps": 1,
+      "min_mm": [
+        63.0,
+        18.0,
+        -3.75
+      ],
+      "max_mm": [
+        103.0,
+        62.0,
+        -3.0
+      ]
+    },
+    {
+      "component": "MACHINE_E4_POM_C_seal_cartridge",
+      "body": "Machined_cartridge_nominal",
+      "volume_mm3": 5569.035827497423,
+      "lumps": 1,
+      "min_mm": [
+        72.0,
+        56.0,
+        -31.0
+      ],
+      "max_mm": [
+        108.0,
+        71.75,
+        -5.0
+      ]
+    },
+    {
+      "component": "SEAL_E4_cartridge_face_gasket",
+      "body": "1mm_sheet_compressed_0p75",
+      "volume_mm3": 384.4556685567878,
+      "lumps": 1,
+      "min_mm": [
+        72.0,
+        64.0,
+        -31.0
+      ],
+      "max_mm": [
+        108.0,
+        64.75,
+        -5.0
+      ]
+    },
+    {
+      "component": "PROCURE_E4_SKF_6x16x7_and_igus_GFM060806",
+      "body": "SKF_seal_NOMINAL_ENVELOPE",
+      "volume_mm3": 1209.5131716321214,
+      "lumps": 1,
+      "min_mm": [
+        82.0,
+        64.75,
+        -26.0
+      ],
+      "max_mm": [
+        98.0,
+        71.75,
+        -10.0
+      ]
+    },
+    {
+      "component": "PROCURE_E4_SKF_6x16x7_and_igus_GFM060806",
+      "body": "igus_flanged_bush_nominal",
+      "volume_mm3": 193.64588621169037,
+      "lumps": 1,
+      "min_mm": [
+        84.0,
+        57.75,
+        -24.0
+      ],
+      "max_mm": [
+        96.0,
+        63.75,
+        -12.0
+      ]
+    },
+    {
+      "component": "PROCURE_E4_HS65HB_drawing_envelope",
+      "body": "Case_and_lugs_26mm_datum",
+      "volume_mm3": 7307.033629385642,
+      "lumps": 1,
+      "min_mm": [
+        68.15,
+        20.0,
+        -23.8
+      ],
+      "max_mm": [
+        100.45,
+        46.0,
+        -12.2
+      ]
+    },
+    {
+      "component": "PROCURE_E4_HS65HB_drawing_envelope",
+      "body": "M25T_spline_envelope",
+      "volume_mm3": 60.868357663305076,
+      "lumps": 1,
+      "min_mm": [
+        87.5,
+        46.0,
+        -20.5
+      ],
+      "max_mm": [
+        92.5,
+        49.1,
+        -15.5
+      ]
+    },
+    {
+      "component": "PROBE_E4_MOVING",
+      "body": "PRINT_29_E4_insulated_arm",
+      "volume_mm3": 10751.699962302708,
+      "lumps": 1,
+      "min_mm": [
+        78.0,
+        68.0,
+        -156.0
+      ],
+      "max_mm": [
+        102.0,
+        81.0,
+        -6.0
+      ]
+    },
+    {
+      "component": "PROBE_E4_MOVING",
+      "body": "SHAFT_316_D6_L30p5",
+      "volume_mm3": 843.7380004410495,
+      "lumps": 1,
+      "min_mm": [
+        87.0,
+        51.0,
+        -21.0
+      ],
+      "max_mm": [
+        93.0,
+        81.5,
+        -15.0
+      ]
+    },
+    {
+      "component": "PROBE_E4_MOVING",
+      "body": "PIN_316_D2_L22",
+      "volume_mm3": 69.1150383789726,
+      "lumps": 1,
+      "min_mm": [
+        89.0,
+        76.0,
+        -29.0
+      ],
+      "max_mm": [
+        91.0,
+        78.0,
+        -7.0
+      ]
+    },
+    {
+      "component": "PROBE_E4_MOVING",
+      "body": "ELECTRODE_E4_M4x12_A4_tip",
+      "volume_mm3": 250.85617338913335,
+      "lumps": 1,
+      "min_mm": [
+        86.5,
+        69.0,
+        -153.5
+      ],
+      "max_mm": [
+        93.5,
+        83.6,
+        -146.5
+      ]
+    },
+    {
+      "component": "PROCURE_D24V50F5_probe_5V_supply_envelope",
+      "body": "PCB_17p8x20p3",
+      "volume_mm3": 555.5836676323671,
+      "lumps": 1,
+      "min_mm": [
+        79.0,
+        -55.0,
+        24.0
+      ],
+      "max_mm": [
+        96.8,
+        -34.7,
+        25.57
+      ]
+    },
+    {
+      "component": "PROCURE_D24V50F5_probe_5V_supply_envelope",
+      "body": "Upper_components_6p1",
+      "volume_mm3": 1791.9893214676429,
+      "lumps": 1,
+      "min_mm": [
+        79.5,
+        -54.5,
+        25.57
+      ],
+      "max_mm": [
+        96.3,
+        -35.2,
+        31.67
+      ]
+    },
+    {
+      "component": "PROCURE_D24V50F5_probe_5V_supply_envelope",
+      "body": "Lower_components_1p1",
+      "volume_mm3": 70.40000000000032,
+      "lumps": 1,
+      "min_mm": [
+        84.0,
+        -49.0,
+        22.9
+      ],
+      "max_mm": [
+        92.0,
+        -41.0,
+        24.0
+      ]
+    }
+  ],
+  "assembly_release_passed": false,
+  "motion_scope": "Each arm 0..90 at5deg against static solids; separate lane-spacing proof covers other arms. Does not test cable loops, horn adapter, fasteners, seal drag, moving water or continuous swept volume."
+}

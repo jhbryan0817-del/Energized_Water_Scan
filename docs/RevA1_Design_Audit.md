@@ -1,3 +1,5 @@
+> **Historical revision.** Current geometry, BOM and sensing architecture are [Rev-C.1](RevC_Articulated_Probes.md). Fixed-electrode and magnetometer instructions below are superseded.
+
 # Rev-A.1 light design audit â€” 24 September 2026
 
 ## Scope and baseline
