@@ -1,5 +1,7 @@
 # Rev-B.3 wiring and assembly work instruction
 
+> Current revision: [Rev-B.4 component audit](RevB4_Component_Compatibility.md). Use Rev-B.4 CAD/current print ZIP; only PRINT_20 changes from Rev-B.3. E1 access is now builder-accepted; historical results below are retained. Supplier fit and sealing gates remain open.
+
 > **Current mechanical overrides:** see [Rev-B.3](RevB3_Assembly_Readiness.md). E1 is beneath the bow deck: straight vertical socket access fails, and the tested low-profile wrench allowance also clips the hull. Qualify actual tooling before the full hull print. Install the four electronics-tray screws before the battery tray; PRINT_04's new scallops clear their front heads. PRINT_18 now opens the ESP32 upper header area. Motor-support M3×8 starting screws have 2 mm nominal tip margin in revised blind pilots. All actual screw, connector and wire fits remain to be checked.
 
 This is a prototype integration plan, not a released electrical schematic or pin-numbered production harness. Resolve the open selections in the [production audit](RevB1_Production_and_Wiring_Audit.md) before building for use. Keep the original named components; additional integration hardware is still required.

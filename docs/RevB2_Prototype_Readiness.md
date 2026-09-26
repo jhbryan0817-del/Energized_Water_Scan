@@ -1,5 +1,7 @@
 # Rev-B.2 — electrode access, retention and screw mounting
 
+> Current revision: [Rev-B.4 component audit](RevB4_Component_Compatibility.md). Use Rev-B.4 CAD/current print ZIP; only PRINT_20 changes from Rev-B.3. E1 access is now builder-accepted; historical results below are retained. Supplier fit and sealing gates remain open.
+
 > **Superseded in part by [Rev-B.3 assembly audit](RevB3_Assembly_Readiness.md).** Use current Rev-B.3 exports. It corrects front tray screw-head/battery-tray interference, ESP32 header obstruction and motor pilot depth, and identifies unresolved E1 tool access. Results below describe Rev-B.2, not complete assembly release.
 
 25 September 2026. This is a limited interface revision of Rev-B.1, based on repository commit `4a6ef53fa204f29589e1c36442918048740a2d58` and the existing 1012-item Fusion design. The user's four comments define this iteration; the previous audit and historical hardware brief are reference material, not instructions to expand the project.

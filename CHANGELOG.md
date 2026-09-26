@@ -1,5 +1,15 @@
 # Changelog
 
+## Rev-B.4 — 26 September 2026
+
+- Audit all named purchased components against manufacturer/supplier references; record nominal-versus-tolerance limitations and source hashes.
+- Compare downloaded official ADC and regulator STEP body bounds/volumes with the live Fusion assembly; verify ADC drill coordinates and regulator edge tolerance.
+- Revise PRINT_20 with a connected bypass around the five-pin connection row, preserving its screw centres.
+- Enlarge four M4 nut envelopes from Ø7 to Ø8.1 to include hex corners; resolve official D24V10Fx family model provenance.
+- Propose Hitec HS-65HB, TE 34145, Ruland MCL-3-A and Scanstrut DS6-P with explicit integration gaps; specify DIN 84 M4×18 A4 electrode screws.
+- Record E1 access as builder-accepted without claiming physical seal qualification. Assembly release remains false.
+- Export revision-matched editable F3D/STEP, print package and regression evidence; PRINT_20 is the only changed printable geometry.
+
 ## Rev-B.3 — 25 September 2026
 
 - Clear battery-tray overlap with front M3 tray screw heads using two open corner reliefs.

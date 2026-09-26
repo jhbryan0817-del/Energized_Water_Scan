@@ -1,0 +1,10 @@
+{
+  "revision": "Rev-B.4",
+  "timeline_items": 1250,
+  "changed_prints": [
+    "PRINT_20"
+  ],
+  "nut_envelope_diameter_mm": 8.1,
+  "backup": "C:\\Users\\jhbryan\\Documents\\Codex\\2026-09-26\\https-github-com-jhbryan0817-del-energized\\work\\RevB3_before_supplier_audit.f3d",
+  "assembly_release_passed": false
+}

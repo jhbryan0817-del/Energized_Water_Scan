@@ -1,0 +1,107 @@
+{
+  "retrieved": "2026-09-26",
+  "baseline_commit": "593cd2b",
+  "source_comparison": [
+    {
+      "part": "pololu",
+      "method": "Match body order, translated bounds and volume; NOT a symmetric-difference topology proof",
+      "translation_mm": [
+        57,
+        34,
+        24
+      ],
+      "body_count": 1,
+      "supplier_body_count": 1,
+      "max_bound_error_mm": 0.0,
+      "max_volume_error_mm3": 0.0,
+      "passed": true
+    },
+    {
+      "part": "adc",
+      "method": "Match body order, translated bounds and volume; NOT a symmetric-difference topology proof",
+      "translation_mm": [
+        35,
+        -53,
+        24
+      ],
+      "body_count": 27,
+      "supplier_body_count": 27,
+      "max_bound_error_mm": 3.936748271371471e-06,
+      "max_volume_error_mm3": 1.3500311979441904e-13,
+      "passed": true
+    }
+  ],
+  "sources": [
+    {
+      "retrieval_name": "pololu.pdf",
+      "url": "https://www.pololu.com/file/0J1662/d24v10fx-step-down-voltage-regulator-dimensions.pdf",
+      "sha256": "270dc755d5a1d6fa18ed64575a91c0eeb1eb4dd69df364b0d1ef85d6251d8291",
+      "bytes": 988102
+    },
+    {
+      "retrieval_name": "pololu.step",
+      "url": "https://www.pololu.com/file/0J1375/pololu-1a-step-down-voltage-regulator-d24v10fx.step",
+      "sha256": "2862eeb6840b8f51f2a6ff7b44dec49e17504cca8bf9baf4e6f64296aa3ba77b",
+      "bytes": 3273957
+    },
+    {
+      "retrieval_name": "adc.step",
+      "url": "https://raw.githubusercontent.com/adafruit/Adafruit_CAD_Parts/main/1085%20ADS1115%20ADC/1085%20ADS1115%20ADC.step",
+      "sha256": "36657e86b2899297a298b77d7b46f16ef9b8c659055429494d7a1f367f983e9b",
+      "bytes": 630881
+    },
+    {
+      "retrieval_name": "adc.brd",
+      "url": "https://raw.githubusercontent.com/adafruit/ADS1X15-Breakout-Board-PCBs/master/Adafruit%20ADS1115%20ADC%20STEMMA%20QT.brd",
+      "sha256": "bdbfce2bca2b78ef24887f2fa0efb9d6b124c98c7596133bd8e6dd1a309705f2",
+      "bytes": 265553
+    },
+    {
+      "retrieval_name": "esp32.pdf",
+      "url": "https://dl.espressif.com/dl/schematics/esp32_devkitc_v4_dimensions.pdf",
+      "sha256": "93769872f5640475a25e6c367230b407606771e4bbee0aba56903263b17d8d30",
+      "bytes": 901070
+    },
+    {
+      "retrieval_name": "sensor.png",
+      "url": "https://cdn.sparkfun.com/assets/c/d/0/5/3/19921_QwiicMagnetometer-MMC5983MA-BoardOutline.png",
+      "sha256": "2ddb230b01105a178a6d02612bc6f7af773afa1a750804b198f46ad223c4b8ec",
+      "bytes": 13231
+    },
+    {
+      "retrieval_name": "sg90-dim.jpg",
+      "url": "https://towerpro.com.tw/wp-content/uploads/2014/07/小馬達尺寸標示圖B.jpg",
+      "sha256": "239562be5f25bb06d03900741d7388dcb30ab004a294155a060c10875b151f8c",
+      "bytes": 146730
+    },
+    {
+      "retrieval_name": "hitec.pdf",
+      "url": "https://www.hiteccs.com/public/uploads/data_sheet/HCS_HS-65HB_Specsheetv2.2_10-1729887930.pdf",
+      "sha256": "75e08540af6edbba20bcfa557b36d3df73554f7892c783a543489a1ad528aa00",
+      "bytes": 480786
+    },
+    {
+      "retrieval_name": "electrode-screw.pdf",
+      "url": "https://www.accu.co.uk/api/product-datasheet?id=6700",
+      "sha256": "b685b517edb3596aec28771f81b2d47bdc611ecf0bdc35895469b19d6255beb6",
+      "bytes": 539134
+    },
+    {
+      "retrieval_name": "coupling.html",
+      "url": "https://www.krickshop.de/Zubehoer-Ersatzteile/Zubehoer-fuer-Schiffsmodelle/Schiffswellen-Kupplungen/Welleneinsatz-f-Stegkupplung-2mm.htm?ProdNr=63820&a=article&p=192",
+      "sha256": "4330312d15a2579d466f235a6c64f06ad3f0bc0e86c4b81d9aab2b808db3b44c",
+      "bytes": 477656
+    },
+    {
+      "retrieval_name": "prop.html",
+      "url": "https://www.krickshop.de/Accessories-Spare-Parts/Accessories-for-Ship-Models/Propellers-for-shipmodels/Schiffsschraube-3Bl-30mm-R-M2.htm?ProdNr=gr2307-30&a=article&p=186&shop=krick_e",
+      "sha256": "a842b017ebf08a3c5c3f55835a863f864079509b3fff6f9e3eee4aaf19bcfbf1",
+      "bytes": 453932
+    }
+  ],
+  "failed_downloads": [
+    "TE 34145 drawing and STEP: direct download returned Access Denied; proposed only, not integrated or geometry-verified",
+    "Current Mabuchi detail page provides performance data and photograph; no accessible exact-part dimension drawing retrieved"
+  ],
+  "redistribution": "Manufacturer files are linked and hashed, not republished. Comparison results and measurements are retained."
+}

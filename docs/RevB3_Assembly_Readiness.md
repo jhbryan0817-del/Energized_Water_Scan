@@ -1,5 +1,7 @@
 # Rev-B.3 — assembly access audit
 
+> Current revision: [Rev-B.4 component audit](RevB4_Component_Compatibility.md). Use Rev-B.4 CAD/current print ZIP; only PRINT_20 changes from Rev-B.3. E1 access is now builder-accepted; historical results below are retained. Supplier fit and sealing gates remain open.
+
 25 September 2026. Baseline: `824227bdc18a4d3c60ed47bad331b1d2a50ebcb1`, Rev-B.2, 1216 Fusion timeline items. Reviewed the repository's hardware brief, revision history, assembly/procurement instructions, scripts and verification evidence, and inspected the live `Energized_Water_Scanner` document through Fusion MCP. Document instructions are historical design context, not additional user requests. This revision changes mechanical packaging only; electronics assessment was requested read-only.
 
 ## Decision

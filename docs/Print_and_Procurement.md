@@ -1,14 +1,14 @@
-# Rev-B.3 — print, procurement and assembly
+# Rev-B.4 — print, procurement and assembly
 
-Updated 25 September 2026. Use **Rev-B.3** CAD, all sixteen current STLs and the matching ZIP. Reprint PRINT_01, PRINT_04 and PRINT_18 relative to Rev-B.2. See the [current audit and unresolved assembly blockers](RevB3_Assembly_Readiness.md) and [wiring/assembly schedule](Wiring_and_Assembly.md). This BOM is not a complete exact-part procurement/assembly BOM. The builder has screws, an ESP32 and basic components; nearly all named hardware still requires procurement and measurement.
+Updated 26 September 2026. Use **Rev-B.4** CAD, all sixteen current STLs and the matching ZIP. Reprint **PRINT_20 only** relative to Rev-B.3; the other fifteen print geometries are unchanged. See the [component compatibility audit and source evidence](RevB4_Component_Compatibility.md) and [wiring/assembly schedule](Wiring_and_Assembly.md). This BOM is not a complete exact-part procurement/assembly BOM. The builder has screws, an ESP32 and basic components; nearly all named hardware still requires procurement and measurement.
 
 **Printer plan:** H2D for hull and hatch; X1C for smaller parts. The 320 mm hull has only 5 mm total spare width in the H2D's published 325 mm single-nozzle direction before supports/brim. The hatch is 269 × 154 mm and is not an axis-aligned flat X1C print. Confirm Bambu Studio's actual usable area and adhesion plan; do not scale. Print material is unconfirmed. See the source-linked plan in the current audit.
 
-**New interface overrides:** motor-support Ø2.5 pilots end at Z=2.0 rather than 3.8 mm, giving nominal 2 mm M3×8 tip margin. Battery-tray open corner reliefs clear typical front tray M3 heads. PRINT_18 now has an upper header access window. Exact fastener and owned ESP32 fit remain coupon gates. E1 tool access is unresolved and must be demonstrated before the full hull print.
+**New interface overrides:** motor-support Ø2.5 pilots end at Z=2.0 rather than 3.8 mm, giving nominal 2 mm M3×8 tip margin. Battery-tray open corner reliefs clear typical front tray M3 heads. PRINT_18 now has an upper header access window. Exact fastener and owned ESP32 fit remain coupon gates. E1 access is builder-accepted; seal/retention testing remains required. PRINT_20 now leaves the regulator connection row open, and the assembly includes full M4 nut corner envelopes.
 
 ## Print — one of each (16 pieces)
 
-The hull is **320 × 170 mm**; the hatch opening is 245 × 130 mm. Rev-B.3 changes three parts relative to Rev-B.2. Use the complete current package. The hull-section coupon in `coupons/` is separate from the sixteen assembly parts and is not a watertight part.
+The hull is **320 × 170 mm**; the hatch opening is 245 × 130 mm. Rev-B.4 changes PRINT_20 relative to Rev-B.3. Use the complete current package. The hull-section coupon in `coupons/` is separate from the sixteen assembly parts and is not a watertight part.
 
 | STL prefix | Part |
 |---|---|
@@ -44,9 +44,9 @@ STLs are in millimeters and retain assembly coordinates. Position/orient them in
 | Shaft/stern tube | Krick 65220 |
 | Coupling | Krick 63800 + 63823 (2.3 mm) + 63820 (2.0 mm), one of each |
 | Propeller | Krick/Graupner 2307.30, 30 mm, RH, M2 |
-| Servo | Genuine TowerPro SG90 Digital, with matching horn and mounting hardware |
+| Servo | Current CAD retains TowerPro SG90 Digital; exact mount/horn unverified. **Proposed replacement: Hitec HS-65HB + matching Micro 25T set**, requires mount/linkage and supply revision before purchase as a released assembly. See audit. |
 | Battery | Gens Ace GEA222S30X6GT, 2200 mAh 2S 30C XT60 |
-| Electrodes | Four A4/316 M4 bolts, nuts, terminal lugs and sealing washers/O-rings; length to actual stack. The modeled lug replaces the internal washer: do not add another internal washer without revising the stack. |
+| Electrodes | Four Accu SFE-M4-18-A4 DIN 84 screws and four natural A4 DIN 934 M4 nuts. Seal and lug stack remain conditional; TE 34145 lug proposed, not fit-verified. No additional internal washer is allocated. |
 | Rudder/linkage | 3 mm metal stock, 86 mm modeled length; match-drilled 1.3 mm cross-hole at 82 mm from lower end. M2 pushrod, compatible horn/clevises; nominal span 131 mm |
 
 ## Procure — assembly supplies
@@ -68,9 +68,11 @@ See the [current fastening schedule](RevB2_Prototype_Readiness.md#retention-and-
 - Correctly polarized XT60-to-small-Tamiya fused distribution harness for the stock ESC connector; matching 4 mm male motor bullet terminations. Exact manufacturer parts, current ratings, wire gauge and lengths remain to be selected and verified.
 - Nonconductive ties up to 2.5 mm wide for new tray slots; four printed M3 capture bridges now provide restraint geometry; actual board fit and the sensor cable sealed bulkhead/potted feedthrough remain integration gates.
 
+Do not order the proposed servo/lug/collar/gland as proven drop-in replacements. They are documented candidates requiring the listed integration changes. In particular, do not buy a generic boot or Ø8×5 collar on the assumption that the modeled allocations describe real catalog parts.
+
 The WP-1625 BEC is specified as 6 V / 1 A. Test loaded servo current and supply transients before accepting this power arrangement; do not parallel it with the Pololu output. Disconnect external power before USB programming. See the source-backed current audit for details.
 
-Part numbers come from the supplied baseline; availability/prices were not rechecked. Fastener lengths above are starting selections, not released manufacturing dimensions.
+Manufacturer mechanical references were checked on 26 September 2026; see the part-by-part audit. Prices, local stock and shipping were not established. Fastener lengths above are starting selections, not released manufacturing dimensions.
 
 ## Rev-B assembly and service checks
 
@@ -81,6 +83,6 @@ Part numbers come from the supplied baseline; availability/prices were not reche
 - The shortened 46 mm sensor rail projects 20 mm beyond the bow. Use its two new flush M3 blind screw positions and verify cantilever strength, cable strain relief and magnetic performance. Keep its 2 mm gap to the closed hatch clear.
 - Retain Rev-A.1 electrode head/seal contact, the retained tiller cross-pin, lower locking collar and 7 mm steering-boot seat. Match actual fastener stackups and seal compression.
 - Dry-cycle the real horn, rod, clevises and boot before setting controller limits. The ideal CAD linkage uses a 17.9 mm horn radius, 21 mm tiller radius and 131 mm link span.
-- The regulator remains a D24V10F5 procurement requirement with an F3-derived package proxy in CAD. Confirm actual output voltage and package dimensions.
+- The regulator remains D24V10F5 (5 V). Its official D24V10Fx family STEP is verified; the F3 filename provenance issue is resolved. Use revised PRINT_20 and verify the selected wire/header assembly.
 - Repeat mass/trim, flotation/freeboard, leak and sensor-interference tests for the smaller hull. CAD checks do not establish these properties.
 

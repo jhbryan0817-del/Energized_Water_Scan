@@ -1,0 +1,127 @@
+{
+  "revision": "Rev-B.4",
+  "timeline_items": 1250,
+  "tests": [
+    {
+      "name": "Pololu PCB edges expanded 0.3 mm in every XY direction; drawing tolerance",
+      "intersections": []
+    },
+    {
+      "name": "Regulator connection allocation, not a supplied connector model; X56.5..70.2 Y33.5..37 Z25.02..38",
+      "intersections": []
+    },
+    {
+      "name": "Regulator pin axis upward D1mm 58.27",
+      "intersections": []
+    },
+    {
+      "name": "Regulator pin axis upward D1mm 60.81",
+      "intersections": []
+    },
+    {
+      "name": "Regulator pin axis upward D1mm 63.35",
+      "intersections": []
+    },
+    {
+      "name": "Regulator pin axis upward D1mm 65.89",
+      "intersections": []
+    },
+    {
+      "name": "Regulator pin axis upward D1mm 68.43",
+      "intersections": []
+    }
+  ],
+  "M4_nut_envelopes": [
+    {
+      "name": "ELECTRODE_E1_M4_316_envelope:1",
+      "diameter_mm": 8.099999999999987,
+      "height_mm": 3.1999999999999984
+    },
+    {
+      "name": "ELECTRODE_E2_M4_316_envelope:1",
+      "diameter_mm": 8.100000000000001,
+      "height_mm": 3.1999999999999984
+    },
+    {
+      "name": "ELECTRODE_E3_M4_316_envelope:1",
+      "diameter_mm": 8.099999999999996,
+      "height_mm": 3.1999999999999984
+    },
+    {
+      "name": "ELECTRODE_E4_M4_316_envelope:1",
+      "diameter_mm": 8.099999999999996,
+      "height_mm": 3.1999999999999984
+    }
+  ],
+  "adc_hole_centres_mm": [
+    [
+      37.54,
+      -50.46
+    ],
+    [
+      37.54,
+      -37.76
+    ],
+    [
+      57.86,
+      -37.76
+    ],
+    [
+      57.86,
+      -50.46
+    ]
+  ],
+  "driveline_along_axis_from_motor_face": [
+    {
+      "body": "Mabuchi_RS380PH_can",
+      "axial_min_mm": -37.800000000000004,
+      "axial_max_mm": 6.2803698347351005e-15,
+      "axial_length_mm": 37.80000000000001
+    },
+    {
+      "body": "Mabuchi_front_boss",
+      "axial_min_mm": 1.4859514574144726e-14,
+      "axial_max_mm": 2.600000000000014,
+      "axial_length_mm": 2.599999999999999
+    },
+    {
+      "body": "Motor_output_shaft",
+      "axial_min_mm": 2.600000000000015,
+      "axial_max_mm": 16.400000000000013,
+      "axial_length_mm": 13.799999999999997
+    },
+    {
+      "body": "Krick_63800_63823_63820_coupling",
+      "axial_min_mm": 10.00000000000001,
+      "axial_max_mm": 30.000000000000018,
+      "axial_length_mm": 20.000000000000007
+    },
+    {
+      "body": "Krick_65220_stern_tube",
+      "axial_min_mm": 36.00000000000002,
+      "axial_max_mm": 189.00000000000006,
+      "axial_length_mm": 153.00000000000003
+    },
+    {
+      "body": "Krick_65220_shaft_178mm",
+      "axial_min_mm": 25.00000000000003,
+      "axial_max_mm": 203.00000000000009,
+      "axial_length_mm": 178.00000000000006
+    },
+    {
+      "body": "Propeller_30mm_swept_volume",
+      "axial_min_mm": 198.0000000000001,
+      "axial_max_mm": 203.0000000000001,
+      "axial_length_mm": 5.0
+    }
+  ],
+  "regression_passed": true,
+  "assembly_release_passed": false,
+  "limits": [
+    "No manufacturer tolerance inferred from CAD decimal precision.",
+    "Regulator connection space is an allocation; actual connector body and wire bending remain a fit trial.",
+    "Driveline dimensions measured along shaft, not assembly bounding boxes. Bore fits, threads, thrust washers and insertion depths need actual parts.",
+    "E1 access is builder-accepted; seal compression and final leak test remain unverified.",
+    "SG90 horn and mounting are not verified; proposed Hitec substitution has not been implemented."
+  ]
+}

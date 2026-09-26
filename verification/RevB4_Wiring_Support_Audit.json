@@ -1,0 +1,901 @@
+{
+  "revision": "Rev-B.4",
+  "timeline_items": 1250,
+  "E2_lug_to_obstacle_minimum_mm": {
+    "PRINT_03_Removable_electronics_tray:1": 5.2498,
+    "DRIVELINE_Mabuchi_and_Krick:1": 5.5319,
+    "PRINT_11_Motor_face_mount:1": 1.5,
+    "PRINT_14_Motor_lower_cradle:1": 1.0
+  },
+  "route_diameter_mm": 4,
+  "routes_mm": {
+    "E1": [
+      [
+        -84,
+        0,
+        12.2
+      ],
+      [
+        -76,
+        0,
+        12.2
+      ],
+      [
+        -76,
+        -18,
+        12.2
+      ],
+      [
+        -25,
+        -18,
+        12.2
+      ],
+      [
+        -25,
+        -23,
+        12.2
+      ],
+      [
+        -25,
+        -23,
+        40
+      ]
+    ],
+    "E2": [
+      [
+        40,
+        -16,
+        12.2
+      ],
+      [
+        40,
+        -32,
+        12.2
+      ],
+      [
+        0,
+        -32,
+        12.2
+      ],
+      [
+        -25,
+        -23,
+        12.2
+      ],
+      [
+        -25,
+        -23,
+        40
+      ]
+    ],
+    "E3": [
+      [
+        -30,
+        -39,
+        12.2
+      ],
+      [
+        -30,
+        -30,
+        12.2
+      ],
+      [
+        -25,
+        -23,
+        12.2
+      ],
+      [
+        -25,
+        -23,
+        40
+      ]
+    ],
+    "E4": [
+      [
+        -30,
+        39,
+        12.2
+      ],
+      [
+        -25,
+        30,
+        12.2
+      ],
+      [
+        -25,
+        -23,
+        12.2
+      ],
+      [
+        -25,
+        -23,
+        40
+      ]
+    ]
+  },
+  "tested_corridors": [
+    "E1_D4_route_0",
+    "E1_D4_route_1",
+    "E1_D4_route_2",
+    "E1_D4_route_3",
+    "E1_D4_route_4",
+    "E2_D4_route_0",
+    "E2_D4_route_1",
+    "E2_D4_route_2",
+    "E2_D4_route_3",
+    "E3_D4_route_0",
+    "E3_D4_route_1",
+    "E3_D4_route_2",
+    "E4_D4_route_0",
+    "E4_D4_route_1",
+    "E4_D4_route_2",
+    "M3_motor_support_D6_tool_(26, -23)",
+    "M3_motor_support_D6_tool_(26, 23)",
+    "M3_motor_support_D6_tool_(60, -27)",
+    "M3_motor_support_D6_tool_(60, 27)",
+    "capture_M3_D6_tool_ESP_left",
+    "capture_M3_D6_tool_ESP_right",
+    "capture_M3_D6_tool_FE_left",
+    "capture_M3_D6_tool_FE_right",
+    "capture_M3_D6_tool_reg_front",
+    "capture_M3_D6_tool_reg_back",
+    "capture_M3_D6_tool_ESC_front",
+    "capture_M3_D6_tool_ESC_back",
+    "transom_M3_D6_tool_(-9, 50)",
+    "transom_M3_D6_tool_(-9, 58)",
+    "transom_M3_D6_tool_(9, 50)",
+    "transom_M3_D6_tool_(9, 58)",
+    "rail_M3_D6_tool_before_pod_-108",
+    "rail_M3_D6_tool_before_pod_-98",
+    "E2_D12_socket_before_motor"
+  ],
+  "intersections": [],
+  "boolean_failures": [],
+  "support_proximity": [
+    {
+      "component": "D24V10F5_OFFICIAL_STEP:1+D24V10F5_OFFICIAL_D24V10Fx_FAMILY_STEP:1",
+      "nearby": [
+        {
+          "component": "PRINT_03_Removable_electronics_tray:1",
+          "distance_mm": 0.0
+        },
+        {
+          "component": "PRINT_20_Regulator_capture_bridge:1",
+          "distance_mm": 0.5
+        }
+      ]
+    },
+    {
+      "component": "BATTERY_Gens_Ace_GEA222S30X6GT_126g:1",
+      "nearby": [
+        {
+          "component": "PRINT_04_Battery_slide_tray:1",
+          "distance_mm": 0.0
+        }
+      ]
+    },
+    {
+      "component": "ESP32_DevKitC_V4_dimension_envelope:1",
+      "nearby": [
+        {
+          "component": "PRINT_03_Removable_electronics_tray:1",
+          "distance_mm": 0.0
+        },
+        {
+          "component": "PRINT_18_ESP32_capture_bridge:1",
+          "distance_mm": 0.5
+        }
+      ]
+    },
+    {
+      "component": "FRONT_END_replaceable_40x30x12:1",
+      "nearby": [
+        {
+          "component": "PRINT_03_Removable_electronics_tray:1",
+          "distance_mm": 0.0
+        },
+        {
+          "component": "PRINT_19_Front_end_capture_bridge:1",
+          "distance_mm": 0.5
+        }
+      ]
+    },
+    {
+      "component": "ESC_Hobbywing_WP1625:1",
+      "nearby": [
+        {
+          "component": "PRINT_03_Removable_electronics_tray:1",
+          "distance_mm": 0.0
+        },
+        {
+          "component": "PROCURE_ESC_mounting_foam_3mm:1",
+          "distance_mm": 0.0
+        },
+        {
+          "component": "PRINT_21_ESC_capture_bridge:1",
+          "distance_mm": 0.5
+        }
+      ]
+    },
+    {
+      "component": "SERVO_TowerPro_SG90_Digital_ENVELOPE:1",
+      "nearby": [
+        {
+          "component": "PRINT_03_Removable_electronics_tray:1",
+          "distance_mm": 0.0
+        },
+        {
+          "component": "PROCURE_Servo_horn_and_M2_linkage_ENVELOPES:1",
+          "distance_mm": 0.0
+        }
+      ]
+    },
+    {
+      "component": "PRINT_01_Hull_shell:1",
+      "nearby": [
+        {
+          "component": "SEAL_Main_hatch_continuous_gasket:1",
+          "distance_mm": 0.0
+        },
+        {
+          "component": "PRINT_02_Removable_hatch_cover:1",
+          "distance_mm": 0.5
+        },
+        {
+          "component": "PRINT_03_Removable_electronics_tray:1",
+          "distance_mm": 0.0
+        },
+        {
+          "component": "ELECTRODE_E1_M4_316_envelope:1",
+          "distance_mm": 0.0
+        },
+        {
+          "component": "ELECTRODE_E2_M4_316_envelope:1",
+          "distance_mm": 0.0
+        },
+        {
+          "component": "ELECTRODE_E3_M4_316_envelope:1",
+          "distance_mm": 0.0
+        },
+        {
+          "component": "ELECTRODE_E4_M4_316_envelope:1",
+          "distance_mm": 0.0
+        },
+        {
+          "component": "DRIVELINE_Mabuchi_and_Krick:1",
+          "distance_mm": 0.5
+        },
+        {
+          "component": "PRINT_11_Motor_face_mount:1",
+          "distance_mm": 0.0
+        },
+        {
+          "component": "PRINT_06_Magnetometer_adjustment_rail:1",
+          "distance_mm": 0.0
+        },
+        {
+          "component": "PRINT_09_Rudder_transom_bracket:1",
+          "distance_mm": 0.0
+        },
+        {
+          "component": "PRINT_14_Motor_lower_cradle:1",
+          "distance_mm": 0.0
+        },
+        {
+          "component": "SEAL_Steering_pushrod_boot_envelope:1",
+          "distance_mm": 0.0
+        }
+      ]
+    },
+    {
+      "component": "SEAL_Main_hatch_continuous_gasket:1",
+      "nearby": [
+        {
+          "component": "PRINT_01_Hull_shell:1",
+          "distance_mm": 0.0
+        },
+        {
+          "component": "PRINT_02_Removable_hatch_cover:1",
+          "distance_mm": 0.0
+        }
+      ]
+    },
+    {
+      "component": "PRINT_02_Removable_hatch_cover:1",
+      "nearby": [
+        {
+          "component": "PRINT_01_Hull_shell:1",
+          "distance_mm": 0.5
+        },
+        {
+          "component": "SEAL_Main_hatch_continuous_gasket:1",
+          "distance_mm": 0.0
+        }
+      ]
+    },
+    {
+      "component": "PRINT_03_Removable_electronics_tray:1",
+      "nearby": [
+        {
+          "component": "D24V10F5_OFFICIAL_STEP:1+D24V10F5_OFFICIAL_D24V10Fx_FAMILY_STEP:1",
+          "distance_mm": 0.0
+        },
+        {
+          "component": "ESP32_DevKitC_V4_dimension_envelope:1",
+          "distance_mm": 0.0
+        },
+        {
+          "component": "FRONT_END_replaceable_40x30x12:1",
+          "distance_mm": 0.0
+        },
+        {
+          "component": "ESC_Hobbywing_WP1625:1",
+          "distance_mm": 0.0
+        },
+        {
+          "component": "SERVO_TowerPro_SG90_Digital_ENVELOPE:1",
+          "distance_mm": 0.0
+        },
+        {
+          "component": "PRINT_01_Hull_shell:1",
+          "distance_mm": 0.0
+        },
+        {
+          "component": "PRINT_04_Battery_slide_tray:1",
+          "distance_mm": 0.0
+        },
+        {
+          "component": "PROCURE_ESC_mounting_foam_3mm:1",
+          "distance_mm": 0.0
+        },
+        {
+          "component": "PRINT_14_Motor_lower_cradle:1",
+          "distance_mm": 0.0
+        },
+        {
+          "component": "ADS1115_OFFICIAL_STEP:1",
+          "distance_mm": 0.0
+        },
+        {
+          "component": "PRINT_18_ESP32_capture_bridge:1",
+          "distance_mm": 0.0
+        },
+        {
+          "component": "PRINT_19_Front_end_capture_bridge:1",
+          "distance_mm": 0.0
+        },
+        {
+          "component": "PRINT_21_ESC_capture_bridge:1",
+          "distance_mm": 0.0
+        },
+        {
+          "component": "PRINT_20_Regulator_capture_bridge:1",
+          "distance_mm": 0.0
+        }
+      ]
+    },
+    {
+      "component": "PRINT_04_Battery_slide_tray:1",
+      "nearby": [
+        {
+          "component": "BATTERY_Gens_Ace_GEA222S30X6GT_126g:1",
+          "distance_mm": 0.0
+        },
+        {
+          "component": "PRINT_03_Removable_electronics_tray:1",
+          "distance_mm": 0.0
+        }
+      ]
+    },
+    {
+      "component": "ELECTRODE_E1_M4_316_envelope:1",
+      "nearby": [
+        {
+          "component": "PRINT_01_Hull_shell:1",
+          "distance_mm": 0.0
+        }
+      ]
+    },
+    {
+      "component": "ELECTRODE_E2_M4_316_envelope:1",
+      "nearby": [
+        {
+          "component": "PRINT_01_Hull_shell:1",
+          "distance_mm": 0.0
+        },
+        {
+          "component": "PRINT_14_Motor_lower_cradle:1",
+          "distance_mm": 1.0
+        }
+      ]
+    },
+    {
+      "component": "ELECTRODE_E3_M4_316_envelope:1",
+      "nearby": [
+        {
+          "component": "PRINT_01_Hull_shell:1",
+          "distance_mm": 0.0
+        }
+      ]
+    },
+    {
+      "component": "ELECTRODE_E4_M4_316_envelope:1",
+      "nearby": [
+        {
+          "component": "PRINT_01_Hull_shell:1",
+          "distance_mm": 0.0
+        }
+      ]
+    },
+    {
+      "component": "DRIVELINE_Mabuchi_and_Krick:1",
+      "nearby": [
+        {
+          "component": "PRINT_01_Hull_shell:1",
+          "distance_mm": 0.5
+        },
+        {
+          "component": "PRINT_11_Motor_face_mount:1",
+          "distance_mm": 0.0
+        },
+        {
+          "component": "PRINT_14_Motor_lower_cradle:1",
+          "distance_mm": 0.4
+        },
+        {
+          "component": "PROCURE_Motor_cradle_liner_0_4mm_VERIFY:1",
+          "distance_mm": 0.0
+        }
+      ]
+    },
+    {
+      "component": "PRINT_11_Motor_face_mount:1",
+      "nearby": [
+        {
+          "component": "PRINT_01_Hull_shell:1",
+          "distance_mm": 0.0
+        },
+        {
+          "component": "DRIVELINE_Mabuchi_and_Krick:1",
+          "distance_mm": 0.0
+        },
+        {
+          "component": "PRINT_14_Motor_lower_cradle:1",
+          "distance_mm": 0.0
+        }
+      ]
+    },
+    {
+      "component": "PRINT_06_Magnetometer_adjustment_rail:1",
+      "nearby": [
+        {
+          "component": "PRINT_01_Hull_shell:1",
+          "distance_mm": 0.0
+        },
+        {
+          "component": "PRINT_07_Magnetometer_service_pod:1",
+          "distance_mm": 0.0
+        }
+      ]
+    },
+    {
+      "component": "PRINT_07_Magnetometer_service_pod:1",
+      "nearby": [
+        {
+          "component": "PRINT_06_Magnetometer_adjustment_rail:1",
+          "distance_mm": 0.0
+        },
+        {
+          "component": "SENSOR_SparkFun_SEN19921_MMC5983MA:1",
+          "distance_mm": 1.0
+        },
+        {
+          "component": "PRINT_08_Magnetometer_pod_lid:1",
+          "distance_mm": 0.0
+        },
+        {
+          "component": "PROCURE_Magnetometer_adhesive_pad_1mm:1",
+          "distance_mm": 0.0
+        }
+      ]
+    },
+    {
+      "component": "SENSOR_SparkFun_SEN19921_MMC5983MA:1",
+      "nearby": [
+        {
+          "component": "PRINT_07_Magnetometer_service_pod:1",
+          "distance_mm": 1.0
+        },
+        {
+          "component": "PROCURE_Magnetometer_adhesive_pad_1mm:1",
+          "distance_mm": 0.0
+        }
+      ]
+    },
+    {
+      "component": "PRINT_08_Magnetometer_pod_lid:1",
+      "nearby": [
+        {
+          "component": "PRINT_07_Magnetometer_service_pod:1",
+          "distance_mm": 0.0
+        }
+      ]
+    },
+    {
+      "component": "PRINT_09_Rudder_transom_bracket:1",
+      "nearby": [
+        {
+          "component": "PRINT_01_Hull_shell:1",
+          "distance_mm": 0.0
+        },
+        {
+          "component": "PRINT_17_Rudder_tiller:1",
+          "distance_mm": 1.0
+        },
+        {
+          "component": "PROCURE_Rudder_stock_D3_L86:1",
+          "distance_mm": 0.2
+        },
+        {
+          "component": "PROCURE_Rudder_lower_stop_collar_D8_H5_ENVELOPE:1",
+          "distance_mm": 0.5
+        }
+      ]
+    },
+    {
+      "component": "PROCURE_ESC_mounting_foam_3mm:1",
+      "nearby": [
+        {
+          "component": "ESC_Hobbywing_WP1625:1",
+          "distance_mm": 0.0
+        },
+        {
+          "component": "PRINT_03_Removable_electronics_tray:1",
+          "distance_mm": 0.0
+        }
+      ]
+    },
+    {
+      "component": "PRINT_14_Motor_lower_cradle:1",
+      "nearby": [
+        {
+          "component": "PRINT_01_Hull_shell:1",
+          "distance_mm": 0.0
+        },
+        {
+          "component": "PRINT_03_Removable_electronics_tray:1",
+          "distance_mm": 0.0
+        },
+        {
+          "component": "ELECTRODE_E2_M4_316_envelope:1",
+          "distance_mm": 1.0
+        },
+        {
+          "component": "DRIVELINE_Mabuchi_and_Krick:1",
+          "distance_mm": 0.4
+        },
+        {
+          "component": "PRINT_11_Motor_face_mount:1",
+          "distance_mm": 0.0
+        },
+        {
+          "component": "PROCURE_Motor_cradle_liner_0_4mm_VERIFY:1",
+          "distance_mm": 0.0
+        }
+      ]
+    },
+    {
+      "component": "PROCURE_Servo_horn_and_M2_linkage_ENVELOPES:1",
+      "nearby": [
+        {
+          "component": "SERVO_TowerPro_SG90_Digital_ENVELOPE:1",
+          "distance_mm": 0.0
+        },
+        {
+          "component": "SEAL_Steering_pushrod_boot_envelope:1",
+          "distance_mm": 0.0
+        },
+        {
+          "component": "PRINT_17_Rudder_tiller:1",
+          "distance_mm": 0.1
+        }
+      ]
+    },
+    {
+      "component": "SEAL_Steering_pushrod_boot_envelope:1",
+      "nearby": [
+        {
+          "component": "PRINT_01_Hull_shell:1",
+          "distance_mm": 0.0
+        },
+        {
+          "component": "PROCURE_Servo_horn_and_M2_linkage_ENVELOPES:1",
+          "distance_mm": 0.0
+        }
+      ]
+    },
+    {
+      "component": "ADS1115_OFFICIAL_STEP:1",
+      "nearby": [
+        {
+          "component": "PRINT_03_Removable_electronics_tray:1",
+          "distance_mm": 0.0
+        }
+      ]
+    },
+    {
+      "component": "PROCURE_Magnetometer_adhesive_pad_1mm:1",
+      "nearby": [
+        {
+          "component": "PRINT_07_Magnetometer_service_pod:1",
+          "distance_mm": 0.0
+        },
+        {
+          "component": "SENSOR_SparkFun_SEN19921_MMC5983MA:1",
+          "distance_mm": 0.0
+        }
+      ]
+    },
+    {
+      "component": "PRINT_16_Rudder_blade:1",
+      "nearby": [
+        {
+          "component": "PROCURE_Rudder_stock_D3_L86:1",
+          "distance_mm": 0.0
+        }
+      ]
+    },
+    {
+      "component": "PRINT_17_Rudder_tiller:1",
+      "nearby": [
+        {
+          "component": "PRINT_09_Rudder_transom_bracket:1",
+          "distance_mm": 1.0
+        },
+        {
+          "component": "PROCURE_Servo_horn_and_M2_linkage_ENVELOPES:1",
+          "distance_mm": 0.1
+        },
+        {
+          "component": "PROCURE_Rudder_stock_D3_L86:1",
+          "distance_mm": 0.1
+        },
+        {
+          "component": "PROCURE_Tiller_cross_pin_D1_2_L8_ENVELOPE:1",
+          "distance_mm": 0.05
+        }
+      ]
+    },
+    {
+      "component": "PROCURE_Rudder_stock_D3_L86:1",
+      "nearby": [
+        {
+          "component": "PRINT_09_Rudder_transom_bracket:1",
+          "distance_mm": 0.2
+        },
+        {
+          "component": "PRINT_16_Rudder_blade:1",
+          "distance_mm": 0.0
+        },
+        {
+          "component": "PRINT_17_Rudder_tiller:1",
+          "distance_mm": 0.1
+        },
+        {
+          "component": "PROCURE_Tiller_cross_pin_D1_2_L8_ENVELOPE:1",
+          "distance_mm": 0.05
+        },
+        {
+          "component": "PROCURE_Rudder_lower_stop_collar_D8_H5_ENVELOPE:1",
+          "distance_mm": 0.1
+        }
+      ]
+    },
+    {
+      "component": "PROCURE_Tiller_cross_pin_D1_2_L8_ENVELOPE:1",
+      "nearby": [
+        {
+          "component": "PRINT_17_Rudder_tiller:1",
+          "distance_mm": 0.05
+        },
+        {
+          "component": "PROCURE_Rudder_stock_D3_L86:1",
+          "distance_mm": 0.05
+        }
+      ]
+    },
+    {
+      "component": "PROCURE_Rudder_lower_stop_collar_D8_H5_ENVELOPE:1",
+      "nearby": [
+        {
+          "component": "PRINT_09_Rudder_transom_bracket:1",
+          "distance_mm": 0.5
+        },
+        {
+          "component": "PROCURE_Rudder_stock_D3_L86:1",
+          "distance_mm": 0.1
+        }
+      ]
+    },
+    {
+      "component": "PRINT_18_ESP32_capture_bridge:1",
+      "nearby": [
+        {
+          "component": "ESP32_DevKitC_V4_dimension_envelope:1",
+          "distance_mm": 0.5
+        },
+        {
+          "component": "PRINT_03_Removable_electronics_tray:1",
+          "distance_mm": 0.0
+        }
+      ]
+    },
+    {
+      "component": "PRINT_19_Front_end_capture_bridge:1",
+      "nearby": [
+        {
+          "component": "FRONT_END_replaceable_40x30x12:1",
+          "distance_mm": 0.5
+        },
+        {
+          "component": "PRINT_03_Removable_electronics_tray:1",
+          "distance_mm": 0.0
+        }
+      ]
+    },
+    {
+      "component": "PRINT_21_ESC_capture_bridge:1",
+      "nearby": [
+        {
+          "component": "ESC_Hobbywing_WP1625:1",
+          "distance_mm": 0.5
+        },
+        {
+          "component": "PRINT_03_Removable_electronics_tray:1",
+          "distance_mm": 0.0
+        }
+      ]
+    },
+    {
+      "component": "PRINT_20_Regulator_capture_bridge:1",
+      "nearby": [
+        {
+          "component": "D24V10F5_OFFICIAL_STEP:1+D24V10F5_OFFICIAL_D24V10Fx_FAMILY_STEP:1",
+          "distance_mm": 0.5
+        },
+        {
+          "component": "PRINT_03_Removable_electronics_tray:1",
+          "distance_mm": 0.0
+        }
+      ]
+    },
+    {
+      "component": "PROCURE_Motor_cradle_liner_0_4mm_VERIFY:1",
+      "nearby": [
+        {
+          "component": "DRIVELINE_Mabuchi_and_Krick:1",
+          "distance_mm": 0.0
+        },
+        {
+          "component": "PRINT_14_Motor_lower_cradle:1",
+          "distance_mm": 0.0
+        }
+      ]
+    }
+  ],
+  "printed_connected_solids": [
+    {
+      "name": "PRINT_01_Hull_shell:1",
+      "solids": 1,
+      "lumps": [
+        1
+      ]
+    },
+    {
+      "name": "PRINT_02_Removable_hatch_cover:1",
+      "solids": 1,
+      "lumps": [
+        1
+      ]
+    },
+    {
+      "name": "PRINT_03_Removable_electronics_tray:1",
+      "solids": 1,
+      "lumps": [
+        1
+      ]
+    },
+    {
+      "name": "PRINT_04_Battery_slide_tray:1",
+      "solids": 1,
+      "lumps": [
+        1
+      ]
+    },
+    {
+      "name": "PRINT_11_Motor_face_mount:1",
+      "solids": 1,
+      "lumps": [
+        1
+      ]
+    },
+    {
+      "name": "PRINT_06_Magnetometer_adjustment_rail:1",
+      "solids": 1,
+      "lumps": [
+        1
+      ]
+    },
+    {
+      "name": "PRINT_07_Magnetometer_service_pod:1",
+      "solids": 1,
+      "lumps": [
+        1
+      ]
+    },
+    {
+      "name": "PRINT_08_Magnetometer_pod_lid:1",
+      "solids": 1,
+      "lumps": [
+        1
+      ]
+    },
+    {
+      "name": "PRINT_09_Rudder_transom_bracket:1",
+      "solids": 1,
+      "lumps": [
+        1
+      ]
+    },
+    {
+      "name": "PRINT_14_Motor_lower_cradle:1",
+      "solids": 1,
+      "lumps": [
+        1
+      ]
+    },
+    {
+      "name": "PRINT_16_Rudder_blade:1",
+      "solids": 1,
+      "lumps": [
+        1
+      ]
+    },
+    {
+      "name": "PRINT_17_Rudder_tiller:1",
+      "solids": 1,
+      "lumps": [
+        1
+      ]
+    },
+    {
+      "name": "PRINT_18_ESP32_capture_bridge:1",
+      "solids": 1,
+      "lumps": [
+        1
+      ]
+    },
+    {
+      "name": "PRINT_19_Front_end_capture_bridge:1",
+      "solids": 1,
+      "lumps": [
+        1
+      ]
+    },
+    {
+      "name": "PRINT_21_ESC_capture_bridge:1",
+      "solids": 1,
+      "lumps": [
+        1
+      ]
+    },
+    {
+      "name": "PRINT_20_Regulator_capture_bridge:1",
+      "solids": 1,
+      "lumps": [
+        1
+      ]
+    }
+  ],
+  "limits": "Wire centerline corridors only: route bends, connectors, insulation and strain relief require physical dry assembly. Proximity is not proof of fastening. See the documented retention schedule and service sequence."
+}

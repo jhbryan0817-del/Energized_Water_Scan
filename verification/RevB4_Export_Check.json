@@ -1,0 +1,133 @@
+{
+  "step_solid_count": 94,
+  "f3d_fusion_roundtrip": {
+    "revision": "Rev-B.4",
+    "timeline_items": 1250,
+    "parameters": 40,
+    "body_count": 94,
+    "feature_errors_and_warnings": [],
+    "all_body_volumes_match": true,
+    "passed": true
+  },
+  "print_zip_matches_individual_stls": true,
+  "stl_matches_current_brep": [
+    {
+      "file": "PRINT_01_Hull_shell.stl",
+      "max_extent_error_mm": 0.0176400000000001,
+      "relative_volume_error": 0.0001316117140614964
+    },
+    {
+      "file": "PRINT_02_Removable_hatch_cover.stl",
+      "max_extent_error_mm": 0.0,
+      "relative_volume_error": 1.5040034890631323e-05
+    },
+    {
+      "file": "PRINT_03_Removable_electronics_tray.stl",
+      "max_extent_error_mm": 0.0,
+      "relative_volume_error": 4.1861990354554845e-05
+    },
+    {
+      "file": "PRINT_04_Battery_slide_tray.stl",
+      "max_extent_error_mm": 0.0,
+      "relative_volume_error": 0.0
+    },
+    {
+      "file": "PRINT_06_Magnetometer_adjustment_rail.stl",
+      "max_extent_error_mm": 0.0,
+      "relative_volume_error": 3.1947580674687015e-05
+    },
+    {
+      "file": "PRINT_07_Magnetometer_service_pod.stl",
+      "max_extent_error_mm": 0.0,
+      "relative_volume_error": 2.584695118051693e-05
+    },
+    {
+      "file": "PRINT_08_Magnetometer_pod_lid.stl",
+      "max_extent_error_mm": 0.0,
+      "relative_volume_error": 4.723524724138766e-05
+    },
+    {
+      "file": "PRINT_09_Rudder_transom_bracket.stl",
+      "max_extent_error_mm": 5.000000000165983e-05,
+      "relative_volume_error": 0.00027486305952873364
+    },
+    {
+      "file": "PRINT_11_Motor_face_mount.stl",
+      "max_extent_error_mm": 1.9999999999242846e-05,
+      "relative_volume_error": 7.982624412977348e-05
+    },
+    {
+      "file": "PRINT_14_Motor_lower_cradle.stl",
+      "max_extent_error_mm": 3.0000000002416982e-05,
+      "relative_volume_error": 0.00015706962673478616
+    },
+    {
+      "file": "PRINT_16_Rudder_blade.stl",
+      "max_extent_error_mm": 0.005300000000000082,
+      "relative_volume_error": 1.518880296258435e-05
+    },
+    {
+      "file": "PRINT_17_Rudder_tiller.stl",
+      "max_extent_error_mm": 0.0,
+      "relative_volume_error": 4.384355545483796e-05
+    },
+    {
+      "file": "PRINT_18_ESP32_capture_bridge.stl",
+      "max_extent_error_mm": 0.0,
+      "relative_volume_error": 0.0002914237602546252
+    },
+    {
+      "file": "PRINT_19_Front_end_capture_bridge.stl",
+      "max_extent_error_mm": 0.0,
+      "relative_volume_error": 0.00025360112783036516
+    },
+    {
+      "file": "PRINT_20_Regulator_capture_bridge.stl",
+      "max_extent_error_mm": 1.7763568394002505e-15,
+      "relative_volume_error": 0.00015874312092132117
+    },
+    {
+      "file": "PRINT_21_ESC_capture_bridge.stl",
+      "max_extent_error_mm": 0.0,
+      "relative_volume_error": 0.00022654914879163905
+    }
+  ],
+  "sha256": {
+    "cad/Energized_Water_Scanner_RevB4.f3d": "a1e5acd8704902cacaadde733fac3095a83d253a937292ac0948b10f8a5db805",
+    "cad/Energized_Water_Scanner_RevB4.step": "d79b97f9e56c35fc45511c279f4015792d8ed3c631904ba65c83fb3529805e44",
+    "prints/PRINT_01_Hull_shell.stl": "1a4b98c401e3d864536e31e0e13d9020f14955bf4f7b12b573c473f1578877d4",
+    "prints/PRINT_02_Removable_hatch_cover.stl": "1fb8ca0beda55c82ebf28d4ea34d27fe5f47bc4ca00fc2dd07eb12932cde9fd5",
+    "prints/PRINT_03_Removable_electronics_tray.stl": "4fbb9839d496061abfff5e991e5c62ddbe658bd64bb4fc638c1af279e1c2ea08",
+    "prints/PRINT_04_Battery_slide_tray.stl": "1eed01aab7edde85db558c86e8f9bf47735fe6ce21913d34bc72a4059984c37a",
+    "prints/PRINT_06_Magnetometer_adjustment_rail.stl": "6c2d40564c1bf3f16612e3500c88ea0670e66ad1d83057f3064e877ae8cec77d",
+    "prints/PRINT_07_Magnetometer_service_pod.stl": "3f838eb39f9c8349680ab7e183ed76988b60c40aa685d3117ddd5e0d3ecca992",
+    "prints/PRINT_08_Magnetometer_pod_lid.stl": "a46cc0469bd78d4d281c7052e70d38b44cfbd6c070acd0df994b9b60ccc1c097",
+    "prints/PRINT_09_Rudder_transom_bracket.stl": "17503887112ff3c064c3ce86bc94b2cdc9f85e04c6100d7585e4657121a9eae1",
+    "prints/PRINT_11_Motor_face_mount.stl": "c5d46a740bba67560495f176e4e141a45c8118799381d8f39103eec672df9ec8",
+    "prints/PRINT_14_Motor_lower_cradle.stl": "4b100c1de3f0eb9293a3471f6cf114546c505605388d1fde008254f9cdbae38e",
+    "prints/PRINT_16_Rudder_blade.stl": "95c5ce9f2b838f88c9fa01b330ab64c69ec2c8551b464bcb8e7a2798fc71e2d9",
+    "prints/PRINT_17_Rudder_tiller.stl": "2b57fa1c56366e92478fc5ecdff3c05b85743946fc70923481916ff93a6045e4",
+    "prints/PRINT_18_ESP32_capture_bridge.stl": "59b7df9237b1fb0dffa0be2366db242a1ae0c3de75293c3e8c8d436b0dc3a60e",
+    "prints/PRINT_19_Front_end_capture_bridge.stl": "165ff729f45f3974379cef6b37395f3ada50df656e38b4498961867e293d4ca6",
+    "prints/PRINT_20_Regulator_capture_bridge.stl": "3ca77c122cbeaa742af4a74aa0023f18e2e445a50282fc52fd02869bb09ffeca",
+    "prints/PRINT_21_ESC_capture_bridge.stl": "3dd801d1875382673522fc3c48ca6f5f0e19bea35536084e392d2773d74f4508",
+    "prints/Print_STLs.zip": "c265ab3ea70b87fc94e7d920736e930d37a020d0deb2b70167c6c9c253085014",
+    "previews/RevB4_regulator_connection_access.png": "d23e7f960de0b1f2c6533e8d528083bdd928eb23f136c24a7dfa97aafe1e5eca",
+    "coupons/COUPON_01_E2_motor_mount_hull_section.stl": "d5b7f9780cf2328fd72148dc2a94e8571651706d24b157b100d781b4bc5f4a5c"
+  },
+  "coupon_mesh": {
+    "file": "COUPON_01_E2_motor_mount_hull_section.stl",
+    "triangles": 2682,
+    "extent_mm": [
+      52.0,
+      68.0,
+      10.0
+    ],
+    "nonmanifold_edge_count": 0,
+    "inconsistent_winding_edges": 0,
+    "degenerate_triangles": 0,
+    "connected_components": 1,
+    "signed_volume_mm3": 12593.8868,
+    "passed": true
+  }
+}
