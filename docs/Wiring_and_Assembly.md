@@ -1,43 +1,43 @@
-# Rev-B.3 wiring and assembly work instruction
+# Rev-C.1 — wiring and assembly
 
-> Current revision: [Rev-B.4 component audit](RevB4_Component_Compatibility.md). Use Rev-B.4 CAD/current print ZIP; only PRINT_20 changes from Rev-B.3. E1 access is now builder-accepted; historical results below are retained. Supplier fit and sealing gates remain open.
+Current design: [four articulated probes](RevC_Articulated_Probes.md). This is an integration plan; no validated schematic, firmware or completed harness is supplied. Older fixed-electrode and magnetometer wiring instructions are superseded.
 
-> **Current mechanical overrides:** see [Rev-B.3](RevB3_Assembly_Readiness.md). E1 is beneath the bow deck: straight vertical socket access fails, and the tested low-profile wrench allowance also clips the hull. Qualify actual tooling before the full hull print. Install the four electronics-tray screws before the battery tray; PRINT_04's new scallops clear their front heads. PRINT_18 now opens the ESP32 upper header area. Motor-support M3×8 starting screws have 2 mm nominal tip margin in revised blind pilots. All actual screw, connector and wire fits remain to be checked.
+## Connection changes
 
-This is a prototype integration plan, not a released electrical schematic or pin-numbered production harness. Resolve the open selections in the [production audit](RevB1_Production_and_Wiring_Audit.md) before building for use. Keep the original named components; additional integration hardware is still required.
+| Connection | Rev-C.1 arrangement |
+|---|---|
+|E1–E4|Four electrically independent exposed arm-tip heads → individually insulated leads → protected/bias/filter front end → ADS1115 A0/A1/A2/A3. No connection to hinge shaft, servo or hull hardware.|
+|ADC|Retain 3.3 V I²C interface. For 3D solve use coherent 0–3,1–3,2–3 differential measurements, or four coherently calibrated single-ended channels followed by differencing. Two old perpendicular pairs are insufficient.|
+|Magnetometer|Remove sensor, remote cable, firmware initialization/read/calibration requirements and heading dependency. This repository had no firmware implementation to delete.|
+|Probe power|Fused 2S branch → added D24V50F5 → four HS-65HB servo supply/returns. Separate from logic supply and ESC BEC positive.|
+|Probe controls|Four independent ESP32 PWM channels plus signal ground. Final GPIO/connector cavity map is unassigned; validate 3.3 V signal recognition before fixing hardware. Do not treat vendor wire colours as pinout verification.|
+|Logic|Retain D24V10F5 → ESP32 5 V input; disconnect all external power before USB.|
+|Steering|Existing ESC BEC → existing SG90 only. Its original loaded-current/boot/linkage gates remain open.|
+|Returns|Common signal reference with star distribution. Servo/motor load return must not flow through the high-impedance front-end return. Do not parallel regulator outputs.|
 
-> See the [Rev-B.2 electrode route/stack and retention schedule](RevB2_Prototype_Readiness.md) first. E2 must be terminated before motor installation; a 6×8 mm tray riser carries conductors to above-tray service connectors. Capture bridges and screw pilots replace the earlier unsecured-board arrangement. Actual connector passage and wire bends remain dry-assembly checks.
+The new regulator has 5 V±4% nominal accuracy; its lower bound is the servo's 4.8 V minimum before cable losses. Measure voltage at each moving servo under load, low battery and closed-hull temperature. Nominal 5 A rating alone does not establish margin. Measure loaded torque/current and handle jams quickly; avoid sustained hard-stop drive. A separately engineered power stage may be needed after tests.
 
-## Connection schedule
+## Build order and service access
 
-| Harness | From → to | Assembly requirement |
-|---|---|---|
-| P1 | Battery XT60 → fused distribution → ESC small Tamiya input | Mating polarized connector pair and fuse close to battery. Select wire/fuse from measured motor starting/loaded current, connector limits and protection coordination; ESC's 25 A rating alone is not a fuse value. |
-| P2 | Fused distribution → Pololu VIN/GND | Separate branch; strain-relieve soldered leads and insulate every joint. Keep return paired with supply. |
-| P3 | Pololu VOUT 5 V/GND → ESP32 5 V/GND header | One power source only. Disconnect for USB programming; do not feed ESP32 3V3 with 5 V. |
-| P4 | ESC BEC 6 V/GND → servo power/GND | Loaded current test required. BEC positive must remain isolated from Pololu/ESP32 5 V. Logic signals require common reference ground; motor/servo load current must not flow through sensor return wiring. |
-| C1 | ESP32 PWM + reference ground → ESC signal + ground | Firmware pin allocation and ESC calibration/failsafe remain to be defined. Identify actual connector pins, not wire colors alone. |
-| C2 | ESP32 PWM + reference ground → servo signal + ground | Confirm signal compatibility and travel on bench with linkage disconnected, then limit travel on real mechanism. |
-| S1 | ESP32 3.3 V/GND/SDA/SCL → ADS1115 and remote MMC5983MA | Confirm pin order and 3.3 V pull-ups on actual boards. Qwiic/STEMMA connectors do not provide an ESP32 DevKitC socket by themselves: a terminated adapter lead is needed. |
-| S2 | E1/E2/E3/E4 ring terminals → protected front end → ADS1115 A0/A1/A2/A3 | Label both ends E1–E4. Keep E1/E2 and E3/E4 as their respective pairs. Never bypass the unvalidated protection/bias network and connect electrodes directly. |
-| M1 | ESC motor outputs → motor tabs | Matching 4 mm male bullets / suitably rated insulated terminations and motor-tab solder joints required. Restrain before tabs; keep clear of coupling and motor can. Verify direction with propeller removed. |
+1. Resolve the horn adapter, shaft axial/pin retention, electrode terminal stack and seal application first. Print one pod/arm; machine one cartridge. Check actual servo drawing revision and mounting screws. Do not power an incomplete coupling.
+2. Measure cartridge bore, coaxiality and shaft finish; install bushing and lubricated seal without lip damage. The seal is not pressed over a cross-drilled edge. Use a protective installation sleeve. Confirm acceptable breakaway torque and smooth 0–90° travel.
+3. Install the servo in its dry pod from the open top and wire the service connector. Fit the finished horn adapter, supported shaft, arm and retained cross-pin. Calibrate mechanical 0° and 90° with a physical jig; do not assume PWM endpoints equal these angles.
+4. Fit an A4 electrode screw, nut and selected terminal in the tip pocket. Bed the lead in its groove, insulate/encapsulate all metal except the outer head, and verify that copper/terminal metal cannot contact water. Qualify the potting bond and cure before immersion.
+5. Route a measured flexible service loop around the hinge into the separate potted pod entry. Protect it from shaft, lip, pin and stops. Dry-cycle the entire range and inspect tension/chafe at intermediate angles. The conductor is not a rotary seal. Keep sensor lead separate from the servo supply/return inside the pod and hull.
+6. Finish pod/hull lands. Fit the continuous sheet gasket, pass dry leads through the 20×20 hull aperture, and bolt each pod from below. Nominal hard stops set 0.75 mm compression. Use a coupon-qualified tightening procedure. Inspect all four blind pilot floors and the smooth face-gasket path.
+7. Mount the additional D24V50F5 on its two new tray standoffs, with two M2 screws and insulated soldered leads. Leave the connection row, both board sides and surrounding thermal space clear. Confirm screw heads miss components. Route its power branch away from ADC inputs.
+8. Assemble the retained drivetrain and electronics tray. Terminate probe harnesses at labeled accessible dry connectors above the tray; provide enough slack to unplug, but not enough to reach the coupling or gasket. Final bundle diameters and connector bodies must be fitted physically.
+9. Install tray screws before battery tray; retain the transverse battery and pull loop. For USB, disconnect and remove battery plus battery tray and isolate external 5 V. For tray removal, also unplug pod harnesses and remove the steering horn/linkage before releasing tray screws.
+10. To service a pod: disconnect battery, remove battery/tray as needed to access its dry connectors, unplug them, then remove the four underside pod screws. Do not pull wires through the hull while connected. Lift out servo only after withdrawing its cartridge/shaft assembly as required. Replace and requalify disturbed gaskets/potting.
+11. Verify polarity, continuity, insulation between all four electrodes and all hardware, and each isolated supply before energizing electronics. Test one motor-free pod on the bench. Then perform unpowered immersion/leak and representative-ballast flotation tests. Only proceed to controlled low-energy laboratory sensing after all earlier gates pass.
 
-Do not publish guessed pin numbers as a released harness. Record actual connector manufacturer/part, mating part, cavity numbers, polarity, wire gauge, insulation, cut length, strip length and crimp tool after a dry harness build. Check continuity and shorts with all power disconnected; verify each supply separately before connecting electronics.
+## Measurement sequence to implement
 
-## Routing and assembly sequence
+- Confirm valid calibrated angles, all four wetted tips, field/pose stability and sufficient clearance.
+- Command one axis at a time to the chosen non-coplanar pose. Enforce 0–90° command limits, timeout/jam handling and physical end limits after calibration. The CAD limits are not firmware.
+- Stop propulsion; settle until measured noise/repeatability criteria are met. Retain enough holding torque to prevent backdrive. Record servo status and motion state.
+- Acquire timestamped coherent signed differences or common-frequency complex phasors. Reject saturated, unsettled or mismatched-phase data. Fit/calibrate electrode offsets and transfer functions in a known field.
+- Calculate actual tip coordinates from calibrated angles, assess matrix rank/conditioning, then solve in boat coordinates. Log raw voltages, timestamps, angles, covariance/quality flags and the exact geometry/calibration revision.
+- Report no 3D estimate for equal-angle/degenerate poses. Changes in voltage during movement combine spatial and temporal effects; do not label them vertical gradients without a stationary/coherent acquisition model.
 
-1. Print and finish interfaces. Install and seal electrodes, stern tube, steering boot and qualified attachments. Fit the four ring lugs in their specified orientations and route E2 through the cradle side exit. Tighten E2 before motor/cradle installation. Use the new blind M3 support fasteners and confirm tool access/alignment.
-2. On the removed electronics tray, thread the five harness restraint ties and ESC restraint. Tie heads remain above the plate. Fit M2 ADC/servo screws into the new receiving pilots, the four M3 capture bridges and the ESC pad. Bridge feet seat on printed pedestals; verify real electronics cannot escape and no screw load presses on components.
-3. Build the fused adapter/distribution harness outside the hull. Put bulky XT60/Tamiya junctions and fuse in a measured accessible free volume; the 6×8 mm side routing allocation is for conductors, not connector bodies or fuse holders. Exact junction placement is an open CAD gate.
-4. Route propulsion supply and return together on the positive-Y side; keep motor leads local and paired. Branch to the logic-side restraint at (80,50), with slack to unplug the regulator. Keep antenna area free of bundled wire or metal.
-5. Route electrode/ADC wiring on negative Y, using stations (-12,-24) and (78,-44) as appropriate. The front-end-to-ADC run should stay short. Use (105,-44) for the separate servo/control branch; do not bundle that branch with high-impedance electrode conductors. Cross power wiring approximately at right angles where unavoidable.
-6. Route the magnetometer cable through a selected sealed bulkhead/potted feedthrough into the main hull. This interface is not yet designed. Provide strain relief on both sides, a drip loop where applicable and a service disconnect inside. Never run it across the hatch gasket. Do not assume an assembled Qwiic plug passes the existing pod's small wire exit; select a feedthrough assembly process compatible with the plug and seal.
-7. Leave measured service loops between fixed hull and tray, then disconnect those interfaces before lifting the tray. Do not make a loop large enough to reach the motor shaft, coupling, linkage or gasket. Tie-downs are restraints, not certified clearance corridors; inspect with actual cables in place.
-8. Lower and secure tray, reconnect labeled hull/sensor/motor interfaces, fit and adjust the real horn/clevis linkage, and test the mechanism unpowered through its intended travel.
-9. Thread battery straps through matching tray passages; fit battery with pull loop and free balance lead. Keep fuse/disconnect accessible. Connect battery only after polarity/continuity inspection and electrical commissioning.
-10. For USB, unplug battery and remove battery plus loose battery tray; isolate external 5 V before inserting USB. For tray removal, additionally unplug fixed harnesses, remove servo horn/linkage and release the four tray screws.
-11. Inspect all seals and wiring before evenly closing hatch. Perform unpowered leak/float tests, loaded steering/BEC tests, motor thermal/noise tests and controlled sensing validation. No powered-water acceptance is inferred from CAD.
-
-## Harness release record (not yet filled)
-
-Required records: exact connector/fuse/lead BOM; wiring diagram with connector cavities; final GPIO allocation and firmware revision; actual cut lengths and bend radii; restraint and service-loop photographs; continuity/polarity results; motor and servo peak-current traces; BEC/logic rail minima; fuse coordination rationale; sealed-entry drawing and leak results. These are the remaining inputs for repeatable production assembly.
+Final GPIO assignments, exact keyed connectors, wire lengths, fuse coordination, angle feedback/repeatability, jam protection and firmware state machine remain open. No guessed pin-number harness or automatic powered-water operation is included.

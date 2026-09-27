@@ -1,0 +1,8 @@
+{
+  "revision": "Rev-C.1",
+  "timeline": 1523,
+  "fixes": [
+    "Connect the four wire grooves to the terminal potting pockets before their parametric rotations"
+  ],
+  "assembly_release_passed": false
+}

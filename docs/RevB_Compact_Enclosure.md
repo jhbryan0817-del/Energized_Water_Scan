@@ -1,3 +1,5 @@
+> **Historical revision.** Current geometry, BOM and sensing architecture are [Rev-C.1](RevC_Articulated_Probes.md). Fixed-electrode and magnetometer instructions below are superseded.
+
 # Rev-B compact enclosure — 24 September 2026
 
 Rev-B repacks the existing purchased components into a **320 × 170 mm hull**, down from 400 × 190 mm. Length decreases 80 mm (20%); beam decreases 20 mm (10.5%). The bounding footprint decreases 28.4%. These are hull dimensions, not the complete craft's dimensions including its external rudder and sensor rail.

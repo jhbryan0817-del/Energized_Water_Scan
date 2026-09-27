@@ -1,5 +1,15 @@
 # Changelog
 
+## Rev-C.1 — 27 September 2026
+
+- Replace four flush electrodes with independently parameterized 0–90° fore–aft arms, 150 mm deployment below the hull bottom and a non-coplanar measurement pose.
+- Remove magnetometer hardware and current procurement/print/wiring requirements.
+- Add four removable dry HS-65HB pod concepts, replaceable nominal machined seal/bushing cartridges, insulated arms and a separate probe-servo regulator mount.
+- Close old wet electrode holes and rail pilots; correct pod/cartridge and motor-foot interference.
+- Update BOM, supplier/material references, assembly, waterproofing boundaries, sensing plan and explicit interface holds.
+- Add synthetic 3D observability tests, Fusion angle presets, rigid motion/clearance checks and revision-matched exports. No claim of completed horn coupling, qualified waterproofing or validated field measurements.
+
+
 ## Rev-B.4 — 26 September 2026
 
 - Audit all named purchased components against manufacturer/supplier references; record nominal-versus-tolerance limitations and source hashes.
@@ -59,4 +69,3 @@
 ## Rev-A — 2026-09-23
 
 Original published mechanical packaging audit. Historical reports remain in `verification/`; source commit: `a364aa5ba2249f480e7dcc9e9159f0153d982758`.
-

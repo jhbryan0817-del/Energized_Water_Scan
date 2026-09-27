@@ -1,0 +1,48 @@
+{
+  "revision": "Rev-C.1",
+  "baseline_timeline": 1250,
+  "timeline": 1439,
+  "removed": [
+    "ELECTRODE_E1_M4_316_envelope:1",
+    "ELECTRODE_E2_M4_316_envelope:1",
+    "ELECTRODE_E3_M4_316_envelope:1",
+    "ELECTRODE_E4_M4_316_envelope:1",
+    "PRINT_06_Magnetometer_adjustment_rail:1",
+    "PRINT_07_Magnetometer_service_pod:1",
+    "SENSOR_SparkFun_SEN19921_MMC5983MA:1",
+    "PRINT_08_Magnetometer_pod_lid:1",
+    "OPTION_Magnetometer_raised_mast_60mm:1",
+    "OPTION_Magnetometer_forward_boom_80mm:1",
+    "PROCURE_Magnetometer_adhesive_pad_1mm:1"
+  ],
+  "stations": [
+    [
+      "E1",
+      -75,
+      -1,
+      90
+    ],
+    [
+      "E2",
+      90,
+      -1,
+      30
+    ],
+    [
+      "E3",
+      -75,
+      1,
+      30
+    ],
+    [
+      "E4",
+      90,
+      1,
+      90
+    ]
+  ],
+  "hinge_drop_mm": 18,
+  "tip_radius_mm": 132,
+  "assembly_release_passed": false,
+  "status": "mechanical concept; supplier horn adapter, seal qualification and harness unfinished"
+}

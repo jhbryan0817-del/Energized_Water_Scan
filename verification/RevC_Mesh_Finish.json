@@ -1,0 +1,9 @@
+{
+  "revision": "Rev-C.1",
+  "timeline": 1515,
+  "fixes": [
+    "Remove tangential old entry stub at pod floor; rejoin offset entry",
+    "Trim obsolete rail bore fills flush to deckZ68"
+  ],
+  "assembly_release_passed": false
+}

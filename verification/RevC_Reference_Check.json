@@ -1,0 +1,20 @@
+{
+  "date": "2026-09-27",
+  "sources": [
+    {
+      "part": "HS-65HB",
+      "url": "https://www.hiteccs.com/public/uploads/data_sheet/HCS_HS-65HB_Specsheetv2.2_10-1729887930.pdf",
+      "sha256": "75e08540af6edbba20bcfa557b36d3df73554f7892c783a543489a1ad528aa00",
+      "visual_review": true
+    },
+    {
+      "part": "D24V50F5",
+      "url": "https://www.pololu.com/file/0J1436/d24v50f5-step-down-voltage-regulator-dimensions.pdf",
+      "sha256": "41e757f88eae7391346ae7c6f67c841b421d8ffc1a94e425366dffc827f8fc2a",
+      "visual_review": true
+    }
+  ],
+  "other_references": "docs/RevC_Mechanical_References.md",
+  "supplier_models_are_nominal_envelopes": true,
+  "waterproof_system_qualification_passed": false
+}

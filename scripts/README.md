@@ -1,3 +1,20 @@
+# Current verification scripts — Rev-C.1
+
+Run Fusion scripts sequentially with the scanner active. Supply `__file__` when executing source text through MCP so outputs resolve inside this repository.
+
+1. `revc_build.py`: one-time migration from exactly 1,250-item Rev-B.4. Backs up native design outside the repository; result has 1,439 items. Do not rerun on a migrated design.
+2. `revc_interface_fixes.py`: one-time follow-up from 1,439 items, completing motor-foot and cartridge/entry clearance changes.
+3. `revc_mesh_finish.py`: one-time finishing pass from 1,487 items, removing the tangent entry stub that failed mesh topology checks and trimming old rail-fill projections.
+4. `revc_arm_finish.py`: one-time pass from 1,515 items, joining wire grooves to terminal pockets before the angle features. Final model has 1,523 items.
+5. `revc_set_pose.py`: change POSE to `stowed`, `deployed`, `measurement`, or four angles in 0–90°. Four native user parameters drive root-level rotate features. Other dimensions are fixed migration geometry, not fully generative master parameters.
+6. `revc_audit.py`: read-only BRep intersections, 5° probe-motion samples, feature health and exact electrode head positions. Writes `RevC_Assembly_Audit.json` without asserting a physical release.
+7. `revc_gradient.py`: outside Fusion, Python 3 + NumPy. Tests rank/conditioning, signed DC/complex recovery, correlated reference noise and invalid angles. Writes `RevC_Observability.json`.
+8. `revc_export.py`: export 21 stowed-pose STLs, ZIP, measurement-pose F3D/physical STEP and previews. Deletes only the three explicitly retired magnetometer STLs from the current print directory.
+9. `revc_roundtrip.py`: reopen native export, compare body volumes, parameter expressions and timeline, then save the original cloud scanner design.
+10. `revc_check_exports.py`: outside Fusion, check topology, winding, connectedness, BRep/mesh bounds and volume, ZIP contents, STEP count, native roundtrip and hashes. Imports the unchanged standard-library mesh checker from `revb4_check_stl.py`.
+
+No script drives real servos or performs instrument acquisition. A geometric pass does not resolve the documented seal, horn, cable, strength, power or flotation gates. Older scripts below apply only to their original revisions.
+
 # Verification scripts — Rev-B.4
 
 Run `revb4_supplier_fixes.py` **once** on the unchanged 1,236-item Rev-B.3 design. It backs up the native model, changes PRINT_20 and four nut envelopes, and resolves regulator provenance. Final Rev-B.4 has 1,250 timeline items; never rerun this migration on it.
@@ -39,4 +56,3 @@ After exports and the native roundtrip, run `check_exports.py` with Python 3. It
 One-time migration order from the 1012-item Rev-B.1 baseline: `revb2_interfaces.py`, `revb2_finish.py`, `revb2_branding.py`, `revb2_mesh_corrections.py`, `revb2_exit_margin.py`, `revb2_transom_access.py`. Do not rerun migrations on the finished model. These fixed-coordinate scripts preserve the original timeline and add named features. They remove the tangent rail-boss junction, move the power tie slots clear of the ESC pedestal, finish the E2 exit at 12 x 7 mm, and open driver bores through the upper transom gussets.
 
 See [current readiness gates](../docs/RevB2_Prototype_Readiness.md) and [assembly instructions](../docs/Wiring_and_Assembly.md). These scripts do not qualify printed screw strength, real hardware/connector fit, waterproofing, flotation or sensing performance. Historical `RevB1_*` reports describe older geometry.
-

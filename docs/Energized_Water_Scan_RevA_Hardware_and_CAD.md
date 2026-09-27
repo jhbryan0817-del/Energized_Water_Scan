@@ -1,3 +1,5 @@
+> **Historical revision.** Current geometry, BOM and sensing architecture are [Rev-C.1](RevC_Articulated_Probes.md). Fixed-electrode and magnetometer instructions below are superseded.
+
 # Energized Water Scan — Rev-A Hardware & Mechanical-CAD Baseline
 
 **Repository target:** `jhbryan0817-del/Energized_Water_Scan`  
