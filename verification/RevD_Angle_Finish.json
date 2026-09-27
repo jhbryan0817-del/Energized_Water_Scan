@@ -1,0 +1,63 @@
+{
+  "revision": "Rev-D",
+  "timeline": 1700,
+  "rotations": [
+    {
+      "component": "PROBE_E1_MOVING (1)",
+      "index": 1636,
+      "prior_expression": "probe_E1_angle",
+      "new_expression": "0 deg"
+    },
+    {
+      "component": "PROBE_E1_MOVING (1)",
+      "index": 1672,
+      "prior_expression": "probe_E1_angle",
+      "new_expression": "0 deg"
+    },
+    {
+      "component": "PROBE_E1_MOVING (1)",
+      "index": 1693,
+      "live_expression": "probe_E1_angle"
+    },
+    {
+      "component": "PROBE_E2_MOVING (1)",
+      "index": 1641,
+      "prior_expression": "-probe_E2_angle",
+      "new_expression": "0 deg"
+    },
+    {
+      "component": "PROBE_E2_MOVING (1)",
+      "index": 1675,
+      "live_expression": "-probe_E2_angle"
+    },
+    {
+      "component": "PROBE_E3_MOVING (1)",
+      "index": 1646,
+      "prior_expression": "probe_E3_angle",
+      "new_expression": "0 deg"
+    },
+    {
+      "component": "PROBE_E3_MOVING (1)",
+      "index": 1678,
+      "prior_expression": "probe_E3_angle",
+      "new_expression": "0 deg"
+    },
+    {
+      "component": "PROBE_E3_MOVING (1)",
+      "index": 1696,
+      "live_expression": "probe_E3_angle"
+    },
+    {
+      "component": "PROBE_E4_MOVING (1)",
+      "index": 1651,
+      "prior_expression": "-probe_E4_angle",
+      "new_expression": "0 deg"
+    },
+    {
+      "component": "PROBE_E4_MOVING (1)",
+      "index": 1681,
+      "live_expression": "-probe_E4_angle"
+    }
+  ],
+  "reason": "Fusion stores these root-requested body moves on the owning component. Earlier root-only deletion loops found none; six superseded rotations are now fixed at zero. Four final-axis moves remain parameter driven."
+}

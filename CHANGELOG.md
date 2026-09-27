@@ -1,5 +1,14 @@
 # Changelog
 
+## Rev-D — 27 September 2026
+
+- Retain 320 × 170 mm hull footprint; replace underside pods with four integral internal actuator wells and removable covers.
+- Add four recessed wet channels, opposing fold directions and 166 mm arms on hinges 16 mm above the bottom, retaining 150 mm deployed tip depth.
+- Retain HS-65HB servos with nominal internal timing-drive allocations; document new supplier, tension, horn and retention holds.
+- Repackage analog/power cassette, longitudinal battery, overhead controller bridge and separate steering saddle; revise hatch opening/gasket and provide a provisional dogleg linkage.
+- Apply graphite/light-gray/cyan appearances and update assembly/BOM, geometry preset, audits and exports.
+- Preserve earlier revision history and explicit prototype release limitations.
+
 ## Rev-C.1 — 27 September 2026
 
 - Replace four flush electrodes with independently parameterized 0–90° fore–aft arms, 150 mm deployment below the hull bottom and a non-coplanar measurement pose.
