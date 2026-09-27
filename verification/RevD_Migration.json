@@ -1,0 +1,79 @@
+{
+  "revision": "Rev-D",
+  "timeline": 1664,
+  "hull_footprint_mm": [
+    320,
+    170
+  ],
+  "hinge_height_mm": 16,
+  "radius_mm": 166,
+  "deployed_tip_depth_mm": 150,
+  "stations": [
+    [
+      "E1",
+      -70,
+      -1,
+      72,
+      1
+    ],
+    [
+      "E2",
+      85,
+      -1,
+      52,
+      -1
+    ],
+    [
+      "E3",
+      -70,
+      1,
+      72,
+      1
+    ],
+    [
+      "E4",
+      85,
+      1,
+      52,
+      -1
+    ]
+  ],
+  "retired": [
+    "PRINT_01_Hull_shell:1",
+    "PRINT_03_Removable_electronics_tray:1",
+    "PRINT_04_Battery_slide_tray:1",
+    "PRINT_22_E1_dry_servo_pod:1",
+    "SEAL_E1_pod_1mm_silicone_compressed_0p75:1",
+    "MACHINE_E1_POM_C_seal_cartridge:1",
+    "SEAL_E1_cartridge_face_gasket:1",
+    "PROCURE_E1_SKF_6x16x7_and_igus_GFM060806:1",
+    "PROCURE_E1_HS65HB_drawing_envelope:1",
+    "INTERFACE_HOLD_E1_horn_to_shaft_adapter:1",
+    "PROBE_E1_MOVING:1",
+    "PRINT_23_E2_dry_servo_pod:1",
+    "SEAL_E2_pod_1mm_silicone_compressed_0p75:1",
+    "MACHINE_E2_POM_C_seal_cartridge:1",
+    "SEAL_E2_cartridge_face_gasket:1",
+    "PROCURE_E2_SKF_6x16x7_and_igus_GFM060806:1",
+    "PROCURE_E2_HS65HB_drawing_envelope:1",
+    "INTERFACE_HOLD_E2_horn_to_shaft_adapter:1",
+    "PROBE_E2_MOVING:1",
+    "PRINT_24_E3_dry_servo_pod:1",
+    "SEAL_E3_pod_1mm_silicone_compressed_0p75:1",
+    "MACHINE_E3_POM_C_seal_cartridge:1",
+    "SEAL_E3_cartridge_face_gasket:1",
+    "PROCURE_E3_SKF_6x16x7_and_igus_GFM060806:1",
+    "PROCURE_E3_HS65HB_drawing_envelope:1",
+    "INTERFACE_HOLD_E3_horn_to_shaft_adapter:1",
+    "PROBE_E3_MOVING:1",
+    "PRINT_25_E4_dry_servo_pod:1",
+    "SEAL_E4_pod_1mm_silicone_compressed_0p75:1",
+    "MACHINE_E4_POM_C_seal_cartridge:1",
+    "SEAL_E4_cartridge_face_gasket:1",
+    "PROCURE_E4_SKF_6x16x7_and_igus_GFM060806:1",
+    "PROCURE_E4_HS65HB_drawing_envelope:1",
+    "INTERFACE_HOLD_E4_horn_to_shaft_adapter:1",
+    "PROBE_E4_MOVING:1"
+  ],
+  "assembly_release_passed": false
+}

@@ -1,0 +1,43 @@
+{
+  "revision": "Rev-D",
+  "timeline": 1691,
+  "stations": [
+    [
+      "E1",
+      -86,
+      -1,
+      72,
+      1
+    ],
+    [
+      "E2",
+      110,
+      -1,
+      52,
+      -1
+    ],
+    [
+      "E3",
+      -86,
+      1,
+      72,
+      1
+    ],
+    [
+      "E4",
+      110,
+      1,
+      52,
+      -1
+    ]
+  ],
+  "changes": [
+    "Opposed arm stations separated from other shaft cartridges",
+    "Cartridge, belt flange and shaft access pockets",
+    "Fore-aft battery/transom and stern-tube rail relief",
+    "Rotated overhead controller; lower hatch boss clearance",
+    "Relocated steering servo with provisional dogleg pushrod",
+    "Four potted lead roof entries"
+  ],
+  "assembly_release_passed": false
+}

@@ -1,0 +1,49 @@
+{
+  "revision": "Rev-D",
+  "timeline": 1700,
+  "hatch_fastener_centres_mm": [
+    [
+      -115.5,
+      0
+    ],
+    [
+      -105,
+      -70
+    ],
+    [
+      -105,
+      70
+    ],
+    [
+      42.5,
+      -71
+    ],
+    [
+      42.5,
+      71
+    ],
+    [
+      171,
+      -71
+    ],
+    [
+      171,
+      71
+    ],
+    [
+      196.5,
+      -60
+    ],
+    [
+      196.5,
+      0
+    ],
+    [
+      196.5,
+      60
+    ]
+  ],
+  "hatch_aperture_aft_x_mm": 193,
+  "hatch_max_length_mm": 319,
+  "assembly_release_passed": false
+}
