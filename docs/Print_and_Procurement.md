@@ -1,6 +1,6 @@
 # Rev-E print and procurement schedule
 
-See [Rev-E design and holds](Design.md). The [historical reference](../HISTORY.md) is historical. This remains a fit prototype, not a released mechanism or water-ready assembly.
+See the [Rev-E design and holds](Design.md) and [waterproofing audit](Waterproofing_and_Design_Audit.md). This remains a fit prototype, not a released mechanism or water-ready assembly.
 
 ## Current 23-piece print package
 
@@ -30,6 +30,8 @@ STLs are millimetres and arms are exported stowed. Reorient for slicing without 
 - Four roof-entry potting cups, wet hinge loops and insulated tip terminals require the actual wire/encapsulant and flex/immersion tests.
 
 All other named electronics, battery, motor, shaft/tube, propeller and rudder parts remain. Retain the separate D24V50F5 probe supply. Existing electrical protection and connector omissions remain open. No purchase has been made. Fit one complete actuator/transmission/cartridge before buying four sets or printing the complete hull.
+
+Do not trim the bored stern-tube boss, rudder/transom bracket, steering support land, hatch flange, or probe-channel roofs from the hull. They are functional model geometry, even where an isolated view makes them resemble stray overhangs. Remove only slicer-generated supports and inspect the underlying sealing surfaces afterward.
 
 
 The authoritative current item list is [BOM.xlsx](../BOM.xlsx), with a [CSV mirror](../BOM.csv). Green rows detect electricity, red rows support the RC boat, and yellow rows serve both. Blank prices are unresolved procurement estimates; the total is partial. Native Google Sheets retains its live currency formulas; the XLSX uses a dated exchange-rate snapshot.

@@ -1,22 +1,38 @@
-# Energized Water Scan
+# Energized Water Scanner USV
 
-**Rev-E — alignment and strength update, 28 September 2026.** The hull is restored to its assembly datum and grounded. Thicker probe channels, arms, covers, motor supports and battery cradle improve the fit prototype. The hull footprint is **320 × 176 mm**; there are **23 printed parts**.
+Energized Water Scanner is a small unmanned surface vessel (USV) research platform for measuring spatial voltage differences in water. Four independently actuated electrode probes fold into recessed channels for transport and deploy below the hull for measurement. The vessel combines the sensing mechanism with an electric propulsion shaft, rudder steering, onboard power conversion, protected analog acquisition, and an ESP32-class controller.
 
-- [Design, alignment findings and wet/dry interfaces](docs/Design.md)
-- [Current BOM workbook](BOM.xlsx) · [CSV](BOM.csv) · [live Google BOM](https://docs.google.com/spreadsheets/d/129cdgjaWSUko2g8DQrpoiBbZISE-RidNFI1MubGNuU8/edit#gid=372890739)
-- [Print and procurement schedule](docs/Print_and_Procurement.md) · [assembly and wiring](docs/Wiring_and_Assembly.md)
-- [Editable Fusion archive](cad/Energized_Water_Scanner_RevE.f3d) · [physical STEP](cad/Energized_Water_Scanner_RevE.step) · [STL package](prints/Print_STLs.zip)
-- [Assembly audit](verification/RevE_Assembly_Audit.json) · [interface clearances](verification/RevE_Interfaces.json) · [service audit](verification/RevE_Service_Audit.json) · [export verification](verification/RevE_Export_Check.json)
-- [Current scripts](scripts/README.md) · [consolidated history](HISTORY.md)
+The project is intended to explore repeatable electric-potential-gradient measurements and their mapping from a mobile platform. It is **not** a certified electrical-safety instrument: a low or absent reading cannot establish that water is safe.
 
-![Aligned reinforced assembly](previews/RevE_open.png)
+![Energized Water Scanner with the service hatch open](previews/RevE_open.png)
 
-The hull's accidental translation caused the systematic misalignment. The propulsion train itself is coaxial at its intended 15° inclination. Moving the battery 1.5 mm aft increases its nominal coupling clearance to 2.081 mm.
+## System overview
 
-Each wet probe is separated from the servo space by a shaft seal, cartridge gasket and distinct potted wire entry. These interfaces are modeled; actual waterproofness remains untested. Internal covers are service covers and do not create individually sealed servo chambers.
+- **Hull:** 320 × 176 mm printed enclosure with a continuous removable hatch and gasket.
+- **Sensing array:** four 166 mm insulated probe arms with stainless tip electrodes and independent 0–90° deployment.
+- **Actuation:** four dry HS-65HB servos driving sealed output shafts through proposed 1:1 timing transmissions.
+- **Propulsion and steering:** RS-380-class motor, inclined shaft/stern tube, 30 mm propeller, rudder stock, and a separate steering servo.
+- **Electronics:** protected electrode front end, ADS1115 conversion, ESP32-class controller, ESC, logic regulator, and a dedicated 5 V probe-servo supply.
+- **Service architecture:** removable electronics cassette, longitudinal battery cradle, controller bridge, individually disconnectable probe actuators, and separated analog/power cable routes.
 
-**Mechanical fit prototype, not a released water-ready instrument.** Timing-drive supplier selection, horn adapters, shaft retention, steering travel, flexible wiring, seal/potting qualification and loaded flotation remain open. The strengthened hull adds approximately 118 cm³ of solid volume. The geometry demonstrator is not instrument firmware, and an absent reading cannot establish safe water.
+## Design package
 
-Only the latest deliverables remain in the working tree. Previous documentation, reports and revision manifests are consolidated in HISTORY.md; Git history remains intact.
+- [Mechanical design, interfaces, and measurement geometry](docs/Design.md)
+- [Waterproofing and assembly audit](docs/Waterproofing_and_Design_Audit.md)
+- [Wiring and assembly guide](docs/Wiring_and_Assembly.md)
+- [Print and procurement plan](docs/Print_and_Procurement.md)
+- [Complete BOM workbook](BOM.xlsx) and [CSV mirror](BOM.csv)
+- [Fusion archive](cad/Energized_Water_Scanner_RevE.f3d) and [STEP reference](cad/Energized_Water_Scanner_RevE.step)
+- [Verification reports](verification) and [Fusion audit scripts](scripts/README.md)
 
-The Google Sheet is a prioritized **28-line procurement list**, with major electronics first. It excludes owned screws and minor supplies and combines selected mechanical kits. The repository BOM remains the complete **79-line assembly inventory**, including 23 printed pieces. These are different views of the same Rev-E design, not alternate revisions.
+The checked-in 3D exports are the current Rev-E reference set. The live Fusion document contains the latest audit notes; new STL, STEP, and F3D exports are intentionally deferred until the next export pass.
+
+## Build status
+
+Rev-E is a **mechanical fit prototype**, not a water-ready release. Static solid checks found no unintended rigid-body intersections, and sampled probe motion found no modeled collisions. The propulsion train is coaxial at its intended 15° inclination. These are CAD results, not substitutes for hardware validation.
+
+Before water operation, the team must qualify the shaft seals, cartridge gaskets, potted wire feedthroughs, stern-tube bond, steering boot, hatch compression, flexible probe wiring, transmission retention, loaded flotation, and fail-safe actuator behavior. Fit and cycle one complete probe actuator before purchasing or printing four sets.
+
+## Measurement concept
+
+The four deployed electrodes provide three coherent signed voltage differences relative to a reference electrode. Their known positions and vessel attitude can support a local field-gradient estimate when the geometry is sufficiently well conditioned. The current nominal measurement pose is E1/E2/E3/E4 = **60°/20°/20°/45°**; calibration must still account for arm-angle error, electrode offsets, phase, conductivity, and boat attitude.

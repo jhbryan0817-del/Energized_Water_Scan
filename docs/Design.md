@@ -1,6 +1,17 @@
-# Rev-E — internal actuators and recessed folding probes
+# Mechanical design — Rev-E internal actuators and recessed folding probes
 
-Revision E restores the hull to the assembly datum, grounds it against accidental dragging, reinforces printed structures, and adds explicit bonded wet-wire entry allocations. The footprint is now **320 × 176 mm**. Historical documents are retained in HISTORY.md as context, not active instructions.
+Revision E restores the hull to the assembly datum, grounds it against accidental dragging, reinforces printed structures, and adds explicit bonded wet-wire entry allocations. The footprint is **320 × 176 mm**. This document describes the current design; Git history retains earlier revisions.
+
+## Audit disposition of the highlighted exterior features
+
+The features highlighted in the review images are not unexplained holes or disposable support geometry:
+
+- The small bored boss/sleeve at the lower stern is part of the inclined stern-tube penetration and its bonded support. Its circular bore is intentional; the installed tube-to-hull joint must be bonded and leak-tested.
+- The adjacent rear bracket and raised land support the rudder/steering installation and provide structure around the steering interface. They must not be trimmed from the printed hull.
+- The ledges visible above the cyan probe mechanism are the continuous hatch flange and the roofs of the intentionally wet probe channels. The channels flood from outside, but their roofs separate them from the dry electronics volume.
+- Openings in the cyan internal covers are dry-side wire/service passages. They are not the wet-to-dry boundary and must not be treated as waterproof glands.
+
+No additional exterior feature was removed in the final audit: each questioned projection has a propulsion, steering, sealing, or structural role. Remove only temporary slicer support material after printing. The disposition and qualification holds are also stored as attributes in the live Fusion document.
 
 ## Alignment and reinforcement
 
@@ -40,7 +51,7 @@ The retained dry HS-65HB servos sit above the hinge shafts. A nominal 1:1 synchr
 
 **This is a packaging prototype, not a released transmission.** Pulley solids and belts are smooth clearance envelopes. They are not accurate tooth profiles or STL parts. No supplier stock number, load rating or belt tension is asserted for a 96 mm belt. A supplier-approved matched belt/pulley pair, exact horn survey, journal bearing retention, shaft axial retention, tension adjustment and a torque/cycle test remain required. The upper shaft journal allocation supports belt radial load separately from the servo spline. It does not establish a qualified bearing fit or structural capacity.
 
-Primary design references: [SDP/SI timing profiles](https://sdp-si.com/products/details/timing-belt-detail.php), [SDP/SI belt/pulley alignment and center-distance tools](https://www.sdp-si.com/tools/), and [Gates light-power and precision drive design manual](https://www.gates.com/content/dam/documents-library/catalogs/light-power-and-precision-manual.pdf). These support the drive architecture and sizing method, not the specific unreleased assembly. Prior supplier references are consolidated in [HISTORY.md](../HISTORY.md); verify exact purchased parts against current CAD and BOM.
+Primary design references: [SDP/SI timing profiles](https://sdp-si.com/products/details/timing-belt-detail.php), [SDP/SI belt/pulley alignment and center-distance tools](https://www.sdp-si.com/tools/), and [Gates light-power and precision drive design manual](https://www.gates.com/content/dam/documents-library/catalogs/light-power-and-precision-manual.pdf). These support the drive architecture and sizing method, not the specific unreleased assembly. Verify exact purchased parts against the current CAD and BOM.
 
 The machined cartridge, radial seal and lower bushing are relocated within the recessed hinge region. The two rear cartridges have a 1.7 mm shorter inboard nose, ending at local absolute Y=32.7 mm, while the lower bushing begins at 32.75 mm; seal and bushing seats remain unchanged. The rear belt plane shifts 3 mm outboard and its servo shifts 5 mm outboard to preserve battery lift access. Their original water-duty and machining holds remain. Removing the external pod flange removes one wet gasket interface per channel. The 319 × 154 mm shaped hatch uses ten fasteners and a new continuous gasket; its aft aperture reaches X=193 mm for tray and battery lift-out. The removable internal covers are service/dust covers, not a second watertight compartment. A failed shaft seal can still flood the hull.
 
@@ -52,7 +63,7 @@ Assembly order: install and inspect shaft cartridges and actuator mechanisms; fi
 
 Keep the four electrode conductors individually identified and insulated from shafts and fasteners. Route their dry tails along the port side toward the analog front end. Route servo power and motor power on the starboard side, with a local disconnect at each well and strain relief before each connector. The small internal cover exits are dry passages; they do not replace the required potted wet-to-dry electrode entry and a qualified flexible hinge loop. Exact connector mating, cable bends, wire fatigue, potting and retention remain physical assembly checks.
 
-The dedicated D24V50F5 probe rail is retained. Do not parallel regulator outputs or power all probe servos from the ESC's 1 A BEC. Acquisition and power limitations remain documented in HISTORY.md; the protected front end and calibration are not validated by this mechanical revision.
+The dedicated D24V50F5 probe rail is retained. Do not parallel regulator outputs or power all probe servos from the ESC's 1 A BEC. The protected front end, acquisition chain, and calibration are not validated by this mechanical revision.
 
 ## Measurement geometry
 
