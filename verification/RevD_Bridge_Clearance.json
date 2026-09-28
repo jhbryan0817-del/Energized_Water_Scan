@@ -1,7 +1,0 @@
-{
-  "component": "PRINT_31_Upper_controller_bridge",
-  "old_volume_mm3": 11950.373317062385,
-  "new_volume_mm3": 11824.373317062385,
-  "added_volume_mm3": 0.0,
-  "reason": "Cut-only notch enlarged to X162.5..171.5,Y-40.2..-30,Z40.9..56; clears the full horn envelope between the coarse service lift samples."
-}
