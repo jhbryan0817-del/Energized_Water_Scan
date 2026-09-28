@@ -1,0 +1,698 @@
+{
+  "revision": "Rev-E",
+  "timeline": 1724,
+  "lanes_mm": {
+    "E1": [
+      -78.6,
+      -42.5
+    ],
+    "E2": [
+      -58.6,
+      -21.5
+    ],
+    "E3": [
+      42.5,
+      78.6
+    ],
+    "E4": [
+      21.5,
+      58.6
+    ]
+  },
+  "pairs": [
+    {
+      "a": "E1/PRINT_26_E1_insulated_arm",
+      "b": "E2/PRINT_27_E2_insulated_arm",
+      "y_gap_mm": 7.0,
+      "full_rotation_disk_gap_mm": -153.8361929960369,
+      "separation_bound_mm": 7.0
+    },
+    {
+      "a": "E1/PRINT_26_E1_insulated_arm",
+      "b": "E2/SHAFT_316_D6_extended",
+      "y_gap_mm": 6.5,
+      "full_rotation_disk_gap_mm": 14.33926281486226,
+      "separation_bound_mm": 14.33926281486226
+    },
+    {
+      "a": "E1/PRINT_26_E1_insulated_arm",
+      "b": "E2/PIN_316_D2_L22",
+      "y_gap_mm": 10.0,
+      "full_rotation_disk_gap_mm": 7.536542484794282,
+      "separation_bound_mm": 10.0
+    },
+    {
+      "a": "E1/PRINT_26_E1_insulated_arm",
+      "b": "E2/ELECTRODE_E2_M4x12_A4_tip",
+      "y_gap_mm": 4.399999999999999,
+      "full_rotation_disk_gap_mm": -150.9542283401718,
+      "separation_bound_mm": 4.399999999999999
+    },
+    {
+      "a": "E1/SHAFT_316_D6_extended",
+      "b": "E2/PRINT_27_E2_insulated_arm",
+      "y_gap_mm": -13.5,
+      "full_rotation_disk_gap_mm": 14.339262814862252,
+      "separation_bound_mm": 14.339262814862252
+    },
+    {
+      "a": "E1/SHAFT_316_D6_extended",
+      "b": "E2/SHAFT_316_D6_extended",
+      "y_gap_mm": -14.0,
+      "full_rotation_disk_gap_mm": 182.51471862576142,
+      "separation_bound_mm": 182.51471862576142
+    },
+    {
+      "a": "E1/SHAFT_316_D6_extended",
+      "b": "E2/PIN_316_D2_L22",
+      "y_gap_mm": -10.5,
+      "full_rotation_disk_gap_mm": 175.71199829569343,
+      "separation_bound_mm": 175.71199829569343
+    },
+    {
+      "a": "E1/SHAFT_316_D6_extended",
+      "b": "E2/ELECTRODE_E2_M4x12_A4_tip",
+      "y_gap_mm": -16.1,
+      "full_rotation_disk_gap_mm": 17.22122747072737,
+      "separation_bound_mm": 17.22122747072737
+    },
+    {
+      "a": "E1/PIN_316_D2_L22",
+      "b": "E2/PRINT_27_E2_insulated_arm",
+      "y_gap_mm": 15.0,
+      "full_rotation_disk_gap_mm": 7.536542484794296,
+      "separation_bound_mm": 15.0
+    },
+    {
+      "a": "E1/PIN_316_D2_L22",
+      "b": "E2/SHAFT_316_D6_extended",
+      "y_gap_mm": 14.5,
+      "full_rotation_disk_gap_mm": 175.71199829569346,
+      "separation_bound_mm": 175.71199829569346
+    },
+    {
+      "a": "E1/PIN_316_D2_L22",
+      "b": "E2/PIN_316_D2_L22",
+      "y_gap_mm": 18.0,
+      "full_rotation_disk_gap_mm": 168.9092779656255,
+      "separation_bound_mm": 168.9092779656255
+    },
+    {
+      "a": "E1/PIN_316_D2_L22",
+      "b": "E2/ELECTRODE_E2_M4x12_A4_tip",
+      "y_gap_mm": 12.399999999999999,
+      "full_rotation_disk_gap_mm": 10.418507140659415,
+      "separation_bound_mm": 12.399999999999999
+    },
+    {
+      "a": "E1/ELECTRODE_E1_M4x12_A4_tip",
+      "b": "E2/PRINT_27_E2_insulated_arm",
+      "y_gap_mm": 8.0,
+      "full_rotation_disk_gap_mm": -150.9542283401718,
+      "separation_bound_mm": 8.0
+    },
+    {
+      "a": "E1/ELECTRODE_E1_M4x12_A4_tip",
+      "b": "E2/SHAFT_316_D6_extended",
+      "y_gap_mm": 7.5,
+      "full_rotation_disk_gap_mm": 17.221227470727378,
+      "separation_bound_mm": 17.221227470727378
+    },
+    {
+      "a": "E1/ELECTRODE_E1_M4x12_A4_tip",
+      "b": "E2/PIN_316_D2_L22",
+      "y_gap_mm": 11.0,
+      "full_rotation_disk_gap_mm": 10.4185071406594,
+      "separation_bound_mm": 11.0
+    },
+    {
+      "a": "E1/ELECTRODE_E1_M4x12_A4_tip",
+      "b": "E2/ELECTRODE_E2_M4x12_A4_tip",
+      "y_gap_mm": 5.399999999999999,
+      "full_rotation_disk_gap_mm": -148.07226368430668,
+      "separation_bound_mm": 5.399999999999999
+    },
+    {
+      "a": "E1/PRINT_26_E1_insulated_arm",
+      "b": "E3/PRINT_28_E3_insulated_arm",
+      "y_gap_mm": 126.0,
+      "full_rotation_disk_gap_mm": -344.8361929960369,
+      "separation_bound_mm": 126.0
+    },
+    {
+      "a": "E1/PRINT_26_E1_insulated_arm",
+      "b": "E3/SHAFT_316_D6_extended",
+      "y_gap_mm": 105.5,
+      "full_rotation_disk_gap_mm": -176.66073718513775,
+      "separation_bound_mm": 105.5
+    },
+    {
+      "a": "E1/PRINT_26_E1_insulated_arm",
+      "b": "E3/PIN_316_D2_L22",
+      "y_gap_mm": 134.0,
+      "full_rotation_disk_gap_mm": -183.46345751520573,
+      "separation_bound_mm": 134.0
+    },
+    {
+      "a": "E1/PRINT_26_E1_insulated_arm",
+      "b": "E3/ELECTRODE_E3_M4x12_A4_tip",
+      "y_gap_mm": 127.0,
+      "full_rotation_disk_gap_mm": -341.95422834017177,
+      "separation_bound_mm": 127.0
+    },
+    {
+      "a": "E1/SHAFT_316_D6_extended",
+      "b": "E3/PRINT_28_E3_insulated_arm",
+      "y_gap_mm": 105.5,
+      "full_rotation_disk_gap_mm": -176.66073718513775,
+      "separation_bound_mm": 105.5
+    },
+    {
+      "a": "E1/SHAFT_316_D6_extended",
+      "b": "E3/SHAFT_316_D6_extended",
+      "y_gap_mm": 85.0,
+      "full_rotation_disk_gap_mm": -8.48528137423857,
+      "separation_bound_mm": 85.0
+    },
+    {
+      "a": "E1/SHAFT_316_D6_extended",
+      "b": "E3/PIN_316_D2_L22",
+      "y_gap_mm": 113.5,
+      "full_rotation_disk_gap_mm": -15.288001704306545,
+      "separation_bound_mm": 113.5
+    },
+    {
+      "a": "E1/SHAFT_316_D6_extended",
+      "b": "E3/ELECTRODE_E3_M4x12_A4_tip",
+      "y_gap_mm": 106.5,
+      "full_rotation_disk_gap_mm": -173.77877252927263,
+      "separation_bound_mm": 106.5
+    },
+    {
+      "a": "E1/PIN_316_D2_L22",
+      "b": "E3/PRINT_28_E3_insulated_arm",
+      "y_gap_mm": 134.0,
+      "full_rotation_disk_gap_mm": -183.46345751520573,
+      "separation_bound_mm": 134.0
+    },
+    {
+      "a": "E1/PIN_316_D2_L22",
+      "b": "E3/SHAFT_316_D6_extended",
+      "y_gap_mm": 113.5,
+      "full_rotation_disk_gap_mm": -15.288001704306545,
+      "separation_bound_mm": 113.5
+    },
+    {
+      "a": "E1/PIN_316_D2_L22",
+      "b": "E3/PIN_316_D2_L22",
+      "y_gap_mm": 142.0,
+      "full_rotation_disk_gap_mm": -22.090722034374522,
+      "separation_bound_mm": 142.0
+    },
+    {
+      "a": "E1/PIN_316_D2_L22",
+      "b": "E3/ELECTRODE_E3_M4x12_A4_tip",
+      "y_gap_mm": 135.0,
+      "full_rotation_disk_gap_mm": -180.58149285934059,
+      "separation_bound_mm": 135.0
+    },
+    {
+      "a": "E1/ELECTRODE_E1_M4x12_A4_tip",
+      "b": "E3/PRINT_28_E3_insulated_arm",
+      "y_gap_mm": 127.0,
+      "full_rotation_disk_gap_mm": -341.95422834017177,
+      "separation_bound_mm": 127.0
+    },
+    {
+      "a": "E1/ELECTRODE_E1_M4x12_A4_tip",
+      "b": "E3/SHAFT_316_D6_extended",
+      "y_gap_mm": 106.5,
+      "full_rotation_disk_gap_mm": -173.77877252927263,
+      "separation_bound_mm": 106.5
+    },
+    {
+      "a": "E1/ELECTRODE_E1_M4x12_A4_tip",
+      "b": "E3/PIN_316_D2_L22",
+      "y_gap_mm": 135.0,
+      "full_rotation_disk_gap_mm": -180.58149285934059,
+      "separation_bound_mm": 135.0
+    },
+    {
+      "a": "E1/ELECTRODE_E1_M4x12_A4_tip",
+      "b": "E3/ELECTRODE_E3_M4x12_A4_tip",
+      "y_gap_mm": 128.0,
+      "full_rotation_disk_gap_mm": -339.0722636843067,
+      "separation_bound_mm": 128.0
+    },
+    {
+      "a": "E1/PRINT_26_E1_insulated_arm",
+      "b": "E4/PRINT_29_E4_insulated_arm",
+      "y_gap_mm": 106.0,
+      "full_rotation_disk_gap_mm": -153.8361929960369,
+      "separation_bound_mm": 106.0
+    },
+    {
+      "a": "E1/PRINT_26_E1_insulated_arm",
+      "b": "E4/SHAFT_316_D6_extended",
+      "y_gap_mm": 84.5,
+      "full_rotation_disk_gap_mm": 14.33926281486226,
+      "separation_bound_mm": 84.5
+    },
+    {
+      "a": "E1/PRINT_26_E1_insulated_arm",
+      "b": "E4/PIN_316_D2_L22",
+      "y_gap_mm": 114.0,
+      "full_rotation_disk_gap_mm": 7.536542484794282,
+      "separation_bound_mm": 114.0
+    },
+    {
+      "a": "E1/PRINT_26_E1_insulated_arm",
+      "b": "E4/ELECTRODE_E4_M4x12_A4_tip",
+      "y_gap_mm": 107.0,
+      "full_rotation_disk_gap_mm": -150.9542283401718,
+      "separation_bound_mm": 107.0
+    },
+    {
+      "a": "E1/SHAFT_316_D6_extended",
+      "b": "E4/PRINT_29_E4_insulated_arm",
+      "y_gap_mm": 85.5,
+      "full_rotation_disk_gap_mm": 14.339262814862252,
+      "separation_bound_mm": 85.5
+    },
+    {
+      "a": "E1/SHAFT_316_D6_extended",
+      "b": "E4/SHAFT_316_D6_extended",
+      "y_gap_mm": 64.0,
+      "full_rotation_disk_gap_mm": 182.51471862576142,
+      "separation_bound_mm": 182.51471862576142
+    },
+    {
+      "a": "E1/SHAFT_316_D6_extended",
+      "b": "E4/PIN_316_D2_L22",
+      "y_gap_mm": 93.5,
+      "full_rotation_disk_gap_mm": 175.71199829569343,
+      "separation_bound_mm": 175.71199829569343
+    },
+    {
+      "a": "E1/SHAFT_316_D6_extended",
+      "b": "E4/ELECTRODE_E4_M4x12_A4_tip",
+      "y_gap_mm": 86.5,
+      "full_rotation_disk_gap_mm": 17.22122747072737,
+      "separation_bound_mm": 86.5
+    },
+    {
+      "a": "E1/PIN_316_D2_L22",
+      "b": "E4/PRINT_29_E4_insulated_arm",
+      "y_gap_mm": 114.0,
+      "full_rotation_disk_gap_mm": 7.536542484794296,
+      "separation_bound_mm": 114.0
+    },
+    {
+      "a": "E1/PIN_316_D2_L22",
+      "b": "E4/SHAFT_316_D6_extended",
+      "y_gap_mm": 92.5,
+      "full_rotation_disk_gap_mm": 175.71199829569346,
+      "separation_bound_mm": 175.71199829569346
+    },
+    {
+      "a": "E1/PIN_316_D2_L22",
+      "b": "E4/PIN_316_D2_L22",
+      "y_gap_mm": 122.0,
+      "full_rotation_disk_gap_mm": 168.9092779656255,
+      "separation_bound_mm": 168.9092779656255
+    },
+    {
+      "a": "E1/PIN_316_D2_L22",
+      "b": "E4/ELECTRODE_E4_M4x12_A4_tip",
+      "y_gap_mm": 115.0,
+      "full_rotation_disk_gap_mm": 10.418507140659415,
+      "separation_bound_mm": 115.0
+    },
+    {
+      "a": "E1/ELECTRODE_E1_M4x12_A4_tip",
+      "b": "E4/PRINT_29_E4_insulated_arm",
+      "y_gap_mm": 107.0,
+      "full_rotation_disk_gap_mm": -150.9542283401718,
+      "separation_bound_mm": 107.0
+    },
+    {
+      "a": "E1/ELECTRODE_E1_M4x12_A4_tip",
+      "b": "E4/SHAFT_316_D6_extended",
+      "y_gap_mm": 85.5,
+      "full_rotation_disk_gap_mm": 17.221227470727378,
+      "separation_bound_mm": 85.5
+    },
+    {
+      "a": "E1/ELECTRODE_E1_M4x12_A4_tip",
+      "b": "E4/PIN_316_D2_L22",
+      "y_gap_mm": 115.0,
+      "full_rotation_disk_gap_mm": 10.4185071406594,
+      "separation_bound_mm": 115.0
+    },
+    {
+      "a": "E1/ELECTRODE_E1_M4x12_A4_tip",
+      "b": "E4/ELECTRODE_E4_M4x12_A4_tip",
+      "y_gap_mm": 108.0,
+      "full_rotation_disk_gap_mm": -148.07226368430668,
+      "separation_bound_mm": 108.0
+    },
+    {
+      "a": "E2/PRINT_27_E2_insulated_arm",
+      "b": "E3/PRINT_28_E3_insulated_arm",
+      "y_gap_mm": 106.0,
+      "full_rotation_disk_gap_mm": -153.8361929960369,
+      "separation_bound_mm": 106.0
+    },
+    {
+      "a": "E2/PRINT_27_E2_insulated_arm",
+      "b": "E3/SHAFT_316_D6_extended",
+      "y_gap_mm": 85.5,
+      "full_rotation_disk_gap_mm": 14.33926281486226,
+      "separation_bound_mm": 85.5
+    },
+    {
+      "a": "E2/PRINT_27_E2_insulated_arm",
+      "b": "E3/PIN_316_D2_L22",
+      "y_gap_mm": 114.0,
+      "full_rotation_disk_gap_mm": 7.536542484794282,
+      "separation_bound_mm": 114.0
+    },
+    {
+      "a": "E2/PRINT_27_E2_insulated_arm",
+      "b": "E3/ELECTRODE_E3_M4x12_A4_tip",
+      "y_gap_mm": 107.0,
+      "full_rotation_disk_gap_mm": -150.9542283401718,
+      "separation_bound_mm": 107.0
+    },
+    {
+      "a": "E2/SHAFT_316_D6_extended",
+      "b": "E3/PRINT_28_E3_insulated_arm",
+      "y_gap_mm": 84.5,
+      "full_rotation_disk_gap_mm": 14.339262814862252,
+      "separation_bound_mm": 84.5
+    },
+    {
+      "a": "E2/SHAFT_316_D6_extended",
+      "b": "E3/SHAFT_316_D6_extended",
+      "y_gap_mm": 64.0,
+      "full_rotation_disk_gap_mm": 182.51471862576142,
+      "separation_bound_mm": 182.51471862576142
+    },
+    {
+      "a": "E2/SHAFT_316_D6_extended",
+      "b": "E3/PIN_316_D2_L22",
+      "y_gap_mm": 92.5,
+      "full_rotation_disk_gap_mm": 175.71199829569343,
+      "separation_bound_mm": 175.71199829569343
+    },
+    {
+      "a": "E2/SHAFT_316_D6_extended",
+      "b": "E3/ELECTRODE_E3_M4x12_A4_tip",
+      "y_gap_mm": 85.5,
+      "full_rotation_disk_gap_mm": 17.22122747072737,
+      "separation_bound_mm": 85.5
+    },
+    {
+      "a": "E2/PIN_316_D2_L22",
+      "b": "E3/PRINT_28_E3_insulated_arm",
+      "y_gap_mm": 114.0,
+      "full_rotation_disk_gap_mm": 7.536542484794296,
+      "separation_bound_mm": 114.0
+    },
+    {
+      "a": "E2/PIN_316_D2_L22",
+      "b": "E3/SHAFT_316_D6_extended",
+      "y_gap_mm": 93.5,
+      "full_rotation_disk_gap_mm": 175.71199829569346,
+      "separation_bound_mm": 175.71199829569346
+    },
+    {
+      "a": "E2/PIN_316_D2_L22",
+      "b": "E3/PIN_316_D2_L22",
+      "y_gap_mm": 122.0,
+      "full_rotation_disk_gap_mm": 168.9092779656255,
+      "separation_bound_mm": 168.9092779656255
+    },
+    {
+      "a": "E2/PIN_316_D2_L22",
+      "b": "E3/ELECTRODE_E3_M4x12_A4_tip",
+      "y_gap_mm": 115.0,
+      "full_rotation_disk_gap_mm": 10.418507140659415,
+      "separation_bound_mm": 115.0
+    },
+    {
+      "a": "E2/ELECTRODE_E2_M4x12_A4_tip",
+      "b": "E3/PRINT_28_E3_insulated_arm",
+      "y_gap_mm": 107.0,
+      "full_rotation_disk_gap_mm": -150.9542283401718,
+      "separation_bound_mm": 107.0
+    },
+    {
+      "a": "E2/ELECTRODE_E2_M4x12_A4_tip",
+      "b": "E3/SHAFT_316_D6_extended",
+      "y_gap_mm": 86.5,
+      "full_rotation_disk_gap_mm": 17.221227470727378,
+      "separation_bound_mm": 86.5
+    },
+    {
+      "a": "E2/ELECTRODE_E2_M4x12_A4_tip",
+      "b": "E3/PIN_316_D2_L22",
+      "y_gap_mm": 115.0,
+      "full_rotation_disk_gap_mm": 10.4185071406594,
+      "separation_bound_mm": 115.0
+    },
+    {
+      "a": "E2/ELECTRODE_E2_M4x12_A4_tip",
+      "b": "E3/ELECTRODE_E3_M4x12_A4_tip",
+      "y_gap_mm": 108.0,
+      "full_rotation_disk_gap_mm": -148.07226368430668,
+      "separation_bound_mm": 108.0
+    },
+    {
+      "a": "E2/PRINT_27_E2_insulated_arm",
+      "b": "E4/PRINT_29_E4_insulated_arm",
+      "y_gap_mm": 86.0,
+      "full_rotation_disk_gap_mm": -344.8361929960369,
+      "separation_bound_mm": 86.0
+    },
+    {
+      "a": "E2/PRINT_27_E2_insulated_arm",
+      "b": "E4/SHAFT_316_D6_extended",
+      "y_gap_mm": 64.5,
+      "full_rotation_disk_gap_mm": -176.66073718513775,
+      "separation_bound_mm": 64.5
+    },
+    {
+      "a": "E2/PRINT_27_E2_insulated_arm",
+      "b": "E4/PIN_316_D2_L22",
+      "y_gap_mm": 94.0,
+      "full_rotation_disk_gap_mm": -183.46345751520573,
+      "separation_bound_mm": 94.0
+    },
+    {
+      "a": "E2/PRINT_27_E2_insulated_arm",
+      "b": "E4/ELECTRODE_E4_M4x12_A4_tip",
+      "y_gap_mm": 87.0,
+      "full_rotation_disk_gap_mm": -341.95422834017177,
+      "separation_bound_mm": 87.0
+    },
+    {
+      "a": "E2/SHAFT_316_D6_extended",
+      "b": "E4/PRINT_29_E4_insulated_arm",
+      "y_gap_mm": 64.5,
+      "full_rotation_disk_gap_mm": -176.66073718513775,
+      "separation_bound_mm": 64.5
+    },
+    {
+      "a": "E2/SHAFT_316_D6_extended",
+      "b": "E4/SHAFT_316_D6_extended",
+      "y_gap_mm": 43.0,
+      "full_rotation_disk_gap_mm": -8.48528137423857,
+      "separation_bound_mm": 43.0
+    },
+    {
+      "a": "E2/SHAFT_316_D6_extended",
+      "b": "E4/PIN_316_D2_L22",
+      "y_gap_mm": 72.5,
+      "full_rotation_disk_gap_mm": -15.288001704306545,
+      "separation_bound_mm": 72.5
+    },
+    {
+      "a": "E2/SHAFT_316_D6_extended",
+      "b": "E4/ELECTRODE_E4_M4x12_A4_tip",
+      "y_gap_mm": 65.5,
+      "full_rotation_disk_gap_mm": -173.77877252927263,
+      "separation_bound_mm": 65.5
+    },
+    {
+      "a": "E2/PIN_316_D2_L22",
+      "b": "E4/PRINT_29_E4_insulated_arm",
+      "y_gap_mm": 94.0,
+      "full_rotation_disk_gap_mm": -183.46345751520573,
+      "separation_bound_mm": 94.0
+    },
+    {
+      "a": "E2/PIN_316_D2_L22",
+      "b": "E4/SHAFT_316_D6_extended",
+      "y_gap_mm": 72.5,
+      "full_rotation_disk_gap_mm": -15.288001704306545,
+      "separation_bound_mm": 72.5
+    },
+    {
+      "a": "E2/PIN_316_D2_L22",
+      "b": "E4/PIN_316_D2_L22",
+      "y_gap_mm": 102.0,
+      "full_rotation_disk_gap_mm": -22.090722034374522,
+      "separation_bound_mm": 102.0
+    },
+    {
+      "a": "E2/PIN_316_D2_L22",
+      "b": "E4/ELECTRODE_E4_M4x12_A4_tip",
+      "y_gap_mm": 95.0,
+      "full_rotation_disk_gap_mm": -180.58149285934059,
+      "separation_bound_mm": 95.0
+    },
+    {
+      "a": "E2/ELECTRODE_E2_M4x12_A4_tip",
+      "b": "E4/PRINT_29_E4_insulated_arm",
+      "y_gap_mm": 87.0,
+      "full_rotation_disk_gap_mm": -341.95422834017177,
+      "separation_bound_mm": 87.0
+    },
+    {
+      "a": "E2/ELECTRODE_E2_M4x12_A4_tip",
+      "b": "E4/SHAFT_316_D6_extended",
+      "y_gap_mm": 65.5,
+      "full_rotation_disk_gap_mm": -173.77877252927263,
+      "separation_bound_mm": 65.5
+    },
+    {
+      "a": "E2/ELECTRODE_E2_M4x12_A4_tip",
+      "b": "E4/PIN_316_D2_L22",
+      "y_gap_mm": 95.0,
+      "full_rotation_disk_gap_mm": -180.58149285934059,
+      "separation_bound_mm": 95.0
+    },
+    {
+      "a": "E2/ELECTRODE_E2_M4x12_A4_tip",
+      "b": "E4/ELECTRODE_E4_M4x12_A4_tip",
+      "y_gap_mm": 88.0,
+      "full_rotation_disk_gap_mm": -339.0722636843067,
+      "separation_bound_mm": 88.0
+    },
+    {
+      "a": "E3/PRINT_28_E3_insulated_arm",
+      "b": "E4/PRINT_29_E4_insulated_arm",
+      "y_gap_mm": 7.0,
+      "full_rotation_disk_gap_mm": -153.8361929960369,
+      "separation_bound_mm": 7.0
+    },
+    {
+      "a": "E3/PRINT_28_E3_insulated_arm",
+      "b": "E4/SHAFT_316_D6_extended",
+      "y_gap_mm": 6.5,
+      "full_rotation_disk_gap_mm": 14.33926281486226,
+      "separation_bound_mm": 14.33926281486226
+    },
+    {
+      "a": "E3/PRINT_28_E3_insulated_arm",
+      "b": "E4/PIN_316_D2_L22",
+      "y_gap_mm": 10.0,
+      "full_rotation_disk_gap_mm": 7.536542484794282,
+      "separation_bound_mm": 10.0
+    },
+    {
+      "a": "E3/PRINT_28_E3_insulated_arm",
+      "b": "E4/ELECTRODE_E4_M4x12_A4_tip",
+      "y_gap_mm": 4.399999999999999,
+      "full_rotation_disk_gap_mm": -150.9542283401718,
+      "separation_bound_mm": 4.399999999999999
+    },
+    {
+      "a": "E3/SHAFT_316_D6_extended",
+      "b": "E4/PRINT_29_E4_insulated_arm",
+      "y_gap_mm": -13.5,
+      "full_rotation_disk_gap_mm": 14.339262814862252,
+      "separation_bound_mm": 14.339262814862252
+    },
+    {
+      "a": "E3/SHAFT_316_D6_extended",
+      "b": "E4/SHAFT_316_D6_extended",
+      "y_gap_mm": -14.0,
+      "full_rotation_disk_gap_mm": 182.51471862576142,
+      "separation_bound_mm": 182.51471862576142
+    },
+    {
+      "a": "E3/SHAFT_316_D6_extended",
+      "b": "E4/PIN_316_D2_L22",
+      "y_gap_mm": -10.5,
+      "full_rotation_disk_gap_mm": 175.71199829569343,
+      "separation_bound_mm": 175.71199829569343
+    },
+    {
+      "a": "E3/SHAFT_316_D6_extended",
+      "b": "E4/ELECTRODE_E4_M4x12_A4_tip",
+      "y_gap_mm": -16.1,
+      "full_rotation_disk_gap_mm": 17.22122747072737,
+      "separation_bound_mm": 17.22122747072737
+    },
+    {
+      "a": "E3/PIN_316_D2_L22",
+      "b": "E4/PRINT_29_E4_insulated_arm",
+      "y_gap_mm": 15.0,
+      "full_rotation_disk_gap_mm": 7.536542484794296,
+      "separation_bound_mm": 15.0
+    },
+    {
+      "a": "E3/PIN_316_D2_L22",
+      "b": "E4/SHAFT_316_D6_extended",
+      "y_gap_mm": 14.5,
+      "full_rotation_disk_gap_mm": 175.71199829569346,
+      "separation_bound_mm": 175.71199829569346
+    },
+    {
+      "a": "E3/PIN_316_D2_L22",
+      "b": "E4/PIN_316_D2_L22",
+      "y_gap_mm": 18.0,
+      "full_rotation_disk_gap_mm": 168.9092779656255,
+      "separation_bound_mm": 168.9092779656255
+    },
+    {
+      "a": "E3/PIN_316_D2_L22",
+      "b": "E4/ELECTRODE_E4_M4x12_A4_tip",
+      "y_gap_mm": 12.399999999999999,
+      "full_rotation_disk_gap_mm": 10.418507140659415,
+      "separation_bound_mm": 12.399999999999999
+    },
+    {
+      "a": "E3/ELECTRODE_E3_M4x12_A4_tip",
+      "b": "E4/PRINT_29_E4_insulated_arm",
+      "y_gap_mm": 8.0,
+      "full_rotation_disk_gap_mm": -150.9542283401718,
+      "separation_bound_mm": 8.0
+    },
+    {
+      "a": "E3/ELECTRODE_E3_M4x12_A4_tip",
+      "b": "E4/SHAFT_316_D6_extended",
+      "y_gap_mm": 7.5,
+      "full_rotation_disk_gap_mm": 17.221227470727378,
+      "separation_bound_mm": 17.221227470727378
+    },
+    {
+      "a": "E3/ELECTRODE_E3_M4x12_A4_tip",
+      "b": "E4/PIN_316_D2_L22",
+      "y_gap_mm": 11.0,
+      "full_rotation_disk_gap_mm": 10.4185071406594,
+      "separation_bound_mm": 11.0
+    },
+    {
+      "a": "E3/ELECTRODE_E3_M4x12_A4_tip",
+      "b": "E4/ELECTRODE_E4_M4x12_A4_tip",
+      "y_gap_mm": 5.399999999999999,
+      "full_rotation_disk_gap_mm": -148.07226368430668,
+      "separation_bound_mm": 5.399999999999999
+    }
+  ],
+  "passed": true,
+  "proof": "Each inter-probe body pair has either disjoint invariant Y intervals or disjoint conservative full-rotation disks in XZ. Covers independent angles; excludes flexible leads."
+}

@@ -1,0 +1,80 @@
+﻿ID,Item,Quantity,Purpose,Status,Notes,Source / reference
+BOM-001,Espressif ESP32-DevKitC V4,1.0,Both,Fit verification required,Existing sheet price estimate retained; not a verified current quotation.,ESP32-DevKitC V4 乐鑫 原装 开发板
+BOM-002,Adafruit ADS1115 PID 1085 STEMMA QT/Qwiic ADC,1.0,Electricity detection,Fit verification required,Existing sheet price estimate retained; not a verified current quotation.,Adafruit 1085 ADS1115 STEMMA QT Qwiic
+BOM-003,Pololu D24V10F5 item 2831 5V 1A regulator,1.0,Both,Fit verification required,Existing sheet price estimate retained; not a verified current quotation.,Pololu 2831 D24V10F5 5V 1A 降压模块
+BOM-004,Hobbywing QuicRun WP-1625 brushed ESC (30120000),1.0,RC boat,Fit verification required,Existing sheet price estimate retained; not a verified current quotation.,Hobbywing QuicRun WP-1625 30120000 有刷电调
+BOM-005,Mabuchi RS-380PH-4045 motor,1.0,RC boat,Fit verification required,Existing sheet price estimate retained; not a verified current quotation.,Mabuchi RS-380PH-4045 万宝至 马达
+BOM-006,Krick 65220 Eco M2 shaft/stern tube assembly,1.0,RC boat,Fit verification required,Existing sheet price estimate retained; not a verified current quotation.,Krick 65220 M2 153mm 船轴 艉轴套件
+BOM-007,Krick 63800 bridge coupling connector,1.0,RC boat,Fit verification required,Existing sheet price estimate retained; not a verified current quotation.,Krick 63800 船模 联轴器 连接件
+BOM-008,Krick 63823 2.3 mm coupling insert,1.0,RC boat,Fit verification required,Existing sheet price estimate retained; not a verified current quotation.,Krick 63823 2.3mm 联轴器 接头
+BOM-009,Krick 63820 2.0 mm coupling insert,1.0,RC boat,Fit verification required,Existing sheet price estimate retained; not a verified current quotation.,Krick 63820 2.0mm 联轴器 接头
+BOM-010,"Krick/Graupner 2307.30 propeller, 30 mm RH M2",1.0,RC boat,Fit verification required,Existing sheet price estimate retained; not a verified current quotation.,Graupner Krick 2307.30 30mm M2 右旋 三叶螺旋桨
+BOM-011,Genuine TowerPro SG90 Digital servo,1.0,RC boat,Fit verification required,Existing sheet price estimate retained; not a verified current quotation. Steering servo only; actual horn and travel require verification.,TowerPro SG90 Digital 正品 数字舵机
+BOM-012,Gens Ace GEA222S30X6GT 2200 mAh 2S 30C XT60 LiPo,1.0,Both,Fit verification required,Existing sheet price estimate retained; not a verified current quotation.,Gens Ace GEA222S30X6GT 2S 2200mAh 30C XT60 航模电池
+BOM-013,Protected electrode analog front-end set,1,Electricity detection,HOLD: circuit/protection validation,40 x 30 x 12 mm allocation; resistor/clamp/filter quantities await validated schematic. Old blanket price not carried forward.,"499k / 100k resistors, BAT54S clamps, filters and bias network"
+BOM-014,Hitec HS-65HB probe servo with supplied horn,4,Electricity detection,Fit verification required,Dry only; additional to steering servo. Horn-to-pulley adapter must match actual supplied horn.,https://www.hiteccs.com/public/uploads/data_sheet/HCS_HS-65HB_Specsheetv2.2_10-1729887930.pdf
+BOM-015,Pololu D24V50F5 5 V probe-servo regulator /2851,1,Electricity detection,Fit verification required,Dedicated probe rail; do not parallel regulator outputs or use ESC 1 A BEC for four probes.,https://www.pololu.com/product/2851
+BOM-016,SKF 6 x 16 x 7 HMSA10 RG radial seal,4,Electricity detection,HOLD: water-duty qualification,"Nominal candidate; water duty, lubricant, spring, shaft finish and seal drag not qualified.",https://www.skf.com/mm/09433a92e9164581
+BOM-017,igus GFM-0608-06 flanged shaft bushing,4,Electricity detection,Fit verification required,"6 mm shaft / 8 mm housing, 12 mm flange; verify installed fits.",https://www.igus.com/ContentData/Products/Downloads/iglide_G300_FM_USen.pdf
+BOM-018,Machined POM-C probe seal cartridge,4,Electricity detection,HOLD: machining drawing,Two forward and two rear geometries; use current STEP. Precision tolerances and counterfaces require release. Do not print seal seats.,
+BOM-019,"Cartridge face gasket, 1 mm silicone sheet",4,Electricity detection,Fit verification required,CAD compressed thickness 0.75 mm; retain complete closed perimeter. Polymax 3043956 candidate.,https://www.polymax.co.uk/media/documents/Datasheet/platinum-cured-silicone-sheet-clear-1000-1-3043956.pdf
+BOM-020,"316 stainless probe output shaft, diameter 6 mm",4,Electricity detection,HOLD: shaft interface,"Two 34 mm and two 35 mm nominal lengths; use matching CAD. Surface finish, coupling and axial retention require release.",
+BOM-021,"316 stainless arm cross-pin, diameter 2 x 22 mm",4,Electricity detection,HOLD: pin retention,Retained-pin solution and installation access must be proven.,
+BOM-022,A4 stainless DIN84 M4 x 12 tip electrode screw,4,Electricity detection,Fit verification required,Replaces fixed-hull electrode bolt set; nominal head diameter 7 x 2.6 mm.,https://www.trfastenings.com/Products/Catalogue/Screws-and-Bolts/Machine-Screws/Cheese-Head/Slotted-Drive/TR00007556
+BOM-023,A4 DIN934 M4 tip nut,4,Electricity detection,Fit verification required,Verify actual nut and terminal stack fits the arm-tip potting pocket.,
+BOM-024,M4 tip electrical terminal,4,Electricity detection,HOLD: actual terminal fit,Select to fit diameter 9 mm pocket and wire; no old large hull lug substitution.,
+BOM-025,"20-tooth, 2 mm pitch, 6 mm belt-width pulley",8,Electricity detection,HOLD: select timing transmission,"Smooth CAD allocations only; matched supplier profile, bore and retention remain unresolved.",
+BOM-026,96 mm nominal pitch-length x 6 mm timing belt,4,Electricity detection,HOLD: select timing transmission,28 mm centers and 1:1 ratio are allocations; confirm actual supplier availability/tension.,
+BOM-027,"Upper journal bushing, OD8 / ID6 x 6 mm",4,Electricity detection,HOLD: journal interface,Radial-load support allocation; select actual bearing/fit/retention.,
+BOM-028,"Upper journal shaft, diameter 6 mm",4,Electricity detection,HOLD: journal interface,Use station-specific CAD length; axial retention and pulley interfaces not released.,
+BOM-029,Stock servo horn-to-pulley adapter,4,Electricity detection,HOLD: design after horn survey,Requires actual Micro25T horn survey; no printable spline supplied.,
+BOM-030,3M DP270 potting compound,1,Electricity detection,HOLD: wet bond qualification,"One consumable lot, quantity to dispense TBD. Four stepped roof plugs now modeled, plus four tip encapsulations; qualify jacket/PETG adhesion and immersion.",https://multimedia.3m.com/mws/media/1235390O/dp270-technical-data-sheets.pdf
+BOM-031,Flexible insulated electrode lead,4,Electricity detection,HOLD: flex/immersion qualification,Four runs; cut lengths on assembled prototype. OD1.12 mm candidate used for feedthrough envelope; underwater flex life unqualified.,https://www.alphawire.com/en/products/wire/hook-up-wire/premium/1854
+BOM-032,Probe-servo service connectors and fused harness,1,Electricity detection,HOLD: harness selection,"One harness set with four keyed disconnects, strain relief, fuse and jam shutdown; gauge/rating/part numbers TBD.",
+BOM-033,ADC / controller signal harness,1,Electricity detection,HOLD: harness selection,One set; selected connectors and lead lengths TBD. Magnetometer and its dedicated lead removed.,
+BOM-034,Shared fused battery distribution harness,1,Both,HOLD: harness/protection selection,"XT60 battery input, isolated power branches, switch, fuse, wire and heat-shrink; ratings/parts TBD.",
+BOM-035,ESC adapter and motor terminations,1,RC boat,HOLD: connector selection,One set: correct XT60 distribution-to-small-Tamiya polarity and matching 4 mm motor bullet terminals.,
+BOM-036,Compatible 2S LiPo balance charger,1,Both,Select / check owned equipment,External support equipment; omit purchase if already owned. Select compatible charger.,
+BOM-037,"Main hatch continuous shaped gasket, 2 mm",1,Both,Fit verification required,Use latest shaped outline and 10 holes; verify compression and leak performance.,
+BOM-038,Hatch M3 x 10 screws,10,Both,Fit verification required,"Starting length for 3 mm cover + 2 mm gasket over blind pilots; verify actual stack. Current ring has pilots, not released insert bores.",
+BOM-039,Internal probe-cover M3 x 10 screws,16,Electricity detection,Fit verification required,Updated from M3 x 8 to suit 5 mm covers; nominal 5 mm engagement into 7 mm pilots; verify printed thread life.,
+BOM-040,Cartridge-retention M3 x 8 screws,16,Electricity detection,Fit verification required,Starting length; verify flange/gasket engagement and sealing preload.,
+BOM-041,Probe-servo mounting M2 x 6 screws,8,Electricity detection,Fit verification required,"Starting length; two per servo, verify actual supplied lugs.",
+BOM-042,Probe regulator M2 x 6 screws,2,Electricity detection,Fit verification required,Verify board underside and blind-pilot engagement.,
+BOM-043,ADS1115 M2 x 6 screws,4,Electricity detection,Fit verification required,"Verify board revision, screw heads and pilot fit.",
+BOM-044,Main electronics tray M3 x 8 screws,4,Both,Fit verification required,Starting length; removable cassette.,
+BOM-045,Upper controller bridge M3 x 8 screws,4,Both,Fit verification required,Starting length; remove before battery lift.,
+BOM-046,Electronics capture-bridge M3 screws,8,Both,Fit verification required,Two per bridge; select length from final physical stack.,
+BOM-047,Battery cradle flush M2 x 6 screws,4,Both,Fit verification required,Four countersunk locations; heads must remain below battery seating surface. Verify 1 mm nominal pilot tip margin.,
+BOM-048,Battery retention straps,2,Both,Fit verification required,Pass through retained slots; do not compress or abrade LiPo pack.,
+BOM-049,Motor support M3 x 8 screws,4,RC boat,Fit verification required,Existing bolt positions/grip preserved by reinforcement reliefs.,
+BOM-050,Motor face M2.6 x 6 screws,2,RC boat,Fit verification required,Verify Mabuchi maximum screw penetration.,
+BOM-051,"Nonconductive motor cradle liner, 0.4 mm",1,RC boat,Fit verification required,One fitted liner; temperature and material qualification required.,
+BOM-052,Steering saddle M3 x 8 screws,4,RC boat,Fit verification required,Starting length; verify pilot engagement.,
+BOM-053,Steering servo M2 mounting screws,2,RC boat,Fit verification required,Select length against actual SG90 lugs and support.,
+BOM-054,Rudder bracket M3 transom screws,4,RC boat,Fit verification required,Select final length and seal penetration if applicable.,
+BOM-055,"Rudder stock, diameter 3 x 86 mm",1,RC boat,Fit verification required,Metal stock; cross-hole and retention match actual tiller.,
+BOM-056,"Rudder tiller cross-pin, diameter 1.2 x 8 mm",1,RC boat,Fit verification required,Retain positively; nominal CAD envelope.,
+BOM-057,"Rudder stock stop collar, diameter 8 x 5 mm envelope",1,RC boat,HOLD: collar selection,Must fit 3 mm stock; actual supplier/locking method not selected.,
+BOM-058,M2 steering dogleg pushrod and end fittings,1,RC boat,HOLD: linkage validation,"One linkage set; fabrication geometry, stiffness, horn fit and full steering sweep require physical validation.",
+BOM-059,Steering pushrod bellows / boot,1,RC boat,HOLD: boot selection,7 mm seat / 10 mm flange envelope; select real water-sealing part and verify travel.,
+BOM-060,"ESC mounting foam, 3 mm",1,RC boat,Fit verification required,One pad; verify adhesive and temperature compatibility.,
+BOM-061,Hull coating and stern-tube sealant,1,Both,Fit verification required,One consumable lot; quantities/process TBD. Qualify FDM porosity and penetrations.,
+BOM-062,Insulating cable ties / strain relief supplies,1,Both,Fit verification required,One consumable lot; ties up to 2.5 mm for modeled slots.,
+BOM-063,PRINT_01 Hull with reinforced probe walls,1,Both,Print and qualify,Current Rev-E STL; unfilled insulating PETG fit prototype. Do not scale.,prints/Print_STLs.zip
+BOM-064,PRINT_02 Removable hatch,1,Both,Print and qualify,Current Rev-E STL; unfilled insulating PETG fit prototype. Do not scale.,prints/Print_STLs.zip
+BOM-065,PRINT_03 Main electronics cassette,1,Both,Print and qualify,Current Rev-E STL; unfilled insulating PETG fit prototype. Do not scale.,prints/Print_STLs.zip
+BOM-066,PRINT_04 Reinforced battery cradle,1,Both,Print and qualify,Current Rev-E STL; unfilled insulating PETG fit prototype. Do not scale.,prints/Print_STLs.zip
+BOM-067,PRINT_09 Rudder transom bracket,1,RC boat,Print and qualify,Current Rev-E STL; unfilled insulating PETG fit prototype. Do not scale.,prints/Print_STLs.zip
+BOM-068,PRINT_11 Reinforced motor face mount,1,RC boat,Print and qualify,Current Rev-E STL; unfilled insulating PETG fit prototype. Do not scale.,prints/Print_STLs.zip
+BOM-069,PRINT_14 Reinforced motor lower cradle,1,RC boat,Print and qualify,Current Rev-E STL; unfilled insulating PETG fit prototype. Do not scale.,prints/Print_STLs.zip
+BOM-070,PRINT_16 Rudder blade,1,RC boat,Print and qualify,Current Rev-E STL; unfilled insulating PETG fit prototype. Do not scale.,prints/Print_STLs.zip
+BOM-071,PRINT_17 Rudder tiller,1,RC boat,Print and qualify,Current Rev-E STL; unfilled insulating PETG fit prototype. Do not scale.,prints/Print_STLs.zip
+BOM-072,PRINT_18 ESP32 capture bridge,1,Both,Print and qualify,Current Rev-E STL; unfilled insulating PETG fit prototype. Do not scale.,prints/Print_STLs.zip
+BOM-073,PRINT_19 Front-end capture bridge,1,Electricity detection,Print and qualify,Current Rev-E STL; unfilled insulating PETG fit prototype. Do not scale.,prints/Print_STLs.zip
+BOM-074,PRINT_20 Logic regulator capture bridge,1,Both,Print and qualify,Current Rev-E STL; unfilled insulating PETG fit prototype. Do not scale.,prints/Print_STLs.zip
+BOM-075,PRINT_21 ESC capture bridge,1,RC boat,Print and qualify,Current Rev-E STL; unfilled insulating PETG fit prototype. Do not scale.,prints/Print_STLs.zip
+BOM-076,PRINT_22-25 5 mm internal probe-servo covers,4,Electricity detection,Print and qualify,Current Rev-E STL; unfilled insulating PETG fit prototype. Do not scale.,prints/Print_STLs.zip
+BOM-077,PRINT_26-29 Reinforced 166 mm insulating probe arms,4,Electricity detection,Print and qualify,Current Rev-E STL; unfilled insulating PETG fit prototype. Do not scale.,prints/Print_STLs.zip
+BOM-078,PRINT_30 Steering service saddle,1,RC boat,Print and qualify,Current Rev-E STL; unfilled insulating PETG fit prototype. Do not scale.,prints/Print_STLs.zip
+BOM-079,PRINT_31 Upper controller bridge,1,Both,Print and qualify,Current Rev-E STL; unfilled insulating PETG fit prototype. Do not scale.,prints/Print_STLs.zip

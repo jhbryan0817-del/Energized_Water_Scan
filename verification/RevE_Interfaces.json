@@ -1,0 +1,248 @@
+{
+  "revision": "Rev-E",
+  "timeline": 1724,
+  "hull_transform_cm": [
+    1.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    1.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    1.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    1.0
+  ],
+  "hull_grounded": true,
+  "motor_axis_unit_vector": [
+    0.9659258262890683,
+    0.0,
+    -0.2588190451025208
+  ],
+  "motor_slope_degrees": 15.000000000000002,
+  "drivetrain_axes": [
+    {
+      "body": "Mabuchi_RS380PH_can",
+      "radial_axis_offset_mm": 0.0,
+      "axis_angle_degrees": 0.0
+    },
+    {
+      "body": "Mabuchi_front_boss",
+      "radial_axis_offset_mm": 4.3021142204224816e-15,
+      "axis_angle_degrees": 0.0
+    },
+    {
+      "body": "Motor_output_shaft",
+      "radial_axis_offset_mm": 0.0,
+      "axis_angle_degrees": 0.0
+    },
+    {
+      "body": "Krick_63800_63823_63820_coupling",
+      "radial_axis_offset_mm": 8.326672684688674e-16,
+      "axis_angle_degrees": 0.0
+    },
+    {
+      "body": "Krick_65220_stern_tube",
+      "radial_axis_offset_mm": 2.220446049250313e-15,
+      "axis_angle_degrees": 0.0
+    },
+    {
+      "body": "Krick_65220_shaft_178mm",
+      "radial_axis_offset_mm": 5.551115123125783e-15,
+      "axis_angle_degrees": 0.0
+    }
+  ],
+  "battery_clearances": [
+    {
+      "body": "Mabuchi_RS380PH_can",
+      "battery_clearance_mm": 29.58148312587833
+    },
+    {
+      "body": "Mabuchi_front_boss",
+      "battery_clearance_mm": 29.194497626135796
+    },
+    {
+      "body": "Motor_output_shaft",
+      "battery_clearance_mm": 16.86117454699137
+    },
+    {
+      "body": "Krick_63800_63823_63820_coupling",
+      "battery_clearance_mm": 2.081082373059022
+    },
+    {
+      "body": "Krick_65220_stern_tube",
+      "battery_clearance_mm": 1.6611896013958027
+    },
+    {
+      "body": "Krick_65220_shaft_178mm",
+      "battery_clearance_mm": 2.711399356937836
+    },
+    {
+      "body": "Propeller_30mm_swept_volume",
+      "battery_clearance_mm": 66.24404095037148
+    }
+  ],
+  "shaft_coaxiality_passed": true,
+  "wet_dry_boundary": [
+    {
+      "probe": "E1",
+      "radial_seal": "SKF 6x16x7 HMSA10 RG candidate",
+      "cartridge": "Machined POM-C, face gasket retained",
+      "wire_entry_bodies": [
+        {
+          "name": "Cured_potting_DP270_candidate",
+          "volume_mm3": 113.79571157612085,
+          "min_mm": [
+            -53.75,
+            -67.75,
+            23.999999999999993
+          ],
+          "max_mm": [
+            -48.24999999999999,
+            -62.25,
+            31.000000000000007
+          ]
+        },
+        {
+          "name": "Insulated_wire_OD1p12_envelope",
+          "volume_mm3": 8.866831105491471,
+          "min_mm": [
+            -51.559999999999995,
+            -65.56,
+            23.0
+          ],
+          "max_mm": [
+            -50.44,
+            -64.44,
+            32.0
+          ]
+        }
+      ],
+      "dry_servo": "HS-65HB above sealed output shaft, timing transmission",
+      "cover": "Service/dust cover only; not a watertight compartment",
+      "qualification": "Supplier water-duty/counterface, gasket compression and potted jacket adhesion/cycle/immersion tests required"
+    },
+    {
+      "probe": "E2",
+      "radial_seal": "SKF 6x16x7 HMSA10 RG candidate",
+      "cartridge": "Machined POM-C, face gasket retained",
+      "wire_entry_bodies": [
+        {
+          "name": "Cured_potting_DP270_candidate",
+          "volume_mm3": 113.79571157612085,
+          "min_mm": [
+            77.25,
+            -47.75,
+            23.999999999999993
+          ],
+          "max_mm": [
+            82.75,
+            -42.25,
+            31.000000000000007
+          ]
+        },
+        {
+          "name": "Insulated_wire_OD1p12_envelope",
+          "volume_mm3": 8.86683110549146,
+          "min_mm": [
+            79.44,
+            -45.56,
+            23.0
+          ],
+          "max_mm": [
+            80.55999999999999,
+            -44.44,
+            32.0
+          ]
+        }
+      ],
+      "dry_servo": "HS-65HB above sealed output shaft, timing transmission",
+      "cover": "Service/dust cover only; not a watertight compartment",
+      "qualification": "Supplier water-duty/counterface, gasket compression and potted jacket adhesion/cycle/immersion tests required"
+    },
+    {
+      "probe": "E3",
+      "radial_seal": "SKF 6x16x7 HMSA10 RG candidate",
+      "cartridge": "Machined POM-C, face gasket retained",
+      "wire_entry_bodies": [
+        {
+          "name": "Cured_potting_DP270_candidate",
+          "volume_mm3": 113.79571157612085,
+          "min_mm": [
+            -53.75,
+            62.25,
+            23.999999999999993
+          ],
+          "max_mm": [
+            -48.24999999999999,
+            67.75,
+            31.000000000000007
+          ]
+        },
+        {
+          "name": "Insulated_wire_OD1p12_envelope",
+          "volume_mm3": 8.866831105491471,
+          "min_mm": [
+            -51.559999999999995,
+            64.44,
+            23.0
+          ],
+          "max_mm": [
+            -50.44,
+            65.56,
+            32.0
+          ]
+        }
+      ],
+      "dry_servo": "HS-65HB above sealed output shaft, timing transmission",
+      "cover": "Service/dust cover only; not a watertight compartment",
+      "qualification": "Supplier water-duty/counterface, gasket compression and potted jacket adhesion/cycle/immersion tests required"
+    },
+    {
+      "probe": "E4",
+      "radial_seal": "SKF 6x16x7 HMSA10 RG candidate",
+      "cartridge": "Machined POM-C, face gasket retained",
+      "wire_entry_bodies": [
+        {
+          "name": "Cured_potting_DP270_candidate",
+          "volume_mm3": 113.79571157612085,
+          "min_mm": [
+            77.25,
+            42.25,
+            23.999999999999993
+          ],
+          "max_mm": [
+            82.75,
+            47.75,
+            31.000000000000007
+          ]
+        },
+        {
+          "name": "Insulated_wire_OD1p12_envelope",
+          "volume_mm3": 8.86683110549146,
+          "min_mm": [
+            79.44,
+            44.44,
+            23.0
+          ],
+          "max_mm": [
+            80.55999999999999,
+            45.56,
+            32.0
+          ]
+        }
+      ],
+      "dry_servo": "HS-65HB above sealed output shaft, timing transmission",
+      "cover": "Service/dust cover only; not a watertight compartment",
+      "qualification": "Supplier water-duty/counterface, gasket compression and potted jacket adhesion/cycle/immersion tests required"
+    }
+  ],
+  "waterproof_qualification_passed": false,
+  "assembly_release_passed": false
+}

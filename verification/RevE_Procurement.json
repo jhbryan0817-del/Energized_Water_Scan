@@ -1,0 +1,149 @@
+{
+  "revision": "Rev-E",
+  "spreadsheet": "https://docs.google.com/spreadsheets/d/129cdgjaWSUko2g8DQrpoiBbZISE-RidNFI1MubGNuU8/edit#gid=372890739",
+  "procurement_lines": 28,
+  "assembly_bom_lines": 79,
+  "scope": "Major electronics first; owned screws and minor supplies excluded; essential drive/sealing purchases retained. Green detection, red RC boat, yellow both. CNY/HKD explicit, original live FX formulas retained.",
+  "items": [
+    {
+      "item": "Espressif ESP32-DevKitC V4",
+      "quantity": 1,
+      "purpose": "Both"
+    },
+    {
+      "item": "Adafruit ADS1115 PID 1085 STEMMA QT/Qwiic ADC",
+      "quantity": 1,
+      "purpose": "Electricity detection"
+    },
+    {
+      "item": "Protected electrode analog front-end set",
+      "quantity": 1,
+      "purpose": "Electricity detection"
+    },
+    {
+      "item": "Hitec HS-65HB probe servo with supplied horn",
+      "quantity": 4,
+      "purpose": "Electricity detection"
+    },
+    {
+      "item": "Pololu D24V50F5 5 V probe-servo regulator /2851",
+      "quantity": 1,
+      "purpose": "Electricity detection"
+    },
+    {
+      "item": "Pololu D24V10F5 item 2831 5V 1A regulator",
+      "quantity": 1,
+      "purpose": "Both"
+    },
+    {
+      "item": "Hobbywing QuicRun WP-1625 brushed ESC (30120000)",
+      "quantity": 1,
+      "purpose": "RC boat"
+    },
+    {
+      "item": "Mabuchi RS-380PH-4045 motor",
+      "quantity": 1,
+      "purpose": "RC boat"
+    },
+    {
+      "item": "Genuine TowerPro SG90 Digital servo",
+      "quantity": 1,
+      "purpose": "RC boat"
+    },
+    {
+      "item": "Gens Ace GEA222S30X6GT 2200 mAh 2S 30C XT60 LiPo",
+      "quantity": 1,
+      "purpose": "Both"
+    },
+    {
+      "item": "Compatible 2S LiPo balance charger",
+      "quantity": 1,
+      "purpose": "Both"
+    },
+    {
+      "item": "Krick 65220 Eco M2 shaft/stern tube assembly",
+      "quantity": 1,
+      "purpose": "RC boat"
+    },
+    {
+      "item": "Krick coupling kit: 63800 connector + 63823 (2.3 mm) + 63820 (2.0 mm)",
+      "quantity": 1,
+      "purpose": "RC boat"
+    },
+    {
+      "item": "Krick/Graupner 2307.30 propeller, 30 mm RH M2",
+      "quantity": 1,
+      "purpose": "RC boat"
+    },
+    {
+      "item": "SKF 6 x 16 x 7 HMSA10 RG radial seal",
+      "quantity": 4,
+      "purpose": "Electricity detection"
+    },
+    {
+      "item": "igus GFM-0608-06 flanged shaft bushing",
+      "quantity": 4,
+      "purpose": "Electricity detection"
+    },
+    {
+      "item": "Machined POM-C probe seal cartridge",
+      "quantity": 4,
+      "purpose": "Electricity detection"
+    },
+    {
+      "item": "Cartridge face gasket, 1 mm silicone sheet",
+      "quantity": 4,
+      "purpose": "Electricity detection"
+    },
+    {
+      "item": "316 stainless probe output shaft, diameter 6 mm",
+      "quantity": 4,
+      "purpose": "Electricity detection"
+    },
+    {
+      "item": "20-tooth, 2 mm pitch, 6 mm belt-width pulley",
+      "quantity": 8,
+      "purpose": "Electricity detection"
+    },
+    {
+      "item": "96 mm nominal pitch-length x 6 mm timing belt",
+      "quantity": 4,
+      "purpose": "Electricity detection"
+    },
+    {
+      "item": "Upper probe journal set: bushing OD8 / ID6 x 6 mm and shaft",
+      "quantity": 4,
+      "purpose": "Electricity detection"
+    },
+    {
+      "item": "Stock servo horn-to-pulley adapter",
+      "quantity": 4,
+      "purpose": "Electricity detection"
+    },
+    {
+      "item": "3M DP270 potting compound",
+      "quantity": 1,
+      "purpose": "Electricity detection"
+    },
+    {
+      "item": "Main hatch continuous shaped gasket, 2 mm",
+      "quantity": 1,
+      "purpose": "Both"
+    },
+    {
+      "item": "Rudder stock, diameter 3 x 86 mm",
+      "quantity": 1,
+      "purpose": "RC boat"
+    },
+    {
+      "item": "M2 steering dogleg pushrod and end fittings",
+      "quantity": 1,
+      "purpose": "RC boat"
+    },
+    {
+      "item": "Steering pushrod bellows / boot",
+      "quantity": 1,
+      "purpose": "RC boat"
+    }
+  ]
+}
