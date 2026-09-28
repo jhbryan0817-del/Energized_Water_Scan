@@ -1,0 +1,47 @@
+{
+  "revision": "Rev-E1",
+  "changed_bodies": [
+    {
+      "before": {
+        "component": "PRINT_01_Hull_shell (1)",
+        "body": "Hull_four_internal_wells_and_recessed_channels",
+        "volume_mm3": 708922.6053465476,
+        "lumps": 1,
+        "min_mm": [
+          -120.0,
+          -88.0,
+          -10.14914
+        ],
+        "max_mm": [
+          200.0,
+          88.0,
+          68.0
+        ]
+      },
+      "after": {
+        "component": "PRINT_01_Hull_shell (1)",
+        "body": "Hull_four_internal_wells_and_recessed_channels",
+        "volume_mm3": 711685.576333516,
+        "lumps": 1,
+        "min_mm": [
+          -120.0,
+          -88.0,
+          -10.14914
+        ],
+        "max_mm": [
+          200.0,
+          88.0,
+          68.0
+        ]
+      }
+    }
+  ],
+  "unchanged_bodies": 144,
+  "body_count": 145,
+  "timeline": 1768,
+  "unintended_intersections": 0,
+  "sampled_motion_collisions": 0,
+  "boolean_failures": 0,
+  "feature_issues": 0,
+  "intentional_construction_overlaps": 3
+}

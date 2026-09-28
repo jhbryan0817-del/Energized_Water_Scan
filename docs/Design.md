@@ -1,17 +1,19 @@
-# Mechanical design — Rev-E internal actuators and recessed folding probes
+# Mechanical design — Rev-E1 internal actuators and recessed folding probes
+
+**Live Fusion is Rev-E1 (29 September 2026).** It closes an obsolete port-wall opening, removes an obsolete projecting foot, and adds blind end caps to 16 cartridge and four rudder mounting bores. See [changes and validation](RevE1_Changes.md). Existing Rev-E 3D exports are stale for the hull; regeneration and mesh checks are deferred.
 
 Revision E restores the hull to the assembly datum, grounds it against accidental dragging, reinforces printed structures, and adds explicit bonded wet-wire entry allocations. The footprint is **320 × 176 mm**. This document describes the current design; Git history retains earlier revisions.
 
-## Audit disposition of the highlighted exterior features
+## Audit disposition of exterior features
 
-The features highlighted in the review images are not unexplained holes or disposable support geometry:
+The attachment supplied for the 28 September review shows Fusion MCP preferences, not the model. It cannot identify the user's specific protrusion or hole. The following are functional features identified in the design, rather than a confirmed match to that attachment:
 
 - The small bored boss/sleeve at the lower stern is part of the inclined stern-tube penetration and its bonded support. Its circular bore is intentional; the installed tube-to-hull joint must be bonded and leak-tested.
-- The adjacent rear bracket and raised land support the rudder/steering installation and provide structure around the steering interface. They must not be trimmed from the printed hull.
+- The retained rear bracket and current steering mounting land support the rudder/steering installation and provide structure around the steering interface. They must not be trimmed from the printed hull.
 - The ledges visible above the cyan probe mechanism are the continuous hatch flange and the roofs of the intentionally wet probe channels. The channels flood from outside, but their roofs separate them from the dry electronics volume.
 - Openings in the cyan internal covers are dry-side wire/service passages. They are not the wet-to-dry boundary and must not be treated as waterproof glands.
 
-No additional exterior feature was removed in the final audit: each questioned projection has a propulsion, steering, sealing, or structural role. Remove only temporary slicer support material after printing. The disposition and qualification holds are also stored as attributes in the live Fusion document.
+The stern-tube support, rudder bracket, hatch flange and channel roofs have functional roles. Their presence alone is not evidence of stray geometry. See the current audit for any specifically measured and revised stock; do not trim these interfaces arbitrarily.
 
 ## Alignment and reinforcement
 
@@ -21,9 +23,11 @@ Outer channel walls gain 3 mm outward material per side (approximately 8.4 mm wa
 
 The battery moves 1.5 mm aft. Minimum nominal battery-to-coupling clearance is 2.081 mm, to stern tube 1.661 mm, and to motor can 29.58 mm. Its aft end is X=192 mm versus the hatch aperture at X=193 mm. These are nominal CAD values, with no allowance established for actual pack swelling, fabrication variation or vibration. Verify the purchased pack and restraints before assembly.
 
-Hull solid volume increases from 591.10 to 708.92 cm³. Added material requires a fresh measured displacement, freeboard and trim check with the actual assembled mass. No structural or flotation certification follows from thicker CAD walls.
+Rev-E reinforcement increased hull solid volume from 591.10 to 708.92 cm³. Rev-E1 hull repairs bring it to 711.69 cm³. Added material requires a fresh measured displacement, freeboard and trim check with the actual assembled mass. No structural or flotation certification follows from thicker CAD walls.
 
 ## Wet-to-dry boundary
+
+See [Build qualification](Build_Qualification.md) for the complete leakage-path register and physical acceptance gates. The shaft-to-stern-tube internal path is a separate unresolved interface from the tube-to-hull adhesive joint.
 
 Each shaft passes through a machined POM cartridge, a nominal 6 × 16 × 7 mm radial seal, and a separate lower bushing. A face gasket seals cartridge to hull. The wet electrode wire has a distinct stepped potted feedthrough in the channel roof: nominal 3.3 mm throat and 5.5 mm potting pocket around a 1.12 mm insulated lead. Four explicit cured-potting and lead envelopes are now present in CAD and the BOM.
 
@@ -79,12 +83,12 @@ This revision requires a new hull and changed trays/arms; it is not a bolt-on co
 
 ## Evidence and release status
 
-Use only the revision-matched RevE reports and exports. The migration preserves earlier timeline history; fixed lengths are reference values, not a fully generative master-parameter model. Angle parameters remain editable. Reports distinguish rigid-solid checks from unavailable flexible-harness, sealing, torque and flotation tests. `assembly_release_passed` remains false until the retained and new interface holds are closed.
+Use the RevE1 reports for the live repairs; RevE reports and exports describe the historical baseline. The migration preserves earlier timeline history; fixed lengths are reference values, not a fully generative master-parameter model. Angle parameters remain editable. Reports distinguish rigid-solid checks from unavailable flexible-harness, sealing, torque and flotation tests. `assembly_release_passed` remains false until the retained and new interface holds are closed.
 
-The final reports cover 145 physical solid envelopes and 1,724 timeline items. Static checks include bodies within the same component. Three named intersections are explicitly classified as intentional envelope construction (SG90 case/lug overlap, propeller hub/shaft overlap, and steering horn/pin attachment). They are not hidden as collision-free geometry. Probe motion is sampled every 2° through 0–90° against static geometry; separate transverse lanes prevent probe-to-probe collisions. Native parameter checks verify all four electrode positions at stowed, 30°, 90° and the measurement pose. These are sampled checks, not a continuous-motion proof for wires, belts or steering.
+The Rev-E1 assembly report covers 145 physical solid envelopes and 1,768 timeline items. Static checks include bodies within the same component. Three named intersections are explicitly classified as intentional envelope construction (SG90 case/lug overlap, propeller hub/shaft overlap, and steering horn/pin attachment). They are not hidden as collision-free geometry. Probe motion is sampled every 2° through 0–90° against static geometry; separate transverse lanes prevent probe-to-probe collisions. Historical native parameter checks verified all four electrode positions at stowed, 30°, 90° and the measurement pose; Rev-E1 changes only the hull. These are sampled checks, not a continuous-motion proof for wires, belts or steering.
 
-The latest export checks require 23 single-connected manifold meshes, exact ZIP identity, 145 STEP solid envelopes, and a reopened native F3D matching solid volumes, occurrence transforms, parameters and timeline. See verification JSON for the actual outcome.
+The next export pass must check 23 single-connected manifold meshes, exact ZIP identity, 145 STEP solid envelopes, and a reopened native F3D matching solid volumes, occurrence transforms, parameters and timeline. These checks have not been run for Rev-E1 because 3D export is deferred. Existing export verification JSON applies only to Rev-E.
 
 The rigid service audit covers selected driver corridors, the main cassette, controller bridge and battery lift, and two dry bundle corridors. It does not validate cartridge extraction, every cover removal trajectory, belt replacement, connector mating, or the relocated steering sweep; those remain physical-fit checks. The wet cartridge access pockets may require cartridge tilting with the arm removed. Verify the actual tool approach and extraction on one full actuator fit prototype.
 
-The stern-tube sleeve, rudder bracket and steering-saddle support land remain functional hull interfaces. Exterior support geometry is not automatically a stray component. All 23 printed bodies pass the single-connected-solid mesh check.
+The stern-tube sleeve, rudder bracket and current steering-saddle support land remain functional hull interfaces. The separate obsolete port foot was removed. Historical Rev-E exports passed the 23-body mesh check; the repaired Rev-E1 hull still requires a fresh export and mesh check.

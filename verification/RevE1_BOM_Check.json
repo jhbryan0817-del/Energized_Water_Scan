@@ -1,0 +1,47 @@
+{
+  "changes": [
+    {
+      "cell": "H5",
+      "old": "Rev E | 28 Sep 2026",
+      "new": "Rev E1, 29 Sep 2026"
+    },
+    {
+      "cell": "K7",
+      "old": "Fit verification required",
+      "new": "HOLD: internal shaft sealing"
+    },
+    {
+      "cell": "L7",
+      "old": "Existing sheet price estimate retained; not a verified current quotation.",
+      "new": "Qualify shaft-to-tube sealing/lubrication separately from hull bond. Price estimate unchanged."
+    },
+    {
+      "cell": "L41",
+      "old": "Starting length; verify flange/gasket engagement and sealing preload.",
+      "new": "Rev E1: 3 mm flange + 0.75 mm gasket; 5 mm pilot. M3x8 gives 4.25 mm engagement, 0.75 mm tip gap. Verify."
+    },
+    {
+      "cell": "L55",
+      "old": "Select final length and seal penetration if applicable.",
+      "new": "Rev E1: bores stop at X=193 mm, with 3 mm caps. Select length for tip X>=193.75 mm; verify engagement."
+    },
+    {
+      "cell": "F64",
+      "old": "prints/Print_STLs.zip",
+      "new": "docs/RevE1_Changes.md"
+    },
+    {
+      "cell": "K64",
+      "old": "Print and qualify",
+      "new": "HOLD: new hull export"
+    },
+    {
+      "cell": "L64",
+      "old": "Current Rev-E STL; unfilled insulating PETG fit prototype. Do not scale.",
+      "new": "Rev E1 repairs wall and blind screw bores; trims obsolete foot. Existing Rev E hull STL is stale."
+    }
+  ],
+  "style_changes": [],
+  "lines": 79,
+  "preserved": "All unrelated cell values/formulas, cell styles, freeze panes, table and validation definitions checked."
+}

@@ -1,0 +1,334 @@
+{
+  "revision": "Rev-E1",
+  "date": "2026-09-29",
+  "baseline_timeline": 1724,
+  "baseline_hull_mm3": 708922.6053465476,
+  "repaired_hull_mm3": 711685.576333516,
+  "lumps": 1,
+  "changes": [
+    {
+      "feature": "RevE1_restore_port_wall",
+      "volume_change_mm3": 303.17265088576823
+    },
+    {
+      "feature": "RevE1_trim_obsolete_port_foot",
+      "volume_change_mm3": -300.44828750239685
+    },
+    {
+      "feature": "RevE1_E1_blind_pilot_-95_8",
+      "volume_change_mm3": 74.60685391491279
+    },
+    {
+      "feature": "RevE1_E1_blind_pilot_-95_24",
+      "volume_change_mm3": 133.06748719967436
+    },
+    {
+      "feature": "RevE1_E1_blind_pilot_-67_8",
+      "volume_change_mm3": 121.93348144774791
+    },
+    {
+      "feature": "RevE1_E1_blind_pilot_-67_24",
+      "volume_change_mm3": 122.72493637539446
+    },
+    {
+      "feature": "RevE1_E2_blind_pilot_96_8",
+      "volume_change_mm3": 165.74310065922327
+    },
+    {
+      "feature": "RevE1_E2_blind_pilot_96_24",
+      "volume_change_mm3": 165.7431006594561
+    },
+    {
+      "feature": "RevE1_E2_blind_pilot_124_8",
+      "volume_change_mm3": 182.60507298982702
+    },
+    {
+      "feature": "RevE1_E2_blind_pilot_124_24",
+      "volume_change_mm3": 182.60507299017627
+    },
+    {
+      "feature": "RevE1_E3_blind_pilot_-95_8",
+      "volume_change_mm3": 74.93225693749264
+    },
+    {
+      "feature": "RevE1_E3_blind_pilot_-95_24",
+      "volume_change_mm3": 133.1163752117427
+    },
+    {
+      "feature": "RevE1_E3_blind_pilot_-67_8",
+      "volume_change_mm3": 121.93348144798074
+    },
+    {
+      "feature": "RevE1_E3_blind_pilot_-67_24",
+      "volume_change_mm3": 122.72493637504522
+    },
+    {
+      "feature": "RevE1_E4_blind_pilot_96_8",
+      "volume_change_mm3": 165.74310065957252
+    },
+    {
+      "feature": "RevE1_E4_blind_pilot_96_24",
+      "volume_change_mm3": 165.7431006594561
+    },
+    {
+      "feature": "RevE1_E4_blind_pilot_124_8",
+      "volume_change_mm3": 182.60507298982702
+    },
+    {
+      "feature": "RevE1_E4_blind_pilot_124_24",
+      "volume_change_mm3": 182.60507298994344
+    },
+    {
+      "feature": "RevE1_rudder_blind_pilot_-9_50",
+      "volume_change_mm3": 115.4535300192656
+    },
+    {
+      "feature": "RevE1_rudder_blind_pilot_-9_58",
+      "volume_change_mm3": 115.45353001949843
+    },
+    {
+      "feature": "RevE1_rudder_blind_pilot_9_50",
+      "volume_change_mm3": 115.45353001949843
+    },
+    {
+      "feature": "RevE1_rudder_blind_pilot_9_58",
+      "volume_change_mm3": 115.45353001938201
+    }
+  ],
+  "added_stock_interferences": [],
+  "pilot_checks": [
+    {
+      "kind": "cartridge",
+      "probe": "E1",
+      "x": -95,
+      "z": 8,
+      "sign": -1,
+      "wall": 59,
+      "pilot_depth_mm": 5,
+      "cap_mm": 3,
+      "cap_solid": true,
+      "bore_open": true
+    },
+    {
+      "kind": "cartridge",
+      "probe": "E1",
+      "x": -95,
+      "z": 24,
+      "sign": -1,
+      "wall": 59,
+      "pilot_depth_mm": 5,
+      "cap_mm": 3,
+      "cap_solid": true,
+      "bore_open": true
+    },
+    {
+      "kind": "cartridge",
+      "probe": "E1",
+      "x": -67,
+      "z": 8,
+      "sign": -1,
+      "wall": 59,
+      "pilot_depth_mm": 5,
+      "cap_mm": 3,
+      "cap_solid": true,
+      "bore_open": true
+    },
+    {
+      "kind": "cartridge",
+      "probe": "E1",
+      "x": -67,
+      "z": 24,
+      "sign": -1,
+      "wall": 59,
+      "pilot_depth_mm": 5,
+      "cap_mm": 3,
+      "cap_solid": true,
+      "bore_open": true
+    },
+    {
+      "kind": "cartridge",
+      "probe": "E2",
+      "x": 96,
+      "z": 8,
+      "sign": -1,
+      "wall": 39,
+      "pilot_depth_mm": 5,
+      "cap_mm": 3,
+      "cap_solid": true,
+      "bore_open": true
+    },
+    {
+      "kind": "cartridge",
+      "probe": "E2",
+      "x": 96,
+      "z": 24,
+      "sign": -1,
+      "wall": 39,
+      "pilot_depth_mm": 5,
+      "cap_mm": 3,
+      "cap_solid": true,
+      "bore_open": true
+    },
+    {
+      "kind": "cartridge",
+      "probe": "E2",
+      "x": 124,
+      "z": 8,
+      "sign": -1,
+      "wall": 39,
+      "pilot_depth_mm": 5,
+      "cap_mm": 3,
+      "cap_solid": true,
+      "bore_open": true
+    },
+    {
+      "kind": "cartridge",
+      "probe": "E2",
+      "x": 124,
+      "z": 24,
+      "sign": -1,
+      "wall": 39,
+      "pilot_depth_mm": 5,
+      "cap_mm": 3,
+      "cap_solid": true,
+      "bore_open": true
+    },
+    {
+      "kind": "cartridge",
+      "probe": "E3",
+      "x": -95,
+      "z": 8,
+      "sign": 1,
+      "wall": 59,
+      "pilot_depth_mm": 5,
+      "cap_mm": 3,
+      "cap_solid": true,
+      "bore_open": true
+    },
+    {
+      "kind": "cartridge",
+      "probe": "E3",
+      "x": -95,
+      "z": 24,
+      "sign": 1,
+      "wall": 59,
+      "pilot_depth_mm": 5,
+      "cap_mm": 3,
+      "cap_solid": true,
+      "bore_open": true
+    },
+    {
+      "kind": "cartridge",
+      "probe": "E3",
+      "x": -67,
+      "z": 8,
+      "sign": 1,
+      "wall": 59,
+      "pilot_depth_mm": 5,
+      "cap_mm": 3,
+      "cap_solid": true,
+      "bore_open": true
+    },
+    {
+      "kind": "cartridge",
+      "probe": "E3",
+      "x": -67,
+      "z": 24,
+      "sign": 1,
+      "wall": 59,
+      "pilot_depth_mm": 5,
+      "cap_mm": 3,
+      "cap_solid": true,
+      "bore_open": true
+    },
+    {
+      "kind": "cartridge",
+      "probe": "E4",
+      "x": 96,
+      "z": 8,
+      "sign": 1,
+      "wall": 39,
+      "pilot_depth_mm": 5,
+      "cap_mm": 3,
+      "cap_solid": true,
+      "bore_open": true
+    },
+    {
+      "kind": "cartridge",
+      "probe": "E4",
+      "x": 96,
+      "z": 24,
+      "sign": 1,
+      "wall": 39,
+      "pilot_depth_mm": 5,
+      "cap_mm": 3,
+      "cap_solid": true,
+      "bore_open": true
+    },
+    {
+      "kind": "cartridge",
+      "probe": "E4",
+      "x": 124,
+      "z": 8,
+      "sign": 1,
+      "wall": 39,
+      "pilot_depth_mm": 5,
+      "cap_mm": 3,
+      "cap_solid": true,
+      "bore_open": true
+    },
+    {
+      "kind": "cartridge",
+      "probe": "E4",
+      "x": 124,
+      "z": 24,
+      "sign": 1,
+      "wall": 39,
+      "pilot_depth_mm": 5,
+      "cap_mm": 3,
+      "cap_solid": true,
+      "bore_open": true
+    },
+    {
+      "kind": "rudder",
+      "y": -9,
+      "z": 50,
+      "bore_end_x_mm": 193,
+      "cap_mm": 3,
+      "cap_solid": true,
+      "bore_open": true
+    },
+    {
+      "kind": "rudder",
+      "y": -9,
+      "z": 58,
+      "bore_end_x_mm": 193,
+      "cap_mm": 3,
+      "cap_solid": true,
+      "bore_open": true
+    },
+    {
+      "kind": "rudder",
+      "y": 9,
+      "z": 50,
+      "bore_end_x_mm": 193,
+      "cap_mm": 3,
+      "cap_solid": true,
+      "bore_open": true
+    },
+    {
+      "kind": "rudder",
+      "y": 9,
+      "z": 58,
+      "bore_end_x_mm": 193,
+      "cap_mm": 3,
+      "cap_solid": true,
+      "bore_open": true
+    }
+  ],
+  "applied": true,
+  "timeline": 1768,
+  "final_hull_mm3": 711685.576333516,
+  "final_lumps": 1,
+  "feature_issues": []
+}

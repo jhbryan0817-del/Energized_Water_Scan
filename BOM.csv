@@ -4,7 +4,7 @@ BOM-002,Adafruit ADS1115 PID 1085 STEMMA QT/Qwiic ADC,1.0,Electricity detection,
 BOM-003,Pololu D24V10F5 item 2831 5V 1A regulator,1.0,Both,Fit verification required,Existing sheet price estimate retained; not a verified current quotation.,Pololu 2831 D24V10F5 5V 1A 降压模块
 BOM-004,Hobbywing QuicRun WP-1625 brushed ESC (30120000),1.0,RC boat,Fit verification required,Existing sheet price estimate retained; not a verified current quotation.,Hobbywing QuicRun WP-1625 30120000 有刷电调
 BOM-005,Mabuchi RS-380PH-4045 motor,1.0,RC boat,Fit verification required,Existing sheet price estimate retained; not a verified current quotation.,Mabuchi RS-380PH-4045 万宝至 马达
-BOM-006,Krick 65220 Eco M2 shaft/stern tube assembly,1.0,RC boat,Fit verification required,Existing sheet price estimate retained; not a verified current quotation.,Krick 65220 M2 153mm 船轴 艉轴套件
+BOM-006,Krick 65220 Eco M2 shaft/stern tube assembly,1.0,RC boat,HOLD: internal shaft sealing,Qualify shaft-to-tube sealing/lubrication separately from hull bond. Price estimate unchanged.,Krick 65220 M2 153mm 船轴 艉轴套件
 BOM-007,Krick 63800 bridge coupling connector,1.0,RC boat,Fit verification required,Existing sheet price estimate retained; not a verified current quotation.,Krick 63800 船模 联轴器 连接件
 BOM-008,Krick 63823 2.3 mm coupling insert,1.0,RC boat,Fit verification required,Existing sheet price estimate retained; not a verified current quotation.,Krick 63823 2.3mm 联轴器 接头
 BOM-009,Krick 63820 2.0 mm coupling insert,1.0,RC boat,Fit verification required,Existing sheet price estimate retained; not a verified current quotation.,Krick 63820 2.0mm 联轴器 接头
@@ -38,7 +38,7 @@ BOM-036,Compatible 2S LiPo balance charger,1,Both,Select / check owned equipment
 BOM-037,"Main hatch continuous shaped gasket, 2 mm",1,Both,Fit verification required,Use latest shaped outline and 10 holes; verify compression and leak performance.,
 BOM-038,Hatch M3 x 10 screws,10,Both,Fit verification required,"Starting length for 3 mm cover + 2 mm gasket over blind pilots; verify actual stack. Current ring has pilots, not released insert bores.",
 BOM-039,Internal probe-cover M3 x 10 screws,16,Electricity detection,Fit verification required,Updated from M3 x 8 to suit 5 mm covers; nominal 5 mm engagement into 7 mm pilots; verify printed thread life.,
-BOM-040,Cartridge-retention M3 x 8 screws,16,Electricity detection,Fit verification required,Starting length; verify flange/gasket engagement and sealing preload.,
+BOM-040,Cartridge-retention M3 x 8 screws,16,Electricity detection,Fit verification required,"Rev E1: 3 mm flange + 0.75 mm gasket; 5 mm pilot. M3x8 gives 4.25 mm engagement, 0.75 mm tip gap. Verify.",
 BOM-041,Probe-servo mounting M2 x 6 screws,8,Electricity detection,Fit verification required,"Starting length; two per servo, verify actual supplied lugs.",
 BOM-042,Probe regulator M2 x 6 screws,2,Electricity detection,Fit verification required,Verify board underside and blind-pilot engagement.,
 BOM-043,ADS1115 M2 x 6 screws,4,Electricity detection,Fit verification required,"Verify board revision, screw heads and pilot fit.",
@@ -52,7 +52,7 @@ BOM-050,Motor face M2.6 x 6 screws,2,RC boat,Fit verification required,Verify Ma
 BOM-051,"Nonconductive motor cradle liner, 0.4 mm",1,RC boat,Fit verification required,One fitted liner; temperature and material qualification required.,
 BOM-052,Steering saddle M3 x 8 screws,4,RC boat,Fit verification required,Starting length; verify pilot engagement.,
 BOM-053,Steering servo M2 mounting screws,2,RC boat,Fit verification required,Select length against actual SG90 lugs and support.,
-BOM-054,Rudder bracket M3 transom screws,4,RC boat,Fit verification required,Select final length and seal penetration if applicable.,
+BOM-054,Rudder bracket M3 transom screws,4,RC boat,Fit verification required,"Rev E1: bores stop at X=193 mm, with 3 mm caps. Select length for tip X>=193.75 mm; verify engagement.",
 BOM-055,"Rudder stock, diameter 3 x 86 mm",1,RC boat,Fit verification required,Metal stock; cross-hole and retention match actual tiller.,
 BOM-056,"Rudder tiller cross-pin, diameter 1.2 x 8 mm",1,RC boat,Fit verification required,Retain positively; nominal CAD envelope.,
 BOM-057,"Rudder stock stop collar, diameter 8 x 5 mm envelope",1,RC boat,HOLD: collar selection,Must fit 3 mm stock; actual supplier/locking method not selected.,
@@ -61,7 +61,7 @@ BOM-059,Steering pushrod bellows / boot,1,RC boat,HOLD: boot selection,7 mm seat
 BOM-060,"ESC mounting foam, 3 mm",1,RC boat,Fit verification required,One pad; verify adhesive and temperature compatibility.,
 BOM-061,Hull coating and stern-tube sealant,1,Both,Fit verification required,One consumable lot; quantities/process TBD. Qualify FDM porosity and penetrations.,
 BOM-062,Insulating cable ties / strain relief supplies,1,Both,Fit verification required,One consumable lot; ties up to 2.5 mm for modeled slots.,
-BOM-063,PRINT_01 Hull with reinforced probe walls,1,Both,Print and qualify,Current Rev-E STL; unfilled insulating PETG fit prototype. Do not scale.,prints/Print_STLs.zip
+BOM-063,PRINT_01 Hull with reinforced probe walls,1,Both,HOLD: new hull export,Rev E1 repairs wall and blind screw bores; trims obsolete foot. Existing Rev E hull STL is stale.,docs/RevE1_Changes.md
 BOM-064,PRINT_02 Removable hatch,1,Both,Print and qualify,Current Rev-E STL; unfilled insulating PETG fit prototype. Do not scale.,prints/Print_STLs.zip
 BOM-065,PRINT_03 Main electronics cassette,1,Both,Print and qualify,Current Rev-E STL; unfilled insulating PETG fit prototype. Do not scale.,prints/Print_STLs.zip
 BOM-066,PRINT_04 Reinforced battery cradle,1,Both,Print and qualify,Current Rev-E STL; unfilled insulating PETG fit prototype. Do not scale.,prints/Print_STLs.zip

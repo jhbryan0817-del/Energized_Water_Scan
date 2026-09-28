@@ -1,6 +1,8 @@
-# Rev-E print and procurement schedule
+# Rev-E1 print and procurement schedule
 
-See the [Rev-E design and holds](Design.md) and [waterproofing audit](Waterproofing_and_Design_Audit.md). This remains a fit prototype, not a released mechanism or water-ready assembly.
+**Live Fusion is Rev-E1 (29 September 2026).** It closes an obsolete port-wall opening, removes an obsolete projecting foot, and adds blind end caps to 16 cartridge and four rudder mounting bores. See [changes and validation](RevE1_Changes.md). Existing Rev-E 3D exports are stale for the hull; regeneration and mesh checks are deferred.
+
+See the [Rev-E design and holds](Design.md), [waterproofing audit](Waterproofing_and_Design_Audit.md), and [build qualification gates](Build_Qualification.md). This remains a fit prototype, not a released mechanism or water-ready assembly.
 
 ## Current 23-piece print package
 
@@ -31,9 +33,11 @@ STLs are millimetres and arms are exported stowed. Reorient for slicing without 
 
 All other named electronics, battery, motor, shaft/tube, propeller and rudder parts remain. Retain the separate D24V50F5 probe supply. Existing electrical protection and connector omissions remain open. No purchase has been made. Fit one complete actuator/transmission/cartridge before buying four sets or printing the complete hull.
 
+The propulsion shaft/tube requires a supplier-confirmed internal sealing and lubrication arrangement in addition to its outer hull bond. That arrangement has no released additional part number or quantity yet; do not treat the existing BOM as a complete waterproof procurement package. Likewise confirm water duty and corrosion resistance for the exact probe seal, rather than buying by 6 × 16 × 7 mm envelope alone. The current BOM quantities remain unchanged by these qualification holds.
+
 Do not trim the bored stern-tube boss, rudder/transom bracket, steering support land, hatch flange, or probe-channel roofs from the hull. They are functional model geometry, even where an isolated view makes them resemble stray overhangs. Remove only slicer-generated supports and inspect the underlying sealing surfaces afterward.
 
 
 The authoritative current item list is [BOM.xlsx](../BOM.xlsx), with a [CSV mirror](../BOM.csv). Green rows detect electricity, red rows support the RC boat, and yellow rows serve both. Blank prices are unresolved procurement estimates; the total is partial. Native Google Sheets retains its live currency formulas; the XLSX uses a dated exchange-rate snapshot.
 
-The Google Sheet is a prioritized **28-line procurement list**, with major electronics first. It excludes owned screws and minor supplies and combines selected mechanical kits. The repository BOM remains the complete **79-line assembly inventory**, including 23 printed pieces. These are different views of the same Rev-E design, not alternate revisions.
+The Google Sheet is a prioritized **28-line procurement list**, with major electronics first. It excludes owned screws and minor supplies and combines selected mechanical kits. The repository BOM remains the complete **79-line assembly inventory**, including 23 printed pieces. The repository BOM now records Rev-E1 repair and procurement holds. The separate Google Sheet was not updated in this pass; reconcile it before purchasing.
