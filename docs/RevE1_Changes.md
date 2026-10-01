@@ -1,6 +1,6 @@
 # Rev-E1 hull repairs — 29 September 2026
 
-**1 October 2026 update:** the live physical assembly remains Rev-E1. Its service/wiring references and component-source annotations are now audited against current manufacturer information. See the [live mechanical audit](Mechanical_Audit_2026-10-01.md), including corrected battery removal and USB access. No BOM or 3D export was changed.
+**Current live Fusion: Rev-E2, 1 October 2026.** Physical corrections to the controller shelf, battery cradle/mounts and wire restraints are saved in Fusion. See [Rev-E2 physical changes](RevE2_Changes.md) and the [component audit](Mechanical_Audit_2026-10-01.md). The BOM and all repository 3D files are unchanged; existing exports are stale.
 
 The live `Energized_Water_Scanner` Fusion document contains these repairs. Only the hull geometry changed. The 23-piece print inventory and 79-line assembly BOM retain their quantities. **Existing Rev-E hull STL, STEP and Fusion archive files do not contain the repairs. Export and mesh validation are deferred; do not print the old hull expecting Rev-E1.**
 
@@ -50,7 +50,7 @@ These checks use nominal rigid geometry. They do not establish continuous swept 
 
 The four servos stay dry inside the shared hull, driving separate sealed shafts. Their service covers do not isolate flooding. Build and cycle one complete cartridge/transmission/lead-loop coupon before ordering four sets. Confirm water-compatible seals, shaft finish, retention, gasket compression and lead-potting bonds.
 
-The propulsion tube needs a qualified seal/lubrication arrangement **inside the tube around the rotating shaft**, independently of the outer tube-to-hull bond. That selection remains open; the BOM flags it. Battery wiring, straps and tolerance must fit within nominal 1.661–2.081 mm drivetrain gaps. See [build qualification](Build_Qualification.md), [assembly](Wiring_and_Assembly.md) and [procurement](Print_and_Procurement.md).
+The propulsion tube needs a qualified seal/lubrication arrangement **inside the tube around the rotating shaft**, independently of the outer tube-to-hull bond. That selection remains open; the BOM flags it. Those Rev-E1 nominal 1.661–2.081 mm gaps are historical; Rev-E2 raises/repositions the pack and changes current tube/coupling gaps to 9.661/2.904 mm. See [build qualification](Build_Qualification.md), [assembly](Wiring_and_Assembly.md) and [procurement](Print_and_Procurement.md).
 
 The repository workbook and CSV incorporate the new screw limits, hull export hold and stern-shaft sealing hold. Prices, quantities, existing formulas and workbook formatting are preserved. The separate Google Sheet was not changed.
 

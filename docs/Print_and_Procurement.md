@@ -1,8 +1,8 @@
-# Rev-E1 print and procurement schedule
+# Rev-E2 print and procurement schedule
 
-**1 October 2026 update:** the live physical assembly remains Rev-E1. Its service/wiring references and component-source annotations are now audited against current manufacturer information. See the [live mechanical audit](Mechanical_Audit_2026-10-01.md), including corrected battery removal and USB access. No BOM or 3D export was changed.
+**Current live Fusion: Rev-E2, 1 October 2026.** Physical corrections to the controller shelf, battery cradle/mounts and wire restraints are saved in Fusion. See [Rev-E2 physical changes](RevE2_Changes.md) and the [component audit](Mechanical_Audit_2026-10-01.md). The BOM and all repository 3D files are unchanged; existing exports are stale.
 
-**Live Fusion is Rev-E1 (29 September 2026).** It closes an obsolete port-wall opening, removes an obsolete projecting foot, and adds blind end caps to 16 cartridge and four rudder mounting bores. See [changes and validation](RevE1_Changes.md). Existing Rev-E 3D exports are stale for the hull; regeneration and mesh checks are deferred.
+**Rev-E1 baseline repairs (29 September 2026), retained in Rev-E2:** It closes an obsolete port-wall opening, removes an obsolete projecting foot, and adds blind end caps to 16 cartridge and four rudder mounting bores. See [changes and validation](RevE1_Changes.md). Existing Rev-E 3D exports are stale for the hull; regeneration and mesh checks are deferred.
 
 See the [Rev-E design and holds](Design.md), [waterproofing audit](Waterproofing_and_Design_Audit.md), and [build qualification gates](Build_Qualification.md). This remains a fit prototype, not a released mechanism or water-ready assembly.
 
@@ -16,9 +16,13 @@ See the [Rev-E design and holds](Design.md), [waterproofing audit](Waterproofing
 | 18–21 | Retained electronics capture bridges, relocated |
 | 22–25 | Four internal servo covers, replacing external pods |
 | 26–29 | Four 166 mm insulating probe arms |
-| 30,31 | Steering saddle and removable overhead controller bridge |
+| 30,31 | Steering saddle and forward removable controller shelf |
 
-STLs are millimetres and arms are exported stowed. Reorient for slicing without scaling. The hull remains within 320 × 176 mm. Check support removal from the wet channels and hollow internal wells in the slicer before printing. PETG remains a fit-prototype candidate; porosity, wall strength, sealing flatness and sustained screw preload are unqualified.
+Use the current live Fusion bodies for slicer preparation. Existing repository STLs/STEP/F3D are historical and do not contain Rev-E1/E2 changes. No new 3D export is provided in this iteration. Reorient for slicing without scaling. The hull remains within 320 × 176 mm. Check support removal from the wet channels and hollow internal wells in the slicer before printing. PETG remains a fit-prototype candidate; porosity, wall strength, sealing flatness and sustained screw preload are unqualified.
+
+## Revised bodies to print from live Fusion
+
+Rev-E2 changes PRINT_01 hull (two dry blind battery bosses), PRINT_03 cassette (forward controller supports and ties), PRINT_04 raised cradle/strap passages and vertical-extraction relief, PRINT_25 E4 cover (ties), and PRINT_31 forward shelf. PRINT_18 is relocated but its print shape is unchanged. The package remains 23 pieces and the complete BOM is unchanged. Inspect the five revised single-solid bodies and support access in the slicer; check screw/strap coupons first. See [dimensions, fasteners and validation](RevE2_Changes.md).
 
 ## BOM changes from Rev-C
 
@@ -28,8 +32,8 @@ STLs are millimetres and arms are exported stowed. Reorient for slicing without 
 - Replace four external pod gaskets and mounting sets with four internal covers and sixteen M3 cover screws. M3×10 is a starting length only; verify blind engagement and tool access.
 - Retain the four cartridge face gaskets and sixteen cartridge screws; verify the new installed stack.
 - Replace the main hatch gasket with the new shaped continuous sheet gasket. Do not reuse the old rectangular outline. Verify compression and screw lengths at the new opening and shortened rear-center boss.
-- Retain the battery cradle with four flush M2 countersunk screws at (88,±13) and (189,±13) mm. Nominal Ø4.6 top countersinks and Ø1.7 blind pilots are fit-prototype starting geometry; verify head seating and screw length before loading the pack.
-- Add the separate steering saddle and upper controller bridge with four M3 fasteners each; the main cassette also has four M3 fasteners. Verify engagement and printed-pilot strength.
+- Retain the battery cradle with four flush M2 countersunk screws at (88,±13) and (185,±13) mm. Nominal Ø4.6 top countersinks and Ø1.7 blind pilots are fit-prototype starting geometry; verify head seating and screw length before loading the pack.
+- Add the separate steering saddle and forward controller shelf with four M3 fasteners each; the main cassette also has four M3 fasteners. Verify engagement and printed-pilot strength.
 - Replace the straight steering pushrod with the provisional M2 dogleg envelope. Bend geometry, stiffness, retention and full steering travel require a new validation.
 - Four roof-entry potting cups, wet hinge loops and insulated tip terminals require the actual wire/encapsulant and flex/immersion tests.
 

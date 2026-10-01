@@ -1,8 +1,8 @@
 # Build qualification — 29 September 2026 audit
 
-**1 October 2026 update:** the live physical assembly remains Rev-E1. Its service/wiring references and component-source annotations are now audited against current manufacturer information. See the [live mechanical audit](Mechanical_Audit_2026-10-01.md), including corrected battery removal and USB access. No BOM or 3D export was changed.
+**Current live Fusion: Rev-E2, 1 October 2026.** Physical corrections to the controller shelf, battery cradle/mounts and wire restraints are saved in Fusion. See [Rev-E2 physical changes](RevE2_Changes.md) and the [component audit](Mechanical_Audit_2026-10-01.md). The BOM and all repository 3D files are unchanged; existing exports are stale.
 
-**Live Fusion is Rev-E1 (29 September 2026).** It closes an obsolete port-wall opening, removes an obsolete projecting foot, and adds blind end caps to 16 cartridge and four rudder mounting bores. See [changes and validation](RevE1_Changes.md). Existing Rev-E 3D exports are stale for the hull; regeneration and mesh checks are deferred.
+**Rev-E1 baseline repairs (29 September 2026), retained in Rev-E2:** It closes an obsolete port-wall opening, removes an obsolete projecting foot, and adds blind end caps to 16 cartridge and four rudder mounting bores. See [changes and validation](RevE1_Changes.md). Existing Rev-E 3D exports are stale for the hull; regeneration and mesh checks are deferred.
 
 The assembly remains a fit prototype. A connected CAD solid and an interference-free pose do not establish a watertight printed assembly. Complete these gates before committing to a full four-actuator build.
 
@@ -30,7 +30,7 @@ The [Krick 65220 listing](https://www.krickshop.de/Schiffswelle-Stevenrohr-M2-x-
 
 1. Obtain one actual probe servo, stock horn, matched belt/pulley set, cartridge, seal, bushing, output shaft and electrode lead. Confirm the 96 mm belt allocation can be realized with a supplier-matched system. Survey fasteners, retention, bearing supports and tension adjustment.
 2. Build one complete actuator coupon with the same print process, sealing interfaces and lead route as the hull. Demonstrate insertion/removal, tool access, tensioning, current under load and full travel without binding or wire rubbing. Record tolerances before ordering four sets.
-3. Confirm the battery's actual envelope including leads, connector, straps and protective padding. The existing nominal 1.661 mm tube and 2.081 mm coupling gaps provide no verified allowance for those items or pack variation. Keep the pack restrained away from rotating parts.
+3. Confirm the battery's actual envelope including leads, connector, straps and protective padding. Rev-E2 increases nominal tube/coupling gaps to 9.661/2.904 mm; the coupling remains an unverified allocation and actual leads, padding and pack variation still require checks. Keep the pack restrained away from rotating parts.
 4. Verify connector mating and removal with the cassette installed. Label four analog leads; separate them from motor and servo power; provide strain relief and service slack without crossing moving belts, shafts or the hatch gasket.
 5. Establish the maximum immersion head, water type, operating duration, temperature and motion-cycle requirement. These are test inputs still to be specified, not ratings provided by this model.
 6. Test each wet/dry interface, then the empty assembled hull using dry internal witness material. Test both static and actuated conditions; inspect after repeated hatch openings. Record conditions, duration, cycles and any ingress. Any observed ingress fails the test; absence of visible ingress only supports the conditions actually tested.
@@ -42,8 +42,8 @@ Inspect support accessibility under the hatch flange, wet-channel roofs and ster
 
 Do not use stale STL/STEP/F3D exports to manufacture later live-Fusion geometry. Export and mesh validation are intentionally deferred at the user's request.
 
-## Mass and service update — 1 October
+## Rev-E2 mass and service update — 1 October
 
-The 23 print bodies total 1,089.011 cm³. A fully dense 1.27 g/cm³ PETG estimate is 1.383 kg of plastic; the documented battery, motor, five servos and ESC add about 0.283 kg before other hardware. Actual infill, coatings and hardware mass must be measured. The 28 mm waterline is a reference, not a demonstrated loaded flotation result; see the current audit for the displacement limits.
+The 23 print bodies total 1,106.542 cm³. A fully dense 1.27 g/cm³ PETG estimate is 1.405 kg of plastic; documented battery, motor, five servos and ESC add about 0.283 kg before other hardware. Actual infill, coatings and hardware mass must be measured. The relocated battery/controller changes trim. The 28 mm waterline remains an unqualified reference; establish loaded flotation and freeboard.
 
-Verify the corrected three-stage battery-removal path and compact USB access on hardware. Preserve the sealed rudder caps; a straight battery lift is not clear. Verify removal and reassembly with the actual pack leads, restraints and service connectors fitted.
+Verify the new straight battery lift with controller installed, the forward 40 mm USB service allocation, accessible X185 aft cradle screws, strap passages, tie saddles and E4 cover's inward-slide/lift path on actual hardware. Preserve sealed stern caps. Check battery leads, restraints, padding, antenna clearance, header/connector height and harness bends against the current live assembly. See [physical revision](RevE2_Changes.md).

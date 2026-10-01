@@ -1,10 +1,10 @@
 # Waterproofing and assembly audit
 
-**1 October 2026 update:** the live physical assembly remains Rev-E1. Its service/wiring references and component-source annotations are now audited against current manufacturer information. See the [live mechanical audit](Mechanical_Audit_2026-10-01.md), including corrected battery removal and USB access. No BOM or 3D export was changed.
+**Current live Fusion: Rev-E2, 1 October 2026.** Physical corrections to the controller shelf, battery cradle/mounts and wire restraints are saved in Fusion. See [Rev-E2 physical changes](RevE2_Changes.md) and the [component audit](Mechanical_Audit_2026-10-01.md). The BOM and all repository 3D files are unchanged; existing exports are stale.
 
-**Live Fusion is Rev-E1 (29 September 2026).** It closes an obsolete port-wall opening, removes an obsolete projecting foot, and adds blind end caps to 16 cartridge and four rudder mounting bores. See [changes and validation](RevE1_Changes.md). Existing Rev-E 3D exports are stale for the hull; regeneration and mesh checks are deferred.
+**Rev-E1 baseline repairs (29 September 2026), retained in Rev-E2:** It closes an obsolete port-wall opening, removes an obsolete projecting foot, and adds blind end caps to 16 cartridge and four rudder mounting bores. See [changes and validation](RevE1_Changes.md). Existing Rev-E 3D exports are stale for the hull; regeneration and mesh checks are deferred.
 
-This audit reviews the Rev-E/Rev-E1 Fusion model from the perspective of printing, procuring, assembling, wiring, and operating a small USV. The baseline was rechecked on 28 September and repaired geometry on 29 September 2026 through the local Fusion MCP connection. It distinguishes geometric checks from tests that require physical hardware. See [build qualification](Build_Qualification.md) for the expanded leakage register and physical acceptance gates.
+This audit reviews the Rev-E/Rev-E1 baseline and current Rev-E2 Fusion model from the perspective of printing, procuring, assembling, wiring, and operating a small USV. The baseline was rechecked on 28 September and repaired geometry on 29 September 2026 through the local Fusion MCP connection. It distinguishes geometric checks from tests that require physical hardware. See [build qualification](Build_Qualification.md) for the expanded leakage register and physical acceptance gates.
 
 ## Overall result
 
@@ -28,7 +28,7 @@ The four underside probe channels are intentionally wet. Their openings are not 
 
 - The static assembly report covers 145 physical solid envelopes and records no unintended intersections.
 - Probe motion was sampled every 2° from stowed to deployed; separate transverse lanes prevent probe-to-probe contact in the modeled geometry.
-- The battery has 2.081 mm nominal clearance to the coupling and 1.661 mm to the stern tube. These margins are small and exclude pack swelling, straps, wiring, print tolerance, and vibration.
+- Rev-E2 battery clearance is 2.904 mm to the coupling and 9.661 mm to the stern tube. These margins are small and exclude pack swelling, straps, wiring, print tolerance, and vibration.
 - The service audit reports clear modeled corridors for the main cassette, controller bridge, battery lift, selected cover screws, and separated dry analog/power routes. It does not prove hand access, connector mating, flexible harness motion, or cartridge extraction.
 - Three overlaps are intentional envelope construction: servo case/lugs, propeller hub/shaft, and horn/link pin. They are not accidental component collisions.
 
@@ -48,11 +48,11 @@ An isolated CAD view can make these joined hull features look like loose parts. 
 2. Select a matched 2 mm-pitch pulley/belt set and prove horn adapter, tension adjustment, journal retention, shaft retention, torque margin, stall behavior, and cycle life.
 3. Leak-test the cartridge, feedthrough, stern tube, and steering boot independently before a full empty-hull test.
    Test both the outside of the stern tube and the separate rotating-shaft path through its inside. Specify operating head, water type, duration and cycles before accepting a result.
-4. Confirm the purchased battery, straps, wires, connectors, and bend radii in the 1.661–2.081 mm drivetrain clearance region.
+4. Confirm the purchased battery, straps, wires, connectors, and bend radii against the revised 9.661 mm tube and 2.904 mm coupling clearances.
 5. Perform dry motion tests one actuator at a time, then four-channel sequencing with jam detection and current limits.
 6. Measure loaded displacement, freeboard, trim, stability, and recovery with the actual mass distribution before energized-water experiments.
 7. Calibrate the complete analog chain and electrode geometry in a controlled field. Treat a missing reading as an instrument result, never as proof of safe water.
 
 ## Fusion disposition
 
-The live `Energized_Water_Scanner` document was saved with the Rev-E1 hull repairs. Named timeline features and model attributes record the repairs and remaining build holds. See [Rev-E1 changes](RevE1_Changes.md) for the new geometry and verification evidence. No new STL, STEP, or F3D export was generated during this pass.
+The live document now contains Rev-E2 physical controller, battery and wire-restraint corrections, retaining all Rev-E1 sealing repairs. Two new battery bosses have blind pilots entirely inside the dry hull; no wet wall or sealed cap was drilled through. See [exact changes](RevE2_Changes.md) and the [current component audit](Mechanical_Audit_2026-10-01.md) for fresh rigid-body, service and probe checks. The saved model remains a fit prototype; sealing, flexible mechanisms and loaded flotation require hardware validation. No new 3D export was generated and the BOM is unchanged.
