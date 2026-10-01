@@ -1,47 +1,34 @@
 # Energized Water Scanner USV
 
-Energized Water Scanner is a small unmanned surface vessel (USV) research platform for measuring spatial voltage differences in water. Four independently actuated electrode probes fold into recessed channels for transport and deploy below the hull for measurement. The vessel combines the sensing mechanism with an electric propulsion shaft, rudder steering, onboard power conversion, protected analog acquisition, and an ESP32-class controller.
+Energized Water Scanner is a small unmanned surface vessel research platform for measuring voltage differences in water. The current **Rev-F** design has **two** independently actuated probes, a rear ESP32 controller, a shorter electronics cassette and a narrower lower hull.
 
-The project is intended to explore repeatable electric-potential-gradient measurements and their mapping from a mobile platform. It is **not** a certified electrical-safety instrument: a low or absent reading cannot establish that water is safe.
+![Rev-F live Fusion assembly](previews/RevF_2026-10-02_open.png)
 
-![Current live Fusion assembly with service hatch open](previews/RevE2_2026-10-01_open.png)
+## Current design — 2 October 2026
 
-## System overview
+- Remove the forward-driven outer E1/E3 probes and their mechanisms; retain E2/E4, their two recessed wet channels and two internal covers.
+- Move the ESP32 onto a removable rear starboard shelf beside the battery.
+- Move the main electronics cassette 8 mm aft and shorten its forward edge, freeing 34 mm ahead of it.
+- Replace the outer channels and projecting strips with sloping sealed hull stock. Bottom beam is now 125.2 mm; the upper hatch flange remains 170 mm wide. Hull length remains 320 mm.
+- Remove obsolete mounts and reference components. The current print package has **19 pieces**, down from 23.
 
-- **Hull:** 320 × 176 mm printed enclosure with a continuous removable hatch and gasket.
-- **Sensing array:** four 166 mm insulated probe arms with stainless tip electrodes and independent 0–90° deployment.
-- **Actuation:** four dry HS-65HB servos driving sealed output shafts through proposed 1:1 timing transmissions.
-- **Propulsion and steering:** RS-380-class motor, inclined shaft/stern tube, 30 mm propeller, rudder stock, and a separate steering servo.
-- **Electronics:** protected electrode front end, ADS1115 conversion, ESP32-class controller, ESC, logic regulator, and a dedicated 5 V probe-servo supply.
-- **Service architecture:** removable electronics cassette, longitudinal battery cradle, forward controller shelf, individually disconnectable probe actuators, and separated analog/power cable routes.
+The source of truth is the saved live **Energized_Water_Scanner** Fusion document. Repository STL/STEP/F3D files are historical. This update contains **written documentation and native viewport PNGs only**.
 
-## Design package
+## Build documents
 
-- [Rev-E2 physical controller, battery and wiring corrections](docs/RevE2_Changes.md)
-- [1 October live mechanical/component audit and service corrections](docs/Mechanical_Audit_2026-10-01.md)
+- [Rev-F changes, images and measured CAD checks](docs/RevF_Changes.md)
+- [Current mechanical layout and interfaces](docs/Design.md)
+- [Current print list and procurement delta](docs/RevF_Procurement.md)
+- [Wiring and assembly](docs/Wiring_and_Assembly.md)
+- [Build qualification and leakage paths](docs/Build_Qualification.md)
+- [Waterproofing audit](docs/Waterproofing_and_Design_Audit.md)
 
-- [Rev-E1 hull repairs, before/after and validation](docs/RevE1_Changes.md)
-- [Mechanical design, interfaces, and measurement geometry](docs/Design.md)
-- [Waterproofing and assembly audit](docs/Waterproofing_and_Design_Audit.md)
-- [Leakage paths and build qualification gates](docs/Build_Qualification.md)
-- [Wiring and assembly guide](docs/Wiring_and_Assembly.md)
-- [Print and procurement plan](docs/Print_and_Procurement.md)
-- [Complete BOM workbook](BOM.xlsx) and [CSV mirror](BOM.csv)
-- [Fusion archive](cad/Energized_Water_Scanner_RevE.f3d) and [STEP reference](cad/Energized_Water_Scanner_RevE.step)
-- [Verification reports](verification) and [Fusion audit scripts](scripts/README.md)
+The existing BOM.xlsx, BOM.csv and connected Google Sheet were prepared for the earlier four-probe design. Use the **Rev-F procurement delta** for current quantities and fasteners. Do not purchase or print the old four-probe package unchanged. Prior [Rev-E2](docs/RevE2_Changes.md), [Rev-E1](docs/RevE1_Changes.md) and [component audit](docs/Mechanical_Audit_2026-10-01.md) remain historical references.
 
-The live Fusion document is now **Rev-E2 (1 October 2026)**. It moves the controller onto a forward removable shelf, raises/repositions the battery for a straight lift, relocates two cradle mounts for driver access and adds wire-tie saddles. Five printed geometries change: 01/03/04/25/31; the print count and complete BOM remain unchanged. The earlier Rev-E1 wall repair and 20 sealed mounting-bore caps are retained. Repository STL/STEP/F3D files are historical and do not include these changes. Use the saved live Fusion assembly; no new 3D exports are included in this iteration.
+## Measurement and build status
 
-## Build status
+Two electrodes provide **one differential measurement along their separation**. They cannot reproduce the previous four-electrode three-dimensional gradient estimate. The old four-probe presets and gradient scripts are historical and are not validated for Rev-F. The protected analog front end, calibration and firmware still require engineering validation.
 
-Rev-E2 is a **mechanical fit prototype**, not a water-ready release. The current audit finds nominal manufacturer agreement for most major envelopes, but exact servo horns/transmission, coupling assembly, propeller SKU, steering interfaces, sealing and loaded flotation remain open. Static solid checks found no unintended rigid-body intersections, and sampled probe motion found no modeled collisions. The propulsion train is coaxial at its intended 15° inclination. These are CAD results, not substitutes for hardware validation.
+The design supports a staged **mechanical fit prototype**. CAD clearance checks do not qualify a printed hull for water operation. Exact horn/pulley/belt and shaft retention, actual controller clamp contacts/connectors, seal water duty, potting, stern-tube internal sealing, steering motion and loaded flotation remain qualification gates. Fit one retained actuator before duplicating it or committing to a full hull build.
 
-Before water operation, the team must qualify the shaft seals, cartridge gaskets, potted wire feedthroughs, stern-tube bond **and internal shaft-to-tube leakage path**, steering boot, hatch compression, flexible probe wiring, transmission retention, loaded flotation, and fail-safe actuator behavior. Fit and cycle one complete probe actuator before purchasing or printing four sets. The four servo service covers do not provide independent waterproof compartments.
-
-## Measurement concept
-
-The four deployed electrodes provide three coherent signed voltage differences relative to a reference electrode. Their known positions and vessel attitude can support a local field-gradient estimate when the geometry is sufficiently well conditioned. The current nominal measurement pose is E1/E2/E3/E4 = **60°/20°/20°/45°**; calibration must still account for arm-angle error, electrode offsets, phase, conductivity, and boat attitude.
-
-## Electronics procurement summary
-
-The [Energized Water Scanner sheet](https://docs.google.com/spreadsheets/d/129cdgjaWSUko2g8DQrpoiBbZISE-RidNFI1MubGNuU8/edit?gid=372890739#gid=372890739) is an 11-line major-electronics summary with the existing seven columns, concise search keywords and neutral table banding. The complete 79-line repository BOM, its quantities and estimates are unchanged. This audit publishes written guides and native viewport PNGs only; the current model is saved in Fusion without new CAD exports.
+This is not a certified electrical-safety instrument. A low or absent reading does not establish that water is safe.

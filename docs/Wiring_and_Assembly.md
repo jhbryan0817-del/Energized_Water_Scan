@@ -1,43 +1,37 @@
-# Rev-E2 wiring and assembly
+# Rev-F wiring and assembly
 
-**Current live Fusion: Rev-E2, 1 October 2026.** Physical corrections to the controller shelf, battery cradle/mounts and wire restraints are saved in Fusion. See [Rev-E2 physical changes](RevE2_Changes.md) and the [component audit](Mechanical_Audit_2026-10-01.md). The BOM and all repository 3D files are unchanged; existing exports are stale.
+Use the saved live **Energized_Water_Scanner** Fusion assembly and [Rev-F procurement delta](RevF_Procurement.md). The earlier four-probe BOM, CAD archives and gradient scripts are historical.
 
-**Rev-E1 baseline repairs (29 September 2026), retained in Rev-E2:** It closes an obsolete port-wall opening, removes an obsolete projecting foot, and adds blind end caps to 16 cartridge and four rudder mounting bores. See [changes and validation](RevE1_Changes.md). Existing Rev-E 3D exports are stale for the hull; regeneration and mesh checks are deferred.
+## Mechanical sequence
 
-Use the [Rev-E design](Design.md), [waterproofing audit](Waterproofing_and_Design_Audit.md), [build qualification gates](Build_Qualification.md), and [current BOM](Print_and_Procurement.md). The transmission, sealing, and flexible harness remain unreleased interfaces.
+1. Inspect the current hull, both retained wet-channel roofs, cartridge lands, two potting cups and blind pilots. Trial the selected print process and screw fits on coupons before printing the complete 320 mm hull.
+2. Fit one complete E2/E4 actuator with the actual horn, matched timing transmission, upper journal, output-shaft retention, cartridge, seal and lower bushing. Verify tool access, belt tension, shaft alignment and full motion before duplicating it.
+3. Install both cartridges, arms and retained pins. Route each electrode lead in its arm groove with an insulated flexible hinge loop, clear of seals and rotating parts. Qualify the wire/potting bond before encapsulation.
+4. Install the two probe servos and covers 23/25. Disconnect leads and release ties before cover service. With the hatch/gasket removed, slide E4's cover 3 mm inward before lifting. Confirm removal on real hardware.
+5. Install the motor supports, shaft/tube and steering saddle/servo. Retain the stern-tube bond, blind rudder caps and steering boot. Check the actual coupling, shaft retention, internal tube sealing and full steering travel.
+6. Fit the revised cassette using four M3×8 screws at (−17,±58.5) and (67,±58.5) mm. Nominal pilots are Ø2.5 × 5.5 mm; do not deepen them through the wet roofs.
+7. Fit the rear controller shelf/frame with four M3×30 screws at (145,23), (145,59), (183,23), (183,59) mm. Verify the actual board, clamp-safe surfaces and insulating compliant pads. Nominal pilot engagement is 6.9 mm with 2.1 mm tip margin. Tighten only after confirming the real stack and printed-pilot fit.
+8. Fit the retained raised cradle with four flush M2×6 screws at (88,±13) and (185,±13) mm. Thread both straps through their tunnels, pad/deburr battery contact surfaces, and avoid compressing the pack. The controller remains beside the pack for battery service.
+9. Fit and qualify the continuous hatch gasket and cover. Keep all wires off the gasket land; confirm actual compression, screw lengths and leak performance.
 
-1. Use the current live Rev-E2 hull for slicer preparation. Inspect the hull channels, continuous roofs, cartridge lands, potting cups and blind pilots. Confirm support removal and sealing surfaces before assembly.
-2. Bench-fit one HS-65HB, actual stock horn adapter, matched timing drive, upper journal, output shaft and cartridge/seal/bushing. Establish retention and tension adjustment before powering it.
-3. Install cartridges from the wet channels, arms and retained pins. Route the tip conductor in its arm groove and form a controlled hinge loop clear of the shaft seal and full sweep. The loop returns through its potted groove-roof entry. Check insulation, restraint and flex before potting.
-4. Install actuators and internal covers. Release ties and disconnect leads before cover removal. The E4 cover slides 3 mm inward (−Y) before lifting after the hatch/gasket are removed. The forward covers sit partly under the bow flange: use the angled screw approach, then slide/tilt the cover aft before lifting. Confirm this physically; a rigid tool allocation does not prove ergonomics.
-5. Install motor supports and the relocated steering saddle/servo. Fit the dogleg pushrod through the existing boot and tiller line. Recheck full steering travel, end stops, retention, stiffness and boot motion; old steering-travel evidence no longer validates this arrangement.
-6. Fit the extended main cassette and forward controller shelf: protected analog front end and ADS1115 on port; ESC and logic regulator on starboard; separate D24V50F5 probe supply on the forward crosspiece.
-7. Install the raised battery cradle with four flush M2×6 screws at (88,±13) and (185,±13) mm. Fit two straps through the 22 × 2 mm tunnels, deburr/pad contact surfaces and seat the nominal pack at Z33 mm. Fit the forward controller shelf to the cassette with its existing four M3×8 screws. For battery service, disconnect the pack, remove the hatch, release both straps and lift vertically; the controller remains installed. For cradle installation/removal, the final relieved body also lifts vertically through the hatch with drivetrain and actuators retained; remove the pack and four cradle screws first. Disconnect interconnecting leads/ties before lifting the assembled cassette. Preserve all sealed rudder caps.
-8. Route labeled E1/A0, E2/A1, E3/A2 and E4/A3 conductors along the port-side dry corridor. Route servo/motor power on starboard, with a keyed service disconnect and strain relief for each well. Keep electrode leads isolated from shafts and fasteners.
-9. Fit the new continuous shaped hatch gasket and cover. Verify compression and fastener lengths rather than assuming nominal printed pilots have rated pullout strength.
+## Wiring
 
-10. Before installing electronics, perform a staged leak test: cartridges and feedthrough coupons first, then the empty closed hull with the stern tube and steering boot installed. Test the stern-tube outer bond and the internal rotating-shaft path separately; the bonded boss seals only the former. Specify and install the actual inboard sealing/lubrication arrangement before a running test. Use dry witness paper or an equivalent non-energized indicator inside; do not use production electronics as the leak detector. Record immersion head, duration and motion cycles under the qualification plan.
+Keep the retained probes labeled **E2 and E4**. Their historical ADC assignments are A1 and A3; verify the protected front-end schematic and firmware before selecting a differential acquisition mode. Remove E1/E3 leads and servo connections from the active harness. Do not connect unprotected wet electrodes directly to an ADC as a substitute for the protected front end.
 
-Exact connectors, cable bends, lead lengths, potting bonds, flex life and strap/connector hand access require physical checks. The internal cover exits are dry wiring passages; they do not seal the wet electrode entry. Do not parallel regulator outputs or run all probes from the ESC's 1 A BEC.
+Retain the separate logic and probe-servo regulators. Do not parallel regulator outputs. Keep analog electrode wiring away from motor and servo current paths, use keyed disconnects and strain relief, and allow both actuator covers and the rear shelf to be serviced. Actual connector ratings, wire gauge, fuse sizing and lead lengths require the validated circuit and load measurements.
 
-Test dry first, one actuator at a time through 0–90°, recording angle and current. A jam must inhibit measurement and sustained stall. Perform isolated cartridge ingress/cycle tests before complete-hull tests. The original protected-front-end, calibration, controlled-field and flotation gates remain.
+Nominal dry routing allocations to check against real bundles:
 
-The new geometry preset is **60°/20°/20°/45°** for E1/E2/E3/E4. Use the Rev-E pose and gradient scripts. Three coherent signed differences are required; these scripts do not control hardware or establish safe water.
+- Analog spine: X−12…88, Y−26…−22, Z42…46 mm (4 × 4 mm).
+- Power spine: X13…130, Y59…63, Z63…67 mm (4 × 4 mm).
+- Rear-controller signal route: a 3 × 3 mm riser near X75…78, Y−44…−41, then across to Y24…27 at Z65…68, continuing aft toward X150. Keep connector bends and slack inside the hatch.
 
+These are clearance allocations, not modeled flexible cables or confirmed bundle capacity. Use ties no wider than 2.5 mm in the retained saddle slots. Disconnect/release harnesses before lifting any tray or cover.
 
-The authoritative current item list is [BOM.xlsx](../BOM.xlsx), with a [CSV mirror](../BOM.csv). Green rows detect electricity, red rows support the RC boat, and yellow rows serve both. Blank prices are unresolved procurement estimates; the total is partial. Native Google Sheets retains its live currency formulas; the XLSX uses a dated exchange-rate snapshot.
+## Service and initial tests
 
-The Google Sheet is now an **11-line major-electronics procurement summary** (1 October 2026): controller, ADC, protected front end, probe servos, two regulators, ESC, motor, steering servo, battery and external charger. All seven columns remain; purpose highlights were removed and links contain concise Taobao keywords. Mechanical parts and minor supplies remain in the unchanged complete **79-line repository BOM**, including 23 printed pieces. Existing quantities, prices and live currency formulas were preserved; unpriced items still make the total partial.
+Disconnect the battery, remove the hatch, release straps and lift the pack. For cradle removal, remove the pack and its four flush screws. Disconnect the rear-controller harness and remove its shared frame/shelf screws before lifting the controller shelf for USB access. USB faces the transom and is not accessible with an assumed straight plug while installed. Disconnect boat power before USB power.
 
+Dry-cycle one actuator at a time, observing current, slack, shaft retention and interference. A jam must stop sustained drive. Qualify the two wet shaft seals, cartridge gaskets, potting entries, hatch, steering boot, stern-tube outer bond and internal rotating-shaft path before any water test with electronics installed. Use the [build qualification record](Build_Qualification.md).
 
-## Rev-E1 screw installation
-
-The cartridge flanges are 3 mm, with 0.75 mm compressed face gaskets and 5 mm-deep Ø2.5 mm pilots. Nominal M3×8 screws engage 4.25 mm and leave 0.75 mm tip clearance. Verify the real gasket, head seating, screw length and printed thread strength before tightening. Do not deepen the pilots through their 3 mm caps.
-
-Rudder pilots end at X193 mm and have 3 mm caps toward the interior. Measure each bracket seating face and select screw length so its tip stays at X≥193.75 mm while providing adequate engagement. Upper and lower seating geometry differs; do not assume one universal screw length. Test these joints for ingress after assembly.
-
-## Current connector and routing access
-
-The forward controller now has a clear 12 × 40 × 10 mm straight USB allocation. Verify the actual connector and bend. Disconnect boat power before USB connection: DevKitC USB, 5 V and 3.3 V inputs are mutually exclusive.
-
-Analog spine: X−20…80, Y−26…−22, Z42…46 mm. Power spine: X5…130, Y59…63, Z63…67 mm. PRINT_03 adds analog saddles at X27/38 and a power saddle at X20; PRINT_25 adds power saddles at X102/124. Use existing BOM ties up to 2.5 mm wide through the 3 × 1.5 mm tunnels. Verify real bundle size, connector height, slack and bend radii; lift/disconnect power leads before cover service and keep every lead off the hatch gasket. See [physical changes](RevE2_Changes.md) for screw/tool clearances.
+The old four-angle measurement preset and three-dimensional gradient estimator do not apply to this two-electrode revision. Mechanical clearance does not validate sensing, protection, calibration or water safety.
