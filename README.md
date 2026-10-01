@@ -4,7 +4,7 @@ Energized Water Scanner is a small unmanned surface vessel (USV) research platfo
 
 The project is intended to explore repeatable electric-potential-gradient measurements and their mapping from a mobile platform. It is **not** a certified electrical-safety instrument: a low or absent reading cannot establish that water is safe.
 
-![Current live Fusion assembly with service hatch open](previews/Audit_2026-10-01_open.png)
+![Current live Fusion assembly with service hatch open](previews/RevE2_2026-10-01_open.png)
 
 ## System overview
 
@@ -13,10 +13,11 @@ The project is intended to explore repeatable electric-potential-gradient measur
 - **Actuation:** four dry HS-65HB servos driving sealed output shafts through proposed 1:1 timing transmissions.
 - **Propulsion and steering:** RS-380-class motor, inclined shaft/stern tube, 30 mm propeller, rudder stock, and a separate steering servo.
 - **Electronics:** protected electrode front end, ADS1115 conversion, ESP32-class controller, ESC, logic regulator, and a dedicated 5 V probe-servo supply.
-- **Service architecture:** removable electronics cassette, longitudinal battery cradle, controller bridge, individually disconnectable probe actuators, and separated analog/power cable routes.
+- **Service architecture:** removable electronics cassette, longitudinal battery cradle, forward controller shelf, individually disconnectable probe actuators, and separated analog/power cable routes.
 
 ## Design package
 
+- [Rev-E2 physical controller, battery and wiring corrections](docs/RevE2_Changes.md)
 - [1 October live mechanical/component audit and service corrections](docs/Mechanical_Audit_2026-10-01.md)
 
 - [Rev-E1 hull repairs, before/after and validation](docs/RevE1_Changes.md)
@@ -29,11 +30,11 @@ The project is intended to explore repeatable electric-potential-gradient measur
 - [Fusion archive](cad/Energized_Water_Scanner_RevE.f3d) and [STEP reference](cad/Energized_Water_Scanner_RevE.step)
 - [Verification reports](verification) and [Fusion audit scripts](scripts/README.md)
 
-The live Fusion document retains **Rev-E1 physical geometry (29 September 2026)**, with **1 October 2026** component-source annotations and corrected service/wiring references. The audit fixes the battery-removal path, compact USB allocation, dry wire corridors and misleading legacy dimension comments. The physical hull still includes the repaired port-wall opening, trimmed obsolete foot and 20 capped mounting bores. The checked-in Rev-E STL/STEP/F3D files **do not include these repairs**. Do not print the hull from them; fresh 3D exports and mesh validation are deliberately deferred.
+The live Fusion document is now **Rev-E2 (1 October 2026)**. It moves the controller onto a forward removable shelf, raises/repositions the battery for a straight lift, relocates two cradle mounts for driver access and adds wire-tie saddles. Five printed geometries change: 01/03/04/25/31; the print count and complete BOM remain unchanged. The earlier Rev-E1 wall repair and 20 sealed mounting-bore caps are retained. Repository STL/STEP/F3D files are historical and do not include these changes. Use the saved live Fusion assembly; no new 3D exports are included in this iteration.
 
 ## Build status
 
-Rev-E1 is a **mechanical fit prototype**, not a water-ready release. The current audit finds nominal manufacturer agreement for most major envelopes, but exact servo horns/transmission, coupling assembly, propeller SKU, steering interfaces, sealing and loaded flotation remain open. Static solid checks found no unintended rigid-body intersections, and sampled probe motion found no modeled collisions. The propulsion train is coaxial at its intended 15° inclination. These are CAD results, not substitutes for hardware validation.
+Rev-E2 is a **mechanical fit prototype**, not a water-ready release. The current audit finds nominal manufacturer agreement for most major envelopes, but exact servo horns/transmission, coupling assembly, propeller SKU, steering interfaces, sealing and loaded flotation remain open. Static solid checks found no unintended rigid-body intersections, and sampled probe motion found no modeled collisions. The propulsion train is coaxial at its intended 15° inclination. These are CAD results, not substitutes for hardware validation.
 
 Before water operation, the team must qualify the shaft seals, cartridge gaskets, potted wire feedthroughs, stern-tube bond **and internal shaft-to-tube leakage path**, steering boot, hatch compression, flexible probe wiring, transmission retention, loaded flotation, and fail-safe actuator behavior. Fit and cycle one complete probe actuator before purchasing or printing four sets. The four servo service covers do not provide independent waterproof compartments.
 
