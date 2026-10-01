@@ -1,5 +1,7 @@
 # Rev-E1 hull repairs — 29 September 2026
 
+**1 October 2026 update:** the live physical assembly remains Rev-E1. Its service/wiring references and component-source annotations are now audited against current manufacturer information. See the [live mechanical audit](Mechanical_Audit_2026-10-01.md), including corrected battery removal and USB access. No BOM or 3D export was changed.
+
 The live `Energized_Water_Scanner` Fusion document contains these repairs. Only the hull geometry changed. The 23-piece print inventory and 79-line assembly BOM retain their quantities. **Existing Rev-E hull STL, STEP and Fusion archive files do not contain the repairs. Export and mesh validation are deferred; do not print the old hull expecting Rev-E1.**
 
 ## What changed

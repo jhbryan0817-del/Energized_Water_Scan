@@ -1,5 +1,7 @@
 # Rev-E1 wiring and assembly
 
+**1 October 2026 update:** the live physical assembly remains Rev-E1. Its service/wiring references and component-source annotations are now audited against current manufacturer information. See the [live mechanical audit](Mechanical_Audit_2026-10-01.md), including corrected battery removal and USB access. No BOM or 3D export was changed.
+
 **Live Fusion is Rev-E1 (29 September 2026).** It closes an obsolete port-wall opening, removes an obsolete projecting foot, and adds blind end caps to 16 cartridge and four rudder mounting bores. See [changes and validation](RevE1_Changes.md). Existing Rev-E 3D exports are stale for the hull; regeneration and mesh checks are deferred.
 
 Use the [Rev-E design](Design.md), [waterproofing audit](Waterproofing_and_Design_Audit.md), [build qualification gates](Build_Qualification.md), and [current BOM](Print_and_Procurement.md). The transmission, sealing, and flexible harness remain unreleased interfaces.
@@ -10,7 +12,7 @@ Use the [Rev-E design](Design.md), [waterproofing audit](Waterproofing_and_Desig
 4. Install actuators and internal covers. The forward covers sit partly under the bow flange: use the angled screw approach, then slide/tilt the cover aft before lifting. Confirm this physically; a rigid tool allocation does not prove ergonomics.
 5. Install motor supports and the relocated steering saddle/servo. Fit the dogleg pushrod through the existing boot and tiller line. Recheck full steering travel, end stops, retention, stiffness and boot motion; old steering-travel evidence no longer validates this arrangement.
 6. Fit the main cassette: protected analog front end and ADS1115 on port; ESC and logic regulator on starboard; separate D24V50F5 probe supply on the forward crosspiece.
-7. Secure the longitudinal battery cradle with four flush M2 screws, check that no head protrudes into the pack, and install the two straps, then the upper controller bridge. Remove and disconnect the bridge, undo both battery straps and lift the battery alone; the cradle stays installed. Disconnect power before any actuator service.
+7. Secure the longitudinal battery cradle with four flush M2 screws, check that no head protrudes into the pack, and install the two straps, then the upper controller bridge. Disconnect the pack and remove the complete controller bridge/capture assembly; undo both straps. Lift the pack 6 mm, slide it 3 mm toward the bow (−X), then lift out; the cradle stays installed. A straight vertical lift strikes the sealed rudder-mount caps. Do not trim those caps. Disconnect power before any actuator service.
 8. Route labeled E1/A0, E2/A1, E3/A2 and E4/A3 conductors along the port-side dry corridor. Route servo/motor power on starboard, with a keyed service disconnect and strain relief for each well. Keep electrode leads isolated from shafts and fasteners.
 9. Fit the new continuous shaped hatch gasket and cover. Verify compression and fastener lengths rather than assuming nominal printed pilots have rated pullout strength.
 
@@ -25,7 +27,7 @@ The new geometry preset is **60°/20°/20°/45°** for E1/E2/E3/E4. Use the Rev-
 
 The authoritative current item list is [BOM.xlsx](../BOM.xlsx), with a [CSV mirror](../BOM.csv). Green rows detect electricity, red rows support the RC boat, and yellow rows serve both. Blank prices are unresolved procurement estimates; the total is partial. Native Google Sheets retains its live currency formulas; the XLSX uses a dated exchange-rate snapshot.
 
-The Google Sheet is a prioritized **28-line procurement list**, with major electronics first. It excludes owned screws and minor supplies and combines selected mechanical kits. The repository BOM remains the complete **79-line assembly inventory**, including 23 printed pieces. The repository BOM now records Rev-E1 repair and procurement holds. The separate Google Sheet was not updated in this pass; reconcile it before purchasing.
+The Google Sheet is now an **11-line major-electronics procurement summary** (1 October 2026): controller, ADC, protected front end, probe servos, two regulators, ESC, motor, steering servo, battery and external charger. All seven columns remain; purpose highlights were removed and links contain concise Taobao keywords. Mechanical parts and minor supplies remain in the unchanged complete **79-line repository BOM**, including 23 printed pieces. Existing quantities, prices and live currency formulas were preserved; unpriced items still make the total partial.
 
 
 ## Rev-E1 screw installation
@@ -33,3 +35,9 @@ The Google Sheet is a prioritized **28-line procurement list**, with major elect
 The cartridge flanges are 3 mm, with 0.75 mm compressed face gaskets and 5 mm-deep Ø2.5 mm pilots. Nominal M3×8 screws engage 4.25 mm and leave 0.75 mm tip clearance. Verify the real gasket, head seating, screw length and printed thread strength before tightening. Do not deepen the pilots through their 3 mm caps.
 
 Rudder pilots end at X193 mm and have 3 mm caps toward the interior. Measure each bracket seating face and select screw length so its tip stays at X≥193.75 mm while providing adequate engagement. Upper and lower seating geometry differs; do not assume one universal screw length. Test these joints for ingress after assembly.
+
+## Current connector and routing access
+
+The straight 40 mm USB service allocation at the overhead controller overlaps the steering servo. The live model now includes a provisional 20 mm compact-plug allocation; confirm the exact connector and cable bend or remove the complete controller bridge for programming. Disconnect the boat supply before USB connection: DevKitC USB, 5 V and 3.3 V inputs are mutually exclusive.
+
+The corrected 4 × 4 mm analog spine is X−20…80, Y−26…−22, Z42…46 mm. The power spine is above the servo covers at X5…130, Y59…63, Z62…66 mm. Both clear modeled rigid parts, but actual terminations, strain relief, slack and bend radii remain to be fitted. The power spine must disconnect or lift away before cover service; keep every lead clear of the hatch gasket.

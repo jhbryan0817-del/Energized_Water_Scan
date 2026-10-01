@@ -1,5 +1,7 @@
 # Build qualification — 29 September 2026 audit
 
+**1 October 2026 update:** the live physical assembly remains Rev-E1. Its service/wiring references and component-source annotations are now audited against current manufacturer information. See the [live mechanical audit](Mechanical_Audit_2026-10-01.md), including corrected battery removal and USB access. No BOM or 3D export was changed.
+
 **Live Fusion is Rev-E1 (29 September 2026).** It closes an obsolete port-wall opening, removes an obsolete projecting foot, and adds blind end caps to 16 cartridge and four rudder mounting bores. See [changes and validation](RevE1_Changes.md). Existing Rev-E 3D exports are stale for the hull; regeneration and mesh checks are deferred.
 
 The assembly remains a fit prototype. A connected CAD solid and an interference-free pose do not establish a watertight printed assembly. Complete these gates before committing to a full four-actuator build.
@@ -39,3 +41,9 @@ The [Krick 65220 listing](https://www.krickshop.de/Schiffswelle-Stevenrohr-M2-x-
 Inspect support accessibility under the hatch flange, wet-channel roofs and stern-tube support. Retain structural roofs and functional mounts; remove only generated supports or explicitly revised CAD stock. Check slicer layer paths and trial coupons before a long hull print. No slicer, physical leak, torque, fatigue or flotation test was performed by this digital audit.
 
 Do not use stale STL/STEP/F3D exports to manufacture later live-Fusion geometry. Export and mesh validation are intentionally deferred at the user's request.
+
+## Mass and service update — 1 October
+
+The 23 print bodies total 1,089.011 cm³. A fully dense 1.27 g/cm³ PETG estimate is 1.383 kg of plastic; the documented battery, motor, five servos and ESC add about 0.283 kg before other hardware. Actual infill, coatings and hardware mass must be measured. The 28 mm waterline is a reference, not a demonstrated loaded flotation result; see the current audit for the displacement limits.
+
+Verify the corrected three-stage battery-removal path and compact USB access on hardware. Preserve the sealed rudder caps; a straight battery lift is not clear. Verify removal and reassembly with the actual pack leads, restraints and service connectors fitted.

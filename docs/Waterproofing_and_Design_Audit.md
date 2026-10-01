@@ -1,5 +1,7 @@
 # Waterproofing and assembly audit
 
+**1 October 2026 update:** the live physical assembly remains Rev-E1. Its service/wiring references and component-source annotations are now audited against current manufacturer information. See the [live mechanical audit](Mechanical_Audit_2026-10-01.md), including corrected battery removal and USB access. No BOM or 3D export was changed.
+
 **Live Fusion is Rev-E1 (29 September 2026).** It closes an obsolete port-wall opening, removes an obsolete projecting foot, and adds blind end caps to 16 cartridge and four rudder mounting bores. See [changes and validation](RevE1_Changes.md). Existing Rev-E 3D exports are stale for the hull; regeneration and mesh checks are deferred.
 
 This audit reviews the Rev-E/Rev-E1 Fusion model from the perspective of printing, procuring, assembling, wiring, and operating a small USV. The baseline was rechecked on 28 September and repaired geometry on 29 September 2026 through the local Fusion MCP connection. It distinguishes geometric checks from tests that require physical hardware. See [build qualification](Build_Qualification.md) for the expanded leakage register and physical acceptance gates.

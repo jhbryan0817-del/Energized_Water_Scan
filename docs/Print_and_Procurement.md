@@ -1,5 +1,7 @@
 # Rev-E1 print and procurement schedule
 
+**1 October 2026 update:** the live physical assembly remains Rev-E1. Its service/wiring references and component-source annotations are now audited against current manufacturer information. See the [live mechanical audit](Mechanical_Audit_2026-10-01.md), including corrected battery removal and USB access. No BOM or 3D export was changed.
+
 **Live Fusion is Rev-E1 (29 September 2026).** It closes an obsolete port-wall opening, removes an obsolete projecting foot, and adds blind end caps to 16 cartridge and four rudder mounting bores. See [changes and validation](RevE1_Changes.md). Existing Rev-E 3D exports are stale for the hull; regeneration and mesh checks are deferred.
 
 See the [Rev-E design and holds](Design.md), [waterproofing audit](Waterproofing_and_Design_Audit.md), and [build qualification gates](Build_Qualification.md). This remains a fit prototype, not a released mechanism or water-ready assembly.
@@ -40,4 +42,4 @@ Do not trim the bored stern-tube boss, rudder/transom bracket, steering support 
 
 The authoritative current item list is [BOM.xlsx](../BOM.xlsx), with a [CSV mirror](../BOM.csv). Green rows detect electricity, red rows support the RC boat, and yellow rows serve both. Blank prices are unresolved procurement estimates; the total is partial. Native Google Sheets retains its live currency formulas; the XLSX uses a dated exchange-rate snapshot.
 
-The Google Sheet is a prioritized **28-line procurement list**, with major electronics first. It excludes owned screws and minor supplies and combines selected mechanical kits. The repository BOM remains the complete **79-line assembly inventory**, including 23 printed pieces. The repository BOM now records Rev-E1 repair and procurement holds. The separate Google Sheet was not updated in this pass; reconcile it before purchasing.
+The Google Sheet is now an **11-line major-electronics procurement summary** (1 October 2026): controller, ADC, protected front end, probe servos, two regulators, ESC, motor, steering servo, battery and external charger. All seven columns remain; purpose highlights were removed and links contain concise Taobao keywords. Mechanical parts and minor supplies remain in the unchanged complete **79-line repository BOM**, including 23 printed pieces. Existing quantities, prices and live currency formulas were preserved; unpriced items still make the total partial.
