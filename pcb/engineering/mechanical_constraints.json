@@ -1,0 +1,65 @@
+{
+  "source": "Live Energized_Water_Scanner / PRINT_03_Removable_electronics_tray (1):1",
+  "units": "mm",
+  "outline_fusion_xy": [
+    [
+      -20,
+      -62
+    ],
+    [
+      71,
+      -62
+    ],
+    [
+      71,
+      -24
+    ],
+    [
+      13,
+      -24
+    ],
+    [
+      13,
+      24
+    ],
+    [
+      71,
+      24
+    ],
+    [
+      71,
+      62
+    ],
+    [
+      -20,
+      62
+    ]
+  ],
+  "mount_centers_fusion_xy": [
+    [
+      -17,
+      -58.5
+    ],
+    [
+      67,
+      -58.5
+    ],
+    [
+      -17,
+      58.5
+    ],
+    [
+      67,
+      58.5
+    ]
+  ],
+  "proposed_hole_diameter": 3.4,
+  "source_tray_hole_diameter": 3.4,
+  "source_tray_base_z": [
+    32,
+    35
+  ],
+  "pcb_thickness_provisional": 1.6,
+  "mapping": "KiCad X=Fusion X+50; KiCad Y=100-Fusion Y",
+  "status": "MECHANICAL TEMPLATE ONLY. Board height, supports, components, circuit, insulation and routing not released."
+}

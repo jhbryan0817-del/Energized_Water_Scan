@@ -32,3 +32,7 @@ Two electrodes provide **one differential measurement along their separation**. 
 The design supports a staged **mechanical fit prototype**. CAD clearance checks do not qualify a printed hull for water operation. Exact horn/pulley/belt and shaft retention, actual controller clamp contacts/connectors, seal water duty, potting, stern-tube internal sealing, steering motion and loaded flotation remain qualification gates. Fit one retained actuator before duplicating it or committing to a full hull build.
 
 This is not a certified electrical-safety instrument. A low or absent reading does not establish that water is safe.
+
+## PCB redesign work in progress
+
+The requested tray-replacement PCB now has a [measured mechanical template](pcb/engineering/EWS_mechanical_template.kicad_pcb) and [engineering requirements/findings](docs/PCB_Engineering_Draft.md). The new requirement is separate sensitive and high-voltage ranges with a 600 V AC RMS utility-mains fault target. **This is not a completed or fabrication-ready PCB:** the protected dual-range circuit, component layout, routing and validation remain unfinished. The Fusion assembly and current print set have not been changed for this draft. The template's mechanical DRC is not electrical or high-voltage qualification.
