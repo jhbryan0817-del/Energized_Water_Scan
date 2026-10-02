@@ -1,0 +1,9 @@
+item,quantity,description,status
+ESP32 sockets,2,"1x19 female 2.54mm, nominal 6mm body; 25.4mm row spacing",new
+ESC M1,1,Existing Hobbywing WP1625; motor-power harness external,reuse
+SJ3550,2,22x29mm mating pieces; nominal 5.8mm engaged,new; retention test required
+PCB spacers,4,M3 nylon OD6 ID3.4 thickness1mm,new; verify final integration record
+PCB screws,4,M3 nylon; determine engagement from final spacer/board stack,new
+Electrode leads,2,Qualified insulated E2/E4 pigtails plus strain relief,selection/qualification required
+Input fuse,1,External PCB-only 2S branch; select against measured loads/wire limits,selection/qualification required
+Old ADC breakout,0,ADS1115 now bare IC on carrier,remove; retain as spare

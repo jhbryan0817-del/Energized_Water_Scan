@@ -1,3 +1,5 @@
+> Superseded for electronics and tray/controller mounting by [Rev G](RevG_Changes.md). Use the Rev G PCB pin map and current STL manifest. Earlier mechanical qualification requirements remain applicable.
+
 # Rev-F wiring and assembly
 
 Use the saved live **Energized_Water_Scanner** Fusion assembly and [Rev-F procurement delta](RevF_Procurement.md). The earlier four-probe BOM, CAD archives and gradient scripts are historical.

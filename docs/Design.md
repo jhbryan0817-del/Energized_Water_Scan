@@ -1,3 +1,5 @@
+> Superseded for electronics and tray/controller mounting by [Rev G](RevG_Changes.md). Use the Rev G PCB pin map and current STL manifest. Earlier mechanical qualification requirements remain applicable.
+
 # Mechanical design — Rev-F
 
 The current source is the live **Energized_Water_Scanner** Fusion assembly, revised 2 October 2026. See [physical changes and validation](RevF_Changes.md). Repository 3D exports and older audit reports describe previous revisions.

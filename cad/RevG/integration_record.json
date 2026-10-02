@@ -1,0 +1,39 @@
+{
+  "stages": [
+    "PCB, ESP32, regulators, ESC and four spacers placed",
+    "Hull controller posts and interior support ribs removed; lower chine roots retained",
+    "Removed PRINT_03_Removable_electronics_tray",
+    "Removed PRINT_18_ESP32_capture_bridge",
+    "Removed PRINT_19_Front_end_capture_bridge",
+    "Removed PRINT_20_Regulator_capture_bridge",
+    "Removed PRINT_21_ESC_capture_bridge",
+    "Removed PRINT_31_Rear_starboard_controller_shelf",
+    "Removed ESP32_DevKitC_V4_dimension_envelope",
+    "Removed FRONT_END_replaceable_40x30x12",
+    "Removed ESC_Hobbywing_WP1625",
+    "Removed PROCURE_ESC_mounting_foam_3mm",
+    "Removed ADS1115_OFFICIAL_STEP",
+    "Removed D24V10F5_OFFICIAL_STEP",
+    "Removed PROCURE_D24V50F5_probe_5V_supply_envelope",
+    "Fusion save requested"
+  ],
+  "hull_before_cm3": 556.9186736458233,
+  "hull_after_cm3": 543.5308320899394,
+  "hull_is_solid": true,
+  "removed": [
+    "PRINT_03_Removable_electronics_tray (1):1",
+    "PRINT_18_ESP32_capture_bridge:1",
+    "PRINT_19_Front_end_capture_bridge:1",
+    "PRINT_20_Regulator_capture_bridge:1",
+    "PRINT_21_ESC_capture_bridge:1",
+    "PRINT_31_Rear_starboard_controller_shelf:1",
+    "ESP32_DevKitC_V4_dimension_envelope:1",
+    "FRONT_END_replaceable_40x30x12:1",
+    "ESC_Hobbywing_WP1625:1",
+    "PROCURE_ESC_mounting_foam_3mm:1",
+    "ADS1115_OFFICIAL_STEP:1",
+    "D24V10F5_OFFICIAL_STEP:1",
+    "PROCURE_D24V50F5_probe_5V_supply_envelope:1"
+  ],
+  "document": "Energized_Water_Scanner"
+}

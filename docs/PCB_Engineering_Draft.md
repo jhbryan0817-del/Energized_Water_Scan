@@ -1,3 +1,5 @@
+> Superseded for electronics and tray/controller mounting by [Rev G](RevG_Changes.md). Use the Rev G PCB pin map and current STL manifest. Earlier mechanical qualification requirements remain applicable.
+
 # IoT Beyond Lab — PCB engineering work in progress
 
 **Not a completed PCB. Not for fabrication, assembly, or connection to energized water.**

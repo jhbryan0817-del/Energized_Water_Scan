@@ -1,0 +1,81 @@
+(footprint "JP1"
+	(version 20260206)
+	(generator "pcbnew")
+	(generator_version "10.0")
+	(layer "F.Cu")
+	(property "Reference" "JP1"
+		(at 2 0 0)
+		(layer "F.Fab")
+		(uuid "40d9da16-0ccc-4107-93c8-7d7b7eabade3")
+		(effects
+			(font
+				(size 0.8 0.8)
+				(thickness 0.12)
+			)
+		)
+	)
+	(property "Value" "REMOVE_FOR_USB"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "85e002f3-7933-4a15-9ea2-20fa91729044")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "67a6ebce-456b-4063-957b-118beece3aab")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "29dcc5be-3e84-4d4a-9849-3e54637008dd")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(attr through_hole)
+	(duplicate_pad_numbers_are_jumpers no)
+	(pad "1" thru_hole rect
+		(at 0 0)
+		(size 1.8 1.8)
+		(drill 1)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(thermal_bridge_angle 45)
+		(uuid "d9c2f4f8-4e42-4c3a-8011-978265995c6f")
+	)
+	(pad "2" thru_hole circle
+		(at 0 2.54)
+		(size 1.8 1.8)
+		(drill 1)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "e95cf28f-8105-41d3-8f19-d0d5dcff7b81")
+	)
+	(embedded_fonts no)
+	(model "${KIPRJMOD}/models/JP1.step"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 0)
+		)
+	)
+)

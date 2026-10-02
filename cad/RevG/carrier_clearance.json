@@ -1,0 +1,48 @@
+[
+  {
+    "other": "DRIVELINE_Mabuchi_and_Krick:1",
+    "interferences": []
+  },
+  {
+    "other": "PRINT_11_Motor_face_mount:1",
+    "interferences": []
+  },
+  {
+    "other": "PRINT_14_Motor_lower_cradle:1",
+    "interferences": []
+  },
+  {
+    "other": "REV_G_ESC_WP1625_DualLock:1",
+    "interferences": [
+      {
+        "a": "Body1",
+        "b": "WP1625 case envelope 24x34x14",
+        "volume_mm3": 44.58608000000014
+      },
+      {
+        "a": "Body37",
+        "b": "SJ3550 mating fastener nominal 5.8mm",
+        "volume_mm3": 33.73628000000014
+      },
+      {
+        "a": "Body37",
+        "b": "WP1625 case envelope 24x34x14",
+        "volume_mm3": 1.6295286433999672
+      },
+      {
+        "a": "Body56",
+        "b": "SJ3550 mating fastener nominal 5.8mm",
+        "volume_mm3": 2.3756800000000045
+      },
+      {
+        "a": "Body56",
+        "b": "WP1625 case envelope 24x34x14",
+        "volume_mm3": 0.7352315904000002
+      }
+    ]
+  },
+  {
+    "other": "PRINT_01_Hull_shell_RevG:1",
+    "interferences": []
+  }
+]

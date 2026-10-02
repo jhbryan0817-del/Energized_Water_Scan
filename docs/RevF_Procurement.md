@@ -1,3 +1,5 @@
+> Superseded for electronics and tray/controller mounting by [Rev G](RevG_Changes.md). Use the Rev G PCB pin map and current STL manifest. Earlier mechanical qualification requirements remain applicable.
+
 # Rev-F procurement delta and fit-build list
 
 Use the **live Rev-F Fusion assembly** with this document. The existing BOM.xlsx/BOM.csv and all 3D archives describe the earlier four-probe baseline; they are retained as historical purchasing references, not current quantity or print-release lists. No purchase was made.

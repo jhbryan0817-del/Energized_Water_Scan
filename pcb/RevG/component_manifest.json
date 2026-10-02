@@ -1,0 +1,1396 @@
+[
+  {
+    "ref": "H1",
+    "value": "M3 nylon hardware",
+    "footprint": "EWS:H1",
+    "x": -17,
+    "y": -58.5,
+    "angle": 0,
+    "pins": {},
+    "group": "logic",
+    "mpn": "",
+    "note": "",
+    "uuid": "c270e569-a407-5994-9e7e-13756fe2150c"
+  },
+  {
+    "ref": "H2",
+    "value": "M3 nylon hardware",
+    "footprint": "EWS:H2",
+    "x": 67,
+    "y": -58.5,
+    "angle": 0,
+    "pins": {},
+    "group": "logic",
+    "mpn": "",
+    "note": "",
+    "uuid": "a223938f-02ea-5b44-a42d-56288ec82c4f"
+  },
+  {
+    "ref": "H3",
+    "value": "M3 nylon hardware",
+    "footprint": "EWS:H3",
+    "x": -17,
+    "y": 58.5,
+    "angle": 0,
+    "pins": {},
+    "group": "logic",
+    "mpn": "",
+    "note": "",
+    "uuid": "a4a68861-a39d-5a6d-a141-98b0cad15cb7"
+  },
+  {
+    "ref": "H4",
+    "value": "M3 nylon hardware",
+    "footprint": "EWS:H4",
+    "x": 67,
+    "y": 58.5,
+    "angle": 0,
+    "pins": {},
+    "group": "logic",
+    "mpn": "",
+    "note": "",
+    "uuid": "4e79157d-8354-5089-9af7-d544bfe9da32"
+  },
+  {
+    "ref": "U1",
+    "value": "ESP32-DevKitC V4 WROOM",
+    "footprint": "EWS:U1",
+    "x": -15.2,
+    "y": -16.7,
+    "angle": 0,
+    "pins": {
+      "1": "3V3",
+      "2": "EN",
+      "3": "GPIO36",
+      "4": "GPIO39",
+      "5": "GPIO34",
+      "6": "GPIO35",
+      "7": "GPIO32",
+      "8": "GPIO33",
+      "9": "GPIO25",
+      "10": "GPIO26",
+      "11": "GPIO27",
+      "12": "GPIO14",
+      "13": "GPIO12",
+      "14": "GND",
+      "15": "GPIO13",
+      "16": "FLASH9",
+      "17": "FLASH10",
+      "18": "FLASH11",
+      "19": "ESP_5V",
+      "20": "GND",
+      "21": "GPIO23",
+      "22": "GPIO22",
+      "23": "GPIO1",
+      "24": "GPIO3",
+      "25": "GPIO21",
+      "26": "GND",
+      "27": "GPIO19",
+      "28": "GPIO18",
+      "29": "GPIO5",
+      "30": "GPIO17",
+      "31": "GPIO16",
+      "32": "GPIO4",
+      "33": "GPIO0",
+      "34": "GPIO2",
+      "35": "GPIO15",
+      "36": "FLASH8",
+      "37": "FLASH7",
+      "38": "FLASH6"
+    },
+    "group": "logic",
+    "mpn": "",
+    "note": "Fit WROOM variant; flash pins reserved; antenna copper keepout",
+    "uuid": "13b99ea4-38a6-53e8-b16e-05858e10aee9"
+  },
+  {
+    "ref": "J1",
+    "value": "EXPANSION_3V3_ONLY",
+    "footprint": "EWS:J1",
+    "x": -18.4,
+    "y": -17.7,
+    "angle": 180,
+    "pins": {
+      "1": "3V3",
+      "2": "EN",
+      "3": "GPIO36",
+      "4": "GPIO39",
+      "5": "GPIO34",
+      "6": "GPIO35",
+      "7": "GPIO32",
+      "8": "GPIO33",
+      "9": "GPIO25",
+      "10": "GPIO26",
+      "11": "GPIO27",
+      "12": "GPIO14",
+      "13": "GPIO12",
+      "14": "GND",
+      "15": "GPIO13",
+      "16": "GPIO23",
+      "17": "GPIO22",
+      "18": "GPIO1",
+      "19": "GPIO3",
+      "20": "GPIO21",
+      "21": "GPIO19",
+      "22": "GPIO18",
+      "23": "GPIO5",
+      "24": "GPIO17",
+      "25": "GPIO16",
+      "26": "GPIO4",
+      "27": "GPIO0",
+      "28": "GPIO2",
+      "29": "GPIO15"
+    },
+    "group": "logic",
+    "mpn": "",
+    "note": "",
+    "uuid": "3d14003c-9061-5e28-974f-663fb8f5a515"
+  },
+  {
+    "ref": "J2",
+    "value": "I2C_3V3",
+    "footprint": "EWS:J2",
+    "x": -12,
+    "y": 37,
+    "angle": 90,
+    "pins": {
+      "1": "GND",
+      "2": "3V3",
+      "3": "GPIO21",
+      "4": "GPIO22"
+    },
+    "group": "logic",
+    "mpn": "",
+    "note": "",
+    "uuid": "21bd26d4-136b-5977-9b3f-1dc2dd6f8591"
+  },
+  {
+    "ref": "J3",
+    "value": "UART_RESET",
+    "footprint": "EWS:J3",
+    "x": -10,
+    "y": 47,
+    "angle": 90,
+    "pins": {
+      "1": "GND",
+      "2": "GPIO1",
+      "3": "GPIO3",
+      "4": "EN"
+    },
+    "group": "logic",
+    "mpn": "",
+    "note": "",
+    "uuid": "b66e6f37-f558-566a-9d5a-b8e376aba4c0"
+  },
+  {
+    "ref": "JP1",
+    "value": "REMOVE_FOR_USB",
+    "footprint": "EWS:JP1",
+    "x": -3,
+    "y": 35,
+    "angle": 90,
+    "pins": {
+      "1": "LOGIC_5V",
+      "2": "ESP_5V"
+    },
+    "group": "logic",
+    "mpn": "",
+    "note": "",
+    "uuid": "dcb46af8-7ff8-5cbc-9089-e0f9b1d0df03"
+  },
+  {
+    "ref": "U2",
+    "value": "AMC3330DWER",
+    "footprint": "EWS:U2",
+    "x": 26,
+    "y": -53,
+    "angle": 0,
+    "pins": {
+      "1": "HI_DCDC",
+      "2": "HV_REF",
+      "3": "HI_DCDC",
+      "4": "HV_REF",
+      "5": "HI_HLDO",
+      "6": "HI_INP",
+      "7": "HI_INN",
+      "8": "HV_REF",
+      "9": "GND",
+      "10": "HI_OUTN",
+      "11": "HI_OUTP",
+      "12": "LOGIC_5V",
+      "13": "HI_LDO",
+      "14": "HI_DIAG",
+      "15": "GND",
+      "16": "HI_LDO"
+    },
+    "group": "isolated sensing",
+    "mpn": "AMC3330DWER",
+    "note": "",
+    "uuid": "e4b55f86-fcc6-5f88-8e1e-5b3fc5e56b5b"
+  },
+  {
+    "ref": "C1",
+    "value": "1uF",
+    "footprint": "EWS:C1",
+    "x": 17,
+    "y": -49.5,
+    "angle": 0,
+    "pins": {
+      "1": "HI_DCDC",
+      "2": "HV_REF"
+    },
+    "group": "HI",
+    "mpn": "",
+    "note": "",
+    "uuid": "6b07d8b4-4313-597e-832c-af78665edda9"
+  },
+  {
+    "ref": "C2",
+    "value": "1nF",
+    "footprint": "EWS:C2",
+    "x": 17,
+    "y": -52,
+    "angle": 0,
+    "pins": {
+      "1": "HI_DCDC",
+      "2": "HV_REF"
+    },
+    "group": "HI",
+    "mpn": "",
+    "note": "",
+    "uuid": "4853658d-e630-5ec3-b40c-760830a2c559"
+  },
+  {
+    "ref": "C3",
+    "value": "100nF",
+    "footprint": "EWS:C3",
+    "x": 17,
+    "y": -54.5,
+    "angle": 0,
+    "pins": {
+      "1": "HI_HLDO",
+      "2": "HV_REF"
+    },
+    "group": "HI",
+    "mpn": "",
+    "note": "",
+    "uuid": "da33df97-afa1-5d42-a70d-c4dd7a855b71"
+  },
+  {
+    "ref": "C4",
+    "value": "1nF",
+    "footprint": "EWS:C4",
+    "x": 17,
+    "y": -57,
+    "angle": 0,
+    "pins": {
+      "1": "HI_HLDO",
+      "2": "HV_REF"
+    },
+    "group": "HI",
+    "mpn": "",
+    "note": "",
+    "uuid": "3dcdeb2e-fa64-557a-8ccd-0d223e0a967c"
+  },
+  {
+    "ref": "C5",
+    "value": "100nF",
+    "footprint": "EWS:C5",
+    "x": 35,
+    "y": -48.3,
+    "angle": 0,
+    "pins": {
+      "1": "HI_LDO",
+      "2": "GND"
+    },
+    "group": "HI",
+    "mpn": "",
+    "note": "",
+    "uuid": "eed403b8-7c56-5120-b132-9058a11a3e56"
+  },
+  {
+    "ref": "C6",
+    "value": "1nF",
+    "footprint": "EWS:C6",
+    "x": 35,
+    "y": -51.1,
+    "angle": 0,
+    "pins": {
+      "1": "LOGIC_5V",
+      "2": "GND"
+    },
+    "group": "HI",
+    "mpn": "",
+    "note": "",
+    "uuid": "76add1ce-aca1-5c27-9779-2ebfcf801501"
+  },
+  {
+    "ref": "C7",
+    "value": "1uF",
+    "footprint": "EWS:C7",
+    "x": 35,
+    "y": -53.8,
+    "angle": 0,
+    "pins": {
+      "1": "LOGIC_5V",
+      "2": "GND"
+    },
+    "group": "HI",
+    "mpn": "",
+    "note": "",
+    "uuid": "782a8c76-db09-5579-9b92-80452e924ae0"
+  },
+  {
+    "ref": "R1",
+    "value": "1k 0.1%",
+    "footprint": "EWS:R1",
+    "x": 13.5,
+    "y": -52,
+    "angle": 90,
+    "pins": {
+      "1": "HI_INP",
+      "2": "HV_REF"
+    },
+    "group": "HI",
+    "mpn": "",
+    "note": "",
+    "uuid": "1087dc2e-3aa4-5e2d-a678-2933222b0d9b"
+  },
+  {
+    "ref": "R2",
+    "value": "1k 0.1%",
+    "footprint": "EWS:R2",
+    "x": 13.5,
+    "y": -57,
+    "angle": 90,
+    "pins": {
+      "1": "HI_INN",
+      "2": "HV_REF"
+    },
+    "group": "HI",
+    "mpn": "",
+    "note": "",
+    "uuid": "eeff09c4-faf8-556b-b70c-ea144f98e7a0"
+  },
+  {
+    "ref": "C8",
+    "value": "100pF C0G",
+    "footprint": "EWS:C8",
+    "x": 18,
+    "y": -59.5,
+    "angle": 0,
+    "pins": {
+      "1": "HI_INP",
+      "2": "HI_INN"
+    },
+    "group": "HI",
+    "mpn": "",
+    "note": "",
+    "uuid": "71c8f886-6654-5515-9a73-6bb47424743e"
+  },
+  {
+    "ref": "R3",
+    "value": "47k",
+    "footprint": "EWS:R3",
+    "x": 35,
+    "y": -56.4,
+    "angle": 0,
+    "pins": {
+      "1": "HI_DIAG",
+      "2": "3V3"
+    },
+    "group": "logic",
+    "mpn": "",
+    "note": "",
+    "uuid": "845cf684-2ed2-5206-b797-a39036d4c5da"
+  },
+  {
+    "ref": "R100",
+    "value": "249k 0.1% 200V",
+    "footprint": "EWS:R100",
+    "x": -5,
+    "y": -55,
+    "angle": 0,
+    "pins": {
+      "1": "E2",
+      "2": "HI_P1"
+    },
+    "group": "HV input",
+    "mpn": "TNPW1206249KBEEA",
+    "note": "",
+    "uuid": "0e6a5674-2280-51ab-a230-be2f80140baf"
+  },
+  {
+    "ref": "R101",
+    "value": "249k 0.1% 200V",
+    "footprint": "EWS:R101",
+    "x": 0,
+    "y": -55,
+    "angle": 0,
+    "pins": {
+      "1": "HI_P1",
+      "2": "HI_P2"
+    },
+    "group": "HV input",
+    "mpn": "TNPW1206249KBEEA",
+    "note": "",
+    "uuid": "7c7eaab9-3f99-51b7-ad59-e8d56c0af6cd"
+  },
+  {
+    "ref": "R102",
+    "value": "249k 0.1% 200V",
+    "footprint": "EWS:R102",
+    "x": 5,
+    "y": -55,
+    "angle": 0,
+    "pins": {
+      "1": "HI_P2",
+      "2": "HI_P3"
+    },
+    "group": "HV input",
+    "mpn": "TNPW1206249KBEEA",
+    "note": "",
+    "uuid": "c33b7a21-12cc-5411-9b61-89aabe61ca06"
+  },
+  {
+    "ref": "R103",
+    "value": "249k 0.1% 200V",
+    "footprint": "EWS:R103",
+    "x": 10,
+    "y": -55,
+    "angle": 0,
+    "pins": {
+      "1": "HI_P3",
+      "2": "HI_INP"
+    },
+    "group": "HV input",
+    "mpn": "TNPW1206249KBEEA",
+    "note": "",
+    "uuid": "7ce6ab6b-aff5-5951-9383-bceec63bc4eb"
+  },
+  {
+    "ref": "R104",
+    "value": "249k 0.1% 200V",
+    "footprint": "EWS:R104",
+    "x": -5,
+    "y": -39,
+    "angle": 0,
+    "pins": {
+      "1": "E4",
+      "2": "HI_N1"
+    },
+    "group": "HV input",
+    "mpn": "TNPW1206249KBEEA",
+    "note": "",
+    "uuid": "5ab1ee8a-13cd-5944-a033-a0473f83cb25"
+  },
+  {
+    "ref": "R105",
+    "value": "249k 0.1% 200V",
+    "footprint": "EWS:R105",
+    "x": 0,
+    "y": -39,
+    "angle": 0,
+    "pins": {
+      "1": "HI_N1",
+      "2": "HI_N2"
+    },
+    "group": "HV input",
+    "mpn": "TNPW1206249KBEEA",
+    "note": "",
+    "uuid": "e711af4f-925c-5d22-8f44-84d7e3a6d1d3"
+  },
+  {
+    "ref": "R106",
+    "value": "249k 0.1% 200V",
+    "footprint": "EWS:R106",
+    "x": 5,
+    "y": -39,
+    "angle": 0,
+    "pins": {
+      "1": "HI_N2",
+      "2": "HI_N3"
+    },
+    "group": "HV input",
+    "mpn": "TNPW1206249KBEEA",
+    "note": "",
+    "uuid": "136885b6-0a0a-5774-983f-d7524576738d"
+  },
+  {
+    "ref": "R107",
+    "value": "249k 0.1% 200V",
+    "footprint": "EWS:R107",
+    "x": 10,
+    "y": -39,
+    "angle": 0,
+    "pins": {
+      "1": "HI_N3",
+      "2": "HI_INN"
+    },
+    "group": "HV input",
+    "mpn": "TNPW1206249KBEEA",
+    "note": "",
+    "uuid": "6d32d68e-e194-57ba-8510-3b1fd1170e61"
+  },
+  {
+    "ref": "D1",
+    "value": "BAV199",
+    "footprint": "EWS:D1",
+    "x": -5,
+    "y": -45,
+    "angle": 180,
+    "pins": {
+      "1": "HI_INP",
+      "2": "HI_INP",
+      "3": "HV_REF"
+    },
+    "group": "HI",
+    "mpn": "BAV199,215",
+    "note": "",
+    "uuid": "5f57e184-6120-5ce0-973a-c29435e2b2ff"
+  },
+  {
+    "ref": "D2",
+    "value": "BAV199",
+    "footprint": "EWS:D2",
+    "x": 0,
+    "y": -45,
+    "angle": 0,
+    "pins": {
+      "1": "HI_INN",
+      "2": "HI_INN",
+      "3": "HV_REF"
+    },
+    "group": "HI",
+    "mpn": "BAV199,215",
+    "note": "",
+    "uuid": "f80b535a-a1b7-59ab-82f7-8210a6148b12"
+  },
+  {
+    "ref": "U3",
+    "value": "AMC3330DWER",
+    "footprint": "EWS:U3",
+    "x": 26,
+    "y": -39,
+    "angle": 0,
+    "pins": {
+      "1": "LO_DCDC",
+      "2": "HV_REF",
+      "3": "LO_DCDC",
+      "4": "HV_REF",
+      "5": "LO_HLDO",
+      "6": "LO_INP",
+      "7": "LO_INN",
+      "8": "HV_REF",
+      "9": "GND",
+      "10": "LO_OUTN",
+      "11": "LO_OUTP",
+      "12": "LOGIC_5V",
+      "13": "LO_LDO",
+      "14": "LO_DIAG",
+      "15": "GND",
+      "16": "LO_LDO"
+    },
+    "group": "isolated sensing",
+    "mpn": "AMC3330DWER",
+    "note": "",
+    "uuid": "b505d66f-e2d6-5ac9-8cd4-de462121eda5"
+  },
+  {
+    "ref": "C11",
+    "value": "1uF",
+    "footprint": "EWS:C11",
+    "x": 17,
+    "y": -35.5,
+    "angle": 0,
+    "pins": {
+      "1": "LO_DCDC",
+      "2": "HV_REF"
+    },
+    "group": "LO",
+    "mpn": "",
+    "note": "",
+    "uuid": "65547723-c8c5-5c60-ad2b-c88a0880ac78"
+  },
+  {
+    "ref": "C12",
+    "value": "1nF",
+    "footprint": "EWS:C12",
+    "x": 17,
+    "y": -38,
+    "angle": 0,
+    "pins": {
+      "1": "LO_DCDC",
+      "2": "HV_REF"
+    },
+    "group": "LO",
+    "mpn": "",
+    "note": "",
+    "uuid": "5bbf586c-5d86-5e6d-884e-0330432e0ec2"
+  },
+  {
+    "ref": "C13",
+    "value": "100nF",
+    "footprint": "EWS:C13",
+    "x": 17,
+    "y": -40.5,
+    "angle": 0,
+    "pins": {
+      "1": "LO_HLDO",
+      "2": "HV_REF"
+    },
+    "group": "LO",
+    "mpn": "",
+    "note": "",
+    "uuid": "d9429c72-6107-5356-8bcb-e0b8be15f8ac"
+  },
+  {
+    "ref": "C14",
+    "value": "1nF",
+    "footprint": "EWS:C14",
+    "x": 17,
+    "y": -43,
+    "angle": 0,
+    "pins": {
+      "1": "LO_HLDO",
+      "2": "HV_REF"
+    },
+    "group": "LO",
+    "mpn": "",
+    "note": "",
+    "uuid": "ec6b410c-6e3a-5b01-8805-fb7a42a1d234"
+  },
+  {
+    "ref": "C15",
+    "value": "100nF",
+    "footprint": "EWS:C15",
+    "x": 35,
+    "y": -34.3,
+    "angle": 0,
+    "pins": {
+      "1": "LO_LDO",
+      "2": "GND"
+    },
+    "group": "LO",
+    "mpn": "",
+    "note": "",
+    "uuid": "30789d7d-db86-55ba-b9dc-4e821b416492"
+  },
+  {
+    "ref": "C16",
+    "value": "1nF",
+    "footprint": "EWS:C16",
+    "x": 35,
+    "y": -37.1,
+    "angle": 0,
+    "pins": {
+      "1": "LOGIC_5V",
+      "2": "GND"
+    },
+    "group": "LO",
+    "mpn": "",
+    "note": "",
+    "uuid": "5fedccc2-af28-5701-907a-e16957805f21"
+  },
+  {
+    "ref": "C17",
+    "value": "1uF",
+    "footprint": "EWS:C17",
+    "x": 35,
+    "y": -39.8,
+    "angle": 0,
+    "pins": {
+      "1": "LOGIC_5V",
+      "2": "GND"
+    },
+    "group": "LO",
+    "mpn": "",
+    "note": "",
+    "uuid": "d5db1a5e-b15f-570f-b9b8-01f09b7f95d8"
+  },
+  {
+    "ref": "R11",
+    "value": "100k 0.1%",
+    "footprint": "EWS:R11",
+    "x": 13.5,
+    "y": -38,
+    "angle": 90,
+    "pins": {
+      "1": "LO_INP",
+      "2": "HV_REF"
+    },
+    "group": "LO",
+    "mpn": "",
+    "note": "",
+    "uuid": "a67007e9-5198-54df-83ac-d2d013fbe658"
+  },
+  {
+    "ref": "R12",
+    "value": "100k 0.1%",
+    "footprint": "EWS:R12",
+    "x": 13.5,
+    "y": -43,
+    "angle": 90,
+    "pins": {
+      "1": "LO_INN",
+      "2": "HV_REF"
+    },
+    "group": "LO",
+    "mpn": "",
+    "note": "",
+    "uuid": "e82d07e7-bde3-5919-9ac2-c8796e6000e6"
+  },
+  {
+    "ref": "C18",
+    "value": "100pF C0G",
+    "footprint": "EWS:C18",
+    "x": 18,
+    "y": -45.5,
+    "angle": 0,
+    "pins": {
+      "1": "LO_INP",
+      "2": "LO_INN"
+    },
+    "group": "LO",
+    "mpn": "",
+    "note": "",
+    "uuid": "4b709733-e441-5169-9d0a-74f70b6ae5aa"
+  },
+  {
+    "ref": "R13",
+    "value": "47k",
+    "footprint": "EWS:R13",
+    "x": 35,
+    "y": -42.4,
+    "angle": 0,
+    "pins": {
+      "1": "LO_DIAG",
+      "2": "3V3"
+    },
+    "group": "logic",
+    "mpn": "",
+    "note": "",
+    "uuid": "5d2490f7-d95b-594b-81e8-fe24169cceaf"
+  },
+  {
+    "ref": "R110",
+    "value": "249k 0.1% 200V",
+    "footprint": "EWS:R110",
+    "x": -5,
+    "y": -51,
+    "angle": 0,
+    "pins": {
+      "1": "E2",
+      "2": "LO_P1"
+    },
+    "group": "HV input",
+    "mpn": "TNPW1206249KBEEA",
+    "note": "",
+    "uuid": "34b44540-bc82-56f3-99fe-bb5896109f85"
+  },
+  {
+    "ref": "R111",
+    "value": "249k 0.1% 200V",
+    "footprint": "EWS:R111",
+    "x": 0,
+    "y": -51,
+    "angle": 0,
+    "pins": {
+      "1": "LO_P1",
+      "2": "LO_P2"
+    },
+    "group": "HV input",
+    "mpn": "TNPW1206249KBEEA",
+    "note": "",
+    "uuid": "6e6e20bd-b39e-5436-b50b-9b632336742b"
+  },
+  {
+    "ref": "R112",
+    "value": "249k 0.1% 200V",
+    "footprint": "EWS:R112",
+    "x": 5,
+    "y": -51,
+    "angle": 0,
+    "pins": {
+      "1": "LO_P2",
+      "2": "LO_P3"
+    },
+    "group": "HV input",
+    "mpn": "TNPW1206249KBEEA",
+    "note": "",
+    "uuid": "83e3b635-fd1f-54b3-9545-5d696b9ba67e"
+  },
+  {
+    "ref": "R113",
+    "value": "249k 0.1% 200V",
+    "footprint": "EWS:R113",
+    "x": 10,
+    "y": -51,
+    "angle": 0,
+    "pins": {
+      "1": "LO_P3",
+      "2": "LO_INP"
+    },
+    "group": "HV input",
+    "mpn": "TNPW1206249KBEEA",
+    "note": "",
+    "uuid": "4b4c99e5-daa2-513a-91c0-4f11af9c3d86"
+  },
+  {
+    "ref": "R114",
+    "value": "249k 0.1% 200V",
+    "footprint": "EWS:R114",
+    "x": -5,
+    "y": -35,
+    "angle": 0,
+    "pins": {
+      "1": "E4",
+      "2": "LO_N1"
+    },
+    "group": "HV input",
+    "mpn": "TNPW1206249KBEEA",
+    "note": "",
+    "uuid": "631ef418-d216-5b36-a5ef-3d5199c34aae"
+  },
+  {
+    "ref": "R115",
+    "value": "249k 0.1% 200V",
+    "footprint": "EWS:R115",
+    "x": 0,
+    "y": -35,
+    "angle": 0,
+    "pins": {
+      "1": "LO_N1",
+      "2": "LO_N2"
+    },
+    "group": "HV input",
+    "mpn": "TNPW1206249KBEEA",
+    "note": "",
+    "uuid": "7e6d07a7-1d4c-5efa-9881-e40189f8ad86"
+  },
+  {
+    "ref": "R116",
+    "value": "249k 0.1% 200V",
+    "footprint": "EWS:R116",
+    "x": 5,
+    "y": -35,
+    "angle": 0,
+    "pins": {
+      "1": "LO_N2",
+      "2": "LO_N3"
+    },
+    "group": "HV input",
+    "mpn": "TNPW1206249KBEEA",
+    "note": "",
+    "uuid": "08823c97-ae55-5224-b403-e13aea772cbe"
+  },
+  {
+    "ref": "R117",
+    "value": "249k 0.1% 200V",
+    "footprint": "EWS:R117",
+    "x": 10,
+    "y": -35,
+    "angle": 0,
+    "pins": {
+      "1": "LO_N3",
+      "2": "LO_INN"
+    },
+    "group": "HV input",
+    "mpn": "TNPW1206249KBEEA",
+    "note": "",
+    "uuid": "18fa1ee9-daa6-5b29-892a-7e477e56b66e"
+  },
+  {
+    "ref": "D3",
+    "value": "BAV199",
+    "footprint": "EWS:D3",
+    "x": 5,
+    "y": -45,
+    "angle": 0,
+    "pins": {
+      "1": "LO_INP",
+      "2": "LO_INP",
+      "3": "HV_REF"
+    },
+    "group": "LO",
+    "mpn": "BAV199,215",
+    "note": "",
+    "uuid": "6f8d1407-fa6a-516f-8403-94c5323f771d"
+  },
+  {
+    "ref": "D4",
+    "value": "BAV199",
+    "footprint": "EWS:D4",
+    "x": 10,
+    "y": -45,
+    "angle": 0,
+    "pins": {
+      "1": "LO_INN",
+      "2": "LO_INN",
+      "3": "HV_REF"
+    },
+    "group": "LO",
+    "mpn": "BAV199,215",
+    "note": "",
+    "uuid": "7e248d13-8835-5a2d-a708-6bae574423c4"
+  },
+  {
+    "ref": "U4",
+    "value": "ADS1115IDGSR",
+    "footprint": "EWS:U4",
+    "x": 47,
+    "y": -46,
+    "angle": 0,
+    "pins": {
+      "1": "GND",
+      "2": "ADC_READY",
+      "3": "GND",
+      "4": "HI_ADC_P",
+      "5": "HI_ADC_N",
+      "6": "LO_ADC_P",
+      "7": "LO_ADC_N",
+      "8": "3V3",
+      "9": "GPIO21",
+      "10": "GPIO22"
+    },
+    "group": "logic",
+    "mpn": "ADS1115IDGSR",
+    "note": "",
+    "uuid": "2e01bc63-3cc4-5f2d-998c-ecbf2fe93775"
+  },
+  {
+    "ref": "C30",
+    "value": "100nF",
+    "footprint": "EWS:C30",
+    "x": 47,
+    "y": -41,
+    "angle": 0,
+    "pins": {
+      "1": "3V3",
+      "2": "GND"
+    },
+    "group": "logic",
+    "mpn": "",
+    "note": "",
+    "uuid": "6cd96554-735b-5e01-aed3-fc122acfb67f"
+  },
+  {
+    "ref": "R30",
+    "value": "1k",
+    "footprint": "EWS:R30",
+    "x": 40,
+    "y": -52,
+    "angle": 0,
+    "pins": {
+      "1": "HI_OUTP",
+      "2": "HI_ADC_P"
+    },
+    "group": "logic",
+    "mpn": "",
+    "note": "",
+    "uuid": "091e40d1-0e1f-51cc-80cd-bb65be5651f9"
+  },
+  {
+    "ref": "R31",
+    "value": "1k",
+    "footprint": "EWS:R31",
+    "x": 40,
+    "y": -55,
+    "angle": 0,
+    "pins": {
+      "1": "HI_OUTN",
+      "2": "HI_ADC_N"
+    },
+    "group": "logic",
+    "mpn": "",
+    "note": "",
+    "uuid": "3234abc0-2464-50b1-89ee-d63fe4d9b604"
+  },
+  {
+    "ref": "C31",
+    "value": "330nF",
+    "footprint": "EWS:C31",
+    "x": 44,
+    "y": -53,
+    "angle": 0,
+    "pins": {
+      "1": "HI_ADC_P",
+      "2": "HI_ADC_N"
+    },
+    "group": "logic",
+    "mpn": "",
+    "note": "",
+    "uuid": "bb837919-ba4b-5341-8b27-10fdd3e1fbbb"
+  },
+  {
+    "ref": "R32",
+    "value": "1k",
+    "footprint": "EWS:R32",
+    "x": 40,
+    "y": -38,
+    "angle": 0,
+    "pins": {
+      "1": "LO_OUTP",
+      "2": "LO_ADC_P"
+    },
+    "group": "logic",
+    "mpn": "",
+    "note": "",
+    "uuid": "4085324e-b1c6-5502-8054-12bd3a2866d9"
+  },
+  {
+    "ref": "R33",
+    "value": "1k",
+    "footprint": "EWS:R33",
+    "x": 40,
+    "y": -41,
+    "angle": 0,
+    "pins": {
+      "1": "LO_OUTN",
+      "2": "LO_ADC_N"
+    },
+    "group": "logic",
+    "mpn": "",
+    "note": "",
+    "uuid": "96c969dd-80a9-5867-96a4-5430594741ab"
+  },
+  {
+    "ref": "C32",
+    "value": "330nF",
+    "footprint": "EWS:C32",
+    "x": 44,
+    "y": -39,
+    "angle": 0,
+    "pins": {
+      "1": "LO_ADC_P",
+      "2": "LO_ADC_N"
+    },
+    "group": "logic",
+    "mpn": "",
+    "note": "",
+    "uuid": "b90db202-b71f-598d-8a14-2a8b95779901"
+  },
+  {
+    "ref": "R40",
+    "value": "4.7k",
+    "footprint": "EWS:R40",
+    "x": 52,
+    "y": -42,
+    "angle": 0,
+    "pins": {
+      "1": "GPIO21",
+      "2": "3V3"
+    },
+    "group": "logic",
+    "mpn": "",
+    "note": "",
+    "uuid": "aa119c10-d542-54ad-a65e-ff5e6ab62d6a"
+  },
+  {
+    "ref": "R41",
+    "value": "4.7k",
+    "footprint": "EWS:R41",
+    "x": 57,
+    "y": -42,
+    "angle": 0,
+    "pins": {
+      "1": "GPIO22",
+      "2": "3V3"
+    },
+    "group": "logic",
+    "mpn": "",
+    "note": "",
+    "uuid": "a13c9dfb-0c53-512b-aced-03ba6c80aa7e"
+  },
+  {
+    "ref": "R42",
+    "value": "10k",
+    "footprint": "EWS:R42",
+    "x": 56,
+    "y": -47,
+    "angle": 0,
+    "pins": {
+      "1": "ADC_READY",
+      "2": "3V3"
+    },
+    "group": "logic",
+    "mpn": "",
+    "note": "",
+    "uuid": "e2585721-034c-5ef4-8415-49772231c6bc"
+  },
+  {
+    "ref": "J4",
+    "value": "ADC_DIAGNOSTICS",
+    "footprint": "EWS:J4",
+    "x": 61,
+    "y": -37,
+    "angle": 0,
+    "pins": {
+      "1": "GND",
+      "2": "3V3",
+      "3": "HI_DIAG",
+      "4": "LO_DIAG",
+      "5": "ADC_READY",
+      "6": "HI_ADC_P",
+      "7": "HI_ADC_N",
+      "8": "LO_ADC_P",
+      "9": "LO_ADC_N"
+    },
+    "group": "logic",
+    "mpn": "",
+    "note": "",
+    "uuid": "3c5fef4f-822c-56b4-a212-b578d14c9378"
+  },
+  {
+    "ref": "J5",
+    "value": "PROBE_E2_G_5V_S",
+    "footprint": "EWS:J5",
+    "x": 31,
+    "y": 28,
+    "angle": 90,
+    "pins": {
+      "1": "GND",
+      "2": "SERVO_5V",
+      "3": "GPIO25"
+    },
+    "group": "logic",
+    "mpn": "",
+    "note": "",
+    "uuid": "17f7335f-a3ce-52fc-986c-ed9f3994cf60"
+  },
+  {
+    "ref": "J6",
+    "value": "PROBE_E4_G_5V_S",
+    "footprint": "EWS:J6",
+    "x": 41,
+    "y": 28,
+    "angle": 90,
+    "pins": {
+      "1": "GND",
+      "2": "SERVO_5V",
+      "3": "GPIO26"
+    },
+    "group": "logic",
+    "mpn": "",
+    "note": "",
+    "uuid": "8b8c1997-f504-5b95-8160-a26e4e8e45f4"
+  },
+  {
+    "ref": "J7",
+    "value": "STEER_G_5V_S",
+    "footprint": "EWS:J7",
+    "x": 51,
+    "y": 28,
+    "angle": 90,
+    "pins": {
+      "1": "GND",
+      "2": "SERVO_5V",
+      "3": "GPIO27"
+    },
+    "group": "logic",
+    "mpn": "",
+    "note": "",
+    "uuid": "06a9d9b6-892f-5855-b0af-42ec8fa5a7b1"
+  },
+  {
+    "ref": "J8",
+    "value": "ESC_G_NC_S",
+    "footprint": "EWS:J8",
+    "x": 61,
+    "y": 28,
+    "angle": 90,
+    "pins": {
+      "1": "GND",
+      "2": "ESC_BEC_NC",
+      "3": "GPIO14"
+    },
+    "group": "logic",
+    "mpn": "",
+    "note": "",
+    "uuid": "5552e926-38d7-5415-be59-1182a7d82311"
+  },
+  {
+    "ref": "R50",
+    "value": "100k",
+    "footprint": "EWS:R50",
+    "x": 33,
+    "y": 32,
+    "angle": 0,
+    "pins": {
+      "1": "GPIO25",
+      "2": "GND"
+    },
+    "group": "logic",
+    "mpn": "",
+    "note": "",
+    "uuid": "d3cd01e1-af4c-55aa-aa62-5a36c159b377"
+  },
+  {
+    "ref": "R51",
+    "value": "100k",
+    "footprint": "EWS:R51",
+    "x": 42,
+    "y": 32,
+    "angle": 0,
+    "pins": {
+      "1": "GPIO26",
+      "2": "GND"
+    },
+    "group": "logic",
+    "mpn": "",
+    "note": "",
+    "uuid": "73cd17d2-e46f-526c-8dc5-60a7a36ebde9"
+  },
+  {
+    "ref": "R52",
+    "value": "100k",
+    "footprint": "EWS:R52",
+    "x": 51,
+    "y": 32,
+    "angle": 0,
+    "pins": {
+      "1": "GPIO27",
+      "2": "GND"
+    },
+    "group": "logic",
+    "mpn": "",
+    "note": "",
+    "uuid": "646424f6-7ecd-5481-a965-e173abb611da"
+  },
+  {
+    "ref": "R53",
+    "value": "100k",
+    "footprint": "EWS:R53",
+    "x": 60,
+    "y": 32,
+    "angle": 0,
+    "pins": {
+      "1": "GPIO14",
+      "2": "GND"
+    },
+    "group": "logic",
+    "mpn": "",
+    "note": "",
+    "uuid": "1a0475be-799b-5179-8950-2c4215c3e130"
+  },
+  {
+    "ref": "U5",
+    "value": "Pololu_D24V10F5",
+    "footprint": "EWS:U5",
+    "x": 54,
+    "y": 36,
+    "angle": 0,
+    "pins": {
+      "1": "REG_PG",
+      "2": "REG_SHDN",
+      "3": "VBAT",
+      "4": "GND",
+      "5": "LOGIC_5V"
+    },
+    "group": "logic",
+    "mpn": "",
+    "note": "Solder headers; module underside clearance >=2mm",
+    "uuid": "351a1956-723a-5493-8b40-36833ca93595"
+  },
+  {
+    "ref": "U6",
+    "value": "Pololu_D24V50F5",
+    "footprint": "EWS:U6",
+    "x": 32,
+    "y": 36,
+    "angle": 0,
+    "pins": {
+      "1": "SERVO_EN",
+      "2": "VBAT",
+      "3": "GND",
+      "4": "GND",
+      "5": "SERVO_5V"
+    },
+    "group": "logic",
+    "mpn": "",
+    "note": "Solder headers; module underside clearance >=2mm",
+    "uuid": "6f3815a0-5273-537a-a0ea-c408faadba1e"
+  },
+  {
+    "ref": "J9",
+    "value": "REG_CTRL_VIN_REFERENCED",
+    "footprint": "EWS:J9",
+    "x": 53,
+    "y": 58,
+    "angle": 90,
+    "pins": {
+      "1": "REG_SHDN",
+      "2": "REG_PG",
+      "3": "SERVO_EN",
+      "4": "GND"
+    },
+    "group": "logic",
+    "mpn": "",
+    "note": "",
+    "uuid": "f17c4475-9b10-5c38-bb27-2a9d7871a09a"
+  },
+  {
+    "ref": "J10",
+    "value": "POWER_AUX",
+    "footprint": "EWS:J10",
+    "x": -14,
+    "y": 50,
+    "angle": 90,
+    "pins": {
+      "1": "GND",
+      "2": "3V3",
+      "3": "LOGIC_5V",
+      "4": "GND"
+    },
+    "group": "logic",
+    "mpn": "",
+    "note": "",
+    "uuid": "492678e8-7647-5207-a0b5-2bcc091ff033"
+  },
+  {
+    "ref": "J11",
+    "value": "FUSED_2S_INPUT",
+    "footprint": "EWS:J11",
+    "x": -10,
+    "y": 57,
+    "angle": 0,
+    "pins": {
+      "1": "VBAT",
+      "2": "GND"
+    },
+    "group": "logic",
+    "mpn": "",
+    "note": "",
+    "uuid": "d7e0f1c9-139e-53ce-8b46-8996054d161b"
+  },
+  {
+    "ref": "J12",
+    "value": "ELECTRODE_E2",
+    "footprint": "EWS:J12",
+    "x": -14,
+    "y": -49,
+    "angle": 0,
+    "pins": {
+      "1": "E2"
+    },
+    "group": "logic",
+    "mpn": "",
+    "note": "",
+    "uuid": "ae138187-f730-5a7b-9b07-f63632be2136"
+  },
+  {
+    "ref": "J13",
+    "value": "ELECTRODE_E4",
+    "footprint": "EWS:J13",
+    "x": -12,
+    "y": -35,
+    "angle": 0,
+    "pins": {
+      "1": "E4"
+    },
+    "group": "logic",
+    "mpn": "",
+    "note": "",
+    "uuid": "d2680a73-a765-5188-884c-861ecfa427a5"
+  }
+]

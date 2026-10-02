@@ -1,38 +1,21 @@
-# Energized Water Scanner USV
+# Energized Water Scanner USV — Rev G
 
-Energized Water Scanner is a small unmanned surface vessel research platform for measuring voltage differences in water. The current **Rev-F** design has **two** independently actuated probes, a rear ESP32 controller, a shorter electronics cassette and a narrower lower hull.
+The live Fusion **Energized_Water_Scanner** now uses an **IoT Beyond Lab custom PCB** in place of the PRINT_03 tray. The ESP32 sits on the carrier with accessible GPIO expansion. Two isolated measurement ranges, an onboard ADS1115 and separate logic/servo supplies replace the prior loose electronics arrangement.
 
-![Rev-F live Fusion assembly](previews/RevF_2026-10-02_open.png)
+![Rev G live Fusion assembly](previews/RevG_assembly_top.png)
 
-## Current design — 2 October 2026
+## Current files — 2 October 2026
 
-- Remove the forward-driven outer E1/E3 probes and their mechanisms; retain E2/E4, their two recessed wet channels and two internal covers.
-- Move the ESP32 onto a removable rear starboard shelf beside the battery.
-- Move the main electronics cassette 8 mm aft and shorten its forward edge, freeing 34 mm ahead of it.
-- Replace the outer channels and projecting strips with sloping sealed hull stock. Bottom beam is now 125.2 mm; the upper hatch flange remains 170 mm wide. Hull length remains 320 mm.
-- Remove obsolete mounts and reference components. The current print package has **19 pieces**, down from 23.
+- [KiCad 10 project and circuit/assembly guide](pcb/RevG/README.md)
+- [Schematic PDF](pcb/RevG/EWS_RevG_schematic.pdf), [PCB](pcb/RevG/EWS_RevG.kicad_pcb), [BOM](pcb/RevG/BOM.csv), [connector pin map](pcb/RevG/PIN_MAP.md)
+- [Fusion archive](cad/RevG/Energized_Water_Scanner_RevG.f3d), [STEP assembly](cad/RevG/Energized_Water_Scanner_RevG.step), [current STL set](cad/RevG/stl), [print manifest](cad/RevG/print_manifest.json)
+- [Changes and verification](docs/RevG_Changes.md)
+- [Manufacturing review files and release limits](pcb/RevG/manufacturing_review/READ_BEFORE_ORDERING.md)
 
-The source of truth is the saved live **Energized_Water_Scanner** Fusion document. Repository STL/STEP/F3D files are historical. This update contains **written documentation and native viewport PNGs only**.
+The 91 × 124 mm PCB matches the measured U-shaped tray base and four mounting holes. The old tray, four electronics capture bridges and rear ESP32 shelf have been removed. The obsolete rear controller posts/ribs were cut from the hull; lower roots at the chine remain to preserve hull structure. Motor, battery, steering and probe supports retain their useful functions. The current print export has **13 bodies**, down from 19.
 
-## Build documents
+**Electrical status:** routed engineering prototype; automated ERC, DRC, connectivity and schematic parity checks pass. The design targets separate sensitive and 600 V AC RMS, 50/60 Hz ranges for low-voltage utility faults. It has **not** passed physical high-voltage, transient, single-fault, wet-insulation, sensitivity or calibration tests. It is not a certified electrical-safety instrument. A low reading does not mean water is safe. Fabrication files are supplied for engineering review and controlled prototype development.
 
-- [Rev-F changes, images and measured CAD checks](docs/RevF_Changes.md)
-- [Current mechanical layout and interfaces](docs/Design.md)
-- [Current print list and procurement delta](docs/RevF_Procurement.md)
-- [Wiring and assembly](docs/Wiring_and_Assembly.md)
-- [Build qualification and leakage paths](docs/Build_Qualification.md)
-- [Waterproofing audit](docs/Waterproofing_and_Design_Audit.md)
+The two E2/E4 probes provide one differential measurement along their separation. Historical four-probe firmware/presets and procurement files do not apply unchanged. The prior root-level BOM.xlsx/BOM.csv and CAD releases remain historical references; use the Rev G package for electronics and the current STL manifest for printing.
 
-The existing BOM.xlsx, BOM.csv and connected Google Sheet were prepared for the earlier four-probe design. Use the **Rev-F procurement delta** for current quantities and fasteners. Do not purchase or print the old four-probe package unchanged. Prior [Rev-E2](docs/RevE2_Changes.md), [Rev-E1](docs/RevE1_Changes.md) and [component audit](docs/Mechanical_Audit_2026-10-01.md) remain historical references.
-
-## Measurement and build status
-
-Two electrodes provide **one differential measurement along their separation**. They cannot reproduce the previous four-electrode three-dimensional gradient estimate. The old four-probe presets and gradient scripts are historical and are not validated for Rev-F. The protected analog front end, calibration and firmware still require engineering validation.
-
-The design supports a staged **mechanical fit prototype**. CAD clearance checks do not qualify a printed hull for water operation. Exact horn/pulley/belt and shaft retention, actual controller clamp contacts/connectors, seal water duty, potting, stern-tube internal sealing, steering motion and loaded flotation remain qualification gates. Fit one retained actuator before duplicating it or committing to a full hull build.
-
-This is not a certified electrical-safety instrument. A low or absent reading does not establish that water is safe.
-
-## PCB redesign work in progress
-
-The requested tray-replacement PCB now has a [measured mechanical template](pcb/engineering/EWS_mechanical_template.kicad_pcb) and [engineering requirements/findings](docs/PCB_Engineering_Draft.md). The new requirement is separate sensitive and high-voltage ranges with a 600 V AC RMS utility-mains fault target. **This is not a completed or fabrication-ready PCB:** the protected dual-range circuit, component layout, routing and validation remain unfinished. The Fusion assembly and current print set have not been changed for this draft. The template's mechanical DRC is not electrical or high-voltage qualification.
+[Earlier mechanical qualification](docs/Build_Qualification.md) and [waterproofing audit](docs/Waterproofing_and_Design_Audit.md) remain relevant. Rev G does not claim those physical qualification gates are complete.

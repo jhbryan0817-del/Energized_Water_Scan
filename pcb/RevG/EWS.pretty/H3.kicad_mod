@@ -1,0 +1,72 @@
+(footprint "H3"
+	(version 20260206)
+	(generator "pcbnew")
+	(generator_version "10.0")
+	(layer "F.Cu")
+	(property "Reference" "H3"
+		(at 0 -2 0)
+		(layer "F.Fab")
+		(uuid "9eeff78b-68db-4b5a-a8e0-38201f37029f")
+		(effects
+			(font
+				(size 0.8 0.8)
+				(thickness 0.12)
+			)
+		)
+	)
+	(property "Value" "M3 nylon hardware"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "04365665-5ed9-49f9-8768-936735864e57")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "39d4444b-d075-4f4b-91fe-730382faaca7")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "fef66ec9-1d8c-43db-8637-5dc35f9b9ce6")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(attr through_hole board_only exclude_from_pos_files exclude_from_bom)
+	(duplicate_pad_numbers_are_jumpers no)
+	(pad "" np_thru_hole rect
+		(at 0 0)
+		(size 3.4 3.4)
+		(drill 3.4)
+		(layers "*.Cu" "*.Mask")
+		(thermal_bridge_angle 45)
+		(uuid "150dc4ab-8095-4349-b1e7-8f1aba9b7282")
+	)
+	(embedded_fonts no)
+	(model "${KIPRJMOD}/models/H_spacer.step"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 0)
+		)
+	)
+)

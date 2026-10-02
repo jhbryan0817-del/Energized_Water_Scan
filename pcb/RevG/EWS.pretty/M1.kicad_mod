@@ -1,0 +1,63 @@
+(footprint "M1"
+	(version 20260206)
+	(generator "pcbnew")
+	(generator_version "10.0")
+	(layer "F.Cu")
+	(property "Reference" "M1"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(uuid "37c020c5-23db-492d-994c-de5109ca1f03")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Value" "Hobbywing WP1625 on SJ3550"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "70b41ae4-f206-40af-bafa-432c8cefdcd5")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "e80eadb1-35f0-4b5c-8db3-555c20de5ce9")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "a5242b0d-c526-47f1-adb7-cc7ec2259cbd")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(attr board_only exclude_from_pos_files)
+	(duplicate_pad_numbers_are_jumpers no)
+	(embedded_fonts no)
+	(model "${KIPRJMOD}/models/M1.step"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 0)
+		)
+	)
+)

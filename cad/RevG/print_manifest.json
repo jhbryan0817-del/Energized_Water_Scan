@@ -1,0 +1,80 @@
+[
+  {
+    "occurrence": "PRINT_11_Motor_face_mount:1",
+    "body": "PRINT_11_Motor_face_mount",
+    "file": "PRINT_11_Motor_face_mount_1_PRINT_11_Motor_face_mount.stl",
+    "solid": true
+  },
+  {
+    "occurrence": "PRINT_09_Rudder_transom_bracket:1",
+    "body": "Single_print_rudder_bracket",
+    "file": "PRINT_09_Rudder_transom_bracket_1_Single_print_rudder_bracket.stl",
+    "solid": true
+  },
+  {
+    "occurrence": "PRINT_14_Motor_lower_cradle:1",
+    "body": "PRINT_14_Motor_lower_cradle",
+    "file": "PRINT_14_Motor_lower_cradle_1_PRINT_14_Motor_lower_cradle.stl",
+    "solid": true
+  },
+  {
+    "occurrence": "PRINT_16_Rudder_blade:1",
+    "body": "Rudder_blade_with_stock_socket",
+    "file": "PRINT_16_Rudder_blade_1_Rudder_blade_with_stock_socket.stl",
+    "solid": true
+  },
+  {
+    "occurrence": "PRINT_17_Rudder_tiller:1",
+    "body": "Tiller_with_stock_socket",
+    "file": "PRINT_17_Rudder_tiller_1_Tiller_with_stock_socket.stl",
+    "solid": true
+  },
+  {
+    "occurrence": "PRINT_23_E2_internal_servo_cover:1",
+    "body": "Top_access_cover_wide_drive_bay",
+    "file": "PRINT_23_E2_internal_servo_cover_1_Top_access_cover_wide_drive_bay.stl",
+    "solid": true
+  },
+  {
+    "occurrence": "PRINT_25_E4_internal_servo_cover:1",
+    "body": "Top_access_cover_wide_drive_bay (1)",
+    "file": "PRINT_25_E4_internal_servo_cover_1_Top_access_cover_wide_drive_bay_1_.stl",
+    "solid": true
+  },
+  {
+    "occurrence": "PRINT_30_Steering_service_saddle:1",
+    "body": "RevF_Steering_saddle_chine_fit",
+    "file": "PRINT_30_Steering_service_saddle_1_RevF_Steering_saddle_chine_fit.stl",
+    "solid": true
+  },
+  {
+    "occurrence": "PRINT_04_Longitudinal_battery_cradle:1",
+    "body": "Two_strap_battery_cradle (1) (1) (1)",
+    "file": "PRINT_04_Longitudinal_battery_cradle_1_Two_strap_battery_cradle_1_1_1_.stl",
+    "solid": true
+  },
+  {
+    "occurrence": "PROBE_E2_MOVING (1):1",
+    "body": "PRINT_27_E2_insulated_arm",
+    "file": "PROBE_E2_MOVING_1_1_PRINT_27_E2_insulated_arm.stl",
+    "solid": true
+  },
+  {
+    "occurrence": "PROBE_E4_MOVING (1):1",
+    "body": "PRINT_29_E4_insulated_arm",
+    "file": "PROBE_E4_MOVING_1_1_PRINT_29_E4_insulated_arm.stl",
+    "solid": true
+  },
+  {
+    "occurrence": "PRINT_02_Removable_hatch_cover (1):1",
+    "body": "Extended_service_hatch",
+    "file": "PRINT_02_Removable_hatch_cover_1_1_Extended_service_hatch.stl",
+    "solid": true
+  },
+  {
+    "occurrence": "PRINT_01_Hull_shell_RevG:1",
+    "body": "Hull - obsolete controller posts removed",
+    "file": "PRINT_01_Hull_shell_RevG_1_Hull_-_obsolete_controller_posts_removed.stl",
+    "solid": true
+  }
+]
