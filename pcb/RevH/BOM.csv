@@ -1,0 +1,96 @@
+ref,value,mpn,footprint,note,procurement_status,source
+U1,ESP32-DevKitC V4 WROOM,ESP32-DevKitC-32E,EWS:U1,WROOM DevKitC V4; confirm module/38-pin interface; two 1x19 sockets required,Selected candidate; verify exact supplier drawing and availability,https://docs.espressif.com/projects/esp-dev-kits/en/latest/esp32/esp32-devkitc/user_guide.html
+J1,EXPANSION_3V3_ONLY,,EWS:J1,,"HOLD: select manufacturer part against value, footprint and ratings",
+J2,I2C_3V3,,EWS:J2,,"HOLD: select manufacturer part against value, footprint and ratings",
+J3,UART_RESET,,EWS:J3,,"HOLD: select manufacturer part against value, footprint and ratings",
+JP1,REMOVE_FOR_USB,,EWS:JP1,,"HOLD: select manufacturer part against value, footprint and ratings",
+U2,AMC3330DWER,AMC3330DWER,EWS:U2,,Selected candidate; verify exact supplier drawing and availability,https://www.ti.com/lit/ds/symlink/amc3330.pdf
+C1,1uF,,EWS:C1,"; 0805, >=25V; C0G for 100pF/1nF, X7R otherwise; verify effective capacitance","HOLD: select manufacturer part against value, footprint and ratings",
+C2,1nF,,EWS:C2,"; 0805, >=25V; C0G for 100pF/1nF, X7R otherwise; verify effective capacitance","HOLD: select manufacturer part against value, footprint and ratings",
+C3,100nF,,EWS:C3,"; 0805, >=25V; C0G for 100pF/1nF, X7R otherwise; verify effective capacitance","HOLD: select manufacturer part against value, footprint and ratings",
+C4,1nF,,EWS:C4,"; 0805, >=25V; C0G for 100pF/1nF, X7R otherwise; verify effective capacitance","HOLD: select manufacturer part against value, footprint and ratings",
+C5,100nF,,EWS:C5,"; 0805, >=25V; C0G for 100pF/1nF, X7R otherwise; verify effective capacitance","HOLD: select manufacturer part against value, footprint and ratings",
+C6,1nF,,EWS:C6,"; 0805, >=25V; C0G for 100pF/1nF, X7R otherwise; verify effective capacitance","HOLD: select manufacturer part against value, footprint and ratings",
+C7,1uF,,EWS:C7,"; 0805, >=25V; C0G for 100pF/1nF, X7R otherwise; verify effective capacitance","HOLD: select manufacturer part against value, footprint and ratings",
+R1,1k 0.1%,,EWS:R1,,"HOLD: select manufacturer part against value, footprint and ratings",
+R2,1k 0.1%,,EWS:R2,,"HOLD: select manufacturer part against value, footprint and ratings",
+C8,100pF C0G,,EWS:C8,"; 0805, >=25V; C0G for 100pF/1nF, X7R otherwise; verify effective capacitance","HOLD: select manufacturer part against value, footprint and ratings",
+R3,47k,,EWS:R3,,"HOLD: select manufacturer part against value, footprint and ratings",
+R100,249k 0.1% 200V,TNPW1206249KBEEA,EWS:R100,,Selected candidate; verify exact supplier drawing and availability,https://www.vishay.com/docs/28758/tnpw_e3.pdf
+R101,249k 0.1% 200V,TNPW1206249KBEEA,EWS:R101,,Selected candidate; verify exact supplier drawing and availability,https://www.vishay.com/docs/28758/tnpw_e3.pdf
+R102,249k 0.1% 200V,TNPW1206249KBEEA,EWS:R102,,Selected candidate; verify exact supplier drawing and availability,https://www.vishay.com/docs/28758/tnpw_e3.pdf
+R103,249k 0.1% 200V,TNPW1206249KBEEA,EWS:R103,,Selected candidate; verify exact supplier drawing and availability,https://www.vishay.com/docs/28758/tnpw_e3.pdf
+R104,249k 0.1% 200V,TNPW1206249KBEEA,EWS:R104,,Selected candidate; verify exact supplier drawing and availability,https://www.vishay.com/docs/28758/tnpw_e3.pdf
+R105,249k 0.1% 200V,TNPW1206249KBEEA,EWS:R105,,Selected candidate; verify exact supplier drawing and availability,https://www.vishay.com/docs/28758/tnpw_e3.pdf
+R106,249k 0.1% 200V,TNPW1206249KBEEA,EWS:R106,,Selected candidate; verify exact supplier drawing and availability,https://www.vishay.com/docs/28758/tnpw_e3.pdf
+R107,249k 0.1% 200V,TNPW1206249KBEEA,EWS:R107,,Selected candidate; verify exact supplier drawing and availability,https://www.vishay.com/docs/28758/tnpw_e3.pdf
+D1,BAV199,"BAV199,215",EWS:D1,,Selected candidate; verify exact supplier drawing and availability,https://assets.nexperia.com/documents/data-sheet/BAV199.pdf
+D2,BAV199,"BAV199,215",EWS:D2,,Selected candidate; verify exact supplier drawing and availability,https://assets.nexperia.com/documents/data-sheet/BAV199.pdf
+U3,AMC3330DWER,AMC3330DWER,EWS:U3,,Selected candidate; verify exact supplier drawing and availability,https://www.ti.com/lit/ds/symlink/amc3330.pdf
+C11,1uF,,EWS:C11,"; 0805, >=25V; C0G for 100pF/1nF, X7R otherwise; verify effective capacitance","HOLD: select manufacturer part against value, footprint and ratings",
+C12,1nF,,EWS:C12,"; 0805, >=25V; C0G for 100pF/1nF, X7R otherwise; verify effective capacitance","HOLD: select manufacturer part against value, footprint and ratings",
+C13,100nF,,EWS:C13,"; 0805, >=25V; C0G for 100pF/1nF, X7R otherwise; verify effective capacitance","HOLD: select manufacturer part against value, footprint and ratings",
+C14,1nF,,EWS:C14,"; 0805, >=25V; C0G for 100pF/1nF, X7R otherwise; verify effective capacitance","HOLD: select manufacturer part against value, footprint and ratings",
+C15,100nF,,EWS:C15,"; 0805, >=25V; C0G for 100pF/1nF, X7R otherwise; verify effective capacitance","HOLD: select manufacturer part against value, footprint and ratings",
+C16,1nF,,EWS:C16,"; 0805, >=25V; C0G for 100pF/1nF, X7R otherwise; verify effective capacitance","HOLD: select manufacturer part against value, footprint and ratings",
+C17,1uF,,EWS:C17,"; 0805, >=25V; C0G for 100pF/1nF, X7R otherwise; verify effective capacitance","HOLD: select manufacturer part against value, footprint and ratings",
+R11,100k 0.1%,,EWS:R11,,"HOLD: select manufacturer part against value, footprint and ratings",
+R12,100k 0.1%,,EWS:R12,,"HOLD: select manufacturer part against value, footprint and ratings",
+C18,100pF C0G,,EWS:C18,"; 0805, >=25V; C0G for 100pF/1nF, X7R otherwise; verify effective capacitance","HOLD: select manufacturer part against value, footprint and ratings",
+R13,47k,,EWS:R13,,"HOLD: select manufacturer part against value, footprint and ratings",
+R110,249k 0.1% 200V,TNPW1206249KBEEA,EWS:R110,,Selected candidate; verify exact supplier drawing and availability,https://www.vishay.com/docs/28758/tnpw_e3.pdf
+R111,249k 0.1% 200V,TNPW1206249KBEEA,EWS:R111,,Selected candidate; verify exact supplier drawing and availability,https://www.vishay.com/docs/28758/tnpw_e3.pdf
+R112,249k 0.1% 200V,TNPW1206249KBEEA,EWS:R112,,Selected candidate; verify exact supplier drawing and availability,https://www.vishay.com/docs/28758/tnpw_e3.pdf
+R113,249k 0.1% 200V,TNPW1206249KBEEA,EWS:R113,,Selected candidate; verify exact supplier drawing and availability,https://www.vishay.com/docs/28758/tnpw_e3.pdf
+R114,249k 0.1% 200V,TNPW1206249KBEEA,EWS:R114,,Selected candidate; verify exact supplier drawing and availability,https://www.vishay.com/docs/28758/tnpw_e3.pdf
+R115,249k 0.1% 200V,TNPW1206249KBEEA,EWS:R115,,Selected candidate; verify exact supplier drawing and availability,https://www.vishay.com/docs/28758/tnpw_e3.pdf
+R116,249k 0.1% 200V,TNPW1206249KBEEA,EWS:R116,,Selected candidate; verify exact supplier drawing and availability,https://www.vishay.com/docs/28758/tnpw_e3.pdf
+R117,249k 0.1% 200V,TNPW1206249KBEEA,EWS:R117,,Selected candidate; verify exact supplier drawing and availability,https://www.vishay.com/docs/28758/tnpw_e3.pdf
+D3,BAV199,"BAV199,215",EWS:D3,,Selected candidate; verify exact supplier drawing and availability,https://assets.nexperia.com/documents/data-sheet/BAV199.pdf
+D4,BAV199,"BAV199,215",EWS:D4,,Selected candidate; verify exact supplier drawing and availability,https://assets.nexperia.com/documents/data-sheet/BAV199.pdf
+U4,ADS1115IDGSR,ADS1115IDGSR,EWS:U4,0x48: continuous HI AIN0-AIN1; 860 SPS nominal,Selected candidate; verify exact supplier drawing and availability,https://www.ti.com/lit/ds/symlink/ads1115.pdf
+C30,100nF,,EWS:C30,"; 0805, >=25V; C0G for 100pF/1nF, X7R otherwise; verify effective capacitance","HOLD: select manufacturer part against value, footprint and ratings",
+R30,1k,,EWS:R30,,"HOLD: select manufacturer part against value, footprint and ratings",
+R31,1k,,EWS:R31,,"HOLD: select manufacturer part against value, footprint and ratings",
+C31,330nF,,EWS:C31,"; 0805, >=25V; C0G for 100pF/1nF, X7R otherwise; verify effective capacitance","HOLD: select manufacturer part against value, footprint and ratings",
+R32,1k,,EWS:R32,,"HOLD: select manufacturer part against value, footprint and ratings",
+R33,1k,,EWS:R33,,"HOLD: select manufacturer part against value, footprint and ratings",
+C32,330nF,,EWS:C32,"; 0805, >=25V; C0G for 100pF/1nF, X7R otherwise; verify effective capacitance","HOLD: select manufacturer part against value, footprint and ratings",
+R40,4.7k,,EWS:R40,,"HOLD: select manufacturer part against value, footprint and ratings",
+R41,4.7k,,EWS:R41,,"HOLD: select manufacturer part against value, footprint and ratings",
+R42,10k,,EWS:R42,,"HOLD: select manufacturer part against value, footprint and ratings",
+J4,ADC_DIAGNOSTICS,,EWS:J4,,"HOLD: select manufacturer part against value, footprint and ratings",
+J5,PROBE_E2_G_5V_S,,EWS:J5,,"HOLD: select manufacturer part against value, footprint and ratings",
+J6,PROBE_E4_G_5V_S,,EWS:J6,,"HOLD: select manufacturer part against value, footprint and ratings",
+J7,STEER_G_5V_S,,EWS:J7,,"HOLD: select manufacturer part against value, footprint and ratings",
+J8,ESC_G_NC_S,,EWS:J8,,"HOLD: select manufacturer part against value, footprint and ratings",
+R50,100k,,EWS:R50,,"HOLD: select manufacturer part against value, footprint and ratings",
+R51,100k,,EWS:R51,,"HOLD: select manufacturer part against value, footprint and ratings",
+R52,100k,,EWS:R52,,"HOLD: select manufacturer part against value, footprint and ratings",
+R53,100k,,EWS:R53,,"HOLD: select manufacturer part against value, footprint and ratings",
+U5,Pololu_D24V10F5,D24V10F5 (Pololu 2831),EWS:U5,Solder headers; module underside clearance >=2mm,Selected candidate; verify exact supplier drawing and availability,https://www.pololu.com/product/2831
+U6,Pololu_D24V50F5,D24V50F5 (Pololu 2851),EWS:U6,Solder headers; module underside clearance >=2mm,Selected candidate; verify exact supplier drawing and availability,https://www.pololu.com/product/2851
+J9,REG_CTRL_VIN_REFERENCED,,EWS:J9,,"HOLD: select manufacturer part against value, footprint and ratings",
+J10,POWER_AUX,,EWS:J10,,"HOLD: select manufacturer part against value, footprint and ratings",
+J11,2S_INPUT_EXTERNAL_FUSE,,EWS:J11,,"HOLD: select manufacturer part against value, footprint and ratings",
+J12,ELECTRODE_E2,,EWS:J12,,"HOLD: select manufacturer part against value, footprint and ratings",
+J13,ELECTRODE_E4,,EWS:J13,,"HOLD: select manufacturer part against value, footprint and ratings",
+U7,ADS1115IDGSR,ADS1115IDGSR,EWS:U7,"0x49: continuous LO AIN0-AIN1; independent clock, not phase synchronous",Selected candidate; verify exact supplier drawing and availability,https://www.ti.com/lit/ds/symlink/ads1115.pdf
+C33,100nF 25V X7R,GRM21BR71E104KA01L,EWS:C33,,Selected candidate; verify exact supplier drawing and availability,
+R43,10k 1%,RC0805FR-0710KL,EWS:R43,,Selected candidate; verify exact supplier drawing and availability,
+F1,3A fast fuse,0453003.MR,EWS:F1,"Prototype 3A; coordinate with harness fuse, inrush and measured load",Selected candidate; verify exact supplier drawing and availability,https://www.littelfuse.com/~/media/electronics/datasheets/fuses/littelfuse_fuse_451_453_datasheet.pdf.pdf
+Q1,DMPH3010LK3-13,DMPH3010LK3-13,EWS:Q1,Reverse input protection: pin2/tab drain=fused input; pin3 source=VBAT,Selected candidate; verify exact supplier drawing and availability,https://www.diodes.com/datasheet/download/DMPH3010LK3.pdf
+R60,100k 1%,RC0805FR-07100KL,EWS:R60,,Selected candidate; verify exact supplier drawing and availability,
+D5,SMBJ12A,SMBJ12A,EWS:D5,12V standoff; 19.9V specified clamp; downstream of F1/Q1,Selected candidate; verify exact supplier drawing and availability,https://m.littelfuse.com/~/media/electronics/datasheets/tvs_diodes/littelfuse_tvs_diode_smbj_datasheet.pdf.pdf
+D6,BZT52H-C10,"BZT52H-C10,115",EWS:D6,"10V gate-source clamp, cathode at source",Selected candidate; verify exact supplier drawing and availability,https://assets.nexperia.com/documents/data-sheet/BZT52H_SER.pdf
+C40,10uF 25V X5R,GRM21BR61E106KA73L,EWS:C40,"Under U6; <=1.35mm body, >=2mm module standoff; verify DC-bias curve and actual module gap",Selected candidate; verify exact supplier drawing and availability,https://www.ti.com/mx/lit/pdf/sbau413
+C41,10uF 25V X5R,GRM21BR61E106KA73L,EWS:C41,"Under U5; <=1.35mm body, >=2mm module standoff; verify DC-bias curve and actual module gap",Selected candidate; verify exact supplier drawing and availability,https://www.ti.com/mx/lit/pdf/sbau413
+C42,10uF 25V X5R,GRM21BR61E106KA73L,EWS:C42,"Under U6; <=1.35mm body, >=2mm module standoff; verify DC-bias curve and actual module gap",Selected candidate; verify exact supplier drawing and availability,https://www.ti.com/mx/lit/pdf/sbau413
+R61,200k 0.1%,TNPW0805200KBEEA,EWS:R61,Under socketed DevKitC; verify at least 2mm underside clearance,Selected candidate; verify exact supplier drawing and availability,https://www.vishay.com/docs/28758/tnpw_e3.pdf
+R62,33k 0.1%,TNPW080533K0BEEA,EWS:R62,Under socketed DevKitC; verify at least 2mm underside clearance,Selected candidate; verify exact supplier drawing and availability,https://www.vishay.com/docs/28758/tnpw_e3.pdf
+R63,10k 1%,RC0805FR-0710KL,EWS:R63,Under socketed DevKitC; verify at least 2mm underside clearance,Selected candidate; verify exact supplier drawing and availability,
+C43,100nF 25V X7R,GRM21BR71E104KA01L,EWS:C43,Under socketed DevKitC; verify at least 2mm underside clearance,Selected candidate; verify exact supplier drawing and availability,
+J14,DRY_LEAK_SENSOR,TSW-103-07-G-S,EWS:J14,Dry interior 3.3V open-drain sensor; not an electrode/conductivity port,Selected candidate; verify exact supplier drawing and availability,
+R64,1k 1%,RC0805FR-071KL,EWS:R64,Under socketed DevKitC; verify at least 2mm underside clearance,Selected candidate; verify exact supplier drawing and availability,
+R65,10k 1%,RC0805FR-0710KL,EWS:R65,Under socketed DevKitC; verify at least 2mm underside clearance,Selected candidate; verify exact supplier drawing and availability,
+C44,100nF 25V X7R,GRM21BR71E104KA01L,EWS:C44,Under socketed DevKitC; verify at least 2mm underside clearance,Selected candidate; verify exact supplier drawing and availability,

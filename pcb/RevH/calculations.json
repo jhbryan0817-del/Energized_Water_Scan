@@ -1,0 +1,18 @@
+{
+  "assumptions": "Ideal resistor network, nominal AMC gain 2; no electrode impedance, clamp leakage or ADC loading included",
+  "high_attenuation": 997,
+  "sensitive_attenuation": 10.96,
+  "high_amc_peak_at_600Vrms": 0.8510813815685627,
+  "high_adc_peak_at_600Vrms": 1.7021627631371254,
+  "resistor_power_W_at_600Vrms": 0.022545067499388838,
+  "filter_pole_Hz": 241.1438531695384,
+  "filter_gain_50Hz": 0.9791731858255098,
+  "filter_gain_60Hz": 0.9704126662292777,
+  "high_volts_per_code": 0.03115625,
+  "sensitive_volts_per_code": 8.562500000000001e-05,
+  "battery_divider_ratio": 7.0606060606060606,
+  "battery_adc_V_at_8_4V": 1.1896995708154505,
+  "battery_adc_V_at_19_9V": 2.8184549356223174,
+  "battery_filter_pole_Hz": 41.526429720505725,
+  "small_signal_electrode_load_ohms": 1044158.623984711
+}

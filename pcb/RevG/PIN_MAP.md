@@ -1,3 +1,5 @@
+> Historical Rev G baseline corresponding to the retained mechanical model. Use [Rev H](../RevH/README.md) for current electronics.
+
 # Rev G connector pin map
 
 View the board from the component side. Square pad = pin 1. The reverse silkscreen is mirrored for reading from the back. All GPIO are 3.3 V only.

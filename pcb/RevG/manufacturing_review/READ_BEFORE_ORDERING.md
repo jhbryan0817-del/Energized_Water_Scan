@@ -1,9 +1,3 @@
-# Engineering review package — not a safety release
+# Historical Rev G manufacturing candidates
 
-4 layers, nominal finished 2.0 mm; 70 µm outer copper and 35 µm inner copper; ENIG; green solder mask; white silkscreen both sides. Suggested dielectric arrangement is 0.30/1.19/0.30 mm before fab process adjustment. Fabricator must reconcile finished thickness, copper build-up, drill/annular geometry and laminate properties. Minimum signal track/space 0.15 mm; typical routes 0.20 mm; through vias 0.70/0.35 mm. Do not substitute a two-layer or 1.6 mm board.
-
-Keep both floating input domains and the explicit isolation areas free of unintended copper, plating, conductive labels and metal hardware. Do not credit solder mask as insulation. Obtain laminate CTI and insulation data and have the complete design reviewed for the intended measurement category/environment before any hazardous-voltage prototype test. Gerbers do not certify that review has occurred.
-
-All through-hole mounting hardware is nylon. Components are hand assembled. 0805 capacitors: 25 V minimum, X7R for 100 nF/330 nF/1 µF and C0G for 100 pF/1 nF; select/verify effective capacitance at operating bias against the TI recommendations. Replace 1 µF with a verified 2.2 µF part if necessary to meet effective-capacitance requirements; this is an approved BOM variant requiring verification. General 1206 resistors: 0.25 W minimum, 1% unless the value specifies 0.1%; sense/divider parts use 0.1%, 25 ppm/K or better. Raw input resistors must retain the specified 200 V working-voltage rating and approved pulse/overload behaviour.
-
-Soldering BOM identifies existing modules, IC MPNs and passive constraints. Generic passives/headers still require supplier selection and footprint confirmation. Do not order by the historic four-probe BOM. Carry out independent pinout, isolation, fault and manufacturing review before releasing the files for a hazardous-voltage build.
+These files belong to the previous prototype and are not current. Use [Rev H](../../RevH/README.md) for electronics development. Neither revision is a qualified energized-water instrument. Do not order these old exports as Rev H boards.

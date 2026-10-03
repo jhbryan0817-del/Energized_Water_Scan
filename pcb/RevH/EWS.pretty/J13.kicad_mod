@@ -1,0 +1,62 @@
+(footprint "J13"
+	(version 20260206)
+	(generator "pcbnew")
+	(generator_version "10.0")
+	(layer "F.Cu")
+	(property "Reference" "J13"
+		(at 0 -2 0)
+		(layer "F.Fab")
+		(uuid "b73f24b3-9bea-4668-9d02-ee3f9dbf90bb")
+		(effects
+			(font
+				(size 0.8 0.8)
+				(thickness 0.12)
+			)
+		)
+	)
+	(property "Value" "ELECTRODE_E4"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "554bd650-9bb0-487f-9903-3d7e3dfc5e11")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "0033b7bf-3b33-4364-ae2b-d2b717f24666")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "e079e50d-854c-4ab8-aeb7-1b4abae5668e")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(attr through_hole)
+	(duplicate_pad_numbers_are_jumpers no)
+	(pad "1" thru_hole rect
+		(at 0 0)
+		(size 3 3)
+		(drill 1.5)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(thermal_bridge_angle 45)
+		(uuid "9fc54937-d6d1-4ef6-9f7a-cddd00cfc340")
+	)
+	(embedded_fonts no)
+)

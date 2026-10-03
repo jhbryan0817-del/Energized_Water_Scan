@@ -1,0 +1,20 @@
+{
+  "status": "Engineering design checks only; no physical tests",
+  "kicad_version": "10.0.6",
+  "components_in_manifest": 99,
+  "electrical_pins_compared": 319,
+  "netlist_manifest_board_mismatches": [],
+  "outline_bounding_box_unchanged": true,
+  "mounting_holes_unchanged": true,
+  "board_thickness_mm": 2.0,
+  "copper_layers": 6,
+  "six_layer_stack": "70um/35um/35um/35um/35um/70um copper; dielectric .2/.3/.7/.3/.2mm; mask .01mm each; fabricator confirmation pending",
+  "physical_tests_performed": false,
+  "new_3d_files": false,
+  "manufacturing_release": false,
+  "exact_Edge_Cuts_geometry_unchanged": true,
+  "drc_violations": 0,
+  "unconnected_items": 0,
+  "schematic_parity_issues": 0,
+  "erc_violations": 0
+}

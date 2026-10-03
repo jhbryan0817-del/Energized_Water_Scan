@@ -1,0 +1,66 @@
+{
+    "$schema": "https://schemas.kicad.org/erc.v1.json",
+    "coordinate_units": "mm",
+    "date": "2026-10-03T19:42:45",
+    "ignored_checks": [
+        {
+            "description": "Global label only appears once in the schematic",
+            "key": "single_global_label"
+        },
+        {
+            "description": "Four connection points are joined together",
+            "key": "four_way_junction"
+        },
+        {
+            "description": "SPICE model issue",
+            "key": "simulation_model_issue"
+        },
+        {
+            "description": "Assigned footprint doesn't match footprint filters",
+            "key": "footprint_filter"
+        }
+    ],
+    "included_severities": [
+        "error",
+        "warning"
+    ],
+    "kicad_version": "10.0.6",
+    "sheets": [
+        {
+            "path": "/",
+            "uuid_path": "/c1e8c922-faa2-5920-8a56-5962dea42720",
+            "violations": []
+        },
+        {
+            "path": "/Control/",
+            "uuid_path": "/c1e8c922-faa2-5920-8a56-5962dea42720/140dd7c1-cc01-559e-ad38-03bd84b3550d",
+            "violations": []
+        },
+        {
+            "path": "/Power/",
+            "uuid_path": "/c1e8c922-faa2-5920-8a56-5962dea42720/5d78bc4a-e4a4-5296-8686-2780b3bb1dd3",
+            "violations": []
+        },
+        {
+            "path": "/Input_protection/",
+            "uuid_path": "/c1e8c922-faa2-5920-8a56-5962dea42720/ac5c2f71-8678-5eb0-9aa7-440e8111e1ea",
+            "violations": []
+        },
+        {
+            "path": "/Isolation/",
+            "uuid_path": "/c1e8c922-faa2-5920-8a56-5962dea42720/bb4cdf1e-bdbf-56df-8ead-72b6b6e62e48",
+            "violations": []
+        },
+        {
+            "path": "/Health/",
+            "uuid_path": "/c1e8c922-faa2-5920-8a56-5962dea42720/97a4239f-5d66-584f-b1fd-bc0e99f5b568",
+            "violations": []
+        },
+        {
+            "path": "/ADC/",
+            "uuid_path": "/c1e8c922-faa2-5920-8a56-5962dea42720/f69f4572-265a-57e7-bbb9-84ad2438f7df",
+            "violations": []
+        }
+    ],
+    "source": "EWS_RevH.kicad_sch"
+}

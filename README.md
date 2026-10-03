@@ -1,21 +1,29 @@
-# Energized Water Scanner USV — Rev G
+# Energized Water Scanner USV
 
-The live Fusion **Energized_Water_Scanner** now uses an **IoT Beyond Lab custom PCB** in place of the PRINT_03 tray. The ESP32 sits on the carrier with accessible GPIO expansion. Two isolated measurement ranges, an onboard ADS1115 and separate logic/servo supplies replace the prior loose electronics arrangement.
+A small unmanned surface vessel for research into detecting and mapping electrical hazards in flooded areas. Two deployable electrodes, E2/E4, measure voltage difference; the vessel must combine that measurement with validated probe pose, orientation and location. A low reading cannot establish that water is safe.
 
-![Rev G live Fusion assembly](previews/RevG_assembly_top.png)
+## Current state — 3 October 2026
 
-## Current files — 2 October 2026
+**Electronics: Rev H engineering prototype. Mechanical assembly: Rev G.** The PCB retains the 91 × 124 mm U-shaped perimeter, 58 × 48 mm motor opening, four mounting holes and 2 mm thickness. Six copper layers accommodate the revised electronics. Fusion integration of the new populated PCB is the next iteration; no 3D files changed here.
 
-- [KiCad 10 project and circuit/assembly guide](pcb/RevG/README.md)
-- [Schematic PDF](pcb/RevG/EWS_RevG_schematic.pdf), [PCB](pcb/RevG/EWS_RevG.kicad_pcb), [BOM](pcb/RevG/BOM.csv), [connector pin map](pcb/RevG/PIN_MAP.md)
-- [Fusion archive](cad/RevG/Energized_Water_Scanner_RevG.f3d), [STEP assembly](cad/RevG/Energized_Water_Scanner_RevG.step), [current STL set](cad/RevG/stl), [print manifest](cad/RevG/print_manifest.json)
-- [Changes and verification](docs/RevG_Changes.md)
-- [Manufacturing review files and release limits](pcb/RevG/manufacturing_review/READ_BEFORE_ORDERING.md)
+- [PCB design, operating limits and assembly](pcb/RevH/README.md)
+- [Editable KiCad project](pcb/RevH/EWS_RevH.kicad_pro), [schematic PDF](pcb/RevH/EWS_RevH_schematic.pdf), [PCB BOM](pcb/RevH/BOM.csv), [connector pin map](pcb/RevH/PIN_MAP.md)
+- [System design](docs/Design.md), [assembly and procurement](docs/Wiring_and_Assembly.md), [remaining qualification work](docs/Build_Qualification.md)
+- [System BOM](BOM.csv): mechanical/harness items plus one assembled carrier. Components on that carrier are listed only in its PCB BOM.
 
-The 91 × 124 mm PCB matches the measured U-shaped tray base and four mounting holes. The old tray, four electronics capture bridges and rear ESP32 shelf have been removed. The obsolete rear controller posts/ribs were cut from the hull; lower roots at the chine remain to preserve hull structure. Motor, battery, steering and probe supports retain their useful functions. The current print export has **13 bodies**, down from 19.
+Rev H adds a dedicated ADC per voltage range, hard-wired diagnostic/ready signals, reverse-input protection, a PCB-branch fuse and transient suppressor, battery monitoring and a dry-compartment ingress-sensor interface. The circuit targets sensitive measurements and a separate 600 V RMS, 50/60 Hz fault range. These are unqualified design targets. Bench calibration, insulation/protection review, physical fault testing and environmental qualification remain open. No validated acquisition firmware is supplied.
 
-**Electrical status:** routed engineering prototype; automated ERC, DRC, connectivity and schematic parity checks pass. The design targets separate sensitive and 600 V AC RMS, 50/60 Hz ranges for low-voltage utility faults. It has **not** passed physical high-voltage, transient, single-fault, wet-insulation, sensitivity or calibration tests. It is not a certified electrical-safety instrument. A low reading does not mean water is safe. Fabrication files are supplied for engineering review and controlled prototype development.
+![Current Rev H PCB assembly drawing](previews/RevH_PCB.png)
 
-The two E2/E4 probes provide one differential measurement along their separation. Historical four-probe firmware/presets and procurement files do not apply unchanged. The prior root-level BOM.xlsx/BOM.csv and CAD releases remain historical references; use the Rev G package for electronics and the current STL manifest for printing.
+![Retained Rev G mechanical assembly — electronics model pending Rev H update](previews/RevG_assembly_top.png)
 
-[Earlier mechanical qualification](docs/Build_Qualification.md) and [waterproofing audit](docs/Waterproofing_and_Design_Audit.md) remain relevant. Rev G does not claim those physical qualification gates are complete.
+Two electrodes provide one field projection, not a full 3D field map or a direct measurement of floodwater current. Current-density estimates require independently measured conductivity and a valid field/geometry model. Fast transient measurement and an electrical-safety clearance decision are not released capabilities.
+
+## Next milestones
+
+1. Review the new PCB and validate components, protection, calibration, acquisition timing and fault behavior on a controlled bench.
+2. Model and fit the Rev H populated board in the live Fusion assembly; verify module standoffs, ESC attachment, solder tails, wiring and hatch clearance.
+3. Resolve actuator hardware and sealing, then test the unpowered hull for leakage and loaded flotation.
+4. Implement and validate acquisition, invalid-state handling, pose/location logging and mapping; obtain appropriate laboratory qualification before hazardous exposure.
+
+Detailed revision narratives and superseded preview images have been removed from the current documentation; Git history preserves them. Existing named CAD releases are unchanged. The `pcb/RevG` files are retained as the electrical baseline corresponding to the current mechanical model; use Rev H for new electronics work. Historical scripts and verification records retain their original scope and must not be treated as current acceptance evidence.

@@ -1,39 +1,18 @@
-> Superseded for electronics and tray/controller mounting by [Rev G](RevG_Changes.md). Use the Rev G PCB pin map and current STL manifest. Earlier mechanical qualification requirements remain applicable.
+# Assembly and procurement
 
-# Rev-F wiring and assembly
+Use the [Rev H PCB BOM](../pcb/RevH/BOM.csv) for the carrier and the [system BOM](../BOM.csv) for remaining hardware. Do not buy a separate ADS1115 breakout or obsolete front-end module: the two converters and isolated front ends are on the PCB. The component BOM includes sockets/modules; do not count them twice. Blank manufacturer selections are procurement holds, not approved substitutions.
 
-Use the saved live **Energized_Water_Scanner** Fusion assembly and [Rev-F procurement delta](RevF_Procurement.md). The earlier four-probe BOM, CAD archives and gradient scripts are historical.
+The system BOM preserves unresolved supplier/interface warnings. It uses two probe mechanisms, three servos total, the retained battery/drivetrain, the Rev G 13-body print set, and revised PCB/ESC mounting hardware. Obtain and qualify one probe actuator before ordering its duplicate. Smooth timing-pulley envelopes do not define actual teeth, horn adaptation, tensioning or shaft retention. Verify the exact SG90 horn/lugs, motor mounting depth, coupling dimensions and propeller/shaft interfaces on supplier hardware.
 
-## Mechanical sequence
+1. Inspect the current hull, wet roofs, blind pilots and sealing lands. Qualify printing/coating on coupons. Do not deepen a blind pilot into a wet channel.
+2. Resolve one E2/E4 actuator with matched pulleys/belt, actual servo horn, upper journal, shaft retention, cartridge, seal and bushing. Test travel, jam response, current and temperature before duplication.
+3. Route E2/E4 leads with insulated hinge loops, strain relief and qualified potted entries. Keep them separated from motor/servo wiring. External wet conductors terminate only at the designated isolated electrode inputs.
+4. Fit the propulsion and steering hardware. Qualify both the stern-tube outer bond and the internal rotating-shaft leakage path; one does not seal the other.
+5. Install the Rev H carrier using the retained mounting pattern, 1 mm nylon spacers and verified screw engagement. Check trimmed solder tails. Fit the regulator modules with measured ≥2 mm underside clearance, including the added capacitors beneath them. Update the populated Fusion model before assuming hatch and connector clearance.
+6. Fit the external fused harness and the independently fused motor branch. Observe J11 polarity, fit F1/Q1 correctly, leave the ESC BEC lead insulated, and never parallel regulator outputs. Use a current-limited supply for initial power-up.
+7. Fit two battery straps and qualified ESC retention. Retain the existing SJ3550 attachment concept pending bond/thermal tests. Keep wiring away from the hatch gasket and provide service slack.
+8. If fitted, connect a compatible 3.3 V open-drain dry-compartment ingress sensor to J14 and test it before each run. J14 is not a wet-electrode or conductivity connector.
 
-1. Inspect the current hull, both retained wet-channel roofs, cartridge lands, two potting cups and blind pilots. Trial the selected print process and screw fits on coupons before printing the complete 320 mm hull.
-2. Fit one complete E2/E4 actuator with the actual horn, matched timing transmission, upper journal, output-shaft retention, cartridge, seal and lower bushing. Verify tool access, belt tension, shaft alignment and full motion before duplicating it.
-3. Install both cartridges, arms and retained pins. Route each electrode lead in its arm groove with an insulated flexible hinge loop, clear of seals and rotating parts. Qualify the wire/potting bond before encapsulation.
-4. Install the two probe servos and covers 23/25. Disconnect leads and release ties before cover service. With the hatch/gasket removed, slide E4's cover 3 mm inward before lifting. Confirm removal on real hardware.
-5. Install the motor supports, shaft/tube and steering saddle/servo. Retain the stern-tube bond, blind rudder caps and steering boot. Check the actual coupling, shaft retention, internal tube sealing and full steering travel.
-6. Fit the revised cassette using four M3×8 screws at (−17,±58.5) and (67,±58.5) mm. Nominal pilots are Ø2.5 × 5.5 mm; do not deepen them through the wet roofs.
-7. Fit the rear controller shelf/frame with four M3×30 screws at (145,23), (145,59), (183,23), (183,59) mm. Verify the actual board, clamp-safe surfaces and insulating compliant pads. Nominal pilot engagement is 6.9 mm with 2.1 mm tip margin. Tighten only after confirming the real stack and printed-pilot fit.
-8. Fit the retained raised cradle with four flush M2×6 screws at (88,±13) and (185,±13) mm. Thread both straps through their tunnels, pad/deburr battery contact surfaces, and avoid compressing the pack. The controller remains beside the pack for battery service.
-9. Fit and qualify the continuous hatch gasket and cover. Keep all wires off the gasket land; confirm actual compression, screw lengths and leak performance.
+The [PCB pin map](../pcb/RevH/PIN_MAP.md) is authoritative. GPIO34/35/36/39, GPIO32 and GPIO23 now have onboard functions. Remove boat power and JP1 before USB service; lift the ESP32 from its sockets if necessary. Disconnect leads and ties before lifting the carrier or probe covers. The E4 cover's documented service path is 3 mm inward then upward, subject to confirmation on hardware.
 
-## Wiring
-
-Keep the retained probes labeled **E2 and E4**. Their historical ADC assignments are A1 and A3; verify the protected front-end schematic and firmware before selecting a differential acquisition mode. Remove E1/E3 leads and servo connections from the active harness. Do not connect unprotected wet electrodes directly to an ADC as a substitute for the protected front end.
-
-Retain the separate logic and probe-servo regulators. Do not parallel regulator outputs. Keep analog electrode wiring away from motor and servo current paths, use keyed disconnects and strain relief, and allow both actuator covers and the rear shelf to be serviced. Actual connector ratings, wire gauge, fuse sizing and lead lengths require the validated circuit and load measurements.
-
-Nominal dry routing allocations to check against real bundles:
-
-- Analog spine: X−12…88, Y−26…−22, Z42…46 mm (4 × 4 mm).
-- Power spine: X13…130, Y59…63, Z63…67 mm (4 × 4 mm).
-- Rear-controller signal route: a 3 × 3 mm riser near X75…78, Y−44…−41, then across to Y24…27 at Z65…68, continuing aft toward X150. Keep connector bends and slack inside the hatch.
-
-These are clearance allocations, not modeled flexible cables or confirmed bundle capacity. Use ties no wider than 2.5 mm in the retained saddle slots. Disconnect/release harnesses before lifting any tray or cover.
-
-## Service and initial tests
-
-Disconnect the battery, remove the hatch, release straps and lift the pack. For cradle removal, remove the pack and its four flush screws. Disconnect the rear-controller harness and remove its shared frame/shelf screws before lifting the controller shelf for USB access. USB faces the transom and is not accessible with an assumed straight plug while installed. Disconnect boat power before USB power.
-
-Dry-cycle one actuator at a time, observing current, slack, shaft retention and interference. A jam must stop sustained drive. Qualify the two wet shaft seals, cartridge gaskets, potting entries, hatch, steering boot, stern-tube outer bond and internal rotating-shaft path before any water test with electronics installed. Use the [build qualification record](Build_Qualification.md).
-
-The old four-angle measurement preset and three-dimensional gradient estimator do not apply to this two-electrode revision. Mechanical clearance does not validate sensing, protection, calibration or water safety.
+The current mechanical references remain the named Rev G CAD release and live Fusion assembly. No new STL/STEP/F3D was produced. Match print identifiers and quantities to that release; all printed parts remain subject to the [qualification plan](Build_Qualification.md).

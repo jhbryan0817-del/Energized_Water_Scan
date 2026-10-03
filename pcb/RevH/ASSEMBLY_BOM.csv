@@ -1,0 +1,8 @@
+item,quantity,requirement
+ESP32 female sockets,2,"1x19 2.54mm; 25.4mm row spacing; verify underside gap above health passives"
+Module standoff sets,2,"Insulated; at least 2mm clear below regulators including solder tails"
+JP1 shunt,1,"2.54mm removable; remove before USB"
+PCB nylon spacers,4,"M3 1mm nominal; validate screw engagement"
+PCB nylon screws,4,"Select length against actual blind pilots"
+Electrode pigtails,2,"Rated insulation, strain relief, wet-entry qualification required"
+External battery branch fuse and harness,1,"Select rating and interrupt capacity against measured load and fault current"
