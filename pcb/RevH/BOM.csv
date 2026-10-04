@@ -78,7 +78,7 @@ J13,ELECTRODE_E4,,EWS:J13,,"HOLD: select manufacturer part against value, footpr
 U7,ADS1115IDGSR,ADS1115IDGSR,EWS:U7,"0x49: continuous LO AIN0-AIN1; independent clock, not phase synchronous",Selected candidate; verify exact supplier drawing and availability,https://www.ti.com/lit/ds/symlink/ads1115.pdf
 C33,100nF 25V X7R,GRM21BR71E104KA01L,EWS:C33,,Selected candidate; verify exact supplier drawing and availability,
 R43,10k 1%,RC0805FR-0710KL,EWS:R43,,Selected candidate; verify exact supplier drawing and availability,
-F1,3A fast fuse,0453003.MR,EWS:F1,"Prototype 3A; coordinate with harness fuse, inrush and measured load",Selected candidate; verify exact supplier drawing and availability,https://www.littelfuse.com/~/media/electronics/datasheets/fuses/littelfuse_fuse_451_453_datasheet.pdf.pdf
+F1,3A fast fuse,0453003.MR,EWS:F1,"Prototype 3A; coordinate with harness fuse, inrush and measured load; referenced KiCad 3D file absent locally: Fusion uses labelled provisional clearance envelope, verify supplier dimensions",Selected candidate; verify exact supplier drawing and availability,https://www.littelfuse.com/~/media/electronics/datasheets/fuses/littelfuse_fuse_451_453_datasheet.pdf.pdf
 Q1,DMPH3010LK3-13,DMPH3010LK3-13,EWS:Q1,Reverse input protection: pin2/tab drain=fused input; pin3 source=VBAT,Selected candidate; verify exact supplier drawing and availability,https://www.diodes.com/datasheet/download/DMPH3010LK3.pdf
 R60,100k 1%,RC0805FR-07100KL,EWS:R60,,Selected candidate; verify exact supplier drawing and availability,
 D5,SMBJ12A,SMBJ12A,EWS:D5,12V standoff; 19.9V specified clamp; downstream of F1/Q1,Selected candidate; verify exact supplier drawing and availability,https://m.littelfuse.com/~/media/electronics/datasheets/tvs_diodes/littelfuse_tvs_diode_smbj_datasheet.pdf.pdf
@@ -90,7 +90,7 @@ R61,200k 0.1%,TNPW0805200KBEEA,EWS:R61,Under socketed DevKitC; verify at least 2
 R62,33k 0.1%,TNPW080533K0BEEA,EWS:R62,Under socketed DevKitC; verify at least 2mm underside clearance,Selected candidate; verify exact supplier drawing and availability,https://www.vishay.com/docs/28758/tnpw_e3.pdf
 R63,10k 1%,RC0805FR-0710KL,EWS:R63,Under socketed DevKitC; verify at least 2mm underside clearance,Selected candidate; verify exact supplier drawing and availability,
 C43,100nF 25V X7R,GRM21BR71E104KA01L,EWS:C43,Under socketed DevKitC; verify at least 2mm underside clearance,Selected candidate; verify exact supplier drawing and availability,
-J14,DRY_LEAK_SENSOR,TSW-103-07-G-S,EWS:J14,Dry interior 3.3V open-drain sensor; not an electrode/conductivity port,Selected candidate; verify exact supplier drawing and availability,
+J14,DRY_LEAK_SENSOR,TSW-103-07-G-S,EWS:J14,"Dry interior 3.3V open-drain sensor; not an electrode/conductivity port; generic 3-pin CAD envelope, verify selected TSW lead lengths and mating plug access",Selected candidate; verify exact supplier drawing and availability,
 R64,1k 1%,RC0805FR-071KL,EWS:R64,Under socketed DevKitC; verify at least 2mm underside clearance,Selected candidate; verify exact supplier drawing and availability,
 R65,10k 1%,RC0805FR-0710KL,EWS:R65,Under socketed DevKitC; verify at least 2mm underside clearance,Selected candidate; verify exact supplier drawing and availability,
 C44,100nF 25V X7R,GRM21BR71E104KA01L,EWS:C44,Under socketed DevKitC; verify at least 2mm underside clearance,Selected candidate; verify exact supplier drawing and availability,

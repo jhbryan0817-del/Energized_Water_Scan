@@ -1,6 +1,6 @@
 # Energized Water Scanner — PCB Rev H
 
-**Engineering prototype, 3 October 2026.** Native KiCad 10 sources for the two-electrode flood-hazard research USV. Open `EWS_RevH.kicad_pro`. This revision changes electronics only. The Fusion assembly still represents Rev G; no new STEP, F3D or STL was generated.
+**Engineering prototype, 3 October 2026.** Native KiCad 10 sources for the two-electrode flood-hazard research USV. Open `EWS_RevH.kicad_pro`. This revision changes electronics only. A subsequent 4 October live Fusion Rev I iteration updates the mechanical fit representation; see [CAD audit](../../docs/CAD_Audit_2026-10-04.md). No new STEP, F3D or STL was generated.
 
 ## What changed
 
@@ -69,7 +69,7 @@ All GPIO are 3.3 V only. Retain a WROOM DevKitC V4. Flash pins remain unavailabl
 
 Six copper layers, 2 mm thickness, 91 × 124 mm overall. Fusion coordinates: X −20…71, Y −62…62 mm. Motor opening: X 13…71, Y −24…24 mm. Four Ø3.4 mm holes: (−17,−58.5), (67,−58.5), (−17,58.5), (67,58.5). KiCad X = Fusion X + 50; KiCad Y = 100 − Fusion Y.
 
-Retain the Rev G 1 mm nylon spacer arrangement, subject to actual screw engagement and underside solder-tail clearance. The existing outline and hole geometry are checked against the previous board. Populated heights, leads, connectors, ESC attachment and hatch clearance must be checked in the next Fusion iteration and on real hardware. No revised populated 3D model is supplied.
+Retain the Rev G 1 mm nylon spacer arrangement, subject to actual screw engagement and underside solder-tail clearance. The existing outline and hole geometry are checked against the previous board. Populated heights, leads, connectors, ESC attachment and hatch clearance must be checked in the next Fusion iteration and on real hardware. The populated fit representation is maintained only in the live Fusion document; it is not a supplier-certified assembly or a manufacturing export.
 
 The nominal six-layer stack uses 70 µm outer and 35 µm inner copper, dielectric layers 0.20/0.30/0.70/0.30/0.20 mm, and 0.01 mm mask per side. It totals 2.00 mm. The fabricator must confirm materials, pressed thickness, tolerances and insulation requirements. No controlled impedance is claimed. The added layers provide space through the restricted neck without reducing the input-isolation rules.
 
@@ -93,4 +93,4 @@ Native files were edited through KiCad's pcbnew API and checked with kicad-cli 1
 
 The native schematic uses project-local functional pin-map symbols with named global nets, continuing the previous project style. It is electrically editable and checked for board parity; it is not a substitute for an independent circuit review. No new fabrication order or manufacturing release is authorized by these reports.
 
-Checks use the configured project rules. The reports list inherited ignored checks, including missing courtyards, track-to-via centering and footprint filters. No new violation was excluded to obtain the result. Mechanical fit of parts above sockets or module standoffs remains a separate check. The archive intentionally excludes 3D models; references inherited from Rev G can be resolved during the next modeling iteration.
+Checks use the configured project rules. The reports list inherited ignored checks, including missing courtyards, track-to-via centering and footprint filters. No new violation was excluded to obtain the result. Mechanical fit of parts above sockets or module standoffs remains a separate check. The archive intentionally excludes 3D models; references inherited from Rev G are represented in the live Fusion fit assembly, with provisional envelopes identified in the CAD audit.

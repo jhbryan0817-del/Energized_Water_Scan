@@ -1,6 +1,6 @@
 # Remaining qualification work
 
-Current status: Rev H electronics design, Rev G mechanical assembly. No physical tests or certifications are implied by the CAD or automated electrical reports.
+Current status: Rev H electronics design, live Fusion Rev I mechanical assembly. See the [CAD audit](CAD_Audit_2026-10-04.md). No physical tests or certifications are implied by the CAD or automated electrical reports.
 
 ## Electronics and sensing
 
@@ -21,7 +21,7 @@ Current status: Rev H electronics design, Rev G mechanical assembly. No physical
 | Two electrode lead entries | Actual jacket/potting adhesion, void control, insulation, strain relief and full-motion flex life. |
 | Propulsion tube/shaft | Outer bonded seal plus separate internal dynamic seal, lubrication, alignment and wear tests. |
 | Steering boot and blind fasteners | Retention, travel/fatigue, real screw engagement and no breakthrough into wet spaces. |
-| PCB and modules | Rev H populated Fusion fit, 2 mm module standoffs, underside tails, nylon hardware, ESC retention, wiring and hatch clearance. |
+| PCB and modules | Validate the Rev H populated Fusion fit on real hardware, 2 mm module standoffs, underside tails, nylon hardware, ESC retention, wiring and hatch clearance. |
 
 Specify immersion head, duration, water type, temperature and actuation cycles. Test coupons/interfaces, then the empty assembled hull using dry witness material. Repeat after service cycles. Any ingress fails the tested condition. Internal probe covers are service covers, not independent watertight compartments.
 
