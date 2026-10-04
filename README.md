@@ -4,7 +4,7 @@ A small unmanned surface vessel for research into detecting and mapping electric
 
 ## Current state — 4 October 2026
 
-**Electronics: Rev H engineering prototype. Mechanical assembly: live Fusion Rev I.** The PCB retains the 91 × 124 mm U-shaped perimeter, 58 × 48 mm motor opening, four mounting holes and 2 mm thickness. Six copper layers accommodate the revised electronics. The live Fusion assembly has been updated for Rev H placement and hull cleanup. Repository 3D exports remain historical; this update contains documentation and BOM changes only. See the [CAD audit](docs/CAD_Audit_2026-10-04.md) for verified results and remaining holds.
+**Electronics: Rev H engineering prototype. Mechanical assembly: live Fusion Rev I.** The PCB retains the 91 × 124 mm U-shaped perimeter, 58 × 48 mm motor opening, four mounting holes and 2 mm thickness. Six copper layers accommodate the revised electronics. The live Fusion assembly has been updated for Rev H placement, hull cleanup and corrective closure of obsolete bow/stern openings. Repository 3D exports remain historical; this update contains documentation and BOM changes only. See the [CAD audit](docs/CAD_Audit_2026-10-04.md) for verified results and remaining holds.
 
 - [PCB design, operating limits and assembly](pcb/RevH/README.md)
 - [Editable KiCad project](pcb/RevH/EWS_RevH.kicad_pro), [schematic PDF](pcb/RevH/EWS_RevH_schematic.pdf), [PCB BOM](pcb/RevH/BOM.csv), [connector pin map](pcb/RevH/PIN_MAP.md)
